@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #fcfbe8;
+    background-color: #dffff7;
 }
 
 h1 {
@@ -43,7 +43,7 @@ img {
 
 header {
     overflow: hidden;
-    background-color: rgb(255, 255, 255);
+    background-color: #72ffdc;
     border-bottom: 1px solid black;
     position: fixed;
     top: 0;
@@ -203,24 +203,14 @@ header {
 }
 
 .habContainer__item {
-    max-width: 60px;
+    max-width: 50px;
 }
 
 .habContiner__img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
-.habContainer__lenguageicons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-}
-
-.habContainer__lenguagename {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
+.habContiner__img--title {
+    margin: 15px auto;
 }

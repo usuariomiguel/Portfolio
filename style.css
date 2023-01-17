@@ -59,10 +59,16 @@ header {
 }
 
 .nav__logo {
-    background-color: red;
+    display: none;
+    /* background-color: red;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 50%; */
+}
+
+.nav_title {
+    font-family: var(--ff-title);
+    font-size: var(--fs-subtitle);
 }
 
 .navList {
@@ -169,7 +175,40 @@ header {
 }
 
 .portfolioContainer__item--img {
+    border-radius: 10px;
     border: 2px solid black;
+}
+
+.habContainer {
+    margin: 75px 0;
+}
+
+.habContainer__title {
+    margin: 0px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid black;
+}
+
+.habContiner__subtitle {
+    margin: 0px;
+    padding: 25px 0;
+}
+
+.habContainer__lenguajes, .habContainer__utility {
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.habContainer__item {
+    max-width: 60px;
+}
+
+.habContiner__img {
+    width: 60px;
+    height: 60px;
 }
 
 .habContainer__lenguageicons {

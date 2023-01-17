@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #dffff7;
+    background-color: #fdf5e9;
 }
 
 h1 {
@@ -43,7 +43,7 @@ img {
 
 header {
     overflow: hidden;
-    background-color: #72ffdc;
+    background-color: #ffffff;
     border-bottom: 1px solid black;
     position: fixed;
     top: 0;
@@ -52,6 +52,7 @@ header {
 }
 
 .nav {
+    color: black;
     padding: 10px 25px;
     display: flex;
     align-items: center;
@@ -94,7 +95,7 @@ header {
     text-indent: bold;
 }
 
-.heroContent {
+.heroContainer {
     top: 0;
     left: 0;
     height: 100vh;
@@ -213,4 +214,41 @@ header {
 
 .habContiner__img--title {
     margin: 15px auto;
+}
+
+.formContainer {
+    margin: 75px 0px;
+}
+
+.formContainer__title {
+    margin: 0;
+    padding-bottom: 25px;
+    border-bottom: 2px solid black;
+}
+
+.formContainer__form {
+    padding-top: 25px;
+}
+
+.formContainer__forminput {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;
+    margin: 10px 0;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-family: var(--ff-paragraph);
+}
+
+.formContainer__submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 15px 40px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-family: var(--ff-paragraph);
 }

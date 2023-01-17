@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav class="nav">
-            <a href=""><img src="" alt="" class="nav__logo"></a>
+            <img src="/src/img/foto_miguel.jpg" alt="" class="nav__logo">
             <ul class="navList">
                 <a href="" class="navList__link">
                     <li class="navList__list">INICIO</li>
@@ -32,41 +37,104 @@
                     <li class="navList__list">CONTACTO</li>
                 </a>
             </ul>
-            <a href="#" class="darkMode"><img src="" alt="" class="darkMode__img"></a>
+            <a href="#" class="darkMode"><img src="./src/icons/🦆 icon _sun_.svg" alt="" class="darkMode__img"></a>
+            <a href="#" class="navBurguermenu__link"><img src="/src/icons/burger-menu-svgrepo-com.svg" alt="" class="navBurguermenu__img"></a>
         </nav>
     </header>
-    <main>
-        <h1 class="heroTitle">MIGUEL ANGEL CANTOS</h1>
-        <h2 class="herosubtitle">BIENVENIDX A MI PORTFOLIO DE DESARROLLADOR WEB</h2>
-        <p class="hero__paragraph paragraph">Puedes podenerte en contato conmigo escribiendo a
-            migueangelcantos@gmail.com</p>
-        <input type="button" value="Descarga mi CV" class="herobutton">
-        <div class="hero__socialmedia">
-            <img src="" alt="" class="hero__socialmedia--logo">
-            <img src="" alt="" class="hero__socialmedia--logo">
-        </div>
-        <hr>
-        <h2 class="portfolioContainer">PORTFOLIO</h2>
-        <div class="portfolioContainer">
-            <div class="portfolioContainer__items">
-                <a href="" class="portfolioContainer__items--link">
-                    <img src="" alt="" class="portfolioContainer__items--img">
-                </a>
-                <h3 class="portfolioContainer__items--title">ANCO COMPANY</h3>
+    <main class="main">
+        <section class="heroContent">
+            <p class="subtitlehero"><b><i>PORTFOLIO 2023</i></b></p>
+            <h1 class="heroTitle">MIGUEL ÁNGEL CANTOS</h1>
+            <!-- <img class="heroMachine" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=007990&width=375&height=25&lines=En+proceso+de+ser+un+desarrollador+web." alt="Typing SVG"/> -->
+            <h3 class="herosubtitle">BIENVENIDO A MI PORTFOLIO DE DESARROLLADOR WEB</h3>
+            <p class="hero__paragraph paragraph">Puedes podenerte en contacto conmigo escribiendo a
+            <a class="hero__link">migueangelcantos@gmail.com.</a></p>
+            <div class="herobutton">
+                <a href="" class="herobutton__link" download >Descarga mi CV</a>
             </div>
-            <div class="portfolioContainer__items">
-                <a href="" class="portfolioContainer__items--link">
-                    <img src="" alt="" class="portfolioContainer__items--img">
-                </a>
-                <h3 class="portfolioContainer__items--title">ROCK & VIDA</h3>
+            <div class="hero__socialmedia">
+                <img src="/src/icons/whatsapp-svgrepo-com.svg" alt="" class="hero__socialmedia--logo">
+                <img src="/src/icons/linkedin-svgrepo-com.svg" alt="" class="hero__socialmedia--logo">
+                <img src="/src/icons/github-svgrepo-com.svg" alt="" class="hero__socialmedia--logo">
             </div>
+        </section>
+        <section class="portfolioContainer">
+            <h2 class="portfolioTitle">PORTFOLIO</h2>
             <div class="portfolioContainer__items">
-                <a href="" class="portfolioContainer__items--link">
-                    <img src="" alt="" class="portfolioContainer__items--img">
-                </a>
-                <h3 class="portfolioContainer__items--title">PORTFOLIO</h3>
+                <div class="portfolioContainer__item">
+                    <h4 class="portfolioContainer__item--title">ANCO COMPANY</h4>
+                    <a href="" class="portfolioContainer__items--link">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.fotocommunity.com%2Fatardeceres-1b2829bd-e28f-47e5-9a55-8d9988f8e184.jpg%3Fheight%3D1080&f=1&nofb=1&ipt=be04f00fcfe96abe97200a52a9cdcaf10e4e1f5febca97e943df9bc77840d8b6&ipo=images" alt="" class="portfolioContainer__item--img">
+                    </a>
+                </div>
+                <div class="portfolioContainer__item">
+                    <h4 class="portfolioContainer__item--title">ROCK Y VIDA</h4>
+                    <a href="" class="portfolioContainer__item--link">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.fotocommunity.com%2Fatardeceres-1b2829bd-e28f-47e5-9a55-8d9988f8e184.jpg%3Fheight%3D1080&f=1&nofb=1&ipt=be04f00fcfe96abe97200a52a9cdcaf10e4e1f5febca97e943df9bc77840d8b6&ipo=images" alt="" class="portfolioContainer__item--img">
+                    </a>
+                </div>
+                <div class="portfolioContainer__item">
+                    <h4 class="portfolioContainer__item--title">PORTFOLIO</h4>
+                    <a href="" class="portfolioContainer__item--link">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.fotocommunity.com%2Fatardeceres-1b2829bd-e28f-47e5-9a55-8d9988f8e184.jpg%3Fheight%3D1080&f=1&nofb=1&ipt=be04f00fcfe96abe97200a52a9cdcaf10e4e1f5febca97e943df9bc77840d8b6&ipo=images" alt="" class="portfolioContainer__item--img">
+                    </a>
+                </div>
             </div>
-        </div>
+        </section>
+        <section>
+            <div class="habContainer">
+                <h2 class="habContainer__title">HABILIDADES
+                    <h3 class="habContiner__subtitle">Lenguajes de programacion</h3>
+
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/HTML.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">HTML5</h4>
+                    </div>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/CSS.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">CSS</h4>
+                    </div>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/js.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">JAVASCRIPT</h4>
+                    </div>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/PHP.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">PHP</h4>
+                    </div>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/pug.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">PUG</h4>
+                    </div>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/MySQL.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">MySQL</h4>
+                    </div>
+
+                    <h3 class="habContiner__subtitle">Utilidades</h3>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/figma.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">FIGMA</h4>
+                    </div>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/canva.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">CANVA</h4>
+                    </div>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/git.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">GIT</h4>
+                    </div>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/github.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">GITHUB</h4>
+                    </div>
+                    <div class="habContainer__lenguage">
+                        <img src="/src/icons/vsc.svg" alt="" class="habContiner__img">
+                        <h4 class="habContiner__img--title">VSC</h4>
+                    </div>
+                </h2>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>

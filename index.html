@@ -19,31 +19,36 @@
             <img src="./src/img/foto_miguel.jpg" alt="" class="nav__logo">
             <p class="nav__title">PORTFOLIO 2023</p>
             <ul class="navList">
-                <a href="" class="navList__link">
-                    <li class="navList__list">INICIO</li>
-                </a>
-                <a href="" class="navList__link">
-                    <li class="navList__list">SOBRE MI</li>
-                </a>
-                <a href="" class="navList__link">
-                    <li class="navList__list">PORTFOLIO</li>
-                </a>
-                <a href="" class="navList__link">
-                    <li class="navList__list">EDUCACIÓN</li>
-                </a>
-                <a href="" class="navList__link">
-                    <li class="navList__list">HABILIDADES</li>
-                </a>
-                <a href="" class="navList__link">
-                    <li class="navList__list">CONTACTO</li>
-                </a>
+                <li class="navList__list">
+                    <a href="#" class="navList__link">INICIO</a>
+                </li>
+                
+                <li class="navList__list">
+                    <a href="#hero" class="navList__link">SOBRE MI</a>
+                </li>
+                
+                <li class="navList__list">
+                    <a href="#portfolio" class="navList__link">PORTFOLIO</a>
+                </li>
+                
+                <li class="navList__list">
+                    <a href="#" class="navList__link">EDUCACIÓN</a>
+                </li>
+                
+                <li class="navList__list">
+                    <a href="#skills" class="navList__link">HABILIDADES</a>
+                </li>
+                
+                <li class="navList__list">
+                    <a href="#form" class="navList__link">CONTACTO</a>
+                </li>
             </ul>
-            <a href="#" class="darkMode"><img src="./src/icons/🦆 icon _sun_.svg" alt="" class="darkMode__img"></a>
+            <a href="#" class="darkMode"><img src="./src/icons/darkmode.svg" alt="" class="darkMode__img"></a>
             <a href="#" class="navBurguermenu__link"><img src="./src/icons/burger-menu-svgrepo-com.svg" alt="" class="navBurguermenu__img"></a>
         </nav>
     </header>
     <main class="main">
-        <section class="heroContainer">
+        <section class="heroContainer" id="hero">
             <h1 class="heroTitle">MIGUEL ÁNGEL CANTOS</h1>
             <!-- <img class="heroMachine" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=007990&width=375&height=25&lines=En+proceso+de+ser+un+desarrollador+web." alt="Typing SVG"/> -->
             <h3 class="herosubtitle">BIENVENIDO A MI PORTFOLIO DE DESARROLLADOR WEB</h3>
@@ -58,7 +63,7 @@
                 <img src="./src/icons/github-svgrepo-com.svg" alt="" class="hero__socialmedia--logo">
             </div>
         </section>
-        <section class="portfolioContainer">
+        <section class="portfolioContainer" id="portfolio">
             <h2 class="portfolioTitle">PORTFOLIO</h2>
             <div class="portfolioContainer__items">
                 <div class="portfolioContainer__item">
@@ -81,10 +86,11 @@
                 </div>
             </div>
         </section>
-        <section class="habContainer">
-                <h2 class="habContainer__title">HABILIDADES
-                    <h3 class="habContiner__subtitle">Lenguajes de programacion</h3>
-                    <div class="habContainer__lenguajes">
+        <section class="habContainer" id="skills">
+            <div class="habContainer__general">
+                <h2 class="habContainer__title">HABILIDADES</h2>
+                <h3 class="habContiner__subtitle">Lenguajes de programacion</h3>
+                        <div class="habContainer__lenguajes">
                             <div class="habContainer__item">
                                 <img src="./src/icons/html.svg" alt="" class="habContiner__img">
                                 <h4 class="habContiner__img--title">HTML</h4>
@@ -110,39 +116,38 @@
                                 <h4 class="habContiner__img--title">MySQL</h4>
                             </div>
                         </div>
-                    </div>
-
-                    <h3 class="habContiner__subtitle">Utilidades</h3>
-                    <div class="habContainer__utility">
-                        <div class="habContainer__item">
-                            <img src="./src/icons/figma.svg" alt="" class="habContiner__img">
-                            <h4 class="habContiner__img--title">FIGMA</h4>
+            
+                        <h3 class="habContiner__subtitle">Utilidades</h3>
+                        <div class="habContainer__utility">
+                            <div class="habContainer__item">
+                                <img src="./src/icons/figma.svg" alt="" class="habContiner__img">
+                                <h4 class="habContiner__img--title">FIGMA</h4>
+                            </div>
+                            <div class="habContainer__item">
+                                <img src="./src/icons/canva.svg" alt="" class="habContiner__img">
+                                <h4 class="habContiner__img--title">CANVA</h4>
+                            </div>
+                            <div class="habContainer__item">
+                                <img src="./src/icons/git.svg" alt="" class="habContiner__img">
+                                <h4 class="habContiner__img--title">GIT</h4>
+                            </div>
+                            <div class="habContainer__item">
+                                <img src="./src/icons/github.svg" alt="" class="habContiner__img">
+                                <h4 class="habContiner__img--title">GITHUB</h4>
+                            </div>
+                            <div class="habContainer__item">
+                                <img src="./src/icons/vsc.svg" alt="" class="habContiner__img">
+                                <h4 class="habContiner__img--title">VSC</h4>
+                            </div>
                         </div>
-                        <div class="habContainer__item">
-                            <img src="./src/icons/canva.svg" alt="" class="habContiner__img">
-                            <h4 class="habContiner__img--title">CANVA</h4>
-                        </div>
-                        <div class="habContainer__item">
-                            <img src="./src/icons/git.svg" alt="" class="habContiner__img">
-                            <h4 class="habContiner__img--title">GIT</h4>
-                        </div>
-                        <div class="habContainer__item">
-                            <img src="./src/icons/github.svg" alt="" class="habContiner__img">
-                            <h4 class="habContiner__img--title">GITHUB</h4>
-                        </div>
-                        <div class="habContainer__item">
-                            <img src="./src/icons/vsc.svg" alt="" class="habContiner__img">
-                            <h4 class="habContiner__img--title">VSC</h4>
-                        </div>
-                    </div>
-                </h2>
+            </div>
         </section>
-        <section class="formContainer">
+        <section class="formContainer" id="form">
             <h2 class="formContainer__title">CONTACTO</h2>
             <div class="formContainer__form">
-                <input type="text" name="nombre" id="" class="formContainer__name formContainer__forminput" value="Nombre:">
-                <input type="email" name="Correo" id="" class="formContainer__email formContainer__forminput" value="Correo:">
-                <textarea class="formContainer__textarea formContainer__forminput" name="mensaje" id="" cols="30" rows="10">Escribe tu mensaje...</textarea>
+                <input type="text" name="nombre" class="formContainer__name formContainer__forminput" value="Nombre:">
+                <input type="email" name="Correo" class="formContainer__email formContainer__forminput" value="Correo:">
+                <textarea class="formContainer__textarea formContainer__forminput" name="mensaje" cols="30" rows="10">Escribe tu mensaje...</textarea>
                 <input type="submit" value="Enviar" class="formContainer__submit">
             </div>
         </section>

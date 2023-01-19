@@ -48,7 +48,8 @@ img {
 
 header {
     background-color: rgb(0, 0, 0);
-    border-bottom: 2px solid rgba(238, 255, 0, 0.65);
+    border-bottom: 2px dashed ;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -73,6 +74,12 @@ header {
     margin: 0;
     font-family: var(--ff-title);
     font-size: 20px;
+}
+
+.othercolor {
+    background: linear-gradient(rgb(0, 217, 255),rgb(212, 0, 255));
+    -webkit-background-clip: text;
+    color: transparent;  
 }
 
 .navList {
@@ -100,17 +107,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(./src/img/foto_miguel.jpg);
+    /* background-image: url(./src/img/foto_miguel.jpg);
     background-size: cover;
     background-position: left;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     padding: 0px 20px;
 }
 
 .heroTitle {
-    margin-bottom: 25px;
-    border-bottom: 2px solid black;
+    padding-bottom: 25px;
+    border-bottom: 4px solid black
 }
 
 .heroMachine {
@@ -129,18 +136,19 @@ header {
 }
 
 .hero__link {
-    text-decoration: none;
-    color: rgb(236, 255, 92);
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(212, 0, 255);
 }
 
 .herobutton {
     font-family: var(--ff-paragraph);
     font-size: var(--fs-paragraph);
     padding-left: 50px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.877);
     text-align: center;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     margin: 25px 0;
     margin-bottom: 40px;
     max-width: 50%;
@@ -148,7 +156,7 @@ header {
 
 .herobutton__link {
     text-decoration: none;
-    color: azure;
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }
 
@@ -210,11 +218,12 @@ header {
     padding: 25px 0;
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     color: #000000;
     text-align: center;
     justify-content: space-around;
-    border: 3px solid black;
+    border: 2px solid black;
+    /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
     border-radius: 10px;
 }
 
@@ -258,8 +267,7 @@ header {
 }
 
 .formContainer__submit {
-    display: block;
-    margin: 0 auto;
+    float: right;
     margin-top: 15px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;

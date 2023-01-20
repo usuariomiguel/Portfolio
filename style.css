@@ -13,13 +13,22 @@
     --fs-paragraph-d: 20px;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #ffeed5;
     height: 100%;
-}
-
-* {
-    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -55,7 +64,7 @@ img {
 }
 
 header {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(129, 129, 129);
     border-bottom: 2px dashed ;
     border-image: linear-gradient(to right, darkblue, darkorchid) 1;
     position: fixed;
@@ -103,6 +112,10 @@ header {
     height: 50px;
 }
 
+.main {
+    padding: 0 20px;
+}
+
 .subtitlehero {
     text-align: right;
     color: rgb(232, 60, 60);
@@ -120,7 +133,6 @@ header {
     background-position: left;
     background-attachment: fixed;
     background-repeat: no-repeat; */
-    padding: 0px 20px;
 }
 
 .heroTitle {
@@ -176,7 +188,7 @@ header {
 }
 
 .portfolioContainer {
-    margin: 75px 20px;
+    padding: 75px 0px;
 }
 
 .portfolioTitle {
@@ -205,7 +217,7 @@ header {
 }
 
 .habContainer {
-    margin: 75px 20px;
+    padding: 75px 0px;
 }
 
 .habContainer__title {
@@ -247,7 +259,7 @@ header {
 }
 
 .formContainer {
-    margin: 75px 20px;
+    padding: 75px 0px;
 }
 
 .formContainer__title {
@@ -263,7 +275,7 @@ header {
     border: 2px solid rgb(115, 115, 115);
     border-radius: 10px;
     padding: 15px;
-    width: 90%;
+    width: 100%;
     margin: 10px 0;
     background-color: rgb(255, 255, 255);
     color: #000000;
@@ -345,6 +357,10 @@ header {
         font-size: var(--fs-paragraph-d);
     }
 
+    .main {
+        padding: 0 50px;
+    }
+
     .nav__title {
         padding-left: 50px;
         font-size: var(--fs-paragraph-d);
@@ -360,7 +376,6 @@ header {
     }
 
     .heroContainer {
-        padding: 0 50px;
     }
 
     .hero__socialmedia--logo {
@@ -374,8 +389,7 @@ header {
     }
 
     .portfolioContainer {
-        margin-left: 50px;
-        margin-right: 50px;
+
     }
 
     .portfolioContainer__items {
@@ -389,8 +403,8 @@ header {
     }
 
     .habContainer {
-        margin-left: 50px;
-        margin-right: 50px;
+        /* margin-left: 50px;
+        margin-right: 50px; */
     }
 
     .habContiner__subtitle {
@@ -417,16 +431,78 @@ header {
     }
 
     .formContainer {
-        margin-left: 50px;
-        margin-right: 50px;
+        /* margin-left: 50px;
+        margin-right: 50px; */
     }
 
-    .formContainer__forminput {
-        width: 95.5%;
+}
+
+@media only screen and (min-device-width: 1024px){
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        gap: 75px;
+        width: 20%;
+        height: 100%;
+        border: none;
+        border-right:2px solid #004cff; 
     }
 
-    .footer {
-        margin-left: 50px;
-        margin-right: 50px;
+    .nav {
+        padding: 0;
     }
+
+    .nav__title {
+        display: none;
+        padding: 0;
+    }
+
+    .nav__logo {
+        display: block;
+        width: 150px;
+        height: 150px;
+        border-radius: 500px;
+    }
+
+    .navBurguermenu__img {
+        display: none;
+    }
+
+    .navList {
+        display: block;
+        padding: 0;
+        line-height: 1.7;
+        list-style: none;
+    }
+
+    .navList__link {
+        text-decoration: none;
+        color: white;
+    }
+
+    .darkMode__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main {
+        margin-left: 20%;
+    }
+
+    .habContainer__lenguajes, .habContainer__utility {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        padding: 25px 0;
+        background-color: #f5f5f5;
+        color: #000000;
+        text-align: center;
+        justify-content: space-evenly;
+        border: 4px double rgb(164, 164, 164);
+        /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
+        border-radius: 10px;
+    }
+
 }

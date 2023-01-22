@@ -322,7 +322,7 @@ header {
     margin: 0 auto;
 }
 
-@media only screen and (min-device-width: 768px){
+@media only screen and (min-width: 768px){
 
     h1 {
         font-family: var(--ff-title);
@@ -442,7 +442,7 @@ header {
 
 }
 
-@media only screen and (min-device-width: 1024px){
+@media only screen and (min-width: 1024px){
 
     h1 {
         font-family: var(--ff-title);
@@ -538,10 +538,17 @@ header {
     }
 
     .portfolioContainer {
-        /* width: 100%;
+        height: 100vh;
         display: flex;
-        align-items: center;
-        justify-content: space-between; */
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .habContainer {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .habContainer__lenguajes, .habContainer__utility {
@@ -557,6 +564,13 @@ header {
         border-radius: 10px;
     }
 
+    .formContainer {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .formContainer__form__displayflex {
         display: flex;
         justify-content: center;
@@ -570,7 +584,7 @@ header {
 
 }
 
-@media only screen and (min-device-width: 1440px){
+@media only screen and (min-width: 1440px){
 
 
     h1 {

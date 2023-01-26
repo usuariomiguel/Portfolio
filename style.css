@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 300;
+    font-weight: 600;
     font-family: var(--ff-title);
     font-size: var(--fs-title2);
     padding-bottom: 25px;
@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-    font-weight: 200;
+    font-weight: 300;
     font-family: var(--ff-paragraph);
     font-size: var(--fs-title3);
     padding: 25px 0;
@@ -80,6 +80,11 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-primary-paragraph);
+}
+
 header {
     background-color: #090F12;
     border-bottom: 2px dashed ;
@@ -91,10 +96,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.nav {
-    padding: 10px 20px;
+    padding: 10px 25px;
 }
 
 .nav__logo {
@@ -104,10 +106,8 @@ header {
 .nav__title {
     text-decoration: none;
     color: #ffffff;
-    padding-left: 20px;
     margin: 0;
     font-family: var(--ff-title);
-    font-size: 20px;
 }
 
 .othercolor {
@@ -125,12 +125,12 @@ header {
 }
 
 .navBurguermenu__img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .main {
-    padding: 0 20px;
+    padding: 0 25px;
 }
 
 .herosubtitle {
@@ -265,6 +265,7 @@ header {
     font-size: var(--fs-paragraph);
     border-bottom:  1px solid var(--color-primary);
     margin: 0 auto;
+    width: 125px;
 }
 
 /*HABILIDADES */
@@ -350,10 +351,11 @@ header {
 }
 
 .formContainer__forminput {
-    border: 2px solid var(--color-primary-paragraph);
+    border: none;
+    border-bottom: 2px solid var(--color-primary-paragraph);
     color: var(--color-primary-paragraph);
     background-color: transparent;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 10px;
     width: 100%;
     margin: 10px 0;
@@ -365,14 +367,12 @@ header {
 }
 
 .formContainer__submit {
-    float: right;
-    margin-top: 15px;
-    border: 2px solid var(--color-primary-paragraph);
-    border-radius: 10px;
-    padding: 10px 40px;
-    background-color: transparent;
-    color:  var(--color-primary-paragraph);
     font-family: var(--ff-paragraph);
+    color:  var(--color-primary-paragraph);
+    border: none;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: transparent;
     font-weight: bold;
 }
 
@@ -382,20 +382,25 @@ header {
 .footer {
     padding-top: 75px;
     font-family: var(--ff-paragraph);
-    font-size: var(--fs-paragraph);
+    font-size: 12px;
     width: 100%;
+    padding: 0px 25px;
 }
 
 .footerContainer {
     display: flex;
-    justify-content: center;
-    border-top: 2px solid rgb(115 115 115);
-    /* border-right: 2px solid rgb(115 115 115); */
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    /* border-radius: 10px; */
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--color-primary);
+    color: var(--color-primary-paragraph);
     padding: 25px 0;
-    margin: 0 auto;
+}
+
+.footerContainer__links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 768px){

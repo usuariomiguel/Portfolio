@@ -1,8 +1,8 @@
 :root {
-    --ff-title:'Righteous', cursive;
-    --ff-paragraph: 'Nunito', sans-serif;
-    --fs-title: 65px;
-    --fs-title2: 50px;
+    --ff-title:'Orbitron', sans-serif;
+    --ff-paragraph: 'Kanit', sans-serif;
+    --fs-title: 50px;
+    --fs-title2: 40px;
     --fs-title3: 35px;
     --fs-title4: 20px;
     --fs-paragraph: 18px;
@@ -16,6 +16,10 @@
     --fs-title3-p: 30px;
     --fs-title4-p: 25px;
     --fs-paragraph-p: 24px;
+
+    --color-primary: #FDD159;
+    --color-primary-paragraph: #fff;
+    --color-primary-button: #000;
 }
 
 * {
@@ -30,7 +34,7 @@ html {
 }
 
 body {
-    background-color: #ffeed5;
+    background-color: #090F12;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -40,21 +44,27 @@ h1 {
     font-size: var(--fs-title);
     font-family: var(--ff-title);
     padding-bottom: 25px;
+    color: #FDD159;
 }
 
 h2 {
+    font-weight: 300;
     font-family: var(--ff-title);
     font-size: var(--fs-title2);
     padding-bottom: 25px;
+    color: #FDD159;
 }
 
 h3 {
+    font-weight: 200;
     font-family: var(--ff-paragraph);
     font-size: var(--fs-title3);
     padding: 25px 0;
+    color: #FDD159;
 }
 
 h4 {
+    font-weight: 100;
     font-family: var(--ff-paragraph);
     font-size: var(--fs-title4);
 }
@@ -62,6 +72,8 @@ h4 {
 p {
     font-family: var(--ff-paragraph);
     font-size: var(--fs-paragraph);
+    color: #ffffff;
+    line-height: 1.8rem;
 }
 
 img {
@@ -69,7 +81,7 @@ img {
 }
 
 header {
-    background-color: rgb(129, 129, 129);
+    background-color: #090F12;
     border-bottom: 2px dashed ;
     border-image: linear-gradient(to right, darkblue, darkorchid) 1;
     position: fixed;
@@ -113,17 +125,17 @@ header {
 }
 
 .navBurguermenu__img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .main {
     padding: 0 20px;
 }
 
-.subtitlehero {
-    text-align: right;
-    color: rgb(232, 60, 60);
+.herosubtitle {
+    color:  var(--color-primary);
+    border-bottom: 1px solid #FDD159;
 }
 
 .heroContainer {
@@ -138,10 +150,6 @@ header {
     background-position: left;
     background-attachment: fixed;
     background-repeat: no-repeat; */
-}
-
-.heroTitle {
-    border-bottom: 4px solid rgb(255, 255, 255);
 }
 
 .heroMachine {
@@ -159,53 +167,39 @@ header {
     padding: 0px;
 }
 
-.hero__link {
-    font-weight: bold;
-    text-decoration: underline;
-    /* color: rgb(212, 0, 255); */
-}
-
-.herobutton {
+.herobutton__link {
+    text-decoration: none;
     font-family: var(--ff-paragraph);
     font-size: var(--fs-paragraph);
+    color: var(--color-primary-button);
+    background-color: var(--color-primary);
     padding-left: 50px;
-    background-color: rgba(0, 0, 0, 0.877);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 15px;
-    margin: 25px 0;
+    margin: 50px 0;
     margin-bottom: 40px;
     max-width: 50%;
 }
 
-.herobutton__link {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
 .hero__socialmedia {
+    display: flex;
+    gap: 30px;
 }
 
 .hero__socialmedia--logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+    width: 35px;
+    height: 35px;
 }
+
+/*PORTFOLIO*/
 
 .portfolioContainer {
     padding: 75px 0px;
 }
 
 .portfolioTitle {
-    border-bottom: 4px solid rgb(255, 255, 255);
     margin: 0px;
-}
-
-.portfolioContainer__item--title {
-    margin: 0;
-    padding-top: 10px;
-    text-align: left;
-    color: black;
 }
 
 .portfolioContainer__items {
@@ -213,13 +207,67 @@ header {
     text-align: center;
 }
 
-.portfolioContainer__item {
-    padding-bottom: 25px;
+.portfolioContainer__item--first {
+    margin-bottom: 75px;
 }
 
 .portfolioContainer__item--img {
-    border-radius: 10px;
+    border-radius: 20px;
 }
+
+.portfolioContainer__item--title {
+    font-family: var(--ff-title);
+    color: var(--color-primary);
+    font-size: var(--fs-title3);
+    margin: 0;
+    padding-top: 10px;
+    text-align: left;
+    padding: 30px 0;
+}
+
+.portfolioContainer__item__paragraph {
+    text-align: left;
+}
+
+.portfolioContainer__item__lenguajes {
+    display: flex;
+    gap: 25px;
+}
+
+.portfolioContainer__item__link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--ff-paragraph);
+    font-size: var(--fs-paragraph);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    text-align: center;
+    width: 200px;
+    padding-left: 50px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 50px 0;
+    margin-bottom: 40px;
+}
+
+.portfolioContainer__recommend__arow {
+    width: 20px;
+    width: 20px;
+}
+
+.portfolioContainer__recommend__link {
+    display: block;
+    text-decoration: none;
+    color: var(--color-primary-paragraph);
+    font-family: var(--ff-paragraph);
+    font-size: var(--fs-paragraph);
+    border-bottom:  1px solid var(--color-primary);
+    margin: 0 auto;
+}
+
+/*HABILIDADES */
 
 .habContainer {
     padding: 75px 0px;
@@ -227,7 +275,6 @@ header {
 
 .habContainer__title {
     margin: 0px;
-    border-bottom: 4px solid rgb(255, 255, 255);
 }
 
 .habContiner__subtitle {
@@ -236,17 +283,42 @@ header {
     text-transform: capitalize;
 }
 
+.habContainer__paragraph {
+    margin-bottom: 30px;
+}
+
+.habContainer__filter {
+    font-family: var(--ff-paragraph);
+    font-size: var(--fs-title4);
+    color: var(--color-primary-paragraph);
+    text-align: center;
+    margin: 0;
+}
+
+.habContainer__buttonsFilter {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.habContainer__buttonsFilters__link {
+    font-size: 14px;
+    font-family: var(--ff-paragraph);
+    text-decoration: none;
+    color: var(--color-primary-paragraph);
+    border: 2px solid var(--color-primary);
+    padding: 5px 0;
+    border-radius: 10px;
+    width: 100px;
+    margin: 30px 0;
+}
+
 .habContainer__lenguajes, .habContainer__utility {
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 25px 0;
-    background-color: #f5f5f5;
+    grid-template-columns: auto auto auto;
     color: #000000;
     text-align: center;
-    justify-content: space-evenly;
-    border: 4px double rgb(164, 164, 164);
-    /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
-    border-radius: 10px;
+    justify-content: space-between;
 }
 
 .habContainer__item {
@@ -255,13 +327,15 @@ header {
 
 .habContiner__img {
     padding-top: 5px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .habContiner__img--title {
     margin: 5px auto;
 }
+
+/*CONTACTO*/
 
 .formContainer {
     padding: 75px 0px;
@@ -269,7 +343,6 @@ header {
 
 .formContainer__title {
     margin: 0;
-    border-bottom: 4px solid rgb(255, 255, 255);
 }
 
 .formContainer__form {
@@ -277,13 +350,13 @@ header {
 }
 
 .formContainer__forminput {
-    border: 2px solid rgb(115, 115, 115);
+    border: 2px solid var(--color-primary-paragraph);
+    color: var(--color-primary-paragraph);
+    background-color: transparent;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     width: 100%;
     margin: 10px 0;
-    background-color: rgb(255, 255, 255);
-    color: #000000;
     font-family: var(--ff-paragraph);
 }
 
@@ -294,14 +367,17 @@ header {
 .formContainer__submit {
     float: right;
     margin-top: 15px;
-    border: 2px solid rgb(115, 115, 115);
+    border: 2px solid var(--color-primary-paragraph);
     border-radius: 10px;
-    padding: 15px 40px;
-    background-color: rgb(255, 255, 255);
-    color: #000000;
+    padding: 10px 40px;
+    background-color: transparent;
+    color:  var(--color-primary-paragraph);
     font-family: var(--ff-paragraph);
     font-weight: bold;
 }
+
+
+/*FOOTER*/
 
 .footer {
     padding-top: 75px;
@@ -381,6 +457,7 @@ header {
     }
 
     .heroContainer {
+        margin: 0 auto;
     }
 
     .hero__socialmedia--logo {
@@ -483,7 +560,7 @@ header {
     }
 
     header {
-        background-color: #ffe4bb;
+        background-color: #ffffff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -497,6 +574,7 @@ header {
 
     .nav {
         padding: 0;
+        font-weight: bold;
     }
 
     .nav__title {
@@ -535,6 +613,7 @@ header {
 
     .main {
         margin-left: 20%;
+        margin: 0 auto;
     }
 
     .portfolioContainer {
@@ -647,7 +726,7 @@ header {
 
     .main {
         margin-left: 350px;
-        max-width: 1440px;
+        max-width: 1200px;
     }
 
     .portfolioContainer__items {

@@ -370,6 +370,8 @@ header {
     font-family: var(--ff-paragraph);
     color:  var(--color-primary-paragraph);
     border: none;
+    border-bottom: 2px solid var(--color-primary-paragraph);
+    padding-top: 15px;
     margin: 0 auto;
     margin-top: 15px;
     background-color: transparent;

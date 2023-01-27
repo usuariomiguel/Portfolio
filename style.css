@@ -2,14 +2,14 @@
     --ff-title:'Orbitron', sans-serif;
     --ff-paragraph: 'Kanit', sans-serif;
     --fs-title: 50px;
-    --fs-title2: 40px;
-    --fs-title3: 35px;
+    --fs-title2: 30px;
+    --fs-title3: 25px;
     --fs-title4: 20px;
     --fs-paragraph: 18px;
-    --fs-title-d: 80px;
-    --fs-title2-d: 65px;
+    --fs-title-d: 70px;
+    --fs-title2-d: 45px;
     --fs-title3-d: 30px;
-    --fs-title4-d: 25px;
+    --fs-title4-d: 30px;
     --fs-paragraph-d: 20px;
     --fs-title-p: 100px;
     --fs-title2-p: 80px;
@@ -70,6 +70,7 @@ h4 {
 }
 
 p {
+    font-weight: 200;
     font-family: var(--ff-paragraph);
     font-size: var(--fs-paragraph);
     color: #ffffff;
@@ -81,14 +82,12 @@ img {
 }
 
 a {
+    font-weight: 400;
     text-decoration: none;
-    color: var(--color-primary-paragraph);
 }
 
 header {
     background-color: #090F12;
-    border-bottom: 2px dashed ;
-    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -134,9 +133,20 @@ header {
 }
 
 .herosubtitle {
+    position: relative;
     color:  var(--color-primary);
-    border-bottom: 1px solid #FDD159;
 }
+
+.herosubtitle::after {
+    position: absolute;
+    content: " ";
+    top: 100%;
+    left: 0;
+    width: 25%;
+    height: 1px;
+    background-color: var(--color-primary);
+}
+
 
 .heroContainer {
     top: 0;
@@ -218,7 +228,6 @@ header {
 .portfolioContainer__item--title {
     font-family: var(--ff-title);
     color: var(--color-primary);
-    font-size: var(--fs-title3);
     margin: 0;
     padding-top: 10px;
     text-align: left;
@@ -252,20 +261,43 @@ header {
     margin-bottom: 40px;
 }
 
-.portfolioContainer__recommend__arow {
-    width: 20px;
-    width: 20px;
+.portfolioContainer__recommend {
+    font-weight: 400;
 }
 
-.portfolioContainer__recommend__link {
+.portfolioContainer__recommend__arow {
     display: block;
+    margin: 0 auto;
+    top: 0;
+    width: 30px;
+    height: auto;
+    animation: 3s mymove infinite ease-in-out;
+}
+
+@keyframes mymove {
+    0% , 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+  }
+
+.portfolioContainer__recommend__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    color: var(--color-primary-paragraph);
+    color: var(--color-primary-button);
     font-family: var(--ff-paragraph);
     font-size: var(--fs-paragraph);
-    border-bottom:  1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    padding: 10px 20px;
     margin: 0 auto;
     width: 125px;
+    margin-top: 20px;
 }
 
 /*HABILIDADES */
@@ -289,6 +321,7 @@ header {
 }
 
 .habContainer__filter {
+    font-weight: 400;
     font-family: var(--ff-paragraph);
     font-size: var(--fs-title4);
     color: var(--color-primary-paragraph);
@@ -299,7 +332,7 @@ header {
 .habContainer__buttonsFilter {
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .habContainer__buttonsFilters__link {
@@ -314,12 +347,20 @@ header {
     margin: 30px 0;
 }
 
-.habContainer__lenguajes, .habContainer__utility {
+.habContainer__lenguajes, .habContainer__utility, .habContainer__all {
     display: grid;
     grid-template-columns: auto auto auto;
     color: #000000;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.habContainer__lenguajes {
+    display: none;
+}
+
+.habContainer__utility {
+    display: none;
 }
 
 .habContainer__item {
@@ -375,13 +416,14 @@ header {
     margin: 0 auto;
     margin-top: 15px;
     background-color: transparent;
-    font-weight: bold;
 }
 
 
 /*FOOTER*/
 
 .footer {
+    background-color: var(--color-primary);
+    color: var(--color-primary-button);
     padding-top: 75px;
     font-family: var(--ff-paragraph);
     font-size: 12px;
@@ -393,8 +435,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid var(--color-primary);
-    color: var(--color-primary-paragraph);
     padding: 25px 0;
 }
 
@@ -403,6 +443,10 @@ header {
     gap: 15px;
     align-items: center;
     justify-content: center;
+}
+
+.footerContainer__link {
+    color: var(--color-primary-button);
 }
 
 @media only screen and (min-width: 768px){
@@ -420,9 +464,8 @@ header {
     }
 
     h3 {
-        /* font-family: var(--ff-paragraph); */
-        /* font-size: var(--fs-title3-d);
-        padding: 50px; */
+        font-family: var(--ff-paragraph);
+        font-size: var(--fs-title3-d);
     }
 
     h4 {
@@ -445,22 +488,22 @@ header {
         font-size: var(--fs-paragraph-d);
     }
 
-    .main {
-        padding: 0 50px;
-    }
-
-    .nav__title {
-        padding-left: 50px;
-        font-size: var(--fs-paragraph-d);
-    }
-
-    .nav {
-        padding-right: 50px;
+    header {
+        padding: 20px 50px;
     }
 
     .navBurguermenu__img {
+        padding: 0;
+        width: 40px;
         height: auto;
-        width: 60px;
+    }
+
+    .nav__title {
+        font-size: var(--fs-paragraph-d);
+    }
+
+    .main {
+        padding: 0 50px;
     }
 
     .heroContainer {
@@ -472,56 +515,62 @@ header {
         height: 50px;
     }
 
-    .herobutton {
+    .herobutton__link {
         margin-top: 50px;
         margin-bottom: 50px;
+        width: 35%;
     }
 
-    .portfolioContainer {
-
+    .hero__socialmedia {
+        gap: 50px;
     }
 
-    .portfolioContainer__items {
-        display: grid;
-        grid-template-columns: 5fr 5fr;
-        gap: 25px;
+    .hero__socialmedia--logo {
+        width: 40px;
+        height: auto;
     }
 
-    .portfolioContainer__items {
-        padding-top: 30px;
+    .portfolioContainer__item__link {
+        padding: 15px;
+        width: 35%;
     }
 
-    .habContainer {
-        /* margin-left: 50px;
-        margin-right: 50px; */
+    .portfolioContainer__recommend__link {
+        padding: 15px;
+        width: 35%;
     }
 
-    .habContiner__subtitle {
-        padding: 30px 0;
+    .habContainer__paragraph {
+        margin-bottom: 50px ;
     }
 
-    .habContainer__lenguajes, .habContainer__utility {
+    .habContainer__buttonsFilters__link {
+        font-size: 18px;
+        padding: 10px;
+        width: 30%;
+    }
+
+    .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
         grid-template-columns: auto auto auto auto;
         padding: 30px 0;
     }
 
-    .habContainer__item {
-        margin: 0 auto;
-    }
-
     .habContiner__img {
-        padding-top: 10px;
-        width: 60px;
-        height: 60px;
+        padding-top: 20px;
+        width: 70px;
+        height: 70px;
     }
 
     .habContiner__img--title {
-        margin: 10px auto;
+        margin: 20px 0;
     }
 
-    .formContainer {
-        /* margin-left: 50px;
-        margin-right: 50px; */
+    .footerContainer__text {
+        font-size: 16px;
+    }
+    
+    .footerContainer__link {
+        font-size: 16px;
     }
 
 }
@@ -567,7 +616,7 @@ header {
     }
 
     header {
-        background-color: #ffffff;
+        /* background-color: #ffffff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -576,7 +625,7 @@ header {
         width: 20%;
         height: 100%;
         border: none;
-        border-right: 4px solid #000000; 
+        border-right: 4px solid #000000;  */
     }
 
     .nav {

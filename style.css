@@ -1,11 +1,12 @@
 :root {
     --ff-title:'Orbitron', sans-serif;
     --ff-paragraph: 'Kanit', sans-serif;
-    --fs-title: 50px;
-    --fs-title2: 30px;
-    --fs-title3: 25px;
+    --fs-title: 55px;
+    --fs-title2: 40px;
+    --fs-title3: 20px;
     --fs-title4: 20px;
-    --fs-paragraph: 18px;
+    --fs-paragraph: 16px;
+    --fs-links: 14px;
     --fs-title-d: 70px;
     --fs-title2-d: 45px;
     --fs-title3-d: 30px;
@@ -56,7 +57,7 @@ h2 {
 }
 
 h3 {
-    font-weight: 300;
+    font-weight: 400;
     font-family: var(--ff-paragraph);
     font-size: var(--fs-title3);
     padding: 25px 0;
@@ -84,6 +85,7 @@ img {
 a {
     font-weight: 400;
     text-decoration: none;
+    font-size: var(--fs-links);
 }
 
 header {
@@ -96,6 +98,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 25px;
+    border-bottom: 2px solid var(--color-primary-paragraph);
 }
 
 .nav__logo {
@@ -128,11 +131,8 @@ header {
     height: 30px;
 }
 
-.main {
-    padding: 0 25px;
-}
-
 .heroContainer {
+    padding: 0 22px;
     top: 0;
     left: 0;
     height: 100vh;
@@ -147,6 +147,10 @@ header {
 }
 
 .herosubtitle {
+    padding: 0;
+    padding: 25px 0;
+    padding-top: 50px;
+    margin-bottom: 25px;
     position: relative;
     color:  var(--color-primary);
 }
@@ -156,7 +160,7 @@ header {
     content: " ";
     top: 100%;
     left: 0;
-    width: 25%;
+    width: 30%;
     height: 1px;
     background-color: var(--color-primary);
 }
@@ -174,16 +178,14 @@ header {
 .herobutton__link {
     text-decoration: none;
     font-family: var(--ff-paragraph);
-    font-size: var(--fs-paragraph);
     color: var(--color-primary-button);
     background-color: var(--color-primary);
     padding-left: 50px;
     text-align: center;
-    border-radius: 20px;
-    padding: 15px;
+    border-radius: 10px;
+    padding: 10px 0px;
     margin: 50px 0;
-    margin-bottom: 40px;
-    max-width: 50%;
+    max-width: 170px;
 }
 
 .hero__socialmedia {
@@ -192,14 +194,14 @@ header {
 }
 
 .hero__socialmedia--logo {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: auto;
 }
 
 /*PORTFOLIO*/
 
 .portfolioContainer {
-    padding: 75px 0px;
+    padding: 75px 22px;
 }
 
 .portfolioTitle {
@@ -225,7 +227,7 @@ header {
     margin: 0;
     padding-top: 10px;
     text-align: left;
-    padding: 30px 0;
+    padding: 35px 0;
 }
 
 .portfolioContainer__item__paragraph {
@@ -233,8 +235,16 @@ header {
 }
 
 .portfolioContainer__item__lenguajes {
+    border-bottom: 1px solid var(--color-primary);
+    padding-top: 9px;
+    padding-bottom: 25px;
     display: flex;
     gap: 25px;
+}
+
+.portfolioContainer__item__img {
+    width: 45px;
+    height: auto;
 }
 
 .portfolioContainer__item__link {
@@ -242,20 +252,23 @@ header {
     justify-content: center;
     text-decoration: none;
     font-family: var(--ff-paragraph);
-    font-size: var(--fs-paragraph);
+    font-size: var(--fs-links);
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
     text-align: center;
-    width: 200px;
+    width: 170px;
     padding-left: 50px;
     text-align: center;
     border-radius: 20px;
     padding: 10px;
-    margin: 50px 0;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .portfolioContainer__recommend {
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
     font-weight: 400;
 }
 
@@ -285,7 +298,7 @@ header {
     text-decoration: none;
     color: var(--color-primary-button);
     font-family: var(--ff-paragraph);
-    font-size: var(--fs-paragraph);
+    font-size: var(--fs-links);
     background-color: var(--color-primary);
     border-radius: 10px;
     padding: 10px 20px;
@@ -297,7 +310,7 @@ header {
 /*HABILIDADES */
 
 .habContainer {
-    padding: 75px 0px;
+    padding: 75px 22px;
 }
 
 .habContainer__title {
@@ -311,13 +324,12 @@ header {
 }
 
 .habContainer__paragraph {
-    margin-bottom: 30px;
+    margin: 25px 0;
 }
 
 .habContainer__filter {
     font-weight: 400;
     font-family: var(--ff-paragraph);
-    font-size: var(--fs-title4);
     color: var(--color-primary-paragraph);
     text-align: center;
     margin: 0;
@@ -330,15 +342,16 @@ header {
 }
 
 .habContainer__buttonsFilters__link {
-    font-size: 14px;
     font-family: var(--ff-paragraph);
+    background-color: var(--color-primary);
+    color: var(--color-primary-button);
+    text-transform: capitalize;
+    font-size: 14px;
     text-decoration: none;
-    color: var(--color-primary-paragraph);
-    border: 2px solid var(--color-primary);
     padding: 5px 0;
     border-radius: 10px;
     width: 100px;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
 .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
@@ -347,6 +360,8 @@ header {
     color: #000000;
     text-align: center;
     justify-content: space-around;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
 }
 
 .habContainer__lenguajes {
@@ -359,22 +374,28 @@ header {
 
 .habContainer__item {
     margin: 0 auto;
+    padding: 20px;
 }
 
 .habContiner__img {
     padding-top: 5px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 
 .habContiner__img--title {
-    margin: 5px auto;
+    font-size: var(--fs-links);
+    margin: 10px auto;
+}
+
+.formContainer__submit--arrow {
+    color: #fff;
 }
 
 /*CONTACTO*/
 
 .formContainer {
-    padding: 75px 0px;
+    padding: 75px 22px;
 }
 
 .formContainer__title {
@@ -387,7 +408,7 @@ header {
 
 .formContainer__forminput {
     border: none;
-    border-bottom: 2px solid var(--color-primary-paragraph);
+    border-bottom: 1px solid var(--color-primary-paragraph);
     color: var(--color-primary-paragraph);
     background-color: transparent;
     /* border-radius: 10px; */
@@ -402,14 +423,44 @@ header {
 }
 
 .formContainer__submit {
+    position: relative;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.formContainer__submit::after {
+    position: absolute;
+    content: " ";
+    top: 115%;
+    border-bottom: 1px solid var(--color-primary-paragraph);
+    width: 20%;
+}
+
+.formContainer__submit--link {
     font-family: var(--ff-paragraph);
     color:  var(--color-primary-paragraph);
     border: none;
-    border-bottom: 2px solid var(--color-primary-paragraph);
-    padding-top: 15px;
-    margin: 0 auto;
-    margin-top: 15px;
     background-color: transparent;
+    padding: 0;
+}
+
+.formContainer__submit--img {
+    width: 15px;
+    height: 15px;
+    animation: arrow-right 2s forwards infinite;
+}
+
+@keyframes arrow-right {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
 }
 
 

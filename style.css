@@ -361,7 +361,7 @@ header {
     color: #000000;
     text-align: center;
     justify-content: space-around;
-    border: 1px solid var(--color-primary);
+    border: 2px double var(--color-primary);
     border-radius: 10px;
 }
 

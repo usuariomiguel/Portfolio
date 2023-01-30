@@ -128,7 +128,7 @@ header {
     left: 0;
     width: 100%;
     background-color: #090F12;
-    transition: transform 1s ;
+    transition: transform .7s ;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -142,9 +142,12 @@ header {
     padding: 0 22px;
 }
 
+.naList__menu__sections {
+    border-bottom: 1px solid var(--color-primary);
+}
+
 .navList__menu {
     padding: 0;
-
 }
 
 .navList__menu__li {
@@ -160,19 +163,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .navList__menu__footer__darkmode {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 12px;
+    padding: 10px 5px;
 }
 
 .navList__menu__footer__darkmode__paragraph {
+    line-height: 0;
+    padding: 0;
+    margin: 0;
     font-size: var(--fs-links);
-    color: var(--color-primary);
+    color: var(--color-primary-paragraph);
 }
 
 .navList__menu__footer__darkmode__img {

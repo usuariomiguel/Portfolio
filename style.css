@@ -211,9 +211,21 @@ a {
     display: none;
 }
 
-.navBurguermenu__img {
+.navBurguermenu__img__hamburguer, .navBurguermenu__img__close {
     width: 30px;
     height: 30px;
+}
+
+.navBurguermenu__img__hamburguer.active {
+    display: none;
+}
+
+.navBurguermenu__img__close{
+    display: none;
+}
+
+.navBurguermenu__img__close.active {
+    display: block;
 }
 
 .heroContainer {
@@ -565,6 +577,10 @@ a {
     font-size: 12px;
     width: 100%;
     padding: 0px 25px;
+}
+
+.footer.active {
+    display: none;
 }
 
 .footerContainer {

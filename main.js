@@ -2,7 +2,6 @@ window.addEventListener('load', function () {
 
     // Header Bg Section
     let header = document.querySelector(".header");
-
     const functionChangeBgHeader = ()=> {
     if(document.documentElement.scrollTop >= 30) {
         header.classList.add("addColor");
@@ -15,14 +14,31 @@ window.addEventListener('load', function () {
         }   
     }
     window.addEventListener("scroll" , functionChangeBgHeader);
-
-    let navBurguermenu__link = this.document.querySelector(".navBurguermenu__link");
+    
+    let navBurguermenu__link__open = this.document.querySelector(".navBurguermenu__link--1");
+    let navBurguermenu__link__close = this.document.querySelector(".navBurguermenu__link--2");
+    let navBurguermenu__img__hamburguer = this.document.querySelector(".navBurguermenu__img__hamburguer");
+    let navBurguermenu__img__close = this.document.querySelector(".navBurguermenu__img__close");
     let navList__movile = this.document.querySelector(".navList__movile");
     let main = this.document.querySelector(".main");
-    navBurguermenu__link.addEventListener('click', function () {
+    let footer = this.document.querySelector(".footer");
+    navBurguermenu__link__open.addEventListener('click', function () {
         setTimeout(() => {
-            main.classList.toggle("active");
+            main.classList.add("active");
         }, 200)
-        navList__movile.classList.toggle("active");
+        navList__movile.classList.add("active");
+        footer.classList.add("active");
+        navBurguermenu__img__hamburguer.classList.add("active");
+        navBurguermenu__img__close.classList.add("active");
+    })
+
+    navBurguermenu__link__close.addEventListener('click', function () {
+        setTimeout(() => {
+            main.classList.remove("active");
+        }, 200)
+        navList__movile.classList.remove("active");
+        footer.classList.remove("active");
+        navBurguermenu__img__hamburguer.classList.remove("active");
+        navBurguermenu__img__close.classList.remove("active");
     })
 })

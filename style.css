@@ -98,7 +98,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 25px;
-    border-bottom: 2px solid var(--color-primary-paragraph);
 }
 
 .nav__logo {
@@ -110,6 +109,79 @@ header {
     color: #ffffff;
     margin: 0;
     font-family: var(--ff-title);
+}
+
+.nav__title__city {
+    font-size: 10px;
+    font-family: var(--ff-paragraph);
+}
+
+.navList__movile {
+    font-family: var(--ff-title);
+    font-weight: bold;
+    position: absolute;
+    align-items: left;
+    line-height: 5rem;
+    top: 0;
+    transform: translateY(-1000px);
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    background-color: #090F12;
+    transition: transform 1s ;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.navList__movile.active {
+    top: 54px;
+    transform: translateY(0);
+    padding: 0 22px;
+}
+
+.navList__menu {
+    padding: 0;
+
+}
+
+.navList__menu__li {
+    list-style: none;
+}
+
+.navList__menu__link {
+    font-size: 35px;
+    color: var(--color-primary);
+}
+
+.navList__menu__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navList__menu__footer__darkmode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navList__menu__footer__darkmode__paragraph {
+    font-size: var(--fs-links);
+    color: var(--color-primary);
+}
+
+.navList__menu__footer__darkmode__img {
+    width: 20px;
+    height: auto;
+}
+
+.main.active {
+    display: none;
 }
 
 .othercolor {

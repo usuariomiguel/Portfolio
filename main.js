@@ -79,4 +79,39 @@ window.addEventListener('load', function () {
         footer.classList.remove("active");
     })
 
+    All = this.document.querySelector(".All");
+    lenguages = this.document.querySelector(".lenguages");
+    tools = this.document.querySelector(".tools");
+    habContainer__all = this.document.querySelector(".habContainer__all");
+    habContainer__lenguajes = this.document.querySelector(".habContainer__lenguajes");
+    habContainer__utility = this.document.querySelector(".habContainer__utility");
+
+    All.addEventListener("click", function () {
+        All.classList.add("active");
+        lenguages.classList.remove("active");
+        tools.classList.remove("active");
+        habContainer__all.classList.remove("innactive");
+        habContainer__lenguajes.classList.remove("active");
+        habContainer__utility.classList.remove("active");
+    })
+
+    lenguages.addEventListener("click", function () {
+        lenguages.classList.add("active");
+        All.classList.remove("active");
+        tools.classList.remove("active");
+        habContainer__all.classList.add("innactive");
+        habContainer__lenguajes.classList.add("active");
+        habContainer__utility.classList.remove("active");
+    })
+    
+    tools.addEventListener("click", function () {
+        tools.classList.add("active");
+        All.classList.remove("active");
+        lenguages.classList.remove("active");
+        habContainer__all.classList.add("innactive");
+        habContainer__lenguajes.classList.remove("active");
+        habContainer__utility.classList.add("active");
+    })
+
+
 })

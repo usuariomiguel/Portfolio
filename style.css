@@ -133,7 +133,7 @@ a {
     left: 0;
     width: 100%;
     background-color: #090F12;
-    transition: transform .7s ;
+    transition: transform 1s ease;
     list-style: none;
     display: flex;
     flex-direction: column;

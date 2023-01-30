@@ -443,6 +443,11 @@ a {
     text-align: center;
     justify-content: space-evenly;
     gap: 25px;
+    border: 2px solid #2c5f6e;
+    border-bottom: none;
+    background-color: #142c33a4;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 0px 20px #2c5f6e4c;
 }
 
 .habContainer__buttonsFilters__link {
@@ -470,8 +475,8 @@ a {
 
 .habContainer__skills {
     background-color: #142c33a4;
-    border: 2px solid #2c5f6e12;
-    border-radius: 12px;
+    border: 2px solid #2c5f6e;
+    border-radius: 0px 0 12px 12px;
     box-shadow: 0px 0px 20px #2c5f6e4c;;
 }
 
@@ -534,15 +539,18 @@ a {
 }
 
 .formContainer__form {
-    padding-top: 25px;
+    padding: 25px;
+    background-color: #142c33a4;
+    border: 2px solid #2c5f6e;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px #2c5f6e4c;
 }
 
 .formContainer__forminput {
     border: none;
-    border-bottom: 1px solid var(--color-primary-paragraph);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.324);
     color: var(--color-primary-paragraph);
     background-color: transparent;
-    /* border-radius: 10px; */
     padding: 10px;
     width: 100%;
     margin: 10px 0;
@@ -567,13 +575,14 @@ a {
     position: absolute;
     content: " ";
     top: 115%;
-    border-bottom: 1px solid var(--color-primary-paragraph);
-    width: 20%;
+    width: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.324);
 }
 
 .formContainer__submit--link {
+    font-weight: 200;
     font-family: var(--ff-paragraph);
-    color:  var(--color-primary-paragraph);
+    color:  rgb(255, 255, 255);
     border: none;
     background-color: transparent;
     padding: 0;

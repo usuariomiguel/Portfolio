@@ -25,20 +25,20 @@ window.addEventListener('load', function () {
     navBurguermenu__link__open.addEventListener('click', function () {
         setTimeout(() => {
             main.classList.add("active");
+            navBurguermenu__img__close.classList.add("active");
         }, 200)
         navList__movile.classList.add("active");
         footer.classList.add("active");
         navBurguermenu__img__hamburguer.classList.add("active");
-        navBurguermenu__img__close.classList.add("active");
     })
 
     navBurguermenu__link__close.addEventListener('click', function () {
         setTimeout(() => {
+            navBurguermenu__img__close.classList.remove("active");
+            navBurguermenu__img__hamburguer.classList.remove("active");
             main.classList.remove("active");
         }, 200)
         navList__movile.classList.remove("active");
         footer.classList.remove("active");
-        navBurguermenu__img__hamburguer.classList.remove("active");
-        navBurguermenu__img__close.classList.remove("active");
     })
 })

@@ -139,12 +139,12 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
+    padding: 0 22px;
 }
 
 .navList__movile.active {
     top: 54px;
     transform: translateY(0);
-    padding: 0 22px;
 }
 
 .naList__menu__sections {

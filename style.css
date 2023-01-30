@@ -346,6 +346,7 @@ header {
     font-family: var(--ff-paragraph);
     background-color: var(--color-primary);
     color: var(--color-primary-button);
+    list-style: circle;
     text-transform: capitalize;
     font-size: 14px;
     text-decoration: none;
@@ -361,7 +362,6 @@ header {
     color: #000000;
     text-align: center;
     justify-content: space-around;
-    border: 2px double var(--color-primary);
     border-radius: 10px;
 }
 

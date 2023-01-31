@@ -16,8 +16,9 @@
 
 <body>
     <header class="header">
+        <div class="headerContainer">
         <img src="./src/img/yo.svg" alt="" class="nav__logo">
-        <a href="#" class="nav__title">MA. CANTOS <span class="othercolor">ª</span><br><span class="nav__title nav__title__city">Madrid, España</span></a>
+        <a href="#" class="nav__title">MA.CANTOS<span class="othercolor nav__title__simbol"> &#174;</span><br><span class="nav__title nav__title__city">Madrid, España</span></a>
         <nav class="nav">
             <ul class="navList">
                 <li class="navList__list">
@@ -65,10 +66,19 @@
             <a href="#" class="navBurguermenu__link--1"><img src="./src/icons/icons8-menu.svg" alt="" class="navBurguermenu__img__hamburguer"></a>
             <a href="#" class="navBurguermenu__link--2"><img src="./src/icons/close.svg" alt="" class="navBurguermenu__img__close"></a>
         </nav>
+        </div>
     </header>
     <main class="main">
+        <section class="socialmedias">
+            <div class="socialmedia__pc">
+                <img src="./src/icons/whatsapp-svgrepo-com (2).svg" alt="" class="socialmedia--logo">
+                <img src="./src/icons/github-svgrepo-com (1).svg" alt="" class="socialmedia--logo">
+                <img src="./src/icons/linkedin-svgrepo-com (1).svg" alt="" class="socialmedia--logo">
+                <img src="./src/icons/gmail-svgrepo-com (1).svg" alt="" class="socialmedia--logo">
+            </div>
+        </section>
         <section class="heroContainer" id="hero">
-            <h1 class="heroTitle">MIGUEL Á. CANTOS</h1>
+                <h1 class="heroTitle">MIGUEL Á. CANTOS</h1>
             <!-- <img class="heroMachine" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=007990&width=375&height=25&lines=En+proceso+de+ser+un+desarrollador+web." alt="Typing SVG"/> -->
             <h3 class="herosubtitle">PORTFOLIO 2023</h3>
             <!-- <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Nunito&weight=700&size=50&duration=3000&color=000000&width=500&height=100&lines=PORTFOLIO+2023;DESARROLLO+WEB" alt="Typing SVG" /></a> -->
@@ -85,41 +95,51 @@
             <h2 class="portfolioTitle">PORTFOLIO</h2>
             <div class="portfolioContainer__items">
                 <div class="portfolioContainer__item portfolioContainer__item--first">
-                    <a href="#" class="portfolioContainer__items--link">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F3200%2F1*SNUFXbMYSOArQbA-Iwi-jA.png&f=1&nofb=1&ipt=0fee57228b32a62b322709c4e4f4b2e427eaf7fcd5ef12500c89ebc9f20e58f8&ipo=images" alt="" class="portfolioContainer__item--img">
-                    </a>
-                    <h3 class="portfolioContainer__item--title">ROCK & VIDA</h3>
-                    <p class="portfolioContainer__item__paragraph paragraph">Proyecto para asociacion cultural en Arganda del Rey con sede en Argentina.</p>
-                    <p class="portfolioContainer__item__paragraph paragraph">
-                    Rock and Vida nace en Argentina con la promesa de ayudar a la gente. Personalmente me gusto este proyecto por su originalidad y porque apoya una buena causa.</p>
-                    <div class="portfolioContainer__item__lenguajes">
-                        <img src="./src/icons/html.svg" alt="" class="portfolioContainer__item__img">
-                        <img src="./src/icons/css.svg" alt="" class="portfolioContainer__item__img">
-                        <img src="./src/icons/js.svg" alt="" class="portfolioContainer__item__img">
-                        <img src="./src/icons/SASS.svg" alt="" class="portfolioContainer__item__img">
-                        <img src="./src/icons/pug.svg" alt="" class="portfolioContainer__item__img">
+                    <div class="portfolioContainer__item__image">
+                            <a href="#" class="portfolioContainer__items--link">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F3200%2F1*SNUFXbMYSOArQbA-Iwi-jA.png&f=1&nofb=1&ipt=0fee57228b32a62b322709c4e4f4b2e427eaf7fcd5ef12500c89ebc9f20e58f8&ipo=images" alt="" class="portfolioContainer__item--img">
+                            </a>
                     </div>
-                    <a href="" class="portfolioContainer__item__link" download >Link de pagina</a>
+                    <div class="portfolioContainer__item__information">
+                            <h3 class="portfolioContainer__item--title">ROCK & VIDA</h3>
+                            <p class="portfolioContainer__item__paragraph paragraph">Proyecto para asociacion cultural en Arganda del Rey con sede en Argentina.</p>
+                            <p class="portfolioContainer__item__paragraph paragraph">
+                            Rock and Vida nace en Argentina con la promesa de ayudar a la gente. Personalmente me gusto este proyecto por su originalidad y porque apoya una buena causa.</p>
+                            <div class="portfolioContainer__item__lenguajes">
+                                <img src="./src/icons/html.svg" alt="" class="portfolioContainer__item__img">
+                                <img src="./src/icons/css.svg" alt="" class="portfolioContainer__item__img">
+                                <img src="./src/icons/js.svg" alt="" class="portfolioContainer__item__img">
+                                <img src="./src/icons/SASS.svg" alt="" class="portfolioContainer__item__img">
+                                <img src="./src/icons/pug.svg" alt="" class="portfolioContainer__item__img">
+                            </div>
+                            <a href="" class="portfolioContainer__item__link" download >Link de pagina</a>
+                    </div>
                 </div>
                 <div class="portfolioContainer__item portfolioContainer__item--second">
-                    <a href="#" class="portfolioContainer__items--link">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F3200%2F1*SNUFXbMYSOArQbA-Iwi-jA.png&f=1&nofb=1&ipt=0fee57228b32a62b322709c4e4f4b2e427eaf7fcd5ef12500c89ebc9f20e58f8&ipo=images" alt="" class="portfolioContainer__item--img">
-                    </a>
-                    <h3 class="portfolioContainer__item--title">ANCO COMPANY</h3>
-                    <p class="portfolioContainer__item__paragraph paragraph">Proyecto para asociacion cultural en Arganda del Rey con sede en Argentina.</p>
-                    <p class="portfolioContainer__item__paragraph paragraph">
-                    Rock and Vida nace en Argentina con la promesa de ayudar a la gente. Personalmente me gusto este proyecto por su originalidad y porque apoya una buena causa.</p>
-                    <div class="portfolioContainer__item__lenguajes">
-                        <img src="./src/icons/html.svg" alt="" class="portfolioContainer__item__img">
-                        <img src="./src/icons/css.svg" alt="" class="portfolioContainer__item__img">
-                        <img src="./src/icons/js.svg" alt="" class="portfolioContainer__item__img">
+                    <div class="portfolioContainer__item__image">
+                            <a href="#" class="portfolioContainer__items--link">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F3200%2F1*SNUFXbMYSOArQbA-Iwi-jA.png&f=1&nofb=1&ipt=0fee57228b32a62b322709c4e4f4b2e427eaf7fcd5ef12500c89ebc9f20e58f8&ipo=images" alt="" class="portfolioContainer__item--img">
+                            </a>
                     </div>
-                    <a href="" class="portfolioContainer__item__link" download >Link de pagina</a>
+                    <div class="portfolioContainer__item__information">
+                            <h3 class="portfolioContainer__item--title">ROCK & VIDA</h3>
+                            <p class="portfolioContainer__item__paragraph paragraph">Proyecto para asociacion cultural en Arganda del Rey con sede en Argentina.</p>
+                            <p class="portfolioContainer__item__paragraph paragraph">
+                            Rock and Vida nace en Argentina con la promesa de ayudar a la gente. Personalmente me gusto este proyecto por su originalidad y porque apoya una buena causa.</p>
+                            <div class="portfolioContainer__item__lenguajes">
+                                <img src="./src/icons/html.svg" alt="" class="portfolioContainer__item__img">
+                                <img src="./src/icons/css.svg" alt="" class="portfolioContainer__item__img">
+                                <img src="./src/icons/js.svg" alt="" class="portfolioContainer__item__img">
+                                <img src="./src/icons/SASS.svg" alt="" class="portfolioContainer__item__img">
+                                <img src="./src/icons/pug.svg" alt="" class="portfolioContainer__item__img">
+                            </div>
+                            <a href="" class="portfolioContainer__item__link" download >Link de pagina</a>
+                    </div>
                 </div>
+            <p class="portfolioContainer__recommend paragraph">Proximamente mas trabajos...</p>
             </div>
-            <p class="portfolioContainer__recommend paragraph">Puedes ver todos mis trabajos aqui</p>
-            <img src="./src/icons/arrow.svg" class="portfolioContainer__recommend__arrow"></img>
-            <a href="#" class="portfolioContainer__recommend__link">PORTFOLIO</a>
+            <!-- <img src="./src/icons/arrow.svg" class="portfolioContainer__recommend__arrow"></img> -->
+            <!-- <a href="#" class="portfolioContainer__recommend__link">PORTFOLIO</a> -->
         </section>
         <section class="habContainer" id="skills">
             <div class="habContainer__general">

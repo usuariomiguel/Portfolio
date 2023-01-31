@@ -112,6 +112,4 @@ window.addEventListener('load', function () {
         habContainer__lenguajes.classList.remove("active");
         habContainer__utility.classList.add("active");
     })
-
-
 })

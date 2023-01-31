@@ -84,7 +84,7 @@ img {
 
 a {
     font-weight: 400;
-    /* text-decoration: none; */
+    text-decoration: none;
     font-size: var(--fs-links);
 }
 

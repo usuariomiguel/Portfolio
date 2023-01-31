@@ -257,7 +257,6 @@ a {
     background: -webkit-radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
     background: -moz-radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
     background: radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
-    
 }
 
 .herosubtitle {
@@ -303,13 +302,17 @@ a {
 }
 
 .hero__socialmedia {
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
+    z-index: 1;
 }
 
 .hero__socialmedia--logo {
     width: 40px;
-    height: auto;
+    height: 40px;
 }
 
 /*PORTFOLIO*/
@@ -350,7 +353,7 @@ a {
 }
 
 .portfolioContainer__item__link {
-    margin: 0;
+    margin: 0 auto;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -363,6 +366,10 @@ a {
     text-align: center;
     border-radius: 12px;
     padding: 10px;
+}
+
+.portfolioContainer__recommend {
+    text-align: center;
 }
 
 /*HABILIDADES */
@@ -736,7 +743,7 @@ a {
     }
     
     .portfolioContainer__item__link {
-        margin: 0;
+        margin: 0 auto;
         margin-top: 20px;
         display: flex;
         justify-content: center;
@@ -1053,10 +1060,18 @@ a {
         margin-top: 20px;
     }
 
+    .portfolioContainer__recommend{
+        text-align: left;
+    }
+
     /*HABILIDADES*/
 
     .habContainer {
         padding: 100px 45px;
+    }
+
+    .habContainer__title {
+        padding: 0;
     }
 
     .habContainer__buttonsFilter {

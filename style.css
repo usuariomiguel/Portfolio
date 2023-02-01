@@ -241,47 +241,44 @@ a {
 }
 
 .heroContainer {
-    padding: 0 22px;
     top: 0;
     left: 0;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     /* background-image: url(./src/img/foto_miguel.jpg);
     background-size: cover;
     background-position: left;
     background-attachment: fixed;
     background-repeat: no-repeat; */
-    background: #3E2D29;
     background: -webkit-radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
     background: -moz-radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
     background: radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
 }
 
+.heroContent__General {
+    padding: 0 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
 .herosubtitle {
     position: relative;
     padding: 0;
-    padding: 25px 0;
-    padding-top: 50px;
-    margin-bottom: 25px;
+    padding-top: 25px;
     color:  var(--color-primary);
 }
 
 .herosubtitle::after {
     position: absolute;
     content: " ";
-    top: 100%;
+    top: 0%;
     left: 0;
-    width: 30%;
+    width: 25%;
     height: 1px;
     background-color: var(--color-primary);
 }
-
-.herobutton__link {
-    font-weight: 600;
-}
-
 
 .hero__paragraph {
     margin: 0px;
@@ -289,15 +286,15 @@ a {
 }
 
 .herobutton__link {
+    font-weight: 600;
+    margin: 25px 0;
     text-decoration: none;
     font-family: var(--ff-paragraph);
     color: var(--color-primary-button);
     background-color: var(--color-primary);
-    padding-left: 50px;
     text-align: center;
     border-radius: 12px;
     padding: 10px 0px;
-    margin: 50px 0;
     max-width: 170px;
 }
 
@@ -305,14 +302,17 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    z-index: 1;
+    justify-content: space-around;
+    padding: 10px 25px;
+    border: 1px solid #2c5f6e;
+    box-shadow: 0px 0px 20px 5px #2c5f6e24;
+    border-radius: 12px;
+    background-color: #142c3334;
 }
 
 .hero__socialmedia--logo {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 /*PORTFOLIO*/
@@ -407,9 +407,9 @@ a {
     text-align: center;
     justify-content: space-evenly;
     gap: 25px;
-    border: 2px solid #2c5f6e;
-    padding: 15px;
-    background-color: #142c33a4;
+    border: 1px solid #2c5f6e;
+    padding: 10px;
+    background-color: #142c33;
     border-radius: 12px;
 }
 
@@ -436,8 +436,9 @@ a {
 }
 
 .habContainer__skills {
-    background-color: #142c33a4;
-    border: 2px solid #2c5f6e;
+    background-color: #142c3342;
+    border: 2px #2c5f6e;
+    border-style: dashed;
     border-radius:12px;
     box-shadow: 0px 0px 20px #2c5f6e4c;;
 }
@@ -1112,6 +1113,10 @@ a {
 }
 
 @media only screen and (min-width: 1440px){
+
+    .heroContent__General {
+        max-width: 1200px;
+    }
 
     /* h1 {
         font-family: var(--ff-title);

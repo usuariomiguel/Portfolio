@@ -253,6 +253,7 @@ a {
     background: -webkit-radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
     background: -moz-radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
     background: radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
+    /* Created with https://www.css-gradient.com */
 }
 
 .heroContent__General {
@@ -303,11 +304,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px 25px;
-    border: 1px solid #2c5f6e;
-    box-shadow: 0px 0px 20px 5px #2c5f6e24;
+    padding: 10px;
+    box-shadow: 0px 0px 25px 10px #2c5f6e09;
     border-radius: 12px;
-    background-color: #142c3334;
+    background-color: #2c5f6e11;
+    border: 2px dashed #2c5f6ebb;
+    border-right: none;
+    border-left: none;
 }
 
 .hero__socialmedia--logo {
@@ -357,15 +360,25 @@ a {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
     font-family: var(--ff-paragraph);
-    color: var(--color-primary);
+    color: var(--color-primary-paragraph);
     border: 2px solid var(--color-primary);
+    border-left: none;
+    border-right: none;
     text-align: center;
     width: 170px;
     text-align: center;
     border-radius: 12px;
     padding: 10px;
+}
+
+.portfolioContainer__item__arrow {
+    width: 15px;
+    height: auto;
+    animation: arrow-right 2s forwards infinite;
 }
 
 .portfolioContainer__recommend {
@@ -408,6 +421,8 @@ a {
     justify-content: space-evenly;
     gap: 25px;
     border: 1px solid #2c5f6e;
+    border-right: none;
+    border-left: none;
     padding: 10px;
     background-color: #142c33;
     border-radius: 12px;
@@ -437,10 +452,11 @@ a {
 
 .habContainer__skills {
     background-color: #142c3342;
-    border: 2px #2c5f6e;
-    border-style: dashed;
+    border: 2px dashed #2c5f6e;
+    border-top: none;
+    border-bottom: none;
     border-radius:12px;
-    box-shadow: 0px 0px 20px #2c5f6e4c;;
+    box-shadow: 0px 0px 20px 5px #2c5f6e1a;
 }
 
 .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
@@ -499,21 +515,28 @@ a {
 
 .formContainer__form {
     padding: 25px;
-    background-color: #142c33a4;
+    background-color: #142c3316;
     border: 2px solid #2c5f6e;
+    border-top: none;
+    border-bottom: none;
     border-radius: 12px;
-    box-shadow: 0px 0px 20px #2c5f6e4c;
+    box-shadow: 0px 0px 20px #2c5f6e24;
+}
+
+input{
+    color: #ff0000;
 }
 
 .formContainer__forminput {
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.324);
+    border-bottom: 1px solid var(--color-primary-paragraph);
     color: var(--color-primary-paragraph);
     background-color: transparent;
     padding: 10px;
     width: 100%;
     margin: 10px 0;
     font-family: var(--ff-paragraph);
+    opacity: 1;
 }
 
 .formContainer__textarea {
@@ -521,27 +544,29 @@ a {
 }
 
 .formContainer__submit {
-    position: relative;
-    text-align: left;
+    margin: 0 auto;
+    margin-top: 20px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-top: 20px;
-}
-
-.formContainer__submit::after {
-    position: absolute;
-    content: " ";
-    top: 115%;
-    width: 100px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.324);
+    text-decoration: none;
+    font-family: var(--ff-paragraph);
+    color: var(--color-primary-paragraph);
+    border: 2px solid var(--color-primary);
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    width: 170px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px;
 }
 
 .formContainer__submit--link {
     padding-left: 15px;
     font-family: var(--ff-paragraph);
-    color:  rgba(255, 255, 255, 0.435);
+    color:  var(--color-primary-paragraph);
     border: none;
     background-color: transparent;
 }

@@ -505,7 +505,7 @@ a {
     background-color: #142c3380;
     border: 2px double #2c5f6e;
     border-radius: 12px;
-    box-shadow: 0px 0px 20px #2c5f6e39;
+    box-shadow: 0px 0px 20px 5px #2c5f6e39;
 }
 
 input{
@@ -539,6 +539,9 @@ input{
     font-family: var(--ff-paragraph);
     color: var(--color-primary-paragraph);
     border: 2px solid var(--color-primary);
+    background-color: #142c3380;
+    border: 2px double #2c5f6e;
+    border-radius: 12px;
     text-align: center;
     width: 170px;
     text-align: center;
@@ -645,7 +648,7 @@ input{
     }
 
     .header {
-        padding: 20px 50px;
+        padding: 20px 45px;
     }
         
     .nav__title__city {
@@ -655,7 +658,7 @@ input{
     .navList__movile {
         line-height: 6rem;
         padding: 0 50px;
-    transform: translateY(-2s000px);
+        transform: translateY(-2000px);
     }
     
     .navList__movile.active {
@@ -690,8 +693,8 @@ input{
         display: none;
     }
     
-    .heroContainer {
-        padding: 0 50px;
+    .heroContent__General {
+        padding: 0 45px;
     }
 
     .hero__paragraph  {
@@ -704,8 +707,7 @@ input{
     
     .herobutton__link {
         padding: 15px 10px;
-        margin: 50px 0;
-        max-width: 220px;
+        max-width: 240px;
     }
     
     .hero__socialmedia {
@@ -714,14 +716,14 @@ input{
     }
     
     .hero__socialmedia--logo {
-        width: 50px;
-        height: auto;
+        width: 40px;
+        height: 40px;
     }
     
     /*PORTFOLIO*/
     
     .portfolioContainer {
-        padding: 100px 50px;
+        padding: 100px 45px;
     }
     
     .portfolioContainer__items {
@@ -731,18 +733,11 @@ input{
     }
     
     .portfolioContainer__item {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        margin: 0;
-        padding: 0;
+        gap: 30px;
     }
     
     .portfolioContainer__item__information {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
+        gap: 25px;
     }
     
     .portfolioContainer__item__lenguajes {
@@ -752,33 +747,22 @@ input{
     }
     
     .portfolioContainer__item__link {
-        margin: 0 auto;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-        font-family: var(--ff-paragraph);
-        color: var(--color-primary);
-        border: 2px solid var(--color-primary);
-        text-align: center;
-        width: 170px;
-        text-align: center;
-        border-radius: 12px;
-        padding: 10px;
+        width: 240px;
+        padding: 15px 10px;
     }
     
     /*HABILIDADES */
     
     .habContainer {
-        padding: 100px 50px;
+        padding: 100px 45px;
     }
 
     .habContainer__general {
-        gap: 35px;
+        gap: 25px;
     }
-    
-    .habContainer__buttonsFilters__link {
-        font-size: var(--fs-links-d);
+
+    .habContainer__title {
+        padding: 0;
     }
     
     .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
@@ -798,16 +782,11 @@ input{
     /*CONTACTO*/
     
     .formContainer {
-        padding: 100px 50px;
-    }
-    
-    .formContainer__title {
-        margin: 0;
-        padding-bottom: 50px;
+        padding: 100px 45px;
     }
     
     .formContainer__form {
-        padding: 45px;
+        padding-bottom: 45px;
     }
     
     .formContainer__forminput {
@@ -816,16 +795,6 @@ input{
     
     .formContainer__submit {
         gap: 10px;
-        padding-top: 30px;
-    }
-    
-    .formContainer__submit::after {
-        top: 115%;
-        width: 120px;
-    }
-    
-    .formContainer__submit--link {
-        padding-left: 25px;
     }
     
     .formContainer__submit--img {
@@ -847,17 +816,15 @@ input{
     /*FOOTER*/
     
     .footer {
-        padding-top: 100px;
-        font-size: 12px;
-        padding: 0px 50px;
+        padding: 0px 45px;
     }
     
     .footerContainer {
-        padding: 30px 0;
+        padding: 25px 0;
     }
-
+    
     .footerContainer__text {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .footerContainer__links {
@@ -866,7 +833,7 @@ input{
     
     .footerContainer__link {
         color: var(--color-primary-button);
-        font-size: 16px;
+        font-size: 14px;
     }
 
 }

@@ -305,12 +305,6 @@ a {
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    box-shadow: 0px 0px 25px 10px #2c5f6e09;
-    border-radius: 12px;
-    background-color: #2c5f6e11;
-    border: 2px dashed #2c5f6ebb;
-    border-right: none;
-    border-left: none;
 }
 
 .hero__socialmedia--logo {
@@ -356,7 +350,7 @@ a {
 }
 
 .portfolioContainer__item__link {
-    margin: 0 auto;
+    margin: 0;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -366,9 +360,6 @@ a {
     font-family: var(--ff-paragraph);
     color: var(--color-primary-paragraph);
     border: 2px solid var(--color-primary);
-    border-left: none;
-    border-right: none;
-    text-align: center;
     width: 170px;
     text-align: center;
     border-radius: 12px;
@@ -420,11 +411,9 @@ a {
     text-align: center;
     justify-content: space-evenly;
     gap: 25px;
-    border: 1px solid #2c5f6e;
-    border-right: none;
-    border-left: none;
+    border: 2px double #2c5f6e;
     padding: 10px;
-    background-color: #142c33;
+    background-color: #142c3380;
     border-radius: 12px;
 }
 
@@ -451,12 +440,10 @@ a {
 }
 
 .habContainer__skills {
-    background-color: #142c3342;
+    background-color: #142c3380;
     border: 2px dashed #2c5f6e;
-    border-top: none;
-    border-bottom: none;
     border-radius:12px;
-    box-shadow: 0px 0px 20px 5px #2c5f6e1a;
+    box-shadow: 0px 0px 20px 5px #2c5f6e39;
 }
 
 .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
@@ -515,12 +502,10 @@ a {
 
 .formContainer__form {
     padding: 25px;
-    background-color: #142c3316;
-    border: 2px solid #2c5f6e;
-    border-top: none;
-    border-bottom: none;
+    background-color: #142c3380;
+    border: 2px double #2c5f6e;
     border-radius: 12px;
-    box-shadow: 0px 0px 20px #2c5f6e24;
+    box-shadow: 0px 0px 20px #2c5f6e39;
 }
 
 input{
@@ -544,7 +529,7 @@ input{
 }
 
 .formContainer__submit {
-    margin: 0 auto;
+    margin: 0;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -554,8 +539,6 @@ input{
     font-family: var(--ff-paragraph);
     color: var(--color-primary-paragraph);
     border: 2px solid var(--color-primary);
-    border-left: none;
-    border-right: none;
     text-align: center;
     width: 170px;
     text-align: center;

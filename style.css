@@ -2,7 +2,7 @@
     --ff-title:'Orbitron', sans-serif;
     --ff-paragraph: 'Kanit', sans-serif;
     --fs-title: 55px;
-    --fs-title2: 40px;
+    --fs-title2: 35px;
     --fs-title3: 20px;
     --fs-title4: 20px;
     --fs-paragraph: 16px;
@@ -53,7 +53,7 @@ h2 {
     font-weight: 600;
     font-family: var(--ff-title);
     font-size: var(--fs-title2);
-    padding-bottom: 25px;
+    padding-bottom: 50px;
     margin: 0;
     color: #FDD159;
 }
@@ -90,6 +90,7 @@ a {
     font-weight: 400;
     text-decoration: none;
     font-size: var(--fs-links);
+    font-family: var(--ff-paragraph);
     margin: 0;
 }
 
@@ -358,9 +359,9 @@ a {
     gap: 10px;
     text-decoration: none;
     font-family: var(--ff-paragraph);
-    color: var(--color-primary-paragraph);
+    color: var(--color-primary);
     border: 2px solid var(--color-primary);
-    width: 170px;
+    width: 200px;
     text-align: center;
     border-radius: 12px;
     padding: 10px;
@@ -385,11 +386,8 @@ a {
 .habContainer__general {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     gap: 25px;
-}
-
-.habContainer__title {
-    margin: 0px;
 }
 
 /* .habContiner__subtitle {
@@ -409,11 +407,10 @@ a {
 .habContainer__buttonsFilter {
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
-    gap: 25px;
-    border: 2px double #2c5f6e;
+    justify-content: space-around;
+    background-color: #0f3446;
+    box-shadow:inset 0px 2px 20px 5px #ffffff17;
     padding: 10px;
-    background-color: #142c3380;
     border-radius: 12px;
 }
 
@@ -440,10 +437,9 @@ a {
 }
 
 .habContainer__skills {
-    background-color: #142c3380;
-    border: 2px dashed #2c5f6e;
+    background-color: #0f3446;
     border-radius:12px;
-    box-shadow: 0px 0px 20px 5px #2c5f6e39;
+    box-shadow:inset 0px 2px 20px 5px #ffffff17;
 }
 
 .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
@@ -496,16 +492,11 @@ a {
     padding: 75px 22px;
 }
 
-.formContainer__title {
-    margin: 0;
-}
-
 .formContainer__form {
     padding: 25px;
-    background-color: #142c3380;
-    border: 2px double #2c5f6e;
+    background-color: #0f3446;
     border-radius: 12px;
-    box-shadow: 0px 0px 20px 5px #2c5f6e39;
+    box-shadow:inset 0px 2px 20px 5px #ffffff17;
 }
 
 input{
@@ -538,12 +529,11 @@ input{
     text-decoration: none;
     font-family: var(--ff-paragraph);
     color: var(--color-primary-paragraph);
-    border: 2px solid var(--color-primary);
-    background-color: #142c3380;
-    border: 2px double #2c5f6e;
+    background-color: #0f3446;
+    box-shadow:inset 0px 2px 20px 5px #ffffff17;
     border-radius: 12px;
     text-align: center;
-    width: 170px;
+    width: auto;
     text-align: center;
     border-radius: 12px;
     padding: 10px;
@@ -560,7 +550,7 @@ input{
 .formContainer__submit--img {
     width: 15px;
     height: 15px;
-    animation: arrow-right 2s forwards infinite;
+    /* animation: arrow-right 2s forwards infinite; */
 }
 
 @keyframes arrow-right {
@@ -717,8 +707,8 @@ input{
     }
     
     .hero__socialmedia--logo {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     
     /*PORTFOLIO*/
@@ -748,8 +738,7 @@ input{
     }
     
     .portfolioContainer__item__link {
-        width: 240px;
-        padding: 15px 10px;
+        padding: 10px;
     }
     
     /*HABILIDADES */
@@ -758,12 +747,8 @@ input{
         padding: 100px 45px;
     }
 
-    .habContainer__general {
+    .habContainer, .habContainer__general {
         gap: 25px;
-    }
-
-    .habContainer__title {
-        padding: 0;
     }
     
     .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
@@ -843,19 +828,20 @@ input{
 
     h1 {
         font-family: var(--ff-title);
-        font-size: var(--fs-title-p);
+        font-size: 70px;
         padding-bottom: 50px;
     }
 
     h2 {
         font-family: var(--ff-title);
         font-size: var(--fs-title2-p);
-        padding-bottom: 50px;
+        margin-bottom: 50px;
+        padding: 0;
     }
 
     h3 {
-        font-family: var(--ff-paragraph);
-        font-size: 25px;
+        font-family: var(--ff-title);
+        font-size: 35px;
     }
 
     h4 {
@@ -866,7 +852,7 @@ input{
     p {
         font-family: var(--ff-paragraph);
         font-size: var(--fs-paragraph-p);
-        font-size: 20px;
+        font-size: 18px;
         margin: 0;
     }
 
@@ -932,6 +918,10 @@ input{
 
     .navList__movile {
         display: none;
+    }
+
+    .main {
+        overflow: hidden;
     }
 
     .heroContent__General {
@@ -1028,10 +1018,6 @@ input{
         gap: 20px;
     }
 
-    .portfolioContainer__item--title {
-        padding: 0;
-    }
-
     .portfolioContainer__item__lenguajes {
         padding: 0;
         width: 30px;
@@ -1041,6 +1027,8 @@ input{
     .portfolioContainer__item__link {
         margin: 0;
         margin-top: 20px;
+        padding: 15px 0px;
+        color: var(--color-primary);
     }
 
     .portfolioContainer__recommend{
@@ -1053,13 +1041,21 @@ input{
         padding: 100px 45px;
     }
 
-    .habContainer__title {
-        padding: 0;
+    .habContainer__general {
+        gap: 50px;
+    }
+
+    .habContainer__information {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .habContainer__paragraph {
+        max-width: 80%;
     }
 
     .habContainer__buttonsFilter {
-        margin-bottom: 30px;
-        border: 2px solid white;
         border-radius: 12px;
         padding: 15px;
     }
@@ -1067,9 +1063,8 @@ input{
     .habContainer__buttonsFilters__link {
         margin: 0;
     }
-
+    
     .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
-        border: 2px solid white;
         grid-template-columns: auto auto auto auto auto;
     }
 
@@ -1101,25 +1096,27 @@ input{
     }
 
     .heroContainer {
-        width: 100%;
+        background: -webkit-radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
+        background: -moz-radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
         background: radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 
     .heroContent__General {
-        gap: 50px   
+        gap: 50px;
     }
 
-    .portfolioContainer {
-        padding-left: 150px;
-        padding-right: 150px;
+    .herContent__General__info {
+        margin: 0 auto;
+        max-width: 1400px;;
     }
 
-    .habContainer {
-        padding-left: 150px;
-        padding-right: 150px;
+    .portfolioContainer, .habContainer, .formContainer, .footerContainer{
+        margin: 0 auto;
+        max-width: 1400px;;
+    }
+
+    .habContainer__buttonsFilters__link::after {
+        width: 40vh;
     }
 
     .formContainer {

@@ -2,11 +2,14 @@ window.addEventListener('load', function () {
 
         // Header Bg Section
         let header = document.querySelector(".header");
+        let socialmedias = document.querySelector(".socialmedia__pc");
         const functionChangeBgHeader = ()=> {
         if(document.documentElement.scrollTop >= 30) {
             header.classList.add("addColor");
+            socialmedias.style.setProperty("opacity", 0);
         } else {
             header.classList.remove("addColor");
+            socialmedias.style.setProperty("opacity", 1);
             // navList__linkSkills.classList.remove("active");
             // navList__linkAbout.classList.remove("active");
             // navList__linkProjects.classList.remove("active");

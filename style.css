@@ -350,6 +350,44 @@ a {
     gap: 25px;
 }
 
+.portfolioContainer__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-title);
+    gap: 25PX;
+    margin: 0 auto;
+    color: var(--color-primary-paragraph);
+    font-size: 20px;
+    border: 2px solid var(--color-primary);
+    border-radius: 500px;
+    padding: 15px;
+    width: 100%;
+}
+
+.portfolioContainer__more__img {
+    width: 25px;
+    rotate: 45deg;
+    animation: close 3s ease infinite ;
+}
+
+@keyframes close {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+}
+
+.portfolioContainer__item--second {
+    display: none;
+}
+
+.portfolioContainer__item--second.active {
+    display: block;
+}
+
 .portfolioContainer__item__link {
     margin: 0;
     margin-top: 20px;
@@ -373,9 +411,9 @@ a {
     animation: arrow-right 2s forwards infinite;
 }
 
-.portfolioContainer__recommend {
+/* .portfolioContainer__recommend {
     text-align: center;
-}
+} */
 
 /*HABILIDADES */
 
@@ -995,6 +1033,10 @@ input{
         gap: 45px;
         margin: 0;
         padding: 0;
+    }`
+
+    .portfolioContainer__more {
+        display: none;
     }
 
     .portfolioContainer__item--second {

@@ -82,6 +82,13 @@ window.addEventListener('load', function () {
         footer.classList.remove("active");
     })
 
+    portfolioContainer__more = this.document.querySelector(".portfolioContainer__more");
+    portfolioContainer__itemSecond = this.document.querySelector(".portfolioContainer__item--second");
+    portfolioContainer__more.addEventListener("click", function () {
+        portfolioContainer__more.style.setProperty("display", "none");
+        portfolioContainer__itemSecond.classList.add("active");
+    })
+
     All = this.document.querySelector(".All");
     lenguages = this.document.querySelector(".lenguages");
     tools = this.document.querySelector(".tools");

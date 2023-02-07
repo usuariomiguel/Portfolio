@@ -2,14 +2,11 @@ window.addEventListener('load', function () {
 
         // Header Bg Section
         let header = document.querySelector(".header");
-        let socialmedias = document.querySelector(".socialmedia__pc");
         const functionChangeBgHeader = ()=> {
         if(document.documentElement.scrollTop >= 30) {
             header.classList.add("addColor");
-            socialmedias.style.setProperty("opacity", 0);
         } else {
             header.classList.remove("addColor");
-            socialmedias.style.setProperty("opacity", 1);
             // navList__linkSkills.classList.remove("active");
             // navList__linkAbout.classList.remove("active");
             // navList__linkProjects.classList.remove("active");
@@ -83,10 +80,10 @@ window.addEventListener('load', function () {
     })
 
     portfolioContainer__more = this.document.querySelector(".portfolioContainer__more");
-    portfolioContainer__itemSecond = this.document.querySelector(".portfolioContainer__item--second");
+    portfolioContainer__itemThird = this.document.querySelector(".portfolioContainer__item--third");
     portfolioContainer__more.addEventListener("click", function () {
         portfolioContainer__more.style.setProperty("display", "none");
-        portfolioContainer__itemSecond.classList.add("active");
+        portfolioContainer__itemThird.classList.add("active");
     })
 
     All = this.document.querySelector(".All");

@@ -676,39 +676,39 @@ a {
     .header {
         padding: 20px 45px;
     }
-        
+
     .nav__title__city {
         font-size: 13px;
     }
-    
+
     .navList__movile {
         line-height: 6rem;
         padding: 0 50px;
         transform: translateY(-2000px);
     }
-    
+
     .navList__movile.active {
         top: 87px;
     }
-    
+
     .navList__menu__link {
         font-size: var(--fs-title2-d);
     }
-        
+
     .navList__menu__footer__darkmode {
         gap: 15px;
         padding: 15px 25px;
     }
-    
+
     .navList__menu__footer__darkmode__paragraph {
         font-size: 18px;
         color: var(--color-primary-paragraph);
     }
-    
+
     .navList__menu__footer__darkmode__img {
         width: 25px;
     }
-    
+
     .navBurguermenu__img__hamburguer, .navBurguermenu__img__close {
         padding: 0;
         width: 40px;
@@ -718,7 +718,7 @@ a {
     .socialmedias {
         display: none;
     }
-    
+
     .heroContent__General {
         padding: 0 45px;
     }
@@ -726,59 +726,59 @@ a {
     .hero__paragraph  {
         max-width: 90%;
     }
-        
+
     .herosubtitle::after {
         width: 20%;
     }
-    
+
     .herobutton__link {
         padding: 15px 10px;
         max-width: 240px;
     }
-    
+
     .hero__socialmedia {
         display: flex;
         justify-content: center;
         gap: 100px;
     }
-    
+
     .hero__socialmedia--logo {
         width: 30px;
         height: 30px;
     }
-    
+
     /*PORTFOLIO*/
-    
+
     .portfolioContainer {
         padding: 100px 45px;
     }
-    
+
     .portfolioContainer__items {
         display: flex;
         flex-direction: column;
         gap: 150px;
     }
-    
+
     .portfolioContainer__item {
         gap: 30px;
     }
-    
+
     .portfolioContainer__item__information {
         gap: 25px;
     }
-    
+
     .portfolioContainer__item__lenguajes {
         padding-top: 9px;
         display: flex;
         gap: 25px;
     }
-    
+
     .portfolioContainer__item__link {
         padding: 10px;
     }
-    
+
     /*HABILIDADES */
-    
+
     .habContainer {
         padding: 100px 45px;
     }
@@ -786,45 +786,45 @@ a {
     .habContainer, .habContainer__general {
         gap: 25px;
     }
-    
+
     .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
         grid-template-columns: auto auto auto auto;
     }
-    
+
     .habContainer__item {
         margin: 0 auto;
         padding: 20px;
     }
-    
+
     .habContiner__img {
         width: 55px;
         height: 55px;
     }
-    
+
     /*CONTACTO*/
-    
+
     .formContainer {
         padding: 100px 45px;
     }
-    
+
     .formContainer__form {
         padding-bottom: 45px;
     }
-    
+
     .formContainer__forminput {
         padding: 20px;
     }
-    
+
     .formContainer__submit {
         gap: 10px;
     }
-    
+
     .formContainer__submit--img {
         width: 17px;
         height: 17px;
         animation: arrow-right 2s forwards infinite;
     }
-    
+
     @keyframes arrow-right {
         0%, 100% {
             transform: translateX(0px);
@@ -833,26 +833,26 @@ a {
             transform: translateX(10px);
         }
     }
-    
-    
+
+
     /*FOOTER*/
-    
+
     .footer {
         padding: 0px 45px;
     }
-    
+
     .footerContainer {
         padding: 25px 0;
     }
-    
+
     .footerContainer__text {
         font-size: 14px;
     }
-    
+
     .footerContainer__links {
         gap: 35px;
     }
-    
+
     .footerContainer__link {
         color: var(--color-primary-button);
         font-size: 14px;
@@ -927,7 +927,7 @@ a {
         list-style: none;
         text-align: center;
     }
-    
+
     .navBurguermenu__img__hamburguer {
         display: none;
     }
@@ -1103,7 +1103,7 @@ a {
     .habContainer__buttonsFilters__link {
         margin: 0;
     }
-    
+
     .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
         grid-template-columns: auto auto auto auto auto;
     }
@@ -1239,7 +1239,7 @@ a {
         list-style: none;
         text-align: center;
     }
-    
+
     .navBurguermenu__img__hamburguer {
         display: none;
     }
@@ -1376,7 +1376,7 @@ a {
     } */
 
     /*HABILIDADES*/
-/* 
+/*
     .habContainer {
         padding: 100px 45px;
     }
@@ -1398,7 +1398,7 @@ a {
     } */
 
     /*FORMULARIO*/
-/* 
+/*
     .formContainer {
         display: flex;
         flex-direction: column;

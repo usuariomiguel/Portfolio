@@ -11,7 +11,7 @@
     --fs-title2-d: 45px;
     --fs-title3-d: 30px;
     --fs-title4-d: 30px;
-    --fs-paragraph-d: 20px;
+    --fs-paragraph-d: 18px;
     --fs-title-p: 80px;
     --fs-title2-p: 60px;
     --fs-title3-p: 30px;
@@ -106,7 +106,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 25px;
+    padding: 10px 22px;
 }
 
 .headerContainer {
@@ -181,7 +181,7 @@ a {
 
 .navList__menu__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -332,8 +332,7 @@ a {
 }
 
 .portfolioContainer__item {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 25px;
     margin: 0;
     padding: 0;
@@ -420,7 +419,7 @@ a {
 }
 
 .portfolioContainer__item--third.active {
-    display: flex;
+    display: grid;
 }
 
 /*HABILIDADES */
@@ -548,6 +547,8 @@ a {
 
 .formContainer__form {
     padding: 25px;
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
     /* background-color: #0f3446;
     border-radius: 12px;
     box-shadow:inset 0px 2px 20px 5px #ffffff17; */
@@ -571,6 +572,7 @@ a {
 
 .formContainer__submit {
     margin: 0 auto;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -641,39 +643,30 @@ a {
 @media only screen and (min-width: 768px){
 
     h1 {
-        font-family: var(--ff-title);
         font-size: var(--fs-title-d);
-        padding-bottom: 30px;
     }
 
     h2 {
-        font-family: var(--ff-title);
         font-size: var(--fs-title2-d);
-        padding-bottom: 30px;
     }
 
     h3 {
-        font-family: var(--ff-paragraph);
         font-size: var(--fs-title3-d);
     }
 
     h4 {
-        font-family: var(--ff-paragraph);
         font-size: var(--fs-title4-d);
     }
 
     p {
-        font-family: var(--ff-paragraph);
         font-size: var(--fs-paragraph-d);
     }
 
     a {
-        font-family: var(--ff-paragraph);
         font-size: var(--fs-links-d);
     }
 
     span {
-        font-family: var(--ff-paragraph);
         font-size: var(--fs-paragraph-d);
     }
 
@@ -692,7 +685,7 @@ a {
     }
 
     .navList__movile.active {
-        top: 87px;
+        top: 80px;
     }
 
     .navList__menu__link {
@@ -700,13 +693,11 @@ a {
     }
 
     .navList__menu__footer__darkmode {
-        gap: 15px;
-        padding: 15px 25px;
+        width: 250px;
     }
 
     .navList__menu__footer__darkmode__paragraph {
         font-size: 18px;
-        color: var(--color-primary-paragraph);
     }
 
     .navList__menu__footer__darkmode__img {
@@ -723,7 +714,7 @@ a {
         display: none;
     }
 
-    .heroContent__General {
+    .herContent__General__info {
         padding: 0 45px;
     }
 
@@ -737,18 +728,16 @@ a {
 
     .herobutton__link {
         padding: 15px 10px;
-        max-width: 240px;
+        max-width: 250px;
     }
 
     .hero__socialmedia {
-        display: flex;
-        justify-content: center;
-        gap: 100px;
+        gap: 50px;
     }
 
     .hero__socialmedia--logo {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: auto;
     }
 
     /*PORTFOLIO*/
@@ -763,11 +752,31 @@ a {
         gap: 150px;
     }
 
-    .portfolioContainer__item {
-        gap: 30px;
+    .portfolioContainer__item--first {
+        grid-template-areas: "a b";
+        grid-template-columns: 5fr 5fr;
+    }
+
+    .portfolioContainer__item--second {
+        grid-template-areas: "b a";
+        grid-template-columns: 5fr 5fr;
+    }
+
+    .portfolioContainer__item--third {
+        grid-template-areas: "a b";
+        grid-template-columns: 5fr 5fr;
+    }
+
+    .portfolioContainer__item__image {
+        grid-area: a;
+    }
+
+    .portfolioContainer__item--img {
+        height: 300px;
     }
 
     .portfolioContainer__item__information {
+        grid-area: b;
         gap: 25px;
     }
 
@@ -777,7 +786,16 @@ a {
         gap: 25px;
     }
 
+    .portfolioContainer__item__img {
+        width: 35px;
+        height: auto;
+    }
+
     .portfolioContainer__item__link {
+        padding: 10px;
+    }
+
+    .portfolioContainer__more {
         padding: 10px;
     }
 
@@ -791,13 +809,17 @@ a {
         gap: 25px;
     }
 
+    .habContainer__buttonsFilter {
+        gap: 100px;
+    }
+
     .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
     }
 
     .habContainer__item {
         margin: 0 auto;
-        padding: 20px;
+        padding: 10px;
     }
 
     .habContiner__img {
@@ -812,32 +834,19 @@ a {
     }
 
     .formContainer__form {
-        padding-bottom: 45px;
+        padding: 0 40px;
+        padding-bottom: 40px;
     }
 
     .formContainer__forminput {
-        padding: 20px;
+        padding: 30px;
     }
 
     .formContainer__submit {
-        gap: 10px;
+        margin-top: 40px;
+        padding: 10px;
+        width: 250px;
     }
-
-    .formContainer__submit--img {
-        width: 17px;
-        height: 17px;
-        animation: arrow-right 2s forwards infinite;
-    }
-
-    @keyframes arrow-right {
-        0%, 100% {
-            transform: translateX(0px);
-        }
-        50% {
-            transform: translateX(10px);
-        }
-    }
-
 
     /*FOOTER*/
 

@@ -1040,6 +1040,10 @@ li {
         /* padding-left: 125px; */
     }
 
+    .heroContent__General__info--one {
+        gap: 45px;
+    }
+
     .heroTitle {
         padding: 0;
     }
@@ -1048,19 +1052,23 @@ li {
         width: 20%;
     }
 
-    .herobutton__link {
-        margin-bottom: 0;
-        max-width: 325px;
+    .hero__paragraph {
+        max-width: 70%;
     }
 
     .hero__socialmedia {
         display: none;
     }
 
+    .heroContent__General__info--one {
+        z-index: 1;
+    }
+
+    .heroContent__General__info--two {
+    }
+
     .hero__source {
         display: block;
-        object-fit: cover;
-        overflow: hidden;
     }
 
     /*PORTFOLIO*/
@@ -1219,6 +1227,10 @@ li {
         padding: 0;
         margin: 0 auto;
         max-width: 1400px;;
+    }
+
+    .hero__paragraph {
+        max-width: 70%;
     }
 
     .portfolioContainer, .habContainer, .formContainer, .footerContainer{

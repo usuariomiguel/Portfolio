@@ -497,6 +497,7 @@ li {
     color: #ffffff84;
     text-decoration: none;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .habContainer__buttonsFilters__link__img {
@@ -1142,7 +1143,7 @@ li {
 
     .habContainer__container {
         display: grid;
-        grid-template-columns: 1.5fr 8.5fr;
+        grid-template-columns: 2fr 8fr;
     }
 
     .habContainer__buttonsFilter {
@@ -1188,6 +1189,7 @@ li {
         height: 100%;
         object-fit: cover;
         border-right: 2px solid var(--color-primary);
+        border-radius: 12px 0 0 12px;
     }
 
     .formContainer__form__displayflex {

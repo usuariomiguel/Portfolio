@@ -93,7 +93,15 @@ window.addEventListener('load', function () {
     habContainer__lenguajes = this.document.querySelector(".habContainer__lenguajes");
     habContainer__utility = this.document.querySelector(".habContainer__utility");
 
+    All.classList.add("active");
+    lenguages.classList.remove("active");
+    tools.classList.remove("active");
+    habContainer__all.classList.remove("innactive");
+    habContainer__lenguajes.classList.remove("active");
+    habContainer__utility.classList.remove("active");
+
     All.addEventListener("click", function () {
+        document.getElementById("All").checked;
         All.classList.add("active");
         lenguages.classList.remove("active");
         tools.classList.remove("active");

@@ -1227,7 +1227,7 @@ li {
 
 }
 
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1500px){
 
     .headerContainer {
         margin: 0 auto;
@@ -1247,6 +1247,7 @@ li {
     }
 
     .heroContent__General__info {
+        padding: 0;
         margin: 0 auto;
         max-width: 1400px;
     }
@@ -1259,7 +1260,7 @@ li {
         max-width: 80%;
     }
 
-    .portfolioContainer, .habContainer, .formContainer, .footerContainer{
+    .portfolioContent, .habContent, .formContent, .footerContainer{
         margin: 0 auto;
         max-width: 1400px;
     }
@@ -1276,8 +1277,14 @@ li {
         max-height: 450px;
     }
 
-    .habContainer__buttonsFilters__link::after {
-        width: 40vh;
+    .habContainer__buttonsFilter {
+        flex-direction: column;
+        gap: 25px;
+        border: 2px solid var(--color-primary);
+        border-radius: 12px;
+        padding-bottom: 185px;
+        padding-top: 30px;
+        padding-left: 30px;
     }
 
     .footer {

@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!-- <canvas class="noise"></canvas> -->
     <header class="header">
         <div class="headerContainer">
             <div class="header__logo">
@@ -93,22 +94,6 @@
     <main class="main">
         <div class="heroContainer" id="hero">
             <div class="heroContent__General">
-                <div class="socialmedias">
-                    <div class="socialmedia__pc">
-                        <a href="">
-                            <img src="./src/icons/icons8-whatsapp (1) 1.svg" alt="" class="socialmedia--logo">
-                        </a>
-                        <a href="">
-                            <img src="./src/icons/github-svgrepo-com (1).svg" alt="" class="socialmedia--logo">
-                        </a>
-                        <a href="">
-                            <img src="./src/icons/linkedin-svgrepo-com (1).svg" alt="" class="socialmedia--logo">
-                        </a>
-                        <a href="">
-                            <img src="./src/icons/gmail-svgrepo-com (1).svg" alt="" class="socialmedia--logo">
-                        </a>
-                    </div>
-                </div>
                 <div class="heroContent__General__info">
                     <section class="heroContent__General__info--one">
                         <h1 class="heroTitle">MIGUEL Á. CANTOS</h1>
@@ -157,6 +142,22 @@
                     <section class="heroContent__General__info--two">
                         <img src="./src/img/mini-room.png" class="hero__source">
                     </section>
+                </div>
+                <div class="socialmedias">
+                    <div class="socialmedia__pc">
+                        <a href="">
+                            <img src="./src/icons/icons8-whatsapp (1) 1.svg" alt="" class="socialmedia--logo">
+                        </a>
+                        <a href="">
+                            <img src="./src/icons/github-svgrepo-com (1).svg" alt="" class="socialmedia--logo">
+                        </a>
+                        <a href="">
+                            <img src="./src/icons/linkedin-svgrepo-com (1).svg" alt="" class="socialmedia--logo">
+                        </a>
+                        <a href="">
+                            <img src="./src/icons/gmail-svgrepo-com (1).svg" alt="" class="socialmedia--logo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -269,14 +270,14 @@
                     <div class="habContainer__container">
                         <div class="habContainer__buttonsFilter">
                             <span class="habContainer__buttonsFilter__title">Tipo de habilidad:</span>
-                            <a class="habContainer__buttonsFilters__link All"><input type="radio" name="filter" id="All"
+                            <a class="habContainer__buttonsFilters__link All"><input class="inputs" type="radio" name="filter" id="All" 
                                     value="Todos" checked> <label for="All" class="label__skills">Todos</label><img class="habContainer__buttonsFilters__link__img"
                                     src="./src/icons/asterisk.svg" alt="" srcset=""></a>
-                            <a class="habContainer__buttonsFilters__link lenguages"><input type="radio" name="filter"
+                            <a class="habContainer__buttonsFilters__link lenguages"><input class="inputs" type="radio" name="filter"
                                     id="lenguages" value="Codigo"><label for="lenguages" class="label__skills">Código</label><img
                                     class="habContainer__buttonsFilters__link__img" src="./src/icons/code.svg" alt=""
                                     srcset=""></a>
-                            <a class="habContainer__buttonsFilters__link tools"><input type="radio" name="filter" id="tools"
+                            <a class="habContainer__buttonsFilters__link tools"><input class="inputs" type="radio" name="filter" id="tools"
                                     value="Utilidad"><label for="tools" class="label__skills">Utilidad</label><img class="habContainer__buttonsFilters__link__img"
                                     src="./src/icons/tools.svg" alt="" srcset=""></a>
                         </div>
@@ -288,7 +289,7 @@
                                 </div>
                                 <div class="habContainer__item">
                                     <img src="./src/icons/css.svg" alt="" class="habContiner__img">
-                                    <span class="habContiner__img--title">CSS</p>
+                                    <span class="habContiner__img--title">CSS   </p>
                                 </div>
                                 <div class="habContainer__item">
                                     <img src="./src/icons/js.svg" alt="" class="habContiner__img">

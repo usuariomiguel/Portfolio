@@ -26,6 +26,7 @@
     
     --color-primary: #fdd159;
     --color-primary-opacity: #fdd1595e;
+    --color-primary-opacity2: #fdd1590e;
     --color-primary-paragraph: #fffcf2;
     --color-primary-button: #423719;
     --color-bgsections: #10191f;
@@ -71,8 +72,10 @@ h1 {
     font-size: var(--fs-title);
     font-family: var(--ff-title);
     padding-bottom: 25px;
-    color: #FDD159;
     margin: 0;
+    background: linear-gradient(#fdd159, #fdd159a9);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 h2 {
@@ -81,14 +84,18 @@ h2 {
     font-size: var(--fs-title2);
     padding-bottom: 50px;
     margin: 0;
-    color: #FDD159;
+    background: linear-gradient(#fdd159, #fdd159a9);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 h3 {
     font-weight: 400;
     font-family: var(--ff-title);
     font-size: var(--fs-title3);
-    color: #FDD159;
+    background: linear-gradient(#fdd159, #fdd159a9);
+    -webkit-background-clip: text;
+    color: transparent;
     margin: 0;
 }
 
@@ -96,7 +103,9 @@ h4 {
     font-weight: 300;
     font-family: var(--ff-title);
     font-size: var(--fs-title4);
-    color: #FDD159;
+    background: linear-gradient(#fdd159, #fdd159a9);
+    -webkit-background-clip: text;
+    color: transparent;
     margin: 0;
     text-align: center;
     border: 1px solid;
@@ -253,9 +262,9 @@ li {
 }
 
 .othercolor {
-    /* background: linear-gradient(rgb(0, 217, 255),rgb(212, 0, 255));
+    background: linear-gradient(#fdd159, #fdd159a9);
     -webkit-background-clip: text;
-    color: transparent; */
+    color: transparent;
 }
 
 .navList {
@@ -322,17 +331,16 @@ li {
     position: relative;
     padding: 0;
     padding-top: 25px;
-    color:  var(--color-primary);
 }
 
 .herosubtitle::after {
     position: absolute;
     content: " ";
-    top: 0%;
+    top: 120%;
     left: 0;
-    width: 25%;
-    height: 1px;
-    background-color: var(--color-primary);
+    width: 30%;
+    height: 2px;
+    background-color: var(--color-primary-opacity);
 }
 
 .hero__paragraph {
@@ -344,8 +352,10 @@ li {
     margin-bottom: 25px;
     text-decoration: none;
     font-family: var(--ff-paragraph);
-    color: var(--color-primary-button);
-    background-color: var(--color-primary);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary-opacity);
+    background-color: var(--color-bgsections);
+    box-shadow: 0 0 50px 10px var(--color-primary-opacity2);
     text-align: center;
     border-radius: 30px;
     padding: 10px 0px;
@@ -409,13 +419,28 @@ li {
     gap: 10px;
     text-decoration: none;
     font-family: var(--ff-paragraph);
-    color: var(--color-primary-button);
-    background-color: var(--color-primary);
-    width: max-content;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary-opacity);
+    background-color: var(--color-bgsections);
+    box-shadow: 0 0 50px 10px var(--color-primary-opacity2);
     text-align: center;
     border-radius: 30px;
-    padding: 10px 30px;
+    padding: 15px 30px;
+    width: max-content;
 }
+
+/* .portfolioContainer__item__link {
+    text-decoration: none;
+    font-family: var(--ff-paragraph);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary-opacity);
+    background-color: var(--color-bgsections);
+    box-shadow: 0 0 50px 10px var(--color-primary-opacity2);
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px 0px;
+    max-width: 170px;
+} */
 
 .portfolioContainer__item__arrow {
     width: 15px;
@@ -1038,8 +1063,9 @@ li {
     }
 
     .navList__cv {
-        color: var(--color-primary-paragraph);
-        border: 1px solid var(--color-primary-paragraph);
+        color: var(--color-primary);
+        border: 2px solid var(--color-primary-opacity);
+        background-color: var(--color-bgsections);
         text-align: center;
         border-radius: 30px;
         padding:  5px 15px;

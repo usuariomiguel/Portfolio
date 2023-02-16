@@ -101,7 +101,7 @@ window.addEventListener('load', function () {
     habContainer__utility.classList.remove("active");
 
     All.addEventListener("click", function () {
-        document.getElementById("All").checked;
+        document.getElementById("All");
         All.classList.add("active");
         lenguages.classList.remove("active");
         tools.classList.remove("active");
@@ -130,39 +130,39 @@ window.addEventListener('load', function () {
     // technique for this demo found here 
     // http://stackoverflow.com/questions/22003491/animating-canvas-to-look-like-tv-noise
 
-    const canvas = document.querySelector('canvas'),
-    ctx = canvas.getContext('2d')
+    // const canvas = document.querySelector('canvas'),
+    // ctx = canvas.getContext('2d')
 
-    canvas.width = canvas.height = 128
+    // canvas.width = canvas.height = 128
 
-    resize();
-    window.onresize = resize;
+    // resize();
+    // window.onresize = resize;
 
-    function resize() {
-    canvas.width = window.innerWidth * window.devicePixelRatio
-    canvas.height = window.innerHeight * window.devicePixelRatio
-    canvas.style.width = window.innerWidth + 'px'
-    canvas.style.height = window.innerHeight + 'px'
-    }
+    // function resize() {
+    // canvas.width = window.innerWidth * window.devicePixelRatio
+    // canvas.height = window.innerHeight * window.devicePixelRatio
+    // canvas.style.width = window.innerWidth + 'px'
+    // canvas.style.height = window.innerHeight + 'px'
+    // }
 
-    function noise(ctx) {
+    // function noise(ctx) {
 
-    const w = ctx.canvas.width,
-    h = ctx.canvas.height,
-    iData = ctx.createImageData(w, h),
-    buffer32 = new Uint32Array(iData.data.buffer),
-    len = buffer32.length
-    let i = 0
+    // const w = ctx.canvas.width,
+    // h = ctx.canvas.height,
+    // iData = ctx.createImageData(w, h),
+    // buffer32 = new Uint32Array(iData.data.buffer),
+    // len = buffer32.length
+    // let i = 0
 
-    for(; i < len;i++)
+    // for(; i < len;i++)
 
-    if (Math.random() < 0.05) buffer32[i] = 0xffffffff;
+    // if (Math.random() < 0.05) buffer32[i] = 0xffffffff;
 
-    ctx.putImageData(iData, 0, 0);
-    }
+    // ctx.putImageData(iData, 0, 0);
+    // }
 
-    (function loop() {
-    noise(ctx);
-    requestAnimationFrame(loop);
-    })();
+    // (function loop() {
+    // noise(ctx);
+    // requestAnimationFrame(loop);
+    // })();
 })

@@ -1,16 +1,9 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="256px" height="256px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
-
+<svg fill="#000000" width="185px" height="185px" viewBox="1 0 22 22" id="gmail" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-
 <g id="SVGRepo_iconCarrier">
-
-<path stroke="#FDD159" stroke-linejoin="round" stroke-width="12" d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"/>
-
+<polygon id="primary" points="17 19 21 19 21 7.43 17 10.86 17 19" style="fill: none; stroke: #FDD159; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
+<polygon id="primary-2" data-name="primary" points="7 10.86 3 7.43 3 19 7 19 7 10.86" style="fill: none; stroke: #FDD159; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
+<path id="secondary" d="M21,7.43h0l-4,3.43-5,4.28L7,10.86,3,7.43H3A2.42,2.42,0,0,1,7,5.59H7l5,4.29,5-4.29h0A2.42,2.42,0,0,1,21,7.43Z" style="fill: none; stroke: #FDD159; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
 </g>
-
 </svg>

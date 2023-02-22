@@ -79,12 +79,13 @@ window.addEventListener('load', function () {
         footer.classList.remove("active");
     })
 
-    portfolioContainer__more = this.document.querySelector(".portfolioContainer__more");
-    portfolioContainer__itemThird = this.document.querySelector(".portfolioContainer__item--third");
-    portfolioContainer__more.addEventListener("click", function () {
-        portfolioContainer__more.style.setProperty("display", "none");
-        portfolioContainer__itemThird.classList.add("active");
-    })
+    /* More items */
+    // portfolioContainer__more = this.document.querySelector(".portfolioContainer__more");
+    // portfolioContainer__itemThird = this.document.querySelector(".portfolioContainer__item--third");
+    // portfolioContainer__more.addEventListener("click", function () {
+    //     portfolioContainer__more.style.setProperty("display", "none");
+    //     portfolioContainer__itemThird.classList.add("active");
+    // })
 
     All = this.document.querySelector(".All");
     lenguages = this.document.querySelector(".lenguages");
@@ -101,7 +102,6 @@ window.addEventListener('load', function () {
     habContainer__utility.classList.remove("active");
 
     All.addEventListener("click", function () {
-        document.getElementById("All");
         All.classList.add("active");
         lenguages.classList.remove("active");
         tools.classList.remove("active");

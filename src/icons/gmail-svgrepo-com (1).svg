@@ -2,8 +2,8 @@
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="SVGRepo_iconCarrier">
-<polygon id="primary" points="17 19 21 19 21 7.43 17 10.86 17 19" style="fill: none; stroke: #FDD159; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
-<polygon id="primary-2" data-name="primary" points="7 10.86 3 7.43 3 19 7 19 7 10.86" style="fill: none; stroke: #FDD159; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
-<path id="secondary" d="M21,7.43h0l-4,3.43-5,4.28L7,10.86,3,7.43H3A2.42,2.42,0,0,1,7,5.59H7l5,4.29,5-4.29h0A2.42,2.42,0,0,1,21,7.43Z" style="fill: none; stroke: #FDD159; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
+<polygon id="primary" points="17 19 21 19 21 7.43 17 10.86 17 19" style="fill: #10191f; stroke: #10191f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
+<polygon id="primary-2" data-name="primary" points="7 10.86 3 7.43 3 19 7 19 7 10.86" style="fill: #10191f; stroke: #10191f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
+<path id="secondary" d="M21,7.43h0l-4,3.43-5,4.28L7,10.86,3,7.43H3A2.42,2.42,0,0,1,7,5.59H7l5,4.29,5-4.29h0A2.42,2.42,0,0,1,21,7.43Z" style="fill: none; stroke: #10191f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
 </g>
 </svg>

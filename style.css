@@ -12,7 +12,7 @@
     --fs-title3-d: 30px;
     --fs-title4-d: 30px;
     --fs-paragraph-d: 18px;
-    --fs-title-p: 75px;
+    --fs-title-p: 90px;
     --fs-title2-p: 60px;
     --fs-title3-p: 30px;
     --fs-title4-p: 25px;
@@ -25,15 +25,20 @@
     --fs-links-pl: 16px;
 
     --bg-color: #16172a;
-    --color-primary: hsl(43.01deg 86.93% 60.98%);
+    --color-primary: #D73772;
+    --color-primary: rgb(226, 226, 226);
     --color-primary-opacity: #fdd1595e;
     --color-primary-opacity2: #fdd1591a;
-    --color-primary-paragraph: #fffcf2;
+    --color-primary-paragraph: #bcbcbc;
     --color-primary-button: #423719;
     --color-bgsections: #212134;
     --color-bgContainer: #263946;
-    --color-gradient-90º: linear-gradient(90deg, hsl(43.01deg 86.93% 60.98%) 0%, hsla(21, 100%, 79%, 1) 100%);
-    --color-gradient-0º: linear-gradient(180deg, hsl(43.01deg 86.93% 60.98%) 0%, hsla(21, 100%, 79%, 1) 100%);
+    --color-gradient-90º: linear-gradient(90deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
+    --color-gradient-0º: linear-gradient(0deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
+    --color-gradient-0º: linear-gradient(90deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
+    --color-gradient-0º: white;
+    --color-gradient-90º: white;
+
     /* --color-primary: #6966ff;
     --color-primary-opacity: #fdd1595e;
     --color-primary-opacity2: #fdd1591a;
@@ -75,9 +80,9 @@ body {
     padding: 0;
 }
 
-::selection {
+/* ::selection {
     background-color: var(--color-primary-opacity);
-}
+} */
 
 h1 {
     text-shadow: -4px -4px 20px var(--color-primary-opacity2);
@@ -88,6 +93,7 @@ h1 {
     background: var(--color-gradient-0º);
     -webkit-background-clip: text;
     color: transparent;
+    line-height: 85%;
 }
 
 h2 {
@@ -343,7 +349,8 @@ li {
     /* Created with https://www.css-gradient.com */
 }
 
-.intro {
+#intro {
+    width: 100%;
     z-index: -1;
 }
 
@@ -508,12 +515,10 @@ li {
 } */
 
 .hero__socialmedia--logo {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     padding: 5px;
-    background: var(--color-gradient-0º);
     border-radius: 8px;
-    box-shadow: 0 0 0 1px #000, 0 30px 30px rgb(0 0 0 / 7%), 0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 4%), 0 2px 2px rgb(0 0 0 / 3%);
 }
 
 .hero__source {
@@ -1177,6 +1182,7 @@ li {
         font-size: var(--fs-title2-p);
         margin-bottom: 50px;
         padding: 0;
+        text-align: left;
     }
 
     h2::after {
@@ -1300,18 +1306,18 @@ li {
         position: absolute;
         display: flex;
         align-self: flex-end;
-        left: 15px;
-        top: 70%;
+        left: 25px;
+        bottom: 3rem;
     }
 
     .socialmedia__pc {
-        /* position: relative; */
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
 
-    .socialmedia__pc::before {
+    /* .socialmedia__pc::before {
         position: absolute;
         content: "";
         top: -110%;
@@ -1323,7 +1329,7 @@ li {
         opacity: 0.2;
     }
 
-    /* .socialmedia__pc::after {
+    .socialmedia__pc::after {
         position: absolute;
         content: "";
         top: 50%;
@@ -1335,12 +1341,9 @@ li {
     } */
 
     .socialmedia--logo {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         padding: 4px;
-        background: var(--color-gradient-0º);
-        border-radius: 8px;
-        box-shadow: 0 0 0 1px #000, 0 30px 30px rgb(0 0 0 / 7%), 0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 4%), 0 2px 2px rgb(0 0 0 / 3%);
     }
 
     .heroContent__General__info {
@@ -1352,7 +1355,7 @@ li {
     }
 
     .heroContent__General__info--one {
-        gap: 30px;
+        gap: 20px;
         padding-top: 90px;
     }
 
@@ -1602,6 +1605,7 @@ li {
         font-size: var(--fs-title2-pl);
         margin-bottom: 50px;
         padding: 0;
+        text-align: left;
     }
 
     h3 {
@@ -1645,10 +1649,10 @@ li {
         max-width: 1300px;
         grid-template-columns: 1fr 1fr;
     }
-
+/* 
     .heroContent__General__info--one {
         gap: 50px;
-    }
+    } */
 
     .hero__paragraph {
         /* max-width: 80%; */
@@ -1694,10 +1698,6 @@ li {
         display: block;
         width: 30px;
         height: auto;
-    }
-
-    .heroContent__General__info--one {
-        gap: 50px;
     }
 
     /*PORTFOLIO*/

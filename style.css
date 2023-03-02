@@ -26,18 +26,18 @@
 
     --bg-color: #16172a;
     --color-primary: #D73772;
-    --color-primary: rgb(226, 226, 226);
+    --color-primary: #fffcf2;
     --color-primary-opacity: #fdd1595e;
     --color-primary-opacity2: #fdd1591a;
-    --color-primary-paragraph: #bcbcbc;
+    --color-primary-paragraph: #fffcf2ea;
     --color-primary-button: #423719;
     --color-bgsections: #212134;
     --color-bgContainer: #263946;
     --color-gradient-90º: linear-gradient(90deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
     --color-gradient-0º: linear-gradient(0deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
     --color-gradient-0º: linear-gradient(90deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
-    --color-gradient-0º: white;
-    --color-gradient-90º: white;
+    --color-gradient-0º: #fffcf2;
+    --color-gradient-90º: #fffcf2;
 
     /* --color-primary: #6966ff;
     --color-primary-opacity: #fdd1595e;

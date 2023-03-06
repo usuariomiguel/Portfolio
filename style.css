@@ -145,11 +145,11 @@ h4 {
 }
 
 p {
-    font-weight: 300;
+    font-weight: 500;
     font-family: var(--ff-paragraph);
     font-size: var(--fs-paragraph);
     color: var(--color-primary-paragraph);
-    line-height: 1.7;
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -352,6 +352,8 @@ li {
 #intro {
     width: 100%;
     z-index: -1;
+    height: 100%;
+    width: 100%;
 }
 
 .starContainer {

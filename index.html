@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
     <script src="./main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
     <script type="module">
-    VANTA.TRUNK({
+    VANTA.RINGS({
         el: "#intro",
         mouseControls: true,
         touchControls: true,
@@ -26,10 +26,9 @@
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        spacing: 0.00,
-        chaos: 3.50,
-        backgroundColor: 0x181834
-      })
+        backgroundColor: 0x181834,
+        color: 0x80b148
+    })
       </script>
 </head>
 <body>

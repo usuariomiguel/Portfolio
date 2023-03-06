@@ -12,7 +12,7 @@
     --fs-title3-d: 30px;
     --fs-title4-d: 30px;
     --fs-paragraph-d: 18px;
-    --fs-title-p: 90px;
+    --fs-title-p: 80px;
     --fs-title2-p: 60px;
     --fs-title3-p: 30px;
     --fs-title4-p: 25px;
@@ -26,18 +26,18 @@
 
     --bg-color: #16172a;
     --bg-color: #181834;
-    --color-primary: #D73772;
-    --color-primary-opacity: #fdd1595e;
-    --color-primary-opacity2: #fdd1591a;
-    --color-primary-paragraph: #fffcf2ea;
+    --color-primary: rgb(253 202 105);
+    --color-primary-opacity: rgba(253, 201, 105, 0.8);
+    --color-primary-opacity2: rgba(253, 201, 105, 0.085);
+    --color-primary-paragraph: #fffcf2d3;
     --color-primary-button: #423719;
     --color-bgsections: #212134;
     --color-bgContainer: #263946;
     --color-gradient-90º: linear-gradient(90deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
     --color-gradient-0º: linear-gradient(0deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
     --color-gradient-0º: linear-gradient(90deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
-    --color-gradient-0º: #fffcf2;
-    --color-gradient-90º: #fffcf2;
+    --color-gradient-0º: rgb(253 202 105);
+    --color-gradient-90º: rgb(253 202 105);
 
     /* --color-primary: #6966ff;
     --color-primary-opacity: #fdd1595e;
@@ -50,6 +50,16 @@
     --color-gradient-0º: linear-gradient(90deg, hsla(241, 100%, 70%, 1) 0%, hsla(241, 46%, 53%, 1) 100%); */
 
 }
+
+/* body{
+  margin:0;
+  width:100%; 
+  overflow:hidden;
+  background:hsla(0, 5%, 5%, 1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to right top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,1));
+} */
 
 * {
     -webkit-box-sizing: border-box;
@@ -93,7 +103,7 @@ h1 {
     background: var(--color-gradient-0º);
     -webkit-background-clip: text;
     color: transparent;
-    line-height: 85%;
+    line-height: 90%;
 }
 
 h2 {
@@ -145,11 +155,11 @@ h4 {
 }
 
 p {
-    font-weight: 500;
+    font-weight: 300;
     font-family: var(--ff-paragraph);
     font-size: var(--fs-paragraph);
     color: var(--color-primary-paragraph);
-    line-height: 1.5;
+    line-height: 1.7;
     margin: 0;
 }
 
@@ -1354,11 +1364,6 @@ li {
         padding: 0;
         padding:0 80px;
         /* padding-left: 125px; */
-    }
-
-    .heroContent__General__info--one {
-        gap: 20px;
-        padding-top: 90px;
     }
 
     .heroTitle {

@@ -260,16 +260,16 @@ li {
 
 .navList__movile{
     display: none;
-    padding: 16px;
     position: absolute;
     font-family: var(--ff-paragraph);
     width: 100vw;
-    line-height: 32px;
+    height: max-content;
     background-color: var(--color-bgsections);
     top: 0;
     left: 0;
     top: 60px;
     z-index: 2;
+    opacity: 1;
 }
 
 .navList__movile.active {
@@ -282,10 +282,16 @@ li {
 
 .navList__menu {
     padding: 0;
+    margin: 0;
+    border: 1px solid var(--color-primary-opacity);
+    border-radius: 0 0 8px 8px;
 }
 
 .navList__menu__li {
     list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid var(--color-primary-opacity);
+
 }
 
 .navList__menu__link {
@@ -294,8 +300,11 @@ li {
 }
 
 .navList__menu__link__CV {
-    color: var(--color-primary);
-    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary-paragraph);
+}
+
+.navList__menu__CV {
+    background-color: var(--color-primary-opacity);
 }
 
 /* .navList__menu__footer {
@@ -560,6 +569,8 @@ li {
     height: 35px;
     padding: 5px;
     border-radius: 8px;
+    fill: var(--color-primary);
+
 }
 
 .hero__source {
@@ -1407,6 +1418,7 @@ li {
         width: 25px;
         height: 25px;
         padding: 4px;
+        fill: var(--color-primary);
     }
 
     .heroContent__General__info {

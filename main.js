@@ -105,7 +105,7 @@ window.addEventListener('load', function () {
         habContainer__lenguajes.classList.remove("active");
         habContainer__utility.classList.add("active");
     })
-    // technique for this demo found here 
+    // technique for this demo found here
     // http://stackoverflow.com/questions/22003491/animating-canvas-to-look-like-tv-noise
 
     // const canvas = document.querySelector('canvas'),
@@ -143,4 +143,9 @@ window.addEventListener('load', function () {
     // noise(ctx);
     // requestAnimationFrame(loop);
     // })();
+    
+    const myAtropos = Atropos({
+        el: '.my-atropos',
+        // rest of parameters
+    });
 })

@@ -559,17 +559,23 @@ li {
 .about__socialmedia {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     padding-top: 50px;
 }
 
+@media only screen and (min-width: 1024px) {
+    .about__socialmedia {
+        justify-content: flex-start;
+    }
+}
+
 .hero__socialmedia--logo {
-    width: clamp(2.5rem , 10vw, 3rem);
-    height: auto;
+    width: clamp(2.5rem , 5vw, 3rem);
+    height: clamp(2.5rem , 5vw, 3rem);
     padding: 5px;
     border-radius: 8px;
     fill: var(--color-primary);
-
+    background-color: var(--bg-color);
 }
 
 .hero__source {
@@ -1082,10 +1088,6 @@ li {
     .herobutton__link {
         padding: 15px 10px;
         max-width: 250px;
-    }
-
-    .about__socialmedia {
-        gap: 50px;
     }
 
     /* ABOUT */

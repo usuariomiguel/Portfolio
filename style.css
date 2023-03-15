@@ -958,7 +958,7 @@ li {
     color: var(--color-primary-button);
     padding-top: 75px;
     font-family: var(--ff-paragraph);
-    font-size: 12px;
+    font-size: clamp(12px, 1vh, 18px);
     width: 100%;
     padding: 0px 25px;
     background-color: #fdca69;
@@ -985,7 +985,6 @@ li {
 
 .footerContainer__link {
     color: var(--color-primary-button);
-    font-size: 12px;
     font-weight: 400;
 }
 
@@ -1226,17 +1225,12 @@ li {
         padding: 25px 0;
     }
 
-    .footerContainer__text {
-        font-size: 14px;
-    }
-
     .footerContainer__links {
         gap: 35px;
     }
 
     .footerContainer__link {
         color: var(--color-primary-button);
-        font-size: 14px;
     }
 
 }

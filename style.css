@@ -546,9 +546,10 @@ li {
 .about__socialmedia {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 0;
-    padding-top: 50px;
+    margin-top: 50px;
+    width: max-content;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -560,8 +561,6 @@ li {
 .hero__socialmedia--logo {
     width: clamp(2.5rem , 5vw, 3rem);
     height: clamp(2.5rem , 5vw, 3rem);
-    padding: 5px;
-    border-radius: 8px;
     fill: var(--color-primary);
 }
 
@@ -755,7 +754,7 @@ li {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    gap: 20px;
+    gap: 50px;
     border-radius: 8px;
 }
 
@@ -1382,7 +1381,7 @@ li {
         position: absolute;
         display: flex;
         align-self: flex-end;
-        left: 25px;
+        left: 2vw;
         bottom: 3rem;
     }
 
@@ -1393,19 +1392,19 @@ li {
         gap: 30px;
     }
 
-    /* .socialmedia__pc::before {
+    .socialmedia__pc::before {
         position: absolute;
         content: "";
         top: -110%;
         left: 14px;
         width: 0.5px;
         height: 100%;
-        background: var(--color-primary-paragraph);
+        background: var(--color-primary);
         border-radius: 30px;
-        opacity: 0.2;
+        opacity: 0.1;
     }
 
-    .socialmedia__pc::after {
+    /* .socialmedia__pc::after {
         position: absolute;
         content: "";
         top: 50%;

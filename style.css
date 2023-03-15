@@ -1392,7 +1392,7 @@ li {
         gap: 30px;
     }
 
-    .socialmedia__pc::before {
+    /* .socialmedia__pc::before {
         position: absolute;
         content: "";
         top: -110%;
@@ -1402,7 +1402,7 @@ li {
         background: var(--color-primary);
         border-radius: 30px;
         opacity: 0.1;
-    }
+    } */
 
     /* .socialmedia__pc::after {
         position: absolute;

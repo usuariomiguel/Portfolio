@@ -58,11 +58,11 @@ window.addEventListener('load', function () {
     })
 
     /* More items */
-    // portfolioContainer__more = this.document.querySelector(".portfolioContainer__more");
-    // portfolioContainer__itemThird = this.document.querySelector(".portfolioContainer__item--third");
-    // portfolioContainer__more.addEventListener("click", function () {
-    //     portfolioContainer__more.style.setProperty("display", "none");
-    //     portfolioContainer__itemThird.classList.add("active");
+    // portContainer__more = this.document.querySelector(".portContainer__more");
+    // portContainer__itemThird = this.document.querySelector(".portContainer__item--third");
+    // portContainer__more.addEventListener("click", function () {
+    //     portContainer__more.style.setProperty("display", "none");
+    //     portContainer__itemThird.classList.add("active");
     // })
 
     All = this.document.querySelector(".All");

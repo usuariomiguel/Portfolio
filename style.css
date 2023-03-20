@@ -557,6 +557,7 @@ li {
 @media only screen and (min-width: 1024px) {
     .about__socialmedia {
         justify-content: flex-start;
+        display: none;
     }
 }
 

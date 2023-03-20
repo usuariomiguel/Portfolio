@@ -1,5 +1,5 @@
 :root {
-    --ff-title:'Orbitron', sans-serif;
+    /* --ff-title:'Orbitron', sans-serif; */
     --ff-title:'Climate Crisis', cursive;
     --ff-climate:'Poppins', sans-serif;
     --ff-paragraph: 'Poppins', sans-serif;
@@ -104,7 +104,8 @@ h1 {
     padding-bottom: 25px;
     margin: 0;
     color: var(--color-primary);
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
+    text-transform: uppercase; 
 }
 
 h2 {
@@ -128,6 +129,7 @@ h3 {
     font-size: var(--fs-title3);
     color: var(--color-primary);
     margin: 0;
+    text-transform: uppercase; 
 }
 
 h4 {

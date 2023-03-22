@@ -36,6 +36,7 @@ window.addEventListener('load', function () {
     })
 
     let navList__menu__hero = document.querySelector(".navList__menu__hero");
+    let navList__menu__about = document.querySelector(".navList__menu__about");
     let navList__menu__portfolio = document.querySelector(".navList__menu__portfolio");
     let navList__menu__skills = document.querySelector(".navList__menu__skills");
 
@@ -43,6 +44,12 @@ window.addEventListener('load', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
+    })
+
+    navList__menu__about.addEventListener('click', function () {
+        navBurguermenu__img__close.classList.remove("active");
+        navBurguermenu__img__hamburguer.classList.remove("active");
+        navList__movile.classList.remove("active"); 
     })
 
     navList__menu__portfolio.addEventListener('click', function () {

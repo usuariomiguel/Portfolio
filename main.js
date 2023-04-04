@@ -21,18 +21,26 @@ window.addEventListener('load', function () {
     let navBurguermenu__img__close = this.document.querySelector(".navBurguermenu__img__close");
     let navList__movile = this.document.querySelector(".navList__movile");
     let herosubtitle = this.document.querySelector(".herosubtitle");
+    let main = this.document.querySelector(".main");
+    let footer = this.document.querySelector(".footer");
     navBurguermenu__link__open.addEventListener('click', function () {
         navBurguermenu__img__close.classList.add("active");
         navBurguermenu__img__hamburguer.classList.add("active");
         navList__movile.classList.add("active");
-        herosubtitle.setAttribute("style","opacity: 0;");
+        herosubtitle.classList.add("active");
+        // setTimeout(() => {
+            main.classList.add("active");
+            footer.classList.add("active");    
+        // }, 650);
     })
 
     navBurguermenu__link__close.addEventListener('click', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
-        herosubtitle.setAttribute("style","opacity: 1;");
+        herosubtitle.classList.remove("active");
+        main.classList.remove("active");
+        footer.classList.remove("active");
     })
 
     let navList__menu__hero = document.querySelector(".navList__menu__hero");
@@ -44,24 +52,32 @@ window.addEventListener('load', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
+        main.classList.remove("active");
+        footer.classList.remove("active");
     })
 
     navList__menu__about.addEventListener('click', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active"); 
+        main.classList.remove("active");
+        footer.classList.remove("active");
     })
 
     navList__menu__portfolio.addEventListener('click', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
+        main.classList.remove("active");
+        footer.classList.remove("active");
     })
 
     navList__menu__skills.addEventListener('click', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
+        main.classList.remove("active");
+        footer.classList.remove("active");
     })
 
     /* More items */

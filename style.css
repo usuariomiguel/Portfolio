@@ -27,7 +27,8 @@
     --fs-links-pl: 16px;
 
     --bg-color: #16172a;
-    --bg-color: #181834;
+    --bg-color: #282853;
+    --bg-color2: #212144;
     --bg-color-portfolio: #181834;
     --bg-color-hab: #ff9d00;
     --color-primary:#fcd561;
@@ -84,7 +85,7 @@ html {
     scroll-behavior: smooth;
     /* background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     background: radial-gradient(ellipse, at bottom rgba(22,40,62,1) 0%, rgba(9,10,15,1) 100%); */
-    background-color: #181834;
+    background-color: var(--bg-color);
 }
 
 body {
@@ -571,6 +572,10 @@ li {
     padding: 75px 16px;
 }
 
+.about , .habContainer {
+    background-color: var(--bg-color2);
+}
+
 /*PORTFOLIO*/
 
 .portContainer {
@@ -927,12 +932,7 @@ li {
 
 .formContainer {
     padding: 75px 16px;
-    background-color: #181834;
     /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%237b7bfb' fill-opacity='0.35'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E"); */
-}
-
-.formContainer__Container {
-    background-color: var(--color-bgsections);
 }
 
 .formContainer__form {
@@ -1630,9 +1630,9 @@ li {
 
     .formContainer__Container {
         position: relative;
-        display: grid;
-        grid-template-columns: 6fr 4fr;
-        gap: 15px;
+        /* display: grid; */
+        /* grid-template-columns: 6fr 4fr; */
+        /* gap: 15px; */
         height: 100%;
     }
 
@@ -1656,6 +1656,14 @@ li {
 
     .formContainer__forminput {
         margin: 0;
+    }
+
+    .formContainer__submit {
+        margin: 0;
+        margin-top: 25px;
+        display: flex;
+        justify-content: right;
+        align-items: right;
     }
 
     .footer {

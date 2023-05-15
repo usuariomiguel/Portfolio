@@ -21,15 +21,17 @@ window.addEventListener('load', function () {
     let navBurguermenu__img__close = this.document.querySelector(".navBurguermenu__img__close");
     let navList__movile = this.document.querySelector(".navList__movile");
     let herosubtitle = this.document.querySelector(".herosubtitle");
-    let heroContainer = this.document.querySelector(".heroContainer");
+    let heroContainer = this.document.querySelector(".heroContent__General__info--one");
     let about = this.document.getElementById("about");
     let skills = this.document.getElementById("skills");
     let port = this.document.getElementById("port");
     let form = this.document.getElementById("form");
     let footer = this.document.querySelector(".footer");
+    navList__movile.classList.add("translate");
     navBurguermenu__link__open.addEventListener('click', function () {
         navBurguermenu__img__close.classList.add("active");
         navBurguermenu__img__hamburguer.classList.add("active");
+        navList__movile.classList.remove("translate");
         navList__movile.classList.add("active");
         herosubtitle.classList.add("active");
         heroContainer.classList.add("active");
@@ -39,8 +41,6 @@ window.addEventListener('load', function () {
         port.classList.add("active");
         skills.classList.add("active");
         form.classList.add("active");
-        // setTimeout(() => {
-        // }, 650);
     })
 
     navBurguermenu__link__close.addEventListener('click', function () {
@@ -55,6 +55,9 @@ window.addEventListener('load', function () {
         port.classList.remove("active");
         skills.classList.remove("active");
         form.classList.remove("active");
+        navList__movile.classList.add("translate");
+        // setTimeout(() => {
+        // }, 700);
     })
 
     let navList__menu__hero = document.querySelector(".navList__menu__hero");

@@ -10,8 +10,8 @@
     --fs-paragraph: 15px;
     --fs-links: 17px;
     --fs-title-d: 65px;
-    --fs-title2-d: 50px;
-    --fs-title3-d: 30px;
+    --fs-title2-d: 40px;
+    --fs-title3-d: 25px;
     --fs-title4-d: 30px;
     --fs-paragraph-d: 16px;
     --fs-title-p: 60px;
@@ -264,24 +264,28 @@ li {
     opacity: 0;
     z-index: -1;
     padding: 0 22px;
-    transition: .5s opacity ease;
+    transition: .7s opacity ease;
 }
 
 .navList__movile.active {
     opacity: 1;
 }
 
+.navList__movile.translate {
+    transform: translateX(1000px);
+}
+
 .header.active {
-    background-color: var(--bg-color);   
+    background-color: var(--bg-color2);   
 }
 
 .herosubtitle.active {
     opacity: 0;
-    transition: .8s opacity ease;
+    transition: .7s opacity ease;
 }
 
-.heroContainer.active {
-    filter: blur(90px);
+.heroContent__General__info--one.active {
+    filter: blur(45px);
     pointer-events:none;
     overflow-x:scroll;
 }
@@ -305,7 +309,7 @@ li {
 }
 
 .navList__menu {
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -315,6 +319,12 @@ li {
     margin: 0;
     border: 1px solid var(--color-primary-paragraph);
     border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+    .navList__menu {
+        height: calc(100vh - 100px);
+    }
 }
 
 .navList__menu__li {
@@ -410,10 +420,6 @@ li {
     display: block;
 }
 
-.socialmedias {
-    display: none;
-}
-
 .heroContainer {
     overflow: hidden;
 }
@@ -421,9 +427,21 @@ li {
 .heroContent__General {
     top: 0;
     left: 0;
-    height: 100vh;
+    padding: 75px 16px;
+    padding-top: 135px;
+    /* height: 100vh; */
     display: flex;
     text-align: center;
+    background-image: linear-gradient(
+        180deg,
+        hsl(240deg 26% 17%) 0%,
+        hsl(240deg 27% 16%) 17%,
+        hsl(240deg 28% 15%) 34%,
+        hsl(240deg 29% 15%) 50%,
+        hsl(240deg 30% 14%) 67%,
+        hsl(240deg 31% 13%) 84%,
+        hsl(240deg 32% 12%) 100%
+      );
     /* background-image: url(./src/img/foto_miguel.jpg);
     background-size: cover;
     background-position: left;
@@ -553,6 +571,12 @@ li {
     max-width: max-content;
 }
 
+.hero__socialmedia--logo {
+    width: clamp(2.5rem , 5vw, 3rem);
+    height: clamp(2.5rem , 5vw, 3rem);
+    fill: var(--color-primary);
+}
+
 /* .herobutton__link::after {
     content: "";
     position: absolute;
@@ -610,12 +634,6 @@ li {
     }
 }
 
-.hero__socialmedia--logo {
-    width: clamp(2.5rem , 5vw, 3rem);
-    height: clamp(2.5rem , 5vw, 3rem);
-    fill: var(--color-primary);
-}
-
 .hero__source {
     display: none;
 }
@@ -626,7 +644,11 @@ li {
     padding: 75px 16px;
 }
 
-.about , .habContainer {
+.about {
+    background-color: var(--bg-color);
+}
+
+.portContainer {
     background-color: var(--bg-color2);
 }
 
@@ -1070,6 +1092,16 @@ li {
     padding: 25px 0;
 }
 
+.socialmedia__pc {
+    display: none;
+}
+
+.socialmedia--logo {
+    width: 10px;
+    height: 10px;
+    fill: var(--color-bgContainer);
+}
+
 .footerContainer__links {
     display: flex;
     gap: 15px;
@@ -1142,10 +1174,6 @@ li {
         height: auto;
     }
 
-    .socialmedias {
-        display: none;
-    }
-
     .heroContent__General__info {
         padding: 0 45px;
     }
@@ -1163,6 +1191,10 @@ li {
     .herobutton__link {
         padding: 15px 10px;
         max-width: 250px;
+    }
+
+    .heroContent__General {
+        padding: 100px 32px;
     }
 
     /* ABOUT */
@@ -1468,21 +1500,6 @@ li {
         gap: 25px;
     }
 
-    .socialmedias {
-        position: absolute;
-        display: flex;
-        align-self: flex-end;
-        left: 2vw;
-        bottom: 3rem;
-    }
-
-    .socialmedia__pc {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
     /* .socialmedia__pc::before {
         position: absolute;
         content: "";
@@ -1506,18 +1523,14 @@ li {
         border-radius: 30px;
     } */
 
-    .socialmedia--logo {
-        width: 30px;
-        height: 30px;
-        padding: 4px;
-        fill: var(--color-primary);
+    .heroContent__General {
+        padding: 100px 80px;
     }
 
     .heroContent__General__info {
         display: grid;
         grid-template-columns: 5.5fr 4.5fr;
         padding: 0;
-        padding:0 80px;
         /* padding-left: 125px; */
     }
 
@@ -1763,10 +1776,6 @@ li {
     .headerContainer {
         margin: 0 auto;
         max-width: 1200px;
-    }
-
-    .heroContent__General {
-        padding: 0 80px;
     }
 
     /* .heroContainer {

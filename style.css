@@ -177,13 +177,8 @@ li {
 @media screen and (hover: hover) {
 
     .navList__link:hover {
-        color: var(--color-primary);
+        opacity: 1;
         transition: color 0.5s;
-    }
-
-    .navList__link--s:hover::After{
-        width: 100%;
-        transition: width 0.5s;
     }
 
     .herobutton__link:hover, .habContainer__buttonsFilters__link:hover, .portContainer__item__link:hover, .formContainer__submit--link:hover {
@@ -1415,6 +1410,7 @@ li {
     }
 
     .navList__link {
+        opacity: 0.75;
         position: relative;
         font-weight: 400;
         font-size: var(--fs-links);

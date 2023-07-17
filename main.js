@@ -74,6 +74,7 @@ window.addEventListener('load', function () {
         port.classList.remove("active");
         skills.classList.remove("active");
         footer.classList.remove("active");
+        form.classList.remove("active");
     })
 
     navList__menu__about.addEventListener('click', function () {
@@ -85,6 +86,7 @@ window.addEventListener('load', function () {
         port.classList.remove("active");
         skills.classList.remove("active");
         footer.classList.remove("active");
+        form.classList.remove("active");
     })
 
     navList__menu__portfolio.addEventListener('click', function () {
@@ -95,6 +97,7 @@ window.addEventListener('load', function () {
         about.classList.remove("active");
         port.classList.remove("active");
         skills.classList.remove("active");
+        form.classList.remove("active");
         footer.classList.remove("active");
     })
 
@@ -106,6 +109,7 @@ window.addEventListener('load', function () {
         about.classList.remove("active");
         port.classList.remove("active");
         skills.classList.remove("active");
+        form.classList.remove("active");
         footer.classList.remove("active");
     })
 

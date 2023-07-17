@@ -634,7 +634,7 @@ li {
     background-image: url("/src/img/arganda.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 60px);
 }
 
 .bg {

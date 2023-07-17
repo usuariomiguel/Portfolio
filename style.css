@@ -627,6 +627,14 @@ li {
 
 .about {
     padding: 75px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/src/img/arganda.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .bg {

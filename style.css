@@ -220,7 +220,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #202037;
 }
 
 .header__logo {
@@ -856,13 +855,6 @@ li {
     padding: 75px 16px;
 }
 
-.habContainer__general {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    gap: 50px;
-}
-
 .habContainer__filter {
     color: var(--color-primary-paragraph);
     text-align: center;
@@ -986,7 +978,7 @@ li {
 .habContiner__img--title {
     display: block;
     /* font-weight: 200; */
-    font-family: var(--ff-paragraph);
+    font-family: var(--ff-title2);
     font-size: var(--fs-paragraph);
     color: var(--color-primary-paragraph);
     text-transform: uppercase;
@@ -1189,6 +1181,7 @@ li {
 
     .portContainer__item__image {
         grid-area: a;
+        max-width: 578px;
     }
 
     .portContainer__item__information {
@@ -1197,14 +1190,14 @@ li {
 
     .portContainer__item--first {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr;
         grid-template-areas: "a b";
         gap: 50px;
     }
 
     .portContainer__item--second {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr;
         grid-template-areas: "b a";
         gap: 50px;
     }
@@ -1216,39 +1209,6 @@ li {
         grid-template-areas: "a b";
         gap: 50px;
     }
-
-    /* .portContainer__item--img {
-       height: auto;
-    }
-
-    .portContainer__item__image {
-        grid-area: a;
-    } */
-
-    /* .portContainer__item__information {
-        grid-area: b;
-        gap: 15px;
-        justify-content: start;
-    }
-
-    .portContainer__item__lenguajes {
-        padding-top: 9px;
-        display: flex;
-        gap: 25px;
-    }
-
-    .portContainer__item__img {
-        width: 35px;
-        height: auto;
-    }
-
-    .portContainer__item__link {
-        margin: 0;
-    }
-
-    .portContainer__more {
-        padding: 10px;
-    } */
 
     /*HABILIDADES */
 
@@ -1565,47 +1525,11 @@ li {
     .portContainer__more {
         padding: 10px;
     }
-/*
-    .portContainer__items {
-        gap: 175px;
-    }
-
-    .portContainer__item {
-        grid-template-columns: auto auto;
-    }
-
-    .portContainer__item__lenguajes {
-        gap: 30px;
-    }
-
-    .portContainer__item__image {
-        max-width: 500px;
-    }
-
-    .portContainer__item--img {
-        height: auto;
-        width: auto;
-    }
-
-    .portContainer__item__information {
-        justify-content: start;
-        padding-top: 50px;
-    }
-
-    .portContainer__recommend{
-        text-align: left;
-    } */
 
     /*HABILIDADES*/
 
     .habContainer {
         padding: 100px 80px;
-    }
-
-    .habContainer__information {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
     }
 
     .habContainer__paragraph {
@@ -1614,23 +1538,40 @@ li {
 
     .habContainer__container {
         display: grid;
-        grid-template-columns: 2fr 8fr;
+        grid-template-columns: 1.5fr 8.5fr;
+        padding: 50px 15px;
     }
 
     .habContainer__buttonsFilter {
         flex-direction: column;
         justify-content: start;
-        padding: 45px 0;
-        gap: 25px;
+        padding: 15px 0 0 0;
+        gap: 5px;
         border: none;
-        border-right: 1px solid var(--color-primary-paragraph);
+        border-top: 2px solid var(--color-primary-paragraph);
+        background-color: var(--bg-color);
     }
 
-    .habContainer__buttonsFilter__title {
-        color: var(--color-primary-paragraph);
-        font-family: var(--ff-paragraph);
-        font-size: 20px;
-        text-align: left;
+    .habContainer__skills {
+        padding: 15px 25px;
+    }
+
+    .All.active {
+        border-top: 2px solid var(--color-primary-paragraph);border-bottom: 2px solid var(--color-primary-paragraph);border-left: 2px solid var(--color-primary-paragraph);
+        color: var(--bg-color);
+        background-color: var(--color-primary-title);
+    }
+    
+    .lenguages.active {
+        border-top: 2px solid var(--color-primary-paragraph);border-bottom: 2px solid var(--color-primary-paragraph);border-left: 2px solid var(--color-primary-paragraph);
+        color: var(--bg-color);
+        background-color: var(--color-primary-title);
+    }
+    
+    .tools.active {
+        border-top: 2px solid var(--color-primary-paragraph);border-bottom: 2px solid var(--color-primary-paragraph);border-left: 2px solid var(--color-primary-paragraph);
+        color: var(--bg-color);
+        background-color: var(--color-primary-title);
     }
 
     .habContainer__buttonsFilters__link {
@@ -1641,26 +1582,21 @@ li {
     }
 
     .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
-        grid-template-columns: auto auto auto;
-        gap: 50px;
+        grid-template-columns: auto auto auto auto;
+        gap: 25px;
     }
 
     .habContainer__lenguajes.active {
-        padding-bottom: calc(535.97px - 412.31px);
+        padding-bottom: calc(257.53px - 163.77px);
     }
     
     .habContainer__utility.active {
-        padding-bottom: calc(535.97px - 287.31px);
+        padding-bottom: calc(257.53px - 162.53px);
     }
 
     .habContainer__item {
         gap: 25px;
     } 
-
-    .habContiner__img {
-        width: 55px;
-        height: auto;
-    }
 
     /*FORMULARIO*/
 
@@ -1804,6 +1740,11 @@ li {
     .portContainer__item {
         gap: 100px;
     }
+
+    /* .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
+        grid-template-columns: auto auto auto auto;
+        gap: 25px;
+    } */
 
     .footer {
         padding: 25px;

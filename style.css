@@ -78,6 +78,11 @@
   background-image: linear-gradient(to right top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,1));
 } */
 
+::selection {
+    background-color: var(--color-primary);
+    color: black;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -906,18 +911,18 @@ li {
 }
 
 .All.active {
-    border: 1px solid var(--color-primary-paragraph);
-    color: var(--color-primary-paragraph);
+    background-color: white;
+    color: black;
 }
 
 .lenguages.active {
-    border: 1px solid var(--color-primary-paragraph);
-    color: var(--color-primary-paragraph);
+    background-color: white;
+    color: black;
 }
 
 .tools.active {
-    border: 1px solid var(--color-primary-paragraph);
-    color: var(--color-primary-paragraph);
+    background-color: white;
+    color: black;
 }
 
 .habContainer__skills {
@@ -1224,8 +1229,8 @@ li {
         padding: 100px 32px;
     }
 
-    .habContainer__buttonsFilter {
-        gap: 100px;
+    .habContainer__buttonsFilters__link {
+        padding: 12px 25px;
     }
 
     .habContainer__skills {
@@ -1545,41 +1550,20 @@ li {
     }
 
     .habContainer__container {
-        display: grid;
-        grid-template-columns: 1.5fr 8.5fr;
-        padding: 50px 15px;
+        /* padding: 50px 15px; */
     }
 
     .habContainer__buttonsFilter {
-        flex-direction: column;
-        justify-content: start;
-        padding: 15px 0 0 0;
+        justify-content: center;
         gap: 5px;
         border: none;
         border-top: 2px solid var(--color-primary-paragraph);
         background-color: var(--bg-color);
+        padding-bottom: 30px;
     }
 
     .habContainer__skills {
         padding: 15px 25px;
-    }
-
-    .All.active {
-        border-top: 2px solid var(--color-primary-paragraph);border-bottom: 2px solid var(--color-primary-paragraph);border-left: 2px solid var(--color-primary-paragraph);
-        color: var(--bg-color);
-        background-color: var(--color-primary-title);
-    }
-    
-    .lenguages.active {
-        border-top: 2px solid var(--color-primary-paragraph);border-bottom: 2px solid var(--color-primary-paragraph);border-left: 2px solid var(--color-primary-paragraph);
-        color: var(--bg-color);
-        background-color: var(--color-primary-title);
-    }
-    
-    .tools.active {
-        border-top: 2px solid var(--color-primary-paragraph);border-bottom: 2px solid var(--color-primary-paragraph);border-left: 2px solid var(--color-primary-paragraph);
-        color: var(--bg-color);
-        background-color: var(--color-primary-title);
     }
 
     .habContainer__buttonsFilters__link {

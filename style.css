@@ -204,14 +204,15 @@ li {
         transition: 0.5s color;
     }
 
-    .habContainer__buttonsFilters__link:hover {
+    .habContainer__buttonsFilters__link:hover, .navList__cv:hover {
         background-color: white;
         color: black;
-        cursor: url(./src/img/cursor.png), pointer;
+        cursor: url(./src/img/cursor.svg), pointer;
+        opacity: 1;
     }
 
     .formContainer__submit--link:hover {
-        cursor: url(./src/img/cursor.png), pointer;
+        cursor: url(./src/img/cursor.svg), pointer;
         color: black;
     }
 
@@ -1311,6 +1312,39 @@ input:focus, textarea:focus{
         font-size: var(--fs-paragraph-p);
     }
 
+    * {
+        cursor: url(./src/img/cursor.svg), pointer;
+     }
+    
+     [data-cursor] {
+        position: static;
+        z-index: 100;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        border: 2px solid white;
+        mix-blend-mode: difference;
+        pointer-events: none;
+        transition: 0.05s ease;
+    }
+      .cursor-hover--a [data-cursor] {
+        width: 90px;
+        height: 90px;
+        opacity: 1;
+    }
+    
+    .cursor-hover--formContainer__submit  [data-cursor] {
+        width: 90px;
+        height: 90px;
+        opacity: 1;
+    }
+    
+    .cursor-hover--formContainer__submit--link  [data-cursor] {
+        width: 90px;
+        height: 90px;
+        opacity: 1;
+    }
+
     .header {
         padding: 10px 32px;
     }
@@ -1720,72 +1754,4 @@ input:focus, textarea:focus{
         font-size: var(--fs-paragraph-pl);
     }
 
-    /*FORMULARIO*/
-
-    /* FOOTER */
-
  }
-
- * {
-    cursor: url(./src/img/cursor.png), pointer;
- }
-
- [data-cursor] {
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    background: var(--color-primary);
-    border: 3px solid white;
-    background-size: 1600% 1600%;
-    mix-blend-mode: difference;
-    pointer-events: none;
-    transition: 0.01s linear;
-    opacity: 0.8;
-    animation: blobRadius 5s ease infinite, blobBackground 15s ease infinite;
-}
-  .cursor-hover--a [data-cursor] {
-    width: 80px;
-    height: 80px;
-    opacity: 1;
-}
-
-.cursor-hover--formContainer__submit  [data-cursor] {
-    width: 90px;
-    height: 90px;
-    opacity: 1;
-}
-
-.cursor-hover--formContainer__submit--link  [data-cursor] {
-    width: 90px;
-    height: 90px;
-    opacity: 1;
-}
-
-@keyframes blobRadius {
-    0%,
-    100% {
-      border-radius: 43% 77% 80% 40% / 40% 40% 80% 80%;
-    }
-    20% {
-      border-radius: 47% 73% 61% 59% / 47% 75% 45% 73%;
-    }
-    40% {
-      border-radius: 46% 74% 74% 46% / 74% 58% 62% 46%;
-    }
-    60% {
-      border-radius: 47% 73% 61% 59% / 40% 40% 80% 80%;
-    }
-    80% {
-      border-radius: 50% 70% 52% 68% / 51% 61% 59% 69%;
-    }
-  }
-
-  @keyframes blobBackground {
-    0%,
-    100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-  }

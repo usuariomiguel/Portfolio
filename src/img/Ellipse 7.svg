@@ -1,9 +1,9 @@
-<svg width="607" height="544" viewBox="0 0 607 544" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="303.5" cy="272" rx="303.5" ry="272" fill="url(#paint0_radial_303_2)"/>
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="300" cy="300" r="300" fill="url(#paint0_radial_303_2)"/>
 <defs>
-<radialGradient id="paint0_radial_303_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(303.5 272) rotate(90) scale(272 303.5)">
-<stop stop-color="#FD9569" stop-opacity="0.76"/>
-<stop offset="1" stop-color="#181834" stop-opacity="0.4"/>
+<radialGradient id="paint0_radial_303_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 300) rotate(90) scale(300)">
+<stop stop-color="#5872ED" stop-opacity="0.76"/>
+<stop offset="1" stop-color="#16172A" stop-opacity="0.5"/>
 </radialGradient>
 </defs>
 </svg>

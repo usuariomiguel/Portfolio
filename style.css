@@ -207,11 +207,11 @@ li {
     .habContainer__buttonsFilters__link:hover {
         background-color: white;
         color: black;
-        cursor: url(./src/img/cursor\ \(4\).png), pointer;
+        cursor: url(./src/img/cursor.png), pointer;
     }
 
     .formContainer__submit--link:hover {
-        cursor: url(./src/img/cursor\ \(4\).png), pointer;
+        cursor: url(./src/img/cursor.png), pointer;
         color: black;
     }
 
@@ -1727,7 +1727,7 @@ input:focus, textarea:focus{
  }
 
  * {
-    cursor: url(./src/img/cursor\ \(4\).png), pointer;
+    cursor: url(./src/img/cursor.png), pointer;
  }
 
  [data-cursor] {

@@ -13,22 +13,20 @@
     --fs-paragraph: 15px;
     --fs-links: 17px;
 
-    --fs-title-d: 50px;
-    --fs-title2-d: 35px;
-    --fs-title3-d: 25px;
-    --fs-title4-d: 30px;
+    --fs-title-d: 45px;
+    --fs-title2-d: 30px;
+    --fs-title3-d: 20px;
     --fs-paragraph-d: 16px;
 
-    --fs-title-p: 60px;
-    --fs-title2-p: 45px;
-    --fs-title3-p: 25px;
+    --fs-title-p: 50px;
+    --fs-title2-p: 35px;
+    --fs-title3-p: 22px;
     --fs-title4-p: 25px;
     --fs-paragraph-p: 16px;
 
-    --fs-title-pl: 65px;
-    --fs-title2-pl: 50px;
-    --fs-title3-pl: 40px;
-    --fs-title4-pl: 25px;
+    --fs-title-pl: 55px;
+    --fs-title2-pl: 40px;
+    --fs-title3-pl: 26px;
     --fs-paragraph-pl: 18px;
     --fs-links-pl: 16px;
 
@@ -116,35 +114,40 @@ body {
 } */
 
 h1 {
-    text-shadow: -4px -4px 20px var(--color-primary-opacity2);
     font-size: var(--fs-title);
     font-family: var(--ff-title);
-    padding-bottom: 25px;
+    font-weight: 300;
     padding-top: 5px;
-    margin: 0;
     color: var(--color-primary-title);
-    letter-spacing: 2px;
-    text-transform: uppercase; 
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 h2 {
-    position: relative;
     font-family: var(--ff-title);
     font-size: var(--fs-title2);
-    margin-bottom: 50px;
-    padding: 0;
     color: var(--color-primary-title);
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 2px;    
+    font-weight: 300;
+}
+
+.cyellow {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 h3 {
     font-family: var(--ff-title);
     font-size: var(--fs-title3);
-    color: var(--color-primary-title);
+    color: var(--color-primary);
     margin: 0;
-    text-transform: uppercase; 
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -699,7 +702,7 @@ input:focus, textarea:focus{
 .portContainer__item__information {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     gap: 20px;
 }
 
@@ -852,12 +855,9 @@ input:focus, textarea:focus{
 .habContainer__buttonsFilter {
     display: flex;
     text-align: center;
-    justify-content: center;
-    gap: 25px;
+    justify-content: start;
+    gap: 15px;
     padding-bottom: 16px;
-    /* background-color: #0f3446;
-    box-shadow:inset 0px 2px 20px 5px #ffffff17;
-    border-radius: 12px; */
 }
 
 .habContainer__buttonsFilter__title, .inputs {
@@ -906,7 +906,7 @@ input:focus, textarea:focus{
     /* background-color: #0f3446;
     border-radius:12px;
     box-shadow:inset 0px 2px 20px 5px #ffffff17; */
-    padding: 16px;
+    padding-top: 16px;
 }
 
 .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
@@ -1083,6 +1083,15 @@ input:focus, textarea:focus{
         font-size: var(--fs-title2-d);
     }
 
+    .cyellow {
+        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: var(--fs-title2-d);
+    }
+
     h3 {
         font-size: var(--fs-title3-d);
     }
@@ -1205,11 +1214,6 @@ input:focus, textarea:focus{
         padding: 12px 25px;
     }
 
-    .habContainer__skills {
-        padding: 0;
-        padding-bottom: 32px;
-    }
-
     .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
         grid-template-columns: auto auto auto;
     }
@@ -1274,14 +1278,21 @@ input:focus, textarea:focus{
 
     h1 {
         font-size: var(--fs-title-p);
-        padding-bottom: 100px;
     }
 
     h2 {
         font-size: var(--fs-title2-p);
-        margin-bottom: 100px;
         padding: 0;
         text-align: left;
+    }
+
+    .cyellow {
+        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: var(--fs-title2-p);
     }
 
     h2::after {
@@ -1654,8 +1665,15 @@ input:focus, textarea:focus{
 
     h2 {
         font-size: var(--fs-title2-pl);
-        padding: 0;
-        text-align: left;
+    }
+
+    .cyellow {
+        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: var(--fs-title2-pL);
     }
 
     h3 {

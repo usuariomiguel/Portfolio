@@ -452,6 +452,7 @@ input:focus, textarea:focus{
     display: flex;
     text-align: center;
     background: linear-gradient(180deg, rgba(32,32,55,1) 0%, rgba(32,32,55,1) 50%, rgba(21,21,41,1) 100%);
+    height: calc(100vh - 90px);
 }
 
 .starContainer {
@@ -1481,6 +1482,7 @@ input:focus, textarea:focus{
 
     .heroContent__General {
         padding: 100px 0;
+        height: auto;
     }
 
     .heroContent__General__info {

@@ -690,6 +690,11 @@ input:focus, textarea:focus{
     gap: 50px;
 }
 
+.buttons, .habContainer__buttonsFilters__link, .formContainer__submit--link, .herosubtitle {
+    color: white;
+    font-weight: bold;
+}
+
 .portContainer__item__link {
     position: relative;
     margin: 0;
@@ -698,11 +703,10 @@ input:focus, textarea:focus{
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: var(--color-primary);
+    color: white;
     text-align: center;
     padding-bottom: 10px;
     width: max-content;
-    color: var(--color-primary-paragraph);
     border: 2px solid var(--color-primary);
     background-color: var(--bg-color2);
     padding: 10px 16px;
@@ -814,7 +818,6 @@ input:focus, textarea:focus{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: var(--color-primary-paragraph);
     text-decoration: none;
     font-size: var(--fs-paragraph);
     cursor: pointer;
@@ -965,7 +968,6 @@ input:focus, textarea:focus{
 .formContainer__submit--link {
     font-weight: bold;
     border: none;
-    color: var(--color-primary-paragraph);
     background-color: transparent;
     cursor: pointer;
     height: 100%;

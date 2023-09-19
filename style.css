@@ -1732,4 +1732,17 @@ input:focus, textarea:focus{
         font-size: var(--fs-paragraph-pl);
     }
 
+    /*FORMULARIO*/
+    .formContainer {
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formContent {
+        width: 100vw;
+    }
+
  }

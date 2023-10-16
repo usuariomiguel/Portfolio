@@ -103,6 +103,16 @@ html {
     background-color:  var(--bg-color);
 }
 
+html::after {
+    display: block;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: transparent url("https://assets.codepen.io/108082/Noise.png") 0 0;
+    background-size: 320px 320px;
+}
+
 body {
     height: 100%;
     margin: 0;

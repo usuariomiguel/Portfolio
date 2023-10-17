@@ -218,17 +218,8 @@ li {
         transition: 0.5s color;
     }
 
-    .habContainer__buttonsFilters__link:hover, .navList__cv:hover {
-        background-color: white;
-        color: black;
-        cursor: url(./src/img/cursor.svg), pointer;
-        opacity: 1;
-        border: 2px solid black;
-    }
-
-    .formContainer__submit--link:hover {
-        cursor: url(./src/img/cursor.svg), pointer;
-        color: black;
+    .habContainer__buttonsFilters__link:hover, .navList__cv:hover, .formContainer__submit--link:hover, a:hover  {
+        cursor: url(./src/img/pointer.svg), pointer;
     }
 
 }
@@ -1298,10 +1289,10 @@ input:focus, textarea:focus{
     }
 
     * {
-        cursor: url(./src/img/cursor.svg), pointer;
+        cursor: url(./src/img/cursorr.svg), pointer;
      }
     
-     [data-cursor] {
+     /* [data-cursor] {
         position: static;
         z-index: 100;
         width: 35px;
@@ -1328,7 +1319,7 @@ input:focus, textarea:focus{
         width: 90px;
         height: 90px;
         opacity: 1;
-    }
+    } */
 
     .header {
         padding: 10px 32px;

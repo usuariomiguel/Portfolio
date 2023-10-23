@@ -1555,7 +1555,6 @@ input:focus, textarea:focus{
     .anco {
       filter: grayscale() ;
       transition: filter 1s ease; 
-      cursor: pointer;
     }
 
     .anco:hover {

@@ -192,6 +192,11 @@ a {
     font-family: var(--ff-title2);
     margin: 0;
     text-transform: initial;
+    border-radius: 7px;
+}
+
+.formContainer__submit {
+  border-radius: 7px;
 }
 
 li {
@@ -206,12 +211,22 @@ li {
         opacity: 1;
     }
 
-    .herobutton__link:hover, .portContainer__item__link:hover, .formContainer__submit:hover {
+    .portContainer__item__link:hover {
         transform: translateY(-3px);
         transition: transform 0.5s;
         background-color: var(--color-primary);
+        border: 2px solid black;
         color: black;
         opacity: 1;
+    }
+
+    .herobutton__link:hover, .formContainer__submit:hover {
+      transform: translateY(-3px);
+      transition: transform 0.5s;
+      background-color: var(--color-primary);
+      border: 2px white solid;
+      color: black;
+      opacity: 1;
     }
 
     .socialmedia--logo:hover{
@@ -219,8 +234,13 @@ li {
         transition: 0.5s color;
     }
 
-    .habContainer__buttonsFilters__link:hover, .navList__cv:hover, .formContainer__submit--link:hover, a:hover  {
+    .habContainer__buttonsFilters__link:hover, .navList__cv:hover, a:hover  {
         cursor: url(./src/img/pointer.svg), pointer;
+    }
+
+    .formContainer__submit--link:hover {
+      cursor: url(./src/img/pointer.svg), pointer;
+      color: black;
     }
 
 }

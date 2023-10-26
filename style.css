@@ -762,7 +762,6 @@ input:focus, textarea:focus{
     width: 50px;
     height: auto;
     padding: 10px;
-    border-radius: 8px;
     box-shadow: 0 0 0 1px var(--color-bgsections), 0 30px 30px rgb(0 0 0 / 7%), 0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 4%), 0 2px 2px rgb(0 0 0 / 3%);
 }
 
@@ -815,6 +814,8 @@ input:focus, textarea:focus{
 
 .habContainer {
     padding: 75px 16px;
+    background-color: var(--color-primary);
+    border-top: 1px solid gray;
 }
 
 .habContainer__filter {
@@ -915,9 +916,11 @@ input:focus, textarea:focus{
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     gap: 11px;
     padding: 10px;
     box-shadow: 0 0 0 1px var(--color-bgsections), 0 30px 30px rgb(0 0 0 / 7%), 0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 4%), 0 2px 2px rgb(0 0 0 / 3%);
+    border-radius: 7px;
 }
 
 .habContainer__item::after {
@@ -1216,7 +1219,7 @@ input:focus, textarea:focus{
     }
 
     .habContiner__img--title {
-        font-size: var(--fs-paragraph-d);
+        font-size: 18px;
     }
 
     /*CONTACTO*/
@@ -1553,12 +1556,12 @@ input:focus, textarea:focus{
     } */
 
     .anco {
-      filter: grayscale() ;
+      filter: grayscale(0.5) ;
       transition: filter 1s ease; 
     }
 
     .anco:hover {
-      filter: blur(0);
+      filter: grayscale(0);
     }
 
     /*HABILIDADES*/
@@ -1606,6 +1609,10 @@ input:focus, textarea:focus{
     .habContainer__item {
         gap: 25px;
     } 
+
+    .habContiner__img--title {
+      font-size: 20px;
+    }
 
     /*FORMULARIO*/
 

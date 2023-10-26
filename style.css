@@ -250,7 +250,7 @@ li {
         transform: translateY(-3px);
         transition: transform 0.5s;
         background-color: var(--color-primary);
-        border: 2px solid black;
+        outline: 2px solid black;
         color: black;
         opacity: 1;
     }
@@ -259,7 +259,6 @@ li {
       transform: translateY(-3px);
       transition: transform 0.5s;
       background-color: var(--color-primary);
-      border: 2px white solid;
       color: black;
       opacity: 1;
     }
@@ -764,7 +763,6 @@ input:focus, textarea:focus{
     text-align: center;
     padding-bottom: 10px;
     width: max-content;
-    border: 2px solid var(--color-primary);
     background-color: var(--bg-color2);
     padding: 10px 16px;
 }
@@ -894,21 +892,21 @@ input:focus, textarea:focus{
 }
 
 .All.active {
-    background-color: white;
+    background-color: var(--color-primary);
     color: black;
-    border: black 2px solid;
+    outline: black 2px solid;
 }
 
 .lenguages.active {
-    background-color: white;
+  background-color: var(--color-primary);
     color: black;
-    border: black 2px solid;
+    outline: black 2px solid;
 }
 
 .tools.active {
-    background-color: white;
+  background-color: var(--color-primary);
     color: black;
-    border: black 2px solid;
+    outline: black 2px solid;
 }
 
 .habContainer__skills {

@@ -152,6 +152,41 @@ h2 {
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.multicolor {
+  font-size: var(--ff-paragraph);
+  background-image: linear-gradient(180deg, #f3ec78, #af4261);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .multicolor {
+    font-size: var(--ff-paragraph-p);
+    background-image: linear-gradient(180deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .multicolor {
+    font-size: var(--ff-paragraph-pl);
+    background-image: linear-gradient(180deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+  }
 }
 
 h3 {
@@ -532,6 +567,7 @@ input:focus, textarea:focus{
     position: static;
     z-index: 1;
     color: var(--color-primary);
+    gap: 30px;
 }
 
 /* .heroContent__General__info::after {
@@ -616,7 +652,6 @@ input:focus, textarea:focus{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px);
 }
 
 
@@ -814,8 +849,8 @@ input:focus, textarea:focus{
 
 .habContainer {
     padding: 75px 16px;
-    background-color: var(--color-primary);
     border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .habContainer__filter {
@@ -1149,6 +1184,7 @@ input:focus, textarea:focus{
 
     .about {
         padding: 100px 32px;
+        height: calc(100vh - 60px);
     }
 
     /*PORTFOLIO*/
@@ -1822,9 +1858,9 @@ input:focus, textarea:focus{
     position: sticky;
     left: 50%;
     top: 50%;
-    width: 0.4vw;
-    height: 0.4vw;
-    margin: -0.2vw 0 0 9.8vw;
+    width: 0.3vw;
+    height: 0.3vw;
+    margin: -4.5px;
     animation: ease 200s alternate infinite;
     pointer-events: none; }
     .firefly::before, .firefly::after {

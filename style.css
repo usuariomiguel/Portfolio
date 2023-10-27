@@ -1515,6 +1515,11 @@ input:focus, textarea:focus{
     .hero__source {
         width: 100%;
         height: calc(100vh - 90px);
+        cursor: none;
+    }
+
+    .spline-watermark {
+      display: none;
     }
 
     .heroTitle {

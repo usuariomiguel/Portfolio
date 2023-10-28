@@ -1508,12 +1508,14 @@ input:focus, textarea:focus{
 
     .heroContent__General__info {
         display: grid;
-        grid-template-columns: 4fr 6fr;
+        grid-template-columns: 3.5fr 6.5fr;
+        gap: 0;
         /* padding-left: 125px; */
     }
 
     .hero__source {
-        width: 100%;
+        max-width: 1000px;
+        max-width: 100%;
         height: calc(100vh - 90px);
         cursor: none;
     }

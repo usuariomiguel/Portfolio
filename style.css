@@ -1038,7 +1038,6 @@ input:focus, textarea:focus{
     margin-top: 25px;
     border: 2px solid var(--color-primary);
     background-color: #15161a;
-    padding: 10px 16px;
     transition: .5s transform;
     width: 100%;
 }
@@ -1051,13 +1050,14 @@ input:focus, textarea:focus{
     cursor: pointer;
     height: 100%;
     width: 100%;
-    padding: 0;
+    padding: 10px;
     font-family: var(--ff-title2);
 }
 
 /*FOOTER*/
 
 .footer {
+    display: none;
     background-color: var(--color-primary);
     color: var(--color-primary-button);
     padding-top: 75px;
@@ -1288,7 +1288,6 @@ input:focus, textarea:focus{
 
     .formContainer__submit {
         margin-top: 40px;
-        padding: 10px;
     }
 
     /*FOOTER*/

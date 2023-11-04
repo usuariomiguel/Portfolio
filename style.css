@@ -136,6 +136,7 @@ h1 {
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+    letter-spacing: 2px;
 }
 
 h2 {
@@ -143,6 +144,7 @@ h2 {
     font-size: var(--fs-title2);
     color: var(--color-primary-title);
     font-weight: 300;
+    letter-spacing: 2px;
 }
 
 .cyellow {
@@ -189,11 +191,11 @@ h2 {
 }
 
 h3 {
-    font-family: var(--ff-title);
+    font-family: var(--ff-paragraph);
     font-size: var(--fs-title3);
     color: var(--color-primary);
     margin: 0;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 h4 {
@@ -277,7 +279,7 @@ input:focus, textarea:focus{
   }
 
 .header {
-    /* position: fixed; */
+    position: fixed;
     background-color: transparent;
     top: 0;
     left: 0;
@@ -678,7 +680,7 @@ input:focus, textarea:focus{
     letter-spacing: 0.25px;
 }
 
-.portContainer__item--title, .cdark, .portContainer__item__paragraph {
+.portContainer__item__paragraph {
     color: var(--color-primary-paragraph);
 }
 

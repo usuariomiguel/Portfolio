@@ -480,7 +480,7 @@ input:focus, textarea:focus{
 
 .heroContainer {
     overflow: hidden;
-    margin: 10px;
+    /* margin: 10px; Se puede dejar aplicando el nuevo diseño */
     border-radius: 17px;
     background-color: var(--bg-color);
   }
@@ -847,8 +847,6 @@ input:focus, textarea:focus{
 
 .habContainer {
     padding: 75px 16px;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
     margin: 15px;
     margin-bottom: 75px;
     background-color: var(--color-primary);

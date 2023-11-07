@@ -1,5 +1,30 @@
 window.addEventListener('load', function () {
 
+    //Scroll Reveal 
+
+    ScrollReveal({
+        distance: '5px',
+        // delay: 100,
+        reset: true
+    })
+
+    ScrollReveal().reveal('.header', {origin: 'top'});
+    ScrollReveal().reveal('.heroContent__General');
+    ScrollReveal().reveal('#about', {origin: 'left'});
+    ScrollReveal().reveal('.aboutContainer', {
+        delay: 300,
+        origin: 'left'
+    });
+    ScrollReveal().reveal('.portContainer');
+    ScrollReveal().reveal('.portContainer__item--first', {origin: 'left'});
+    ScrollReveal().reveal('.portContainer__item--second', {origin: 'right'});
+    ScrollReveal().reveal('#skills', { origin: 'right' });
+    ScrollReveal().reveal('.habContent', {
+        delay: 300,
+        origin: 'right'
+    });
+    ScrollReveal().reveal('#form');
+
     // Header Bg Section
     let header = document.querySelector(".header");
     const functionChangeBgHeader = () => {
@@ -35,7 +60,7 @@ window.addEventListener('load', function () {
         navList__movile.classList.add("active");
         herosubtitle.classList.add("active");
         heroContainer.classList.add("active");
-        footer.classList.add("active");  
+        footer.classList.add("active");
         header.classList.add("active");
         about.classList.add("active");
         port.classList.add("active");
@@ -80,7 +105,7 @@ window.addEventListener('load', function () {
     navList__menu__about.addEventListener('click', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
-        navList__movile.classList.remove("active"); 
+        navList__movile.classList.remove("active");
         heroContainer.classList.remove("active");
         about.classList.remove("active");
         port.classList.remove("active");

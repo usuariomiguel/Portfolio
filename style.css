@@ -1341,14 +1341,6 @@ input:focus, textarea:focus{
         font-size: var(--fs-title2-p);
     }
 
-    h2::after {
-        background-image: var(--color-gradient-90º);
-        top: 50%;
-        left: 50%;
-        width: 50%;
-        height: 2px;
-    }
-
     h3 {
         font-size: var(--fs-title3-p);
     }
@@ -1582,9 +1574,9 @@ input:focus, textarea:focus{
       position: absolute;
       top: 0;
       left: 0;
-      width: 100px;
-      background-color:var(--bg-color);
-      height: 2px;
+      width: 90px;
+      background-color:gray;
+      height: 1px;
     }
       
       .about__information {
@@ -1596,6 +1588,35 @@ input:focus, textarea:focus{
 
     .portContainer {
         padding: 100px auto;
+    }
+
+    .portTitle {
+      text-align: center;
+      margin-bottom: 100px;
+      position: relative;
+    } 
+
+    .portTitle::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      bottom: 50%;
+      background-color: var(--color-primary);
+      height: 1px;
+      z-index: -1;
+      border-radius: 1.75rem;
+    }
+
+    .pp {
+      display: flex;
+      gap: 10px;
+      background-color: var(--bg-color);
+      font-size: var(--ff-paragraph);
+      padding: 10px;
+      width: max-content;
+      margin: 0 auto;
     }
 
     .portContainer__items {

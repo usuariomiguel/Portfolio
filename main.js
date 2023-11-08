@@ -3,7 +3,7 @@ window.addEventListener('load', function () {
     //Scroll Reveal 
 
     ScrollReveal({
-        distance: '5px',
+        distance: '10px',
         // delay: 100,
         reset: true
     })
@@ -11,18 +11,12 @@ window.addEventListener('load', function () {
     ScrollReveal().reveal('.header', {origin: 'top'});
     ScrollReveal().reveal('.heroContent__General');
     ScrollReveal().reveal('#about', {origin: 'left'});
-    ScrollReveal().reveal('.aboutContainer', {
-        delay: 300,
-        origin: 'left'
-    });
+    ScrollReveal().reveal('.aboutContainer', {origin: 'left'});
     ScrollReveal().reveal('.portContainer');
     ScrollReveal().reveal('.portContainer__item--first', {origin: 'left'});
     ScrollReveal().reveal('.portContainer__item--second', {origin: 'right'});
     ScrollReveal().reveal('#skills', { origin: 'right' });
-    ScrollReveal().reveal('.habContent', {
-        delay: 300,
-        origin: 'right'
-    });
+    ScrollReveal().reveal('.habContent', {origin: 'right'});
     ScrollReveal().reveal('#form');
 
     // Header Bg Section

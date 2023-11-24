@@ -241,11 +241,14 @@ li {
 
 @media screen and (hover: hover) {
 
-  .navList__link:hover {
+  .navList__link:hover, .socialmedia--logo:hover {
       color: white;
-      transition: color 0.5s;
+      transition:  border, color 0.5s ease;
       opacity: 1;
-  }
+      border-bottom: 1px solid gray;
+      padding-bottom: 2px;
+      border-radius: 0;
+    }
 
   .portContainer__item__link:hover, .herobutton__link:hover, .formContainer__submit:hover {
       transform: scale(0.98);
@@ -253,13 +256,15 @@ li {
       color: black;
       opacity: 1;
   }
-
-  .socialmedia--logo:hover{
-      fill: white;
-      transition: 0.5s color;
+  
+  .navList__cv:hover {
+    cursor: url(./src/img/pointer.svg), pointer;
+    transform: scale(0.98);
+    color: white;
+    opacity: 1;
   }
 
-  .habContainer__buttonsFilters__link:hover, .navList__cv:hover, a:hover  {
+  .habContainer__buttonsFilters__link:hover, a:hover  {
       cursor: url(./src/img/pointer.svg), pointer;
       transform: scale(0.98);
       color: black;
@@ -1596,20 +1601,6 @@ border-radius: 1.75rem;
     position: relative;
   } 
 
-  .portTitle::after {
-    content: "";
-    position: absolute;
-    top: 75%;
-    left: 0;
-    width: 100%;
-    bottom: 50%;
-    background-color: var(--color-primary);
-    height: 2px;
-    z-index: -1;
-    border-radius: 1.75rem;
-    opacity: 0.5;
-  }
-
   .pp {
     display: flex;
     gap: 10px;
@@ -1636,8 +1627,8 @@ border-radius: 1.75rem;
   } */
 
   .anco {
-    filter: grayscale(0.5) ;
-    transition: filter 1s ease; 
+    filter: grayscale(1) ;
+    transition: filter 0.5s ease; 
   }
 
   .anco:hover {
@@ -1703,19 +1694,6 @@ border-radius: 1.75rem;
   .formContainer__title {
     margin-bottom: 100px;
     position: relative;
-  }
-
-  .formContainer__title::after {
-    position: absolute;
-    content: "";
-    top: 75%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-primary);
-    z-index: -1;
-    opacity: 0.5;
-    border-radius: 1.75rem;
   }
 
   .formContainer__form {

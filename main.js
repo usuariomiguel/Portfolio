@@ -3,7 +3,7 @@ window.addEventListener('load', function () {
     //Scroll Reveal 
 
     ScrollReveal({
-        distance: '10px',
+        distance: '5px',
         // delay: 100,
         reset: true
     })

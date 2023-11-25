@@ -260,8 +260,10 @@ li {
   .navList__cv:hover {
     cursor: url(./src/img/pointer.svg), pointer;
     transform: scale(0.98);
-    color: white;
     opacity: 1;
+    border-radius: 7px;
+    padding-bottom: 5px;
+    border: 2px solid var(--color-primary-paragraph);
   }
 
   .habContainer__buttonsFilters__link:hover, a:hover  {
@@ -1707,8 +1709,8 @@ border-radius: 1.75rem;
   .formContainer__Container {
       position: relative;
       display: grid;
-      grid-template-columns: 4fr 6fr;
-      gap: 50px; 
+      grid-template-columns: 5fr 5fr;
+      gap: 25px; 
   }
 
   .formContainer__text {
@@ -1722,7 +1724,7 @@ border-radius: 1.75rem;
   .formContainer__Container__img {
       display: block;
       height: 100%;
-      width: 300px;
+      width: 400px;
       object-fit: cover;
       /* border-right: 1px solid var(--color-primary-paragraph); */
   }

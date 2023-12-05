@@ -466,6 +466,10 @@ opacity: 1;
   display: none;
 }
 
+.navList__cv {
+  display: none;
+}
+
 .darkMode__img {
   display: none;
 }
@@ -648,6 +652,7 @@ opacity: 1;
   background-color: #fff9d1;;
   border-radius: 1.75rem;
   text-align: justify;
+  border: 12px solid yellow;
 }
 
 .about__title {
@@ -861,6 +866,7 @@ color: var(--bg-color);
   background-color: var(--color-primary);
   border-radius: 1.75rem;
   text-align: justify;
+  border: 12px solid yellow;
 }
 
 .habContainer__title {
@@ -972,11 +978,11 @@ border-radius: 1.75rem;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: left;
   gap: 11px;
-  padding: 10px;
+  padding: 10px 30px;
   box-shadow: 0 0 0 1px var(--color-bgsections), 0 30px 30px rgb(0 0 0 / 7%), 0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 4%), 0 2px 2px rgb(0 0 0 / 3%);
-  border-radius: 7px;
+  border-radius: 40px;
 }
 
 .habContainer__item::after {
@@ -1003,7 +1009,6 @@ border-radius: 1.75rem;
   font-family: var(--ff-title2);
   font-size: var(--fs-paragraph);
   color: var(--color-primary-paragraph);
-  text-transform: uppercase;
 }
 
 /*CONTACTO*/
@@ -1495,13 +1500,12 @@ border-radius: 1.75rem;
   }
 
   .heroContent__General {
-      padding: 100px 0;
+      padding: 100px 50px;
       text-align: left;
       display: flex;
       align-items: center;
       gap: 25px;
       margin: 0;
-      padding: 0;
   }
 
   /* .socialmedia__pc::before {

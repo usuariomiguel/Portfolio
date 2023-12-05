@@ -1498,12 +1498,12 @@ border-radius: 1.75rem;
   }
 
   .heroContent__General {
-      padding: 100px 50px;
       text-align: left;
       display: flex;
       align-items: center;
       gap: 25px;
       margin: 0;
+      padding: 0;
   }
 
   /* .socialmedia__pc::before {

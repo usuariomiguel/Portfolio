@@ -5,7 +5,6 @@ window.addEventListener('load', function () {
     ScrollReveal({
         distance: '5px',
         // delay: 100,
-        reset: true
     })
 
     ScrollReveal().reveal('.header', {origin: 'top'});

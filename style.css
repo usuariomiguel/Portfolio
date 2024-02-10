@@ -160,7 +160,7 @@ h2 {
 
 .multicolor {
 font-size: var(--ff-paragraph);
-background-image: linear-gradient(0deg, #af4261, #1a1225);
+background-image: linear-gradient(0deg, #af4261, #ffffff);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; 
 -moz-background-clip: text;

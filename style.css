@@ -1042,7 +1042,7 @@ border: 1px solid gray;
 /*FOOTER*/
 
 .footer {
-  display: none;
+  /* display: none; */
   background-color: var(--color-primary);
   color: var(--color-primary-button);
   padding-top: 75px;

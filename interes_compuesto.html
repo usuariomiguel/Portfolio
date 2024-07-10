@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Interes compuesto</title>
+</head>
+
+<body>
+
+</body class="font-serif">
+<header class="">
+    <div class="">
+
+    </div>
+</header>
+<main class="font-serif p-11 flex flex-col gap-7">
+    <div class="">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center font-sans leading-6 pb-6">
+            Calculadora de Interés Compuesto
+        </h1>
+        <p class="leading-5 text-left">Cálculadora de interés compuesto para que puedas calcular tus cuentas</p>
+    </div>
+    <form class="bg-container p-6 rounded-lg flex flex-col gap-5 border border-gray-light" action="" method="post">
+        <div class="flex flex-col gap-2">
+            <label for="">Balance inicial:</label>
+            <input class="w-full rounded-lg border border-gray-light p-2 text-sm text-gray" type="number" name="" id="" value="0">
+        </div>
+        <div class="flex flex-col gap-2">
+            <label for="">Depósitos periódicos:</label>
+            <div class="w-full" style="display: flex;">
+                <input class="w-full rounded-l-lg border border-gray-light p-2 text-sm text-gray" type="number" name="" id="" value="0">
+                <select class="w-64 rounded-r-lg bg-gray-dark text-gray-light p-2 text-sm " value="">
+                    <option value="Diario">Diario</option>
+                    <option value="Semestral">Semestral</option>
+                    <option value="Mensual">Mensual</option>
+                    <option value="Anual">Anual</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex flex-col gap-2">
+            <label for="">Ratio interés anual:</label>
+            <input class="w-full rounded-lg border border-gray-light p-2 text-sm text-gray" type="number" name="" id="" value="0">
+        </div>
+        <div class="flex flex-col gap-2">
+            <label for="">Duración:</label>
+            <input class="w-full rounded-lg border border-gray-light p-2 text-sm text-gray" type="number" name="" id="" value="0">
+        </div>
+        <input class="bg-gray-dark p-2 rounded-lg text-gray-light" type="submit" value="Calcular">
+    </form>
+    <div class="bg-container p-6 rounded-lg flex flex-col gap-5 border border-gray-light">
+        <h2 class="text-xl font-bold font-sans">Resultados</h2>
+        <p>Con un ahorro de € cada mes durante X años y con un balance inicial de €</p>
+        <div class="">
+            <div class="flex justify-between py-3 border-b border-gray-light">
+                <span>Balance inicial</span>
+                <span>€</span>
+            </div>
+            <div class="flex justify-between py-3 border-b border-gray-light">
+                <span>Depositos periódicos</span>
+                <span>€</span>
+            </div>
+            <div class="flex justify-between py-3">
+                <span>Interés total</span>
+                <span>€</span>
+            </div>
+        </div>
+        <button class="bg-gray-dark p-2 rounded-lg text-gray-light" type="button">Limpiar Resultados</button>
+    </div>
+</main>
+<footer class="text-center p-3 bg-container border-t border-gray-light">
+    <span>Hecho por Miguel Ángel Cantos</span>
+</footer>
+
+</html>

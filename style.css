@@ -1,9 +1,9 @@
 :root {
   /* --ff-title:'Orbitron', sans-serif; */
-  --ff-title:'Climate Crisis', cursive;
+  --ff-title: 'Climate Crisis', cursive;
   /* --ff-title:'Russo One', sans-serif; */
-  --ff-title2:'Inconsolata', monospace;
-  --ff-climate:'Poppins', sans-serif;
+  --ff-title2: 'Inconsolata', monospace;
+  --ff-climate: 'Poppins', sans-serif;
   --ff-paragraph: 'Poppins', sans-serif;
 
   --fs-title: 50px;
@@ -38,8 +38,8 @@
   --bg-color-portfolio: #e8fbff;
   --color-portfolio: #081a59;
   --bg-color-hab: #ff9d00;
-  --color-primary:#fcd561;
-  --color-primary-title:#f5f5f5;
+  --color-primary: #fcd561;
+  --color-primary-title: #f5f5f5;
   /* --color-primary:var(--color-primary-paragraph); */
   --color-primary-opacity: rgba(253, 201, 105, 0.8);
   --color-primary-opacity2: rgba(253, 201, 105, 0.085);
@@ -102,7 +102,7 @@ html {
   scroll-behavior: smooth;
   /* background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   background: radial-gradient(ellipse, at bottom rgba(22,40,62,1) 0%, rgba(9,10,15,1) 100%); */
-  background-color:  var(--bg-color);
+  background-color: var(--bg-color);
   /* position: relative; */
 }
 
@@ -134,7 +134,7 @@ h1 {
   color: var(--color-primary-title);
   background-image: linear-gradient(45deg, #f3ec78, #af4261);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   letter-spacing: 2px;
@@ -148,31 +148,32 @@ h2 {
   letter-spacing: 2px;
 }
 
-.cyellow, .cyellow__about {
-  background-image: linear-gradient(45deg, var(--color-primary) , #af4261);
+.cyellow,
+.cyellow__about {
+  background-image: linear-gradient(45deg, var(--color-primary), #af4261);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
-.multicolor {
-  font-size: var(--ff-paragraph-p);
-  background-image: linear-gradient(0deg, var(--color-primary), white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  font-weight: bold;
-}
+  .multicolor {
+    font-size: var(--ff-paragraph-p);
+    background-image: linear-gradient(0deg, var(--color-primary), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-.multicolor {
-  font-size: var(--ff-paragraph-pl);
-}
+  .multicolor {
+    font-size: var(--ff-paragraph-pl);
+  }
 }
 
 h3 {
@@ -198,7 +199,7 @@ p {
   font-family: var(--ff-title2);
   font-size: var(--fs-paragraph);
   color: var(--color-primary-paragraph);
-  line-height:1.7;
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -217,7 +218,7 @@ a {
 }
 
 .formContainer__submit {
-border-radius: 7px;
+  border-radius: 7px;
 }
 
 li {
@@ -227,18 +228,20 @@ li {
 @media screen and (hover: hover) {
 
   .navList__link:hover {
-      color: white;
-      opacity: 1;
-      text-shadow: 0px 0px 1px white;
-    }
-
-  .portContainer__item__link:hover, .herobutton__link:hover, .formContainer__submit:hover {
-      transform: scale(0.98);
-      background-color: var(--color-primary);
-      color: black;
-      opacity: 1;
+    color: white;
+    opacity: 1;
+    text-shadow: 0px 0px 1px white;
   }
-  
+
+  .portContainer__item__link:hover,
+  .herobutton__link:hover,
+  .formContainer__submit:hover {
+    transform: scale(0.98);
+    background-color: var(--color-primary);
+    color: black;
+    opacity: 1;
+  }
+
   .navList__cv:hover {
     cursor: url(./src/img/pointer.svg), pointer;
     transform: scale(0.98);
@@ -248,10 +251,11 @@ li {
     border: 2px solid var(--color-primary-paragraph);
   }
 
-  .habContainer__buttonsFilters__link:hover, a:hover  {
-      cursor: url(./src/img/pointer.svg), pointer;
-      transform: scale(0.98);
-      opacity: 1;
+  .habContainer__buttonsFilters__link:hover,
+  a:hover {
+    cursor: url(./src/img/pointer.svg), pointer;
+    transform: scale(0.98);
+    opacity: 1;
   }
 
   .formContainer__submit--link:hover {
@@ -261,9 +265,10 @@ li {
 
 }
 
-input:focus, textarea:focus{
-  outline:none ;
-  border-bottom: 1px solid var(--color-primary); 
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color-primary);
 }
 
 .header {
@@ -317,11 +322,11 @@ input:focus, textarea:focus{
   border: 2px solid var(--color-primary-title);
   background-color: var(--color-bgsections);
   text-align: center;
-  padding:  5px 15px;
+  padding: 5px 15px;
   max-width: max-content;
 }
 
-.navList__movile{
+.navList__movile {
   position: absolute;
   font-family: var(--ff-paragraph);
   width: 100vw;
@@ -336,7 +341,7 @@ input:focus, textarea:focus{
 }
 
 .navList__movile.active {
-opacity: 1;
+  opacity: 1;
 }
 
 .navList__movile.translate {
@@ -344,7 +349,7 @@ opacity: 1;
 }
 
 .header.active {
-  background-color: var(--bg-color2);   
+  background-color: var(--bg-color2);
 }
 
 .herosubtitle.active {
@@ -354,18 +359,21 @@ opacity: 1;
 
 .heroContent__General__info--one.active {
   filter: blur(90px);
-  pointer-events:none;
-  overflow-x:scroll;
+  pointer-events: none;
+  overflow-x: scroll;
 }
 
-#about.active, #port.active, #skills.active, #form.active {
+#about.active,
+#port.active,
+#skills.active,
+#form.active {
   display: none;
   opacity: 0;
 }
 
 .footer.active {
   filter: blur(90px);
-  pointer-events:none;
+  pointer-events: none;
 }
 
 .naList__menu__sections {
@@ -388,7 +396,7 @@ opacity: 1;
 
 .navList__menu__li {
   padding-bottom: 15px;
-}    
+}
 
 .navList__menu__li {
   list-style: none;
@@ -396,7 +404,10 @@ opacity: 1;
   text-transform: uppercase;
 }
 
-.navList__menu__hero, .navList__menu__about, .navList__menu__portfolio, .navList__menu__skills {
+.navList__menu__hero,
+.navList__menu__about,
+.navList__menu__portfolio,
+.navList__menu__skills {
   border-bottom: 1px solid gray;
 }
 
@@ -459,7 +470,8 @@ opacity: 1;
   display: none;
 }
 
-.navBurguermenu__img__hamburguer, .navBurguermenu__img__close {
+.navBurguermenu__img__hamburguer,
+.navBurguermenu__img__close {
   width: 40px;
   height: 40px;
 }
@@ -468,7 +480,7 @@ opacity: 1;
   display: none;
 }
 
-.navBurguermenu__img__close{
+.navBurguermenu__img__close {
   display: none;
 }
 
@@ -489,7 +501,7 @@ opacity: 1;
   padding-top: 135px;
   display: flex;
   text-align: center;
-  
+
 }
 
 .starContainer {
@@ -498,45 +510,57 @@ opacity: 1;
 }
 
 .stars {
-  position: absolute;    
+  position: absolute;
   z-index: -1;
   width: 1px;
   height: 1px;
   border-radius: 2px;
-  box-shadow: 1674px 1379px white , 992px 1173px white , 1193px 1703px white , 1205px 301px white , 1781px 890px white , 1305px 869px white , 756px 286px white , 1541px 689px white , 1390px 697px white , 912px 1269px white , 1995px 1082px white , 392px 1958px white , 983px 41px white , 1580px 811px white , 1117px 1010px white , 573px 1544px white , 1289px 1377px white , 698px 1122px white , 613px 1312px white , 145px 1151px white , 1996px 57px white , 311px 855px white , 1342px 126px white , 1805px 1840px white , 1307px 1202px white , 1114px 323px white , 291px 1549px white , 1679px 1815px white , 692px 163px white , 1121px 835px white , 30px 1497px white , 1601px 563px white , 222px 1483px white , 1556px 1606px white , 1110px 1199px white , 1086px 1590px white , 869px 1234px white , 443px 1790px white , 1751px 1214px white , 1554px 548px white , 1844px 1661px white , 597px 1418px white , 1290px 247px white , 190px 1775px white , 909px 872px white , 1810px 1276px white , 714px 1562px white , 974px 1101px white , 1205px 718px white , 976px 1484px white , 1925px 1517px white , 485px 1245px white , 386px 1359px white , 1526px 394px white , 1990px 235px white , 1884px 1150px white , 753px 403px white , 1183px 1123px white , 214px 836px white , 1965px 1720px white , 43px 463px white , 1385px 1229px white , 401px 1280px white , 639px 156px white , 1356px 980px white , 955px 1649px white , 1915px 1519px white , 668px 1664px white , 385px 687px white , 1670px 1562px white , 836px 162px white , 948px 1747px white , 54px 1007px white , 39px 1336px white , 973px 975px white , 671px 1588px white , 1383px 225px white , 1872px 960px white , 1444px 1257px white , 1064px 453px white , 633px 319px white , 1301px 535px white , 1765px 1783px white , 1307px 521px white , 1905px 1162px white , 938px 209px white , 1223px 1951px white , 747px 890px white , 1708px 1856px white , 1431px 1370px white , 1949px 12px white , 1307px 1595px white , 953px 257px white , 1753px 1475px white , 990px 1087px white , 1555px 118px white , 727px 308px white , 90px 1149px white , 1083px 1746px white , 213px 787px white , 1635px 828px white , 1805px 1963px white , 794px 44px white , 642px 917px white , 1473px 1488px white , 1704px 802px white , 1098px 1042px white , 896px 1823px white , 1945px 698px white , 215px 1286px white , 1355px 1561px white , 74px 1409px white , 1937px 692px white , 1674px 1586px white , 1953px 686px white , 1267px 1903px white , 855px 847px white , 1117px 65px white , 1183px 930px white , 93px 819px white , 1956px 350px white , 1482px 1343px white , 1145px 1688px white , 361px 727px white , 121px 871px white , 1519px 1360px white , 509px 1866px white , 508px 1711px white , 1101px 1630px white , 1070px 1433px white , 1488px 858px white , 523px 1886px white , 635px 200px white , 1399px 613px white , 1441px 942px white , 1381px 243px white , 1381px 1141px white , 1827px 1368px white , 521px 858px white , 1787px 720px white , 1983px 463px white , 1129px 978px white , 1436px 897px white , 4px 1750px white , 1739px 662px white , 326px 571px white , 1578px 1589px white , 888px 1298px white , 693px 873px white , 833px 1066px white , 136px 893px white , 711px 241px white , 41px 453px white , 128px 281px white , 82px 727px white , 1629px 1090px white , 1995px 446px white , 1461px 1145px white , 328px 1226px white , 514px 1101px white , 1218px 994px white , 1317px 1716px white , 484px 1982px white , 335px 1242px white , 559px 897px white , 775px 755px white , 1081px 1253px #FFF , 1666px 1327px #FFF , 569px 1335px white , 883px 486px white , 1629px 853px white , 765px 1663px white , 667px 792px white , 606px 809px white , 157px 350px white , 1742px 518px white , 918px 323px white , 11px 1654px white , 1101px 1845px white , 1336px 551px white , 1776px 1988px white , 1993px 1929px white , 612px 1008px white , 1654px 1078px white , 1946px 160px white , 387px 681px white , 176px 293px white , 1934px 285px white , 1032px 974px white , 985px 1089px white , 1840px 1783px white , 1180px 356px white , 596px 503px white , 571px 409px white , 1454px 49px white , 1667px 1643px white , 844px 278px white , 919px 1026px white , 1916px 1086px white , 1855px 1212px white , 741px 880px white , 66px 148px white , 357px 1714px white , 559px 1534px white , 761px 1662px white , 883px 1059px white , 1418px 60px white , 1091px 302px white , 1538px 663px white , 1688px 949px white , 993px 1482px white , 1516px 1976px white , 620px 1095px white , 577px 1711px white , 301px 110px white , 444px 509px white , 1846px 886px white , 1687px 1426px white , 1906px 786px white , 770px 362px white , 1187px 1804px white , 940px 393px white , 1720px 978px white , 1737px 11px white , 658px 1344px white , 1891px 786px white , 649px 1020px white , 118px 216px white , 1226px 1341px white , 576px 594px white , 1435px 1644px white , 1700px 1559px white , 1189px 1484px white , 991px 1663px white , 573px 319px white , 1526px 1010px white , 808px 151px white , 1573px 755px white , 795px 1720px white , 1907px 1810px white , 59px 945px white , 1250px 1493px white , 573px 919px white , 155px 1691px white , 1955px 1336px white , 1588px 515px white , 1175px 1219px white , 1571px 1870px white , 1124px 595px white , 1612px 283px white , 743px 1638px white , 871px 932px white , 677px 373px white , 1974px 136px white , 270px 1313px white , 1659px 1632px white , 1436px 37px white , 1808px 1558px white , 764px 668px white , 1292px 578px white , 935px 1738px white , 348px 1617px white , 1199px 829px white , 1341px 64px white , 254px 647px white , 1699px 1593px white , 272px 792px white , 1627px 768px white , 864px 1022px white , 998px 155px white , 1378px 222px white , 1262px 1359px white , 519px 1504px white , 214px 1195px white , 1057px 65px white , 1900px 271px white , 1793px 1664px white , 1990px 1005px white , 1630px 834px white , 1378px 1493px white , 1922px 1491px white , 1813px 308px white , 392px 1214px white , 1354px 816px white , 1207px 241px white , 921px 1276px white , 1070px 1579px white , 566px 1099px white , 1587px 873px white , 571px 1473px white , 1408px 1129px white , 1305px 1451px white , 1694px 826px white , 698px 1512px white , 799px 136px white , 126px 1829px white , 652px 1063px white , 504px 1161px white , 942px 631px white , 1483px 1238px white , 615px 181px white , 1470px 1456px white , 923px 1015px white , 659px 1699px white , 78px 1452px white , 1082px 1243px white , 265px 1744px white , 1520px 1550px white , 657px 585px white , 1659px 1240px white ,778px 1828px white , 394px 1983px white , 380px 1522px white , 882px 1669px white , 1372px 1266px white , 1712px 1919px white , 914px 1370px white , 796px 1481px white , 1471px 1535px white , 1451px 1269px white , 674px 1172px white , 511px 1272px white , 1568px 854px white , 1744px 830px white , 1284px 391px white , 315px 1437px white , 50px 409px white , 600px 16px #FFF , 1473px 1321px #FFF , 5px 342px #FFF , 1661px 375px white , 928px 1628px white , 19px 206px white , 248px 411px white , 990px 259px white , 934px 1431px white , 472px 92px white , 21px 860px white , 293px 1982px white , 864px 1753px white , 1095px 241px white , 1969px 118px white , 1650px 819px white , 1283px 1630px white , 1px 1188px white , 199px 754px white , 1563px 1484px white , 1371px 504px white , 921px 1852px white , 1116px 732px white , 279px 1258px white, 1915px 1519px white , 668px 1664px white , 385px 687px white , 1670px 1562px white , 836px 162px white , 948px 1747px white , 54px 1007px white , 39px 1336px white , 973px 975px white , 671px 1588px white , 1383px 225px white , 1872px 960px white , 1444px 1257px white , 1064px 453px white , 633px 319px white , 1301px 535px white , 1765px 1783px white , 1307px 521px white , 1905px 1162px white , 938px 209px white , 1223px 1951px white , 747px 890px white , 1708px 1856px white , 1431px 1370px white , 1949px 12px white , 1307px 1595px white , 953px 257px white , 1753px 1475px white , 990px 1087px white , 1555px 118px white , 727px 308px white , 90px 1149px white , 1083px 1746px white , 213px 787px white , 1635px 828px white , 1805px 1963px white , 794px 44px white , 642px 917px white , 1473px 1488px white , 1704px 802px white , 1098px 1042px white , 896px 1823px white , 1945px 698px white , 215px 1286px white , 1355px 1561px white , 74px 1409px white , 1937px 692px white , 1674px 1586px white , 1953px 686px white , 1267px 1903px white , 855px 847px white , 1117px 65px white , 1183px 930px white , 93px 819px white , 1956px 350px white , 1482px 1343px white , 1145px 1688px white , 361px 727px white , 121px 871px white , 1519px 1360px white , 509px 1866px white , 508px 1711px white , 1101px 1630px white , 1070px 1433px white , 1488px 858px white , 523px 1886px white , 635px 200px white , 1399px 613px white , 1441px 942px white , 1381px 243px white , 1381px 1141px white , 1827px 1368px white , 521px 858px white , 1787px 720px white , 1983px 463px white , 1129px 978px white , 1436px 897px white , 4px 1750px white , 1739px 662px white , 326px 571px white , 1578px 1589px white , 888px 1298px white , 693px 873px white , 833px 1066px white , 136px 893px white , 711px 241px white , 41px 453px white , 128px 281px white , 82px 727px white , 1629px 1090px white , 1995px 446px white , 1461px 1145px white , 328px 1226px white , 514px 1101px white , 1218px 994px white , 1317px 1716px white , 484px 1982px white , 335px 1242px white , 559px 897px white , 775px 755px white , 1081px 1253px #FFF , 1666px 1327px #FFF , 569px 1335px white , 883px 486px white , 1629px 853px white , 765px 1663px white , 667px 792px white , 606px 809px white , 157px 350px white , 1742px 518px white , 918px 323px white , 11px 1654px white , 1101px 1845px white , 1336px 551px white , 1776px 1988px white , 1993px 1929px white , 612px 1008px white , 1654px 1078px white , 1946px 160px white , 387px 681px white , 176px 293px white , 1934px 285px white , 1032px 974px white , 985px 1089px white , 1840px 1783px white , 1180px 356px white , 596px 503px white , 571px 409px white , 1454px 49px white , 1667px 1643px white , 844px 278px white , 919px 1026px white , 1916px 1086px white , 1855px 1212px white , 741px 880px white , 66px 148px white , 357px 1714px white , 559px 1534px white , 761px 1662px white , 883px 1059px white , 1418px 60px white , 1091px 302px white , 1538px 663px white , 1688px 949px white , 993px 1482px white , 1516px 1976px white , 620px 1095px white , 577px 1711px white , 301px 110px white , 940px 401px white, 1915px 1519px white , 668px 1664px white , 385px 687px white , 1670px 1562px white , 836px 162px white , 948px 1747px white , 54px 1007px white , 39px 1336px white , 973px 975px white , 671px 1588px white , 1383px 225px white , 1872px 960px white , 1444px 1257px white , 1064px 453px white , 633px 319px white , 1301px 535px white , 1765px 1783px white , 1307px 521px white , 1905px 1162px white , 938px 209px white , 1223px 1951px white , 747px 890px white , 1708px 1856px white , 1431px 1370px white , 1949px 12px white , 1307px 1595px white , 953px 257px white , 1753px 1475px white , 990px 1087px white , 1555px 118px white , 727px 308px white , 90px 1149px white , 1083px 1746px white , 213px 787px white , 1635px 828px white , 1805px 1963px white , 794px 44px white , 642px 917px white , 1473px 1488px white , 1704px 802px white , 1098px 1042px white , 896px 1823px white , 1945px 698px white , 215px 1286px white , 1355px 1561px white , 74px 1409px white , 1937px 692px white , 1674px 1586px white , 1953px 686px white , 1267px 1903px white , 855px 847px white , 1117px 65px white , 1183px 930px white , 93px 819px white , 1956px 350px white , 1482px 1343px white , 1145px 1688px white , 361px 727px white , 121px 871px white , 1519px 1360px white , 509px 1866px white , 508px 1711px white , 1101px 1630px white , 1070px 1433px white , 1488px 858px white , 523px 1886px white , 635px 200px white , 1399px 613px white , 1441px 942px white , 1381px 243px white , 1381px 1141px white , 1827px 1368px white , 521px 858px white , 1787px 720px white , 1983px 463px white , 1129px 978px white , 1436px 897px white , 4px 1750px white , 1739px 662px white , 326px 571px white , 1578px 1589px white , 888px 1298px white , 693px 873px white , 833px 1066px white , 136px 893px white , 711px 241px white , 41px 453px white , 128px 281px white , 82px 727px white , 1629px 1090px white , 1995px 446px white , 1461px 1145px white , 328px 1226px white , 514px 1101px white , 1218px 994px white , 1317px 1716px white , 484px 1982px white , 335px 1242px white , 559px 897px white , 775px 755px white , 1081px 1253px #FFF , 1666px 1327px #FFF , 569px 1335px white , 883px 486px white , 1629px 853px white , 765px 1663px white , 667px 792px white , 606px 809px white , 157px 350px white , 1742px 518px white , 918px 323px white , 11px 1654px white , 1101px 1845px white , 1336px 551px white , 1776px 1988px white , 1993px 1929px white , 612px 1008px white , 1654px 1078px white , 1946px 160px white , 387px 681px white , 176px 293px white , 1934px 285px white , 1032px 974px white , 985px 1089px white , 1840px 1783px white , 1180px 356px white , 596px 503px white , 571px 409px white , 1454px 49px white , 1667px 1643px white , 844px 278px white , 919px 1026px white , 1916px 1086px white , 1855px 1212px white , 741px 880px white , 66px 148px white , 357px 1714px white , 559px 1534px white , 761px 1662px white , 883px 1059px white , 1418px 60px white , 1091px 302px white , 1538px 663px white , 1688px 949px white , 993px 1482px white , 1516px 1976px white , 620px 1095px white , 577px 1711px white , 301px 110px white , 940px 401px white;
-  animation:animStaropacity 3s linear infinite; 
+  box-shadow: 1674px 1379px white, 992px 1173px white, 1193px 1703px white, 1205px 301px white, 1781px 890px white, 1305px 869px white, 756px 286px white, 1541px 689px white, 1390px 697px white, 912px 1269px white, 1995px 1082px white, 392px 1958px white, 983px 41px white, 1580px 811px white, 1117px 1010px white, 573px 1544px white, 1289px 1377px white, 698px 1122px white, 613px 1312px white, 145px 1151px white, 1996px 57px white, 311px 855px white, 1342px 126px white, 1805px 1840px white, 1307px 1202px white, 1114px 323px white, 291px 1549px white, 1679px 1815px white, 692px 163px white, 1121px 835px white, 30px 1497px white, 1601px 563px white, 222px 1483px white, 1556px 1606px white, 1110px 1199px white, 1086px 1590px white, 869px 1234px white, 443px 1790px white, 1751px 1214px white, 1554px 548px white, 1844px 1661px white, 597px 1418px white, 1290px 247px white, 190px 1775px white, 909px 872px white, 1810px 1276px white, 714px 1562px white, 974px 1101px white, 1205px 718px white, 976px 1484px white, 1925px 1517px white, 485px 1245px white, 386px 1359px white, 1526px 394px white, 1990px 235px white, 1884px 1150px white, 753px 403px white, 1183px 1123px white, 214px 836px white, 1965px 1720px white, 43px 463px white, 1385px 1229px white, 401px 1280px white, 639px 156px white, 1356px 980px white, 955px 1649px white, 1915px 1519px white, 668px 1664px white, 385px 687px white, 1670px 1562px white, 836px 162px white, 948px 1747px white, 54px 1007px white, 39px 1336px white, 973px 975px white, 671px 1588px white, 1383px 225px white, 1872px 960px white, 1444px 1257px white, 1064px 453px white, 633px 319px white, 1301px 535px white, 1765px 1783px white, 1307px 521px white, 1905px 1162px white, 938px 209px white, 1223px 1951px white, 747px 890px white, 1708px 1856px white, 1431px 1370px white, 1949px 12px white, 1307px 1595px white, 953px 257px white, 1753px 1475px white, 990px 1087px white, 1555px 118px white, 727px 308px white, 90px 1149px white, 1083px 1746px white, 213px 787px white, 1635px 828px white, 1805px 1963px white, 794px 44px white, 642px 917px white, 1473px 1488px white, 1704px 802px white, 1098px 1042px white, 896px 1823px white, 1945px 698px white, 215px 1286px white, 1355px 1561px white, 74px 1409px white, 1937px 692px white, 1674px 1586px white, 1953px 686px white, 1267px 1903px white, 855px 847px white, 1117px 65px white, 1183px 930px white, 93px 819px white, 1956px 350px white, 1482px 1343px white, 1145px 1688px white, 361px 727px white, 121px 871px white, 1519px 1360px white, 509px 1866px white, 508px 1711px white, 1101px 1630px white, 1070px 1433px white, 1488px 858px white, 523px 1886px white, 635px 200px white, 1399px 613px white, 1441px 942px white, 1381px 243px white, 1381px 1141px white, 1827px 1368px white, 521px 858px white, 1787px 720px white, 1983px 463px white, 1129px 978px white, 1436px 897px white, 4px 1750px white, 1739px 662px white, 326px 571px white, 1578px 1589px white, 888px 1298px white, 693px 873px white, 833px 1066px white, 136px 893px white, 711px 241px white, 41px 453px white, 128px 281px white, 82px 727px white, 1629px 1090px white, 1995px 446px white, 1461px 1145px white, 328px 1226px white, 514px 1101px white, 1218px 994px white, 1317px 1716px white, 484px 1982px white, 335px 1242px white, 559px 897px white, 775px 755px white, 1081px 1253px #FFF, 1666px 1327px #FFF, 569px 1335px white, 883px 486px white, 1629px 853px white, 765px 1663px white, 667px 792px white, 606px 809px white, 157px 350px white, 1742px 518px white, 918px 323px white, 11px 1654px white, 1101px 1845px white, 1336px 551px white, 1776px 1988px white, 1993px 1929px white, 612px 1008px white, 1654px 1078px white, 1946px 160px white, 387px 681px white, 176px 293px white, 1934px 285px white, 1032px 974px white, 985px 1089px white, 1840px 1783px white, 1180px 356px white, 596px 503px white, 571px 409px white, 1454px 49px white, 1667px 1643px white, 844px 278px white, 919px 1026px white, 1916px 1086px white, 1855px 1212px white, 741px 880px white, 66px 148px white, 357px 1714px white, 559px 1534px white, 761px 1662px white, 883px 1059px white, 1418px 60px white, 1091px 302px white, 1538px 663px white, 1688px 949px white, 993px 1482px white, 1516px 1976px white, 620px 1095px white, 577px 1711px white, 301px 110px white, 444px 509px white, 1846px 886px white, 1687px 1426px white, 1906px 786px white, 770px 362px white, 1187px 1804px white, 940px 393px white, 1720px 978px white, 1737px 11px white, 658px 1344px white, 1891px 786px white, 649px 1020px white, 118px 216px white, 1226px 1341px white, 576px 594px white, 1435px 1644px white, 1700px 1559px white, 1189px 1484px white, 991px 1663px white, 573px 319px white, 1526px 1010px white, 808px 151px white, 1573px 755px white, 795px 1720px white, 1907px 1810px white, 59px 945px white, 1250px 1493px white, 573px 919px white, 155px 1691px white, 1955px 1336px white, 1588px 515px white, 1175px 1219px white, 1571px 1870px white, 1124px 595px white, 1612px 283px white, 743px 1638px white, 871px 932px white, 677px 373px white, 1974px 136px white, 270px 1313px white, 1659px 1632px white, 1436px 37px white, 1808px 1558px white, 764px 668px white, 1292px 578px white, 935px 1738px white, 348px 1617px white, 1199px 829px white, 1341px 64px white, 254px 647px white, 1699px 1593px white, 272px 792px white, 1627px 768px white, 864px 1022px white, 998px 155px white, 1378px 222px white, 1262px 1359px white, 519px 1504px white, 214px 1195px white, 1057px 65px white, 1900px 271px white, 1793px 1664px white, 1990px 1005px white, 1630px 834px white, 1378px 1493px white, 1922px 1491px white, 1813px 308px white, 392px 1214px white, 1354px 816px white, 1207px 241px white, 921px 1276px white, 1070px 1579px white, 566px 1099px white, 1587px 873px white, 571px 1473px white, 1408px 1129px white, 1305px 1451px white, 1694px 826px white, 698px 1512px white, 799px 136px white, 126px 1829px white, 652px 1063px white, 504px 1161px white, 942px 631px white, 1483px 1238px white, 615px 181px white, 1470px 1456px white, 923px 1015px white, 659px 1699px white, 78px 1452px white, 1082px 1243px white, 265px 1744px white, 1520px 1550px white, 657px 585px white, 1659px 1240px white, 778px 1828px white, 394px 1983px white, 380px 1522px white, 882px 1669px white, 1372px 1266px white, 1712px 1919px white, 914px 1370px white, 796px 1481px white, 1471px 1535px white, 1451px 1269px white, 674px 1172px white, 511px 1272px white, 1568px 854px white, 1744px 830px white, 1284px 391px white, 315px 1437px white, 50px 409px white, 600px 16px #FFF, 1473px 1321px #FFF, 5px 342px #FFF, 1661px 375px white, 928px 1628px white, 19px 206px white, 248px 411px white, 990px 259px white, 934px 1431px white, 472px 92px white, 21px 860px white, 293px 1982px white, 864px 1753px white, 1095px 241px white, 1969px 118px white, 1650px 819px white, 1283px 1630px white, 1px 1188px white, 199px 754px white, 1563px 1484px white, 1371px 504px white, 921px 1852px white, 1116px 732px white, 279px 1258px white, 1915px 1519px white, 668px 1664px white, 385px 687px white, 1670px 1562px white, 836px 162px white, 948px 1747px white, 54px 1007px white, 39px 1336px white, 973px 975px white, 671px 1588px white, 1383px 225px white, 1872px 960px white, 1444px 1257px white, 1064px 453px white, 633px 319px white, 1301px 535px white, 1765px 1783px white, 1307px 521px white, 1905px 1162px white, 938px 209px white, 1223px 1951px white, 747px 890px white, 1708px 1856px white, 1431px 1370px white, 1949px 12px white, 1307px 1595px white, 953px 257px white, 1753px 1475px white, 990px 1087px white, 1555px 118px white, 727px 308px white, 90px 1149px white, 1083px 1746px white, 213px 787px white, 1635px 828px white, 1805px 1963px white, 794px 44px white, 642px 917px white, 1473px 1488px white, 1704px 802px white, 1098px 1042px white, 896px 1823px white, 1945px 698px white, 215px 1286px white, 1355px 1561px white, 74px 1409px white, 1937px 692px white, 1674px 1586px white, 1953px 686px white, 1267px 1903px white, 855px 847px white, 1117px 65px white, 1183px 930px white, 93px 819px white, 1956px 350px white, 1482px 1343px white, 1145px 1688px white, 361px 727px white, 121px 871px white, 1519px 1360px white, 509px 1866px white, 508px 1711px white, 1101px 1630px white, 1070px 1433px white, 1488px 858px white, 523px 1886px white, 635px 200px white, 1399px 613px white, 1441px 942px white, 1381px 243px white, 1381px 1141px white, 1827px 1368px white, 521px 858px white, 1787px 720px white, 1983px 463px white, 1129px 978px white, 1436px 897px white, 4px 1750px white, 1739px 662px white, 326px 571px white, 1578px 1589px white, 888px 1298px white, 693px 873px white, 833px 1066px white, 136px 893px white, 711px 241px white, 41px 453px white, 128px 281px white, 82px 727px white, 1629px 1090px white, 1995px 446px white, 1461px 1145px white, 328px 1226px white, 514px 1101px white, 1218px 994px white, 1317px 1716px white, 484px 1982px white, 335px 1242px white, 559px 897px white, 775px 755px white, 1081px 1253px #FFF, 1666px 1327px #FFF, 569px 1335px white, 883px 486px white, 1629px 853px white, 765px 1663px white, 667px 792px white, 606px 809px white, 157px 350px white, 1742px 518px white, 918px 323px white, 11px 1654px white, 1101px 1845px white, 1336px 551px white, 1776px 1988px white, 1993px 1929px white, 612px 1008px white, 1654px 1078px white, 1946px 160px white, 387px 681px white, 176px 293px white, 1934px 285px white, 1032px 974px white, 985px 1089px white, 1840px 1783px white, 1180px 356px white, 596px 503px white, 571px 409px white, 1454px 49px white, 1667px 1643px white, 844px 278px white, 919px 1026px white, 1916px 1086px white, 1855px 1212px white, 741px 880px white, 66px 148px white, 357px 1714px white, 559px 1534px white, 761px 1662px white, 883px 1059px white, 1418px 60px white, 1091px 302px white, 1538px 663px white, 1688px 949px white, 993px 1482px white, 1516px 1976px white, 620px 1095px white, 577px 1711px white, 301px 110px white, 940px 401px white, 1915px 1519px white, 668px 1664px white, 385px 687px white, 1670px 1562px white, 836px 162px white, 948px 1747px white, 54px 1007px white, 39px 1336px white, 973px 975px white, 671px 1588px white, 1383px 225px white, 1872px 960px white, 1444px 1257px white, 1064px 453px white, 633px 319px white, 1301px 535px white, 1765px 1783px white, 1307px 521px white, 1905px 1162px white, 938px 209px white, 1223px 1951px white, 747px 890px white, 1708px 1856px white, 1431px 1370px white, 1949px 12px white, 1307px 1595px white, 953px 257px white, 1753px 1475px white, 990px 1087px white, 1555px 118px white, 727px 308px white, 90px 1149px white, 1083px 1746px white, 213px 787px white, 1635px 828px white, 1805px 1963px white, 794px 44px white, 642px 917px white, 1473px 1488px white, 1704px 802px white, 1098px 1042px white, 896px 1823px white, 1945px 698px white, 215px 1286px white, 1355px 1561px white, 74px 1409px white, 1937px 692px white, 1674px 1586px white, 1953px 686px white, 1267px 1903px white, 855px 847px white, 1117px 65px white, 1183px 930px white, 93px 819px white, 1956px 350px white, 1482px 1343px white, 1145px 1688px white, 361px 727px white, 121px 871px white, 1519px 1360px white, 509px 1866px white, 508px 1711px white, 1101px 1630px white, 1070px 1433px white, 1488px 858px white, 523px 1886px white, 635px 200px white, 1399px 613px white, 1441px 942px white, 1381px 243px white, 1381px 1141px white, 1827px 1368px white, 521px 858px white, 1787px 720px white, 1983px 463px white, 1129px 978px white, 1436px 897px white, 4px 1750px white, 1739px 662px white, 326px 571px white, 1578px 1589px white, 888px 1298px white, 693px 873px white, 833px 1066px white, 136px 893px white, 711px 241px white, 41px 453px white, 128px 281px white, 82px 727px white, 1629px 1090px white, 1995px 446px white, 1461px 1145px white, 328px 1226px white, 514px 1101px white, 1218px 994px white, 1317px 1716px white, 484px 1982px white, 335px 1242px white, 559px 897px white, 775px 755px white, 1081px 1253px #FFF, 1666px 1327px #FFF, 569px 1335px white, 883px 486px white, 1629px 853px white, 765px 1663px white, 667px 792px white, 606px 809px white, 157px 350px white, 1742px 518px white, 918px 323px white, 11px 1654px white, 1101px 1845px white, 1336px 551px white, 1776px 1988px white, 1993px 1929px white, 612px 1008px white, 1654px 1078px white, 1946px 160px white, 387px 681px white, 176px 293px white, 1934px 285px white, 1032px 974px white, 985px 1089px white, 1840px 1783px white, 1180px 356px white, 596px 503px white, 571px 409px white, 1454px 49px white, 1667px 1643px white, 844px 278px white, 919px 1026px white, 1916px 1086px white, 1855px 1212px white, 741px 880px white, 66px 148px white, 357px 1714px white, 559px 1534px white, 761px 1662px white, 883px 1059px white, 1418px 60px white, 1091px 302px white, 1538px 663px white, 1688px 949px white, 993px 1482px white, 1516px 1976px white, 620px 1095px white, 577px 1711px white, 301px 110px white, 940px 401px white;
+  animation: animStaropacity 3s linear infinite;
 }
+
 .stars2 {
-  position: absolute;    
+  position: absolute;
   z-index: -1;
   width: 2px;
   height: 2px;
   border-radius: 3px;
-  box-shadow: 107px 1763px white , 1664px 1938px white , 483px 1565px white , 777px 1678px white , 1306px 246px white , 147px 1313px white , 1748px 368px white , 1331px 1071px white , 355px 1322px white , 1282px 661px white , 1962px 1659px white , 1366px 947px white , 1502px 1997px white , 485px 520px white , 1657px 995px white , 1485px 1249px white , 1523px 1816px white , 14px 722px white , 642px 1860px white , 806px 430px white , 766px 342px white , 212px 103px white , 1662px 764px white , 1005px 1425px white , 1967px 361px white , 1652px 206px white , 1678px 159px white , 709px 459px white , 1429px 1148px white , 609px 1900px white , 515px 1191px white , 774px 1160px white , 171px 63px white , 1303px 1225px white , 1401px 187px white , 1735px 407px white , 1910px 197px white , 488px 1045px white , 440px 783px white , 1453px 1753px white , 139px 1942px white , 1093px 1381px white , 1412px 1014px white , 763px 427px white , 385px 849px white , 924px 1184px white , 603px 1001px white , 338px 854px white , 1432px 1925px white , 662px 864px white , 1756px 499px white , 1234px 550px white , 659px 859px white , 508px 992px white , 1671px 1094px white , 1376px 332px white , 1906px 231px white , 1656px 1075px white , 1993px 224px white , 303px 1578px white , 1782px 1660px white , 971px 231px white , 967px 1219px white , 1890px 1913px white , 1033px 248px white , 1475px 446px white , 255px 1498px white , 1601px 1923px white , 636px 98px white , 114px 141px white , 1204px 1662px white , 368px 1730px white , 1676px 1162px white , 1878px 1488px white , 816px 1131px white , 738px 1776px white , 866px 1658px white , 456px 1568px white , 1647px 365px white , 1268px 1458px white , 775px 1468px white , 1713px 326px white , 962px 625px white , 1622px 344px white , 804px 1431px white , 1071px 1313px white , 861px 183px white , 1839px 1437px white , 1865px 772px white , 449px 590px white , 1106px 494px white , 527px 964px white , 792px 1843px white , 416px 565px white , 1467px 1415px white , 721px 736px white , 319px 13px white , 1304px 807px white , 147px 1315px white , 1248px 257px white , 209px 1919px white , 504px 318px white , 311px 1481px white , 493px 230px white , 826px 311px white , 1487px 928px white , 1598px 1002px white , 1897px 213px white , 277px 1523px white , 1820px 1103px white , 824px 1451px white , 765px 1478px white , 1888px 1739px white , 1026px 1829px white , 596px 490px white , 1279px 1281px white , 1866px 24px white , 1898px 1327px white , 362px 1086px white , 458px 189px white , 10px 913px white , 481px 1575px white , 32px 972px white , 709px 1138px white , 716px 390px white , 336px 1373px white , 1313px 271px white , 276px 1753px white , 941px 1895px white;
-  animation: animStarX 80s linear infinite; 
+  box-shadow: 107px 1763px white, 1664px 1938px white, 483px 1565px white, 777px 1678px white, 1306px 246px white, 147px 1313px white, 1748px 368px white, 1331px 1071px white, 355px 1322px white, 1282px 661px white, 1962px 1659px white, 1366px 947px white, 1502px 1997px white, 485px 520px white, 1657px 995px white, 1485px 1249px white, 1523px 1816px white, 14px 722px white, 642px 1860px white, 806px 430px white, 766px 342px white, 212px 103px white, 1662px 764px white, 1005px 1425px white, 1967px 361px white, 1652px 206px white, 1678px 159px white, 709px 459px white, 1429px 1148px white, 609px 1900px white, 515px 1191px white, 774px 1160px white, 171px 63px white, 1303px 1225px white, 1401px 187px white, 1735px 407px white, 1910px 197px white, 488px 1045px white, 440px 783px white, 1453px 1753px white, 139px 1942px white, 1093px 1381px white, 1412px 1014px white, 763px 427px white, 385px 849px white, 924px 1184px white, 603px 1001px white, 338px 854px white, 1432px 1925px white, 662px 864px white, 1756px 499px white, 1234px 550px white, 659px 859px white, 508px 992px white, 1671px 1094px white, 1376px 332px white, 1906px 231px white, 1656px 1075px white, 1993px 224px white, 303px 1578px white, 1782px 1660px white, 971px 231px white, 967px 1219px white, 1890px 1913px white, 1033px 248px white, 1475px 446px white, 255px 1498px white, 1601px 1923px white, 636px 98px white, 114px 141px white, 1204px 1662px white, 368px 1730px white, 1676px 1162px white, 1878px 1488px white, 816px 1131px white, 738px 1776px white, 866px 1658px white, 456px 1568px white, 1647px 365px white, 1268px 1458px white, 775px 1468px white, 1713px 326px white, 962px 625px white, 1622px 344px white, 804px 1431px white, 1071px 1313px white, 861px 183px white, 1839px 1437px white, 1865px 772px white, 449px 590px white, 1106px 494px white, 527px 964px white, 792px 1843px white, 416px 565px white, 1467px 1415px white, 721px 736px white, 319px 13px white, 1304px 807px white, 147px 1315px white, 1248px 257px white, 209px 1919px white, 504px 318px white, 311px 1481px white, 493px 230px white, 826px 311px white, 1487px 928px white, 1598px 1002px white, 1897px 213px white, 277px 1523px white, 1820px 1103px white, 824px 1451px white, 765px 1478px white, 1888px 1739px white, 1026px 1829px white, 596px 490px white, 1279px 1281px white, 1866px 24px white, 1898px 1327px white, 362px 1086px white, 458px 189px white, 10px 913px white, 481px 1575px white, 32px 972px white, 709px 1138px white, 716px 390px white, 336px 1373px white, 1313px 271px white, 276px 1753px white, 941px 1895px white;
+  animation: animStarX 80s linear infinite;
 }
+
 .stars3 {
-  position: absolute;    
+  position: absolute;
   z-index: -1;
   width: 3px;
   height: 3px;
   border-radius: 3px;
-  box-shadow: 1074px 1789px white , 1873px 1501px white , 164px 207px white , 1193px 1795px white , 396px 1095px white , 214px 201px white , 934px 94px white , 264px 1186px white , 1382px 1340px white , 792px 666px white , 167px 1338px white , 43px 1957px white , 408px 1168px white , 828px 923px white , 119px 440px white , 1001px 445px white , 266px 72px white , 71px 1735px white , 1439px 403px white , 1576px 1311px white , 1028px 1771px white , 1945px 1444px white , 1864px 54px white , 1255px 1604px white , 1126px 973px white , 451px 1506px white , 1185px 628px white , 688px 1033px white , 778px 951px white , 266px 1328px white , 429px 1071px white , 105px 136px white , 1711px 1359px white , 746px 82px white , 1967px 1532px white , 932px 363px white , 1235px 699px white , 1479px 404px white , 1501px 1725px white , 735px 217px white , 1841px 883px white , 1024px 12px white , 197px 358px white , 1482px 1120px white , 302px 388px white , 1909px 1324px white , 943px 237px white , 539px 1692px white , 1858px 395px white , 501px 841px white , 388px 408px white , 600px 1932px white , 1119px 1225px white , 349px 1116px white , 58px 330px white , 399px 234px white , 1188px 1238px white , 385px 444px white , 131px 1809px white , 214px 224px white , 1010px 1854px white , 1758px 479px white , 532px 800px white , 1303px 1906px white , 1916px 1007px white , 1601px 640px var(--color-primary-paragraph) , 1360px 1758px white , 1487px 743px white , 64px 1416px white , 1830px 58px white , 366px 482px white , 284px 1240px white , 1608px 420px white , 583px 859px white , 814px 1357px white , 110px 489px white , 787px 107px white , 563px 168px white , 410px 45px white , 862px 593px white , 1399px 1018px white , 173px 1402px white , 1487px 164px white , 1625px 586px white , 836px 199px white , 1px 1529px white , 123px 287px white , 270px 1168px white , 798px 1338px white , 767px 527px white , 313px 438px white , 1371px 1231px white , 467px 1342px white , 134px 707px white , 1724px 442px white , 1799px 1152px white , 1537px 1259px white , 1428px 494px white , 396px 1067px white , 561px 1376px white;
-  animation: animStaropacity 5s linear infinite; 
+  box-shadow: 1074px 1789px white, 1873px 1501px white, 164px 207px white, 1193px 1795px white, 396px 1095px white, 214px 201px white, 934px 94px white, 264px 1186px white, 1382px 1340px white, 792px 666px white, 167px 1338px white, 43px 1957px white, 408px 1168px white, 828px 923px white, 119px 440px white, 1001px 445px white, 266px 72px white, 71px 1735px white, 1439px 403px white, 1576px 1311px white, 1028px 1771px white, 1945px 1444px white, 1864px 54px white, 1255px 1604px white, 1126px 973px white, 451px 1506px white, 1185px 628px white, 688px 1033px white, 778px 951px white, 266px 1328px white, 429px 1071px white, 105px 136px white, 1711px 1359px white, 746px 82px white, 1967px 1532px white, 932px 363px white, 1235px 699px white, 1479px 404px white, 1501px 1725px white, 735px 217px white, 1841px 883px white, 1024px 12px white, 197px 358px white, 1482px 1120px white, 302px 388px white, 1909px 1324px white, 943px 237px white, 539px 1692px white, 1858px 395px white, 501px 841px white, 388px 408px white, 600px 1932px white, 1119px 1225px white, 349px 1116px white, 58px 330px white, 399px 234px white, 1188px 1238px white, 385px 444px white, 131px 1809px white, 214px 224px white, 1010px 1854px white, 1758px 479px white, 532px 800px white, 1303px 1906px white, 1916px 1007px white, 1601px 640px var(--color-primary-paragraph), 1360px 1758px white, 1487px 743px white, 64px 1416px white, 1830px 58px white, 366px 482px white, 284px 1240px white, 1608px 420px white, 583px 859px white, 814px 1357px white, 110px 489px white, 787px 107px white, 563px 168px white, 410px 45px white, 862px 593px white, 1399px 1018px white, 173px 1402px white, 1487px 164px white, 1625px 586px white, 836px 199px white, 1px 1529px white, 123px 287px white, 270px 1168px white, 798px 1338px white, 767px 527px white, 313px 438px white, 1371px 1231px white, 467px 1342px white, 134px 707px white, 1724px 442px white, 1799px 1152px white, 1537px 1259px white, 1428px 494px white, 396px 1067px white, 561px 1376px white;
+  animation: animStaropacity 5s linear infinite;
 }
 
 @keyframes animStarX {
-  0%, 100% {
-      transform: translateY(200px) translateX(-40px); }
+
+  0%,
+  100% {
+    transform: translateY(200px) translateX(-40px);
+  }
+
   50% {
-      transform: translateY(0px) translateX(0px); }
+    transform: translateY(0px) translateX(0px);
+  }
 }
 
 @keyframes animStaropacity {
-  0%, 100% {
-      opacity: 1; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
   75% {
-       opacity: 0.1; }
+    opacity: 0.1;
+  }
 }
 
 .heroContent__General__info {
@@ -593,12 +617,12 @@ opacity: 1;
   text-align: center;
   padding: 10px 16px;
   max-width: max-content;
-  transition: .5s transform ;
+  transition: .5s transform;
 }
 
 .hero__socialmedia--logo {
-  width: clamp(2.5rem , 5vw, 3rem);
-  height: clamp(2.5rem , 5vw, 3rem);
+  width: clamp(2.5rem, 5vw, 3rem);
+  height: clamp(2.5rem, 5vw, 3rem);
   fill: var(--color-primary);
 }
 
@@ -614,8 +638,8 @@ opacity: 1;
 
 @media only screen and (min-width: 1024px) {
   .about__socialmedia {
-      justify-content: flex-start;
-      display: none;
+    justify-content: flex-start;
+    display: none;
   }
 }
 
@@ -663,11 +687,13 @@ opacity: 1;
   overflow: hidden;
 }
 
-.portContainer__ellipse, .portContainer__ellipse--two {
+.portContainer__ellipse,
+.portContainer__ellipse--two {
   display: none;
 }
 
-.portTitle, .habContainer__title {
+.portTitle,
+.habContainer__title {
   letter-spacing: 0.25px;
 }
 
@@ -735,7 +761,10 @@ opacity: 1;
   gap: 50px;
 }
 
-.buttons, .habContainer__buttonsFilters__link, .formContainer__submit--link, .herosubtitle {
+.buttons,
+.habContainer__buttonsFilters__link,
+.formContainer__submit--link,
+.herosubtitle {
   color: white;
 }
 
@@ -804,15 +833,18 @@ opacity: 1;
 .portContainer__more__img {
   width: 25px;
   rotate: 45deg;
-  animation: close 2s linear infinite ;
+  animation: close 2s linear infinite;
 }
 
 @keyframes close {
-  0%,100% {
-      transform: rotate3d(0deg);
+
+  0%,
+  100% {
+    transform: rotate3d(0deg);
   }
+
   50% {
-      transform:rotate3d(0, 1, 0, 3.5rad) ;
+    transform: rotate3d(0, 1, 0, 3.5rad);
   }
 }
 
@@ -863,7 +895,8 @@ opacity: 1;
   padding-bottom: 16px;
 }
 
-.habContainer__buttonsFilter__title, .inputs {
+.habContainer__buttonsFilter__title,
+.inputs {
   display: none;
 }
 
@@ -898,15 +931,15 @@ opacity: 1;
 }
 
 .lenguages.active {
-background: var(--bg-color);
-color: var(--color-primary-paragraph);
-border: 1px solid gray;
+  background: var(--bg-color);
+  color: var(--color-primary-paragraph);
+  border: 1px solid gray;
 }
 
 .tools.active {
-background: var(--bg-color);
-color: var(--color-primary-paragraph);
-border: 1px solid gray;
+  background: var(--bg-color);
+  color: var(--color-primary-paragraph);
+  border: 1px solid gray;
 }
 
 .habContainer__skills {
@@ -916,7 +949,9 @@ border: 1px solid gray;
   padding-top: 16px;
 }
 
-.habContainer__lenguajes, .habContainer__utility, .habContainer__all {
+.habContainer__lenguajes,
+.habContainer__utility,
+.habContainer__all {
   display: grid;
   grid-template-columns: auto auto;
   gap: 16px;
@@ -989,7 +1024,7 @@ border: 1px solid gray;
   padding: 75px 16px;
 }
 
-.formContainer__text  {
+.formContainer__text {
   display: none;
 }
 
@@ -1087,18 +1122,18 @@ border: 1px solid gray;
   font-weight: 400;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
 
   h1 {
-      font-size: var(--fs-title-d);
+    font-size: var(--fs-title-d);
   }
 
   h2 {
-      font-size: var(--fs-title2-d);
+    font-size: var(--fs-title2-d);
   }
 
   .cyellow {
-      font-size: var(--fs-title2-d);
+    font-size: var(--fs-title2-d);
   }
 
   .cyellow__about {
@@ -1106,209 +1141,212 @@ border: 1px solid gray;
   }
 
   .cdark {
-      font-size: var(--fs-title2-d);
+    font-size: var(--fs-title2-d);
   }
 
   h3 {
-      font-size: var(--fs-title3-d);
+    font-size: var(--fs-title3-d);
   }
 
   h4 {
-      font-size: var(--fs-title4-d);
+    font-size: var(--fs-title4-d);
   }
 
   p {
-      font-size: var(--fs-paragraph-d);
+    font-size: var(--fs-paragraph-d);
   }
 
   a {
-      font-size: var(--fs-links-d);
+    font-size: var(--fs-links-d);
   }
 
   span {
-      font-size: var(--fs-paragraph-d);
+    font-size: var(--fs-paragraph-d);
   }
 
   .nav__title__city {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .navList__movile {
-      top: 80px;
+    top: 80px;
   }
 
   .navList__menu__footer__darkmode {
-      width: 250px;
+    width: 250px;
   }
 
   .navList__menu__footer__darkmode__paragraph {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .navList__menu__footer__darkmode__img {
-      width: 25px;
+    width: 25px;
   }
 
-  .navBurguermenu__img__hamburguer, .navBurguermenu__img__close {
-      padding: 0;
-      width: 35px;
-      height: auto;
+  .navBurguermenu__img__hamburguer,
+  .navBurguermenu__img__close {
+    padding: 0;
+    width: 35px;
+    height: auto;
   }
 
   .heroContent__General__info {
-      padding: 0 45px;
+    padding: 0 45px;
   }
 
   .herosubtitle::before {
-      left: 30%;
-      width: 40%;
+    left: 30%;
+    width: 40%;
   }
 
   .hero__paragraph {
-      max-width: 80%;
-      margin: 0 auto;
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   .herobutton__link {
-      padding: 15px 10px;
-      max-width: 250px;
+    padding: 15px 10px;
+    max-width: 250px;
   }
 
   .heroContent__General {
-      padding: 100px 32px;
+    padding: 100px 32px;
   }
 
   /* ABOUT */
 
   .about {
-      padding: 100px 32px;
-      margin: 0 20px;
+    padding: 100px 32px;
+    margin: 0 20px;
   }
 
   /*PORTFOLIO*/
 
   .portContainer {
-      padding: 100px 32px;
+    padding: 100px 32px;
   }
 
   .portContainer__item__image {
-      grid-area: a;
-      max-width: 578px;
+    grid-area: a;
+    max-width: 578px;
   }
 
   .portContainer__item__information {
-      grid-area: b;
+    grid-area: b;
   }
 
   .portContainer__item--first {
-      display: grid;
-      grid-template-columns: 0.5fr 0.5fr;
-      grid-template-areas: "a b";
-      gap: 50px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas: "a b";
+    gap: 50px;
   }
 
   .portContainer__item--second {
-      display: grid;
-      grid-template-columns: 0.5fr 0.5fr;
-      grid-template-areas: "b a";
-      gap: 50px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas: "b a";
+    gap: 50px;
   }
 
 
   .portContainer__item--third.active {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "a b";
-      gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+    gap: 50px;
   }
 
   /*HABILIDADES */
 
   .habContainer {
-      padding: 100px 32px;
+    padding: 100px 32px;
   }
 
   .habContainer__buttonsFilters__link {
-      padding: 12px 25px;
+    padding: 12px 25px;
   }
 
-  .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
-      grid-template-columns: auto auto auto;
+  .habContainer__lenguajes,
+  .habContainer__utility,
+  .habContainer__all {
+    grid-template-columns: auto auto auto;
   }
 
   .habContainer__lenguajes.active {
-      padding-bottom: calc(324.3px - 239.53px);
+    padding-bottom: calc(324.3px - 239.53px);
   }
-  
+
   .habContainer__utility.active {
-      padding-bottom: calc(324.3px - 153.53px);
+    padding-bottom: calc(324.3px - 153.53px);
   }
 
   .habContainer__item {
-      gap: 35px;
+    gap: 35px;
   }
 
   .habContiner__img {
-      width: 50px;
+    width: 50px;
   }
 
   .habContiner__img--title {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   /*CONTACTO*/
 
   .formContainer {
-      padding: 100px 32px;
+    padding: 100px 32px;
   }
 
   .formContainer__form {
-      padding-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   .formContainer__submit {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
   /*FOOTER*/
 
   .footer {
-      padding: 0px 32px;
+    padding: 0px 32px;
   }
 
   .footerContainer {
-      padding: 25px 0;
+    padding: 25px 0;
   }
 
   .footerContainer__links {
-      gap: 35px;
+    gap: 35px;
   }
 
   .footerContainer__link {
-      color: var(--color-primary-button);
+    color: var(--color-primary-button);
   }
 
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
 
   h1 {
-      font-size: var(--fs-title-p);
+    font-size: var(--fs-title-p);
   }
 
   h2 {
-      font-size: var(--fs-title2-p);
-      padding: 0;
-      text-align: left;
+    font-size: var(--fs-title2-p);
+    padding: 0;
+    text-align: left;
   }
 
   .cyellow {
-      background-image: linear-gradient(45deg, #f3ec78, #af4261);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; 
-      -moz-background-clip: text;
-      -moz-text-fill-color: transparent;
-      font-size: var(--fs-title2-p);
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: var(--fs-title2-p);
   }
 
   .cyellow__about {
@@ -1316,34 +1354,34 @@ border: 1px solid gray;
   }
 
   .cdark {
-      font-size: var(--fs-title2-p);
+    font-size: var(--fs-title2-p);
   }
 
   h3 {
-      font-size: var(--fs-title3-p);
+    font-size: var(--fs-title3-p);
   }
 
   h4 {
-      font-size: var(--fs-title4-p);
+    font-size: var(--fs-title4-p);
   }
 
   p {
-      font-size: var(--fs-paragraph-p);
+    font-size: var(--fs-paragraph-p);
   }
 
   a {
-      font-size: var(--fs-links-p);
+    font-size: var(--fs-links-p);
   }
 
   span {
-      font-size: var(--fs-paragraph-p);
+    font-size: var(--fs-paragraph-p);
   }
 
   * {
-      cursor: url(./src/img/cursorr.svg), pointer;
-   }
-  
-   /* [data-cursor] {
+    cursor: url(./src/img/cursorr.svg), pointer;
+  }
+
+  /* [data-cursor] {
       position: static;
       z-index: 100;
       width: 35px;
@@ -1373,37 +1411,37 @@ border: 1px solid gray;
   } */
 
   .header {
-      padding: 10px 32px;
+    padding: 10px 32px;
   }
 
   .nav__title__simbol {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .navList {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      font-weight: bold;
-      padding: 0;
-      margin: 0;
-      gap: 40px;
-      list-style: none;
-      text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+    list-style: none;
+    text-align: center;
   }
 
   .navBurguermenu__img__hamburguer {
-      display: none;
+    display: none;
   }
 
   .navList__link {
-      opacity: 0.75;
-      position: relative;
-      font-weight: 400;
-      font-size: var(--fs-links);
-      text-decoration: none;
-      color: var(--color-primary-paragraph);
+    opacity: 0.75;
+    position: relative;
+    font-weight: 400;
+    font-size: var(--fs-links);
+    text-decoration: none;
+    color: var(--color-primary-paragraph);
   }
 
   .navList__link--s:hover:after {
@@ -1419,36 +1457,36 @@ border: 1px solid gray;
     box-shadow: 0 0 2px white;
     color: white;
   }
-  
+
   .navList__cv {
     border: 2px solid white;
     border-radius: 8px;
   }
 
   .darkMode__img {
-      display: block;
-      width: 25px;
-      height: auto;
+    display: block;
+    width: 25px;
+    height: auto;
   }
 
   .navList__movile {
-      display: none;
+    display: none;
   }
 
   .heroContent__General {
-      text-align: left;
-      display: flex;
-      align-items: center;
-      gap: 25px;
-      margin: 0;
-      padding: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
   }
 
   .heroContent__General__info {
-      display: grid;
-      grid-template-columns: 6fr 4fr;
-      gap: 0;
-      /* padding-left: 125px; */
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 0;
+    /* padding-left: 125px; */
   }
 
   .hero__source {
@@ -1460,33 +1498,33 @@ border: 1px solid gray;
   }
 
   .heroTitle {
-      padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   .herosubtitle::before {
-      left: 0;
-      width: 30%;
+    left: 0;
+    width: 30%;
   }
 
   .hero__paragraph {
-      max-width: none;
+    max-width: none;
   }
 
   .herobutton__link {
-      margin: 0;
-      padding: 10px 40px;
-      max-width: max-content;
+    margin: 0;
+    padding: 10px 40px;
+    max-width: max-content;
   }
 
   .hero__source {
-      display: block;
+    display: block;
   }
 
   /* ABOUT */
 
   .about {
-      padding: 100px auto;
-    }
+    padding: 100px auto;
+  }
 
   .about__title {
     position: relative;
@@ -1499,26 +1537,26 @@ border: 1px solid gray;
     top: 0;
     left: 0;
     width: 90px;
-    background-color:gray;
+    background-color: gray;
     height: 1px;
   }
-    
-    .about__information {
-      font-size: 20px;
-      line-height: 1.3;
+
+  .about__information {
+    font-size: 20px;
+    line-height: 1.3;
   }
 
   /*PORTFOLIO*/
 
   .portContainer {
-      padding: 100px auto;
+    padding: 100px auto;
   }
 
   .portTitle {
     text-align: center;
     margin-bottom: 100px;
     position: relative;
-  } 
+  }
 
   .pp {
     display: flex;
@@ -1530,15 +1568,15 @@ border: 1px solid gray;
   }
 
   .portContainer__items {
-      gap: 100px;
+    gap: 100px;
   }
 
   .porfolioContainerSection {
-      gap: 100px;
+    gap: 100px;
   }
 
   .portContainer__more {
-      padding: 10px;
+    padding: 10px;
   }
 
   /* .p, .o, .l, .l, .a {
@@ -1546,8 +1584,8 @@ border: 1px solid gray;
   } */
 
   .anco {
-    filter: grayscale(1) ;
-    transition: filter 0.5s ease; 
+    filter: grayscale(1);
+    transition: filter 0.5s ease;
   }
 
   .anco:hover {
@@ -1557,48 +1595,50 @@ border: 1px solid gray;
   /*HABILIDADES*/
 
   .habContainer {
-      padding: 100px auto;
+    padding: 100px auto;
   }
 
   .habContentflesLp {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  
+
   .habContainer__title {
-      margin-bottom: 0;
-      padding-bottom: 30px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
   }
 
   .habContainer__buttonsFilter {
-      justify-content: flex-end;
-      gap: 15px;
-      border: none;
-      padding-bottom: 30px;
+    justify-content: flex-end;
+    gap: 15px;
+    border: none;
+    padding-bottom: 30px;
   }
 
   .habContainer__buttonsFilters__link {
-      margin: 0;
-      font-size: var(--fs-paragraph-p);
+    margin: 0;
+    font-size: var(--fs-paragraph-p);
   }
 
-  .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
-      grid-template-columns: auto auto auto auto;
-      gap: 25px;
+  .habContainer__lenguajes,
+  .habContainer__utility,
+  .habContainer__all {
+    grid-template-columns: auto auto auto auto;
+    gap: 25px;
   }
 
   .habContainer__lenguajes.active {
-      padding-bottom: calc(257.53px - 163.77px);
+    padding-bottom: calc(257.53px - 163.77px);
   }
-  
+
   .habContainer__utility.active {
-      padding-bottom: calc(257.53px - 162.53px);
+    padding-bottom: calc(257.53px - 162.53px);
   }
 
   .habContainer__item {
-      gap: 25px;
-  } 
+    gap: 25px;
+  }
 
   .habContiner__img--title {
     font-size: 20px;
@@ -1607,7 +1647,7 @@ border: 1px solid gray;
   /*FORMULARIO*/
 
   .formContainer {
-      padding: 100px auto;
+    padding: 100px auto;
   }
 
   .formContainer__title {
@@ -1616,76 +1656,76 @@ border: 1px solid gray;
   }
 
   .formContainer__form {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      grid-column: auto;
-      gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    grid-column: auto;
+    gap: 25px;
   }
 
   .formContainer__Container {
-      position: relative;
-      display: grid;
-      grid-template-columns: 5fr 5fr;
-      gap: 25px; 
+    position: relative;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 25px;
   }
 
   .formContainer__text {
-      display: block;
+    display: block;
   }
 
   .forContainer__paragraph {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .formContainer__Container__img {
-      display: block;
-      height: 100%;
-      width: 400px;
-      object-fit: cover;
-      /* border-right: 1px solid var(--color-primary-paragraph); */
+    display: block;
+    height: 100%;
+    width: 400px;
+    object-fit: cover;
+    /* border-right: 1px solid var(--color-primary-paragraph); */
   }
 
   .formContainer__form__displayflex {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
   }
 
   .formContainer__forminput {
-      margin: 0;
+    margin: 0;
   }
 
   .footer {
-      padding: 0 80px;
+    padding: 0 80px;
   }
 
   .footerContainer__links {
-      display: flex;
-      align-items: center;
-      gap: 25px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
   }
 
 }
 
-@media only screen and (min-width: 1350px){
+@media only screen and (min-width: 1350px) {
 
   h1 {
-      font-size: var(--fs-title-pl);
+    font-size: var(--fs-title-pl);
   }
 
   h2 {
-      font-size: var(--fs-title2-pl);
+    font-size: var(--fs-title2-pl);
   }
 
   .cyellow {
-      background-image: linear-gradient(45deg, #f3ec78, #af4261);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; 
-      -moz-background-clip: text;
-      -moz-text-fill-color: transparent;
-      font-size: var(--fs-title2-pL);
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: var(--fs-title2-pL);
   }
 
   .cyellow__about {
@@ -1693,32 +1733,32 @@ border: 1px solid gray;
   }
 
   .cdark {
-      font-size: var(--fs-title2-pL); 
+    font-size: var(--fs-title2-pL);
   }
 
   h3 {
-      font-size: var(--fs-title3-pl);
+    font-size: var(--fs-title3-pl);
   }
 
   h4 {
-      font-size: var(--fs-title4-pl);
+    font-size: var(--fs-title4-pl);
   }
 
   p {
-      font-size: var(--fs-paragraph-pl);
+    font-size: var(--fs-paragraph-pl);
   }
 
   a {
-      font-size: var(--fs-links-pl);
+    font-size: var(--fs-links-pl);
   }
 
   span {
-      font-size: var(--fs-paragraph-pl);
+    font-size: var(--fs-paragraph-pl);
   }
 
   .headerContainer {
-      margin: 0 auto;
-      /* max-width: 1600px; */
+    margin: 0 auto;
+    /* max-width: 1600px; */
   }
 
   /* .heroContainer {
@@ -1728,28 +1768,35 @@ border: 1px solid gray;
   } */
 
   .heroContent__General__info--one {
-      padding: 0;
+    padding: 0;
   }
-/* 
+
+  /* 
   .heroContent__General__info--one {
       gap: 50px;
   } */
 
-  .heroContent__General__info, .aboutContainer, .portContent, .habContent, .formContent, .footerContainer, .headerContainer{
-      margin: 0 auto;
-      max-width: 1100px;
+  .heroContent__General__info,
+  .aboutContainer,
+  .portContent,
+  .habContent,
+  .formContent,
+  .footerContainer,
+  .headerContainer {
+    margin: 0 auto;
+    max-width: 1100px;
   }
 
   .porfolioContainerSection {
-      gap: 150px;
+    gap: 150px;
   }
 
   .portContainer__item--third.active {
-      gap: 100px;
+    gap: 100px;
   }
 
   .portContainer__item {
-      gap: 100px;
+    gap: 100px;
   }
 
   /* .habContainer__lenguajes, .habContainer__utility, .habContainer__all {
@@ -1758,40 +1805,40 @@ border: 1px solid gray;
   } */
 
   .footer {
-      padding: 25px;
+    padding: 25px;
   }
 
   /* pc */
 
   .darkMode__img {
-      display: block;
-      width: 30px;
-      height: auto;
+    display: block;
+    width: 30px;
+    height: auto;
   }
 
   /*PORTFOLIO*/
 
   .porfolioContainerSection {
-      gap: 200px;
+    gap: 200px;
   }
 
   /*HABILIDADES*/
 
   .label__skills {
-      font-size: var(--fs-paragraph-pl);
+    font-size: var(--fs-paragraph-pl);
   }
 
   /*FORMULARIO*/
   .formContainer {
-      height: calc(100vh - 60px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .formContent {
-      width: 100vw;
+    width: 100vw;
   }
 
 }
@@ -1804,912 +1851,1734 @@ border: 1px solid gray;
   height: 0.3vw;
   margin: -4.5px;
   animation: ease 200s alternate infinite;
-  pointer-events: none; }
-  .firefly::before, .firefly::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform-origin: -10vw; }
-  .firefly::before {
-    background: white;
-    opacity: 0.4;
-    animation: drift ease alternate infinite; }
-  .firefly::after {
-    background: white;
-    opacity: 0;
-    box-shadow: 0 0 0vw 0vw yellow;
-    animation: drift ease alternate infinite, flash ease infinite; }
+  pointer-events: none;
+}
+
+.firefly::before,
+.firefly::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform-origin: -10vw;
+}
+
+.firefly::before {
+  background: white;
+  opacity: 0.4;
+  animation: drift ease alternate infinite;
+}
+
+.firefly::after {
+  background: white;
+  opacity: 0;
+  box-shadow: 0 0 0vw 0vw yellow;
+  animation: drift ease alternate infinite, flash ease infinite;
+}
 
 .firefly:nth-child(1) {
-  animation-name: move1; }
-  .firefly:nth-child(1)::before {
-    animation-duration: 18s; }
-  .firefly:nth-child(1)::after {
-    animation-duration: 18s, 5907ms;
-    animation-delay: 0ms, 3986ms; }
+  animation-name: move1;
+}
+
+.firefly:nth-child(1)::before {
+  animation-duration: 18s;
+}
+
+.firefly:nth-child(1)::after {
+  animation-duration: 18s, 5907ms;
+  animation-delay: 0ms, 3986ms;
+}
 
 @keyframes move1 {
   0% {
-    transform: translateX(38vw) translateY(5vh) scale(0.67); }
+    transform: translateX(38vw) translateY(5vh) scale(0.67);
+  }
+
   4.16667% {
-    transform: translateX(41vw) translateY(6vh) scale(0.82); }
+    transform: translateX(41vw) translateY(6vh) scale(0.82);
+  }
+
   8.33333% {
-    transform: translateX(-35vw) translateY(45vh) scale(0.82); }
+    transform: translateX(-35vw) translateY(45vh) scale(0.82);
+  }
+
   12.5% {
-    transform: translateX(-19vw) translateY(12vh) scale(0.79); }
+    transform: translateX(-19vw) translateY(12vh) scale(0.79);
+  }
+
   16.66667% {
-    transform: translateX(-42vw) translateY(-12vh) scale(0.62); }
+    transform: translateX(-42vw) translateY(-12vh) scale(0.62);
+  }
+
   20.83333% {
-    transform: translateX(-12vw) translateY(-28vh) scale(0.36); }
+    transform: translateX(-12vw) translateY(-28vh) scale(0.36);
+  }
+
   25% {
-    transform: translateX(49vw) translateY(33vh) scale(0.41); }
+    transform: translateX(49vw) translateY(33vh) scale(0.41);
+  }
+
   29.16667% {
-    transform: translateX(34vw) translateY(43vh) scale(0.74); }
+    transform: translateX(34vw) translateY(43vh) scale(0.74);
+  }
+
   33.33333% {
-    transform: translateX(13vw) translateY(46vh) scale(0.78); }
+    transform: translateX(13vw) translateY(46vh) scale(0.78);
+  }
+
   37.5% {
-    transform: translateX(-35vw) translateY(43vh) scale(0.7); }
+    transform: translateX(-35vw) translateY(43vh) scale(0.7);
+  }
+
   41.66667% {
-    transform: translateX(32vw) translateY(6vh) scale(0.99); }
+    transform: translateX(32vw) translateY(6vh) scale(0.99);
+  }
+
   45.83333% {
-    transform: translateX(-2vw) translateY(-4vh) scale(0.58); }
+    transform: translateX(-2vw) translateY(-4vh) scale(0.58);
+  }
+
   50% {
-    transform: translateX(-10vw) translateY(39vh) scale(0.85); }
+    transform: translateX(-10vw) translateY(39vh) scale(0.85);
+  }
+
   54.16667% {
-    transform: translateX(-32vw) translateY(-48vh) scale(0.34); }
+    transform: translateX(-32vw) translateY(-48vh) scale(0.34);
+  }
+
   58.33333% {
-    transform: translateX(-40vw) translateY(-5vh) scale(1); }
+    transform: translateX(-40vw) translateY(-5vh) scale(1);
+  }
+
   62.5% {
-    transform: translateX(9vw) translateY(36vh) scale(0.85); }
+    transform: translateX(9vw) translateY(36vh) scale(0.85);
+  }
+
   66.66667% {
-    transform: translateX(-23vw) translateY(2vh) scale(0.51); }
+    transform: translateX(-23vw) translateY(2vh) scale(0.51);
+  }
+
   70.83333% {
-    transform: translateX(-11vw) translateY(-44vh) scale(0.43); }
+    transform: translateX(-11vw) translateY(-44vh) scale(0.43);
+  }
+
   75% {
-    transform: translateX(-32vw) translateY(-32vh) scale(0.92); }
+    transform: translateX(-32vw) translateY(-32vh) scale(0.92);
+  }
+
   79.16667% {
-    transform: translateX(5vw) translateY(-31vh) scale(0.92); }
+    transform: translateX(5vw) translateY(-31vh) scale(0.92);
+  }
+
   83.33333% {
-    transform: translateX(-29vw) translateY(-30vh) scale(0.42); }
+    transform: translateX(-29vw) translateY(-30vh) scale(0.42);
+  }
+
   87.5% {
-    transform: translateX(-37vw) translateY(-44vh) scale(0.26); }
+    transform: translateX(-37vw) translateY(-44vh) scale(0.26);
+  }
+
   91.66667% {
-    transform: translateX(9vw) translateY(16vh) scale(0.64); }
+    transform: translateX(9vw) translateY(16vh) scale(0.64);
+  }
+
   95.83333% {
-    transform: translateX(-24vw) translateY(-46vh) scale(0.79); }
+    transform: translateX(-24vw) translateY(-46vh) scale(0.79);
+  }
+
   100% {
-    transform: translateX(-46vw) translateY(26vh) scale(0.71); } }
+    transform: translateX(-46vw) translateY(26vh) scale(0.71);
+  }
+}
 
 .firefly:nth-child(2) {
-  animation-name: move2; }
-  .firefly:nth-child(2)::before {
-    animation-duration: 17s; }
-  .firefly:nth-child(2)::after {
-    animation-duration: 17s, 10285ms;
-    animation-delay: 0ms, 2228ms; }
+  animation-name: move2;
+}
+
+.firefly:nth-child(2)::before {
+  animation-duration: 17s;
+}
+
+.firefly:nth-child(2)::after {
+  animation-duration: 17s, 10285ms;
+  animation-delay: 0ms, 2228ms;
+}
 
 @keyframes move2 {
   0% {
-    transform: translateX(-9vw) translateY(-18vh) scale(0.4); }
+    transform: translateX(-9vw) translateY(-18vh) scale(0.4);
+  }
+
   5% {
-    transform: translateX(-22vw) translateY(-14vh) scale(0.41); }
+    transform: translateX(-22vw) translateY(-14vh) scale(0.41);
+  }
+
   10% {
-    transform: translateX(-25vw) translateY(-43vh) scale(0.27); }
+    transform: translateX(-25vw) translateY(-43vh) scale(0.27);
+  }
+
   15% {
-    transform: translateX(21vw) translateY(-43vh) scale(0.65); }
+    transform: translateX(21vw) translateY(-43vh) scale(0.65);
+  }
+
   20% {
-    transform: translateX(50vw) translateY(-32vh) scale(0.63); }
+    transform: translateX(50vw) translateY(-32vh) scale(0.63);
+  }
+
   25% {
-    transform: translateX(35vw) translateY(35vh) scale(0.53); }
+    transform: translateX(35vw) translateY(35vh) scale(0.53);
+  }
+
   30% {
-    transform: translateX(27vw) translateY(39vh) scale(0.45); }
+    transform: translateX(27vw) translateY(39vh) scale(0.45);
+  }
+
   35% {
-    transform: translateX(-44vw) translateY(28vh) scale(0.29); }
+    transform: translateX(-44vw) translateY(28vh) scale(0.29);
+  }
+
   40% {
-    transform: translateX(44vw) translateY(-43vh) scale(0.93); }
+    transform: translateX(44vw) translateY(-43vh) scale(0.93);
+  }
+
   45% {
-    transform: translateX(-48vw) translateY(-10vh) scale(0.59); }
+    transform: translateX(-48vw) translateY(-10vh) scale(0.59);
+  }
+
   50% {
-    transform: translateX(-9vw) translateY(-38vh) scale(0.41); }
+    transform: translateX(-9vw) translateY(-38vh) scale(0.41);
+  }
+
   55% {
-    transform: translateX(-33vw) translateY(28vh) scale(0.99); }
+    transform: translateX(-33vw) translateY(28vh) scale(0.99);
+  }
+
   60% {
-    transform: translateX(-9vw) translateY(-19vh) scale(0.83); }
+    transform: translateX(-9vw) translateY(-19vh) scale(0.83);
+  }
+
   65% {
-    transform: translateX(-3vw) translateY(-42vh) scale(0.43); }
+    transform: translateX(-3vw) translateY(-42vh) scale(0.43);
+  }
+
   70% {
-    transform: translateX(-35vw) translateY(12vh) scale(0.28); }
+    transform: translateX(-35vw) translateY(12vh) scale(0.28);
+  }
+
   75% {
-    transform: translateX(-36vw) translateY(37vh) scale(0.5); }
+    transform: translateX(-36vw) translateY(37vh) scale(0.5);
+  }
+
   80% {
-    transform: translateX(-48vw) translateY(33vh) scale(0.62); }
+    transform: translateX(-48vw) translateY(33vh) scale(0.62);
+  }
+
   85% {
-    transform: translateX(-45vw) translateY(26vh) scale(0.66); }
+    transform: translateX(-45vw) translateY(26vh) scale(0.66);
+  }
+
   90% {
-    transform: translateX(-24vw) translateY(9vh) scale(0.62); }
+    transform: translateX(-24vw) translateY(9vh) scale(0.62);
+  }
+
   95% {
-    transform: translateX(5vw) translateY(-42vh) scale(0.29); }
+    transform: translateX(5vw) translateY(-42vh) scale(0.29);
+  }
+
   100% {
-    transform: translateX(-18vw) translateY(-11vh) scale(0.72); } }
+    transform: translateX(-18vw) translateY(-11vh) scale(0.72);
+  }
+}
 
 .firefly:nth-child(3) {
-  animation-name: move3; }
-  .firefly:nth-child(3)::before {
-    animation-duration: 15s; }
-  .firefly:nth-child(3)::after {
-    animation-duration: 15s, 9967ms;
-    animation-delay: 0ms, 4792ms; }
+  animation-name: move3;
+}
+
+.firefly:nth-child(3)::before {
+  animation-duration: 15s;
+}
+
+.firefly:nth-child(3)::after {
+  animation-duration: 15s, 9967ms;
+  animation-delay: 0ms, 4792ms;
+}
 
 @keyframes move3 {
   0% {
-    transform: translateX(-7vw) translateY(-18vh) scale(0.28); }
+    transform: translateX(-7vw) translateY(-18vh) scale(0.28);
+  }
+
   3.7037% {
-    transform: translateX(-44vw) translateY(33vh) scale(0.99); }
+    transform: translateX(-44vw) translateY(33vh) scale(0.99);
+  }
+
   7.40741% {
-    transform: translateX(46vw) translateY(-2vh) scale(0.37); }
+    transform: translateX(46vw) translateY(-2vh) scale(0.37);
+  }
+
   11.11111% {
-    transform: translateX(-42vw) translateY(-23vh) scale(0.68); }
+    transform: translateX(-42vw) translateY(-23vh) scale(0.68);
+  }
+
   14.81481% {
-    transform: translateX(11vw) translateY(-5vh) scale(0.27); }
+    transform: translateX(11vw) translateY(-5vh) scale(0.27);
+  }
+
   18.51852% {
-    transform: translateX(-2vw) translateY(1vh) scale(0.36); }
+    transform: translateX(-2vw) translateY(1vh) scale(0.36);
+  }
+
   22.22222% {
-    transform: translateX(32vw) translateY(12vh) scale(0.91); }
+    transform: translateX(32vw) translateY(12vh) scale(0.91);
+  }
+
   25.92593% {
-    transform: translateX(15vw) translateY(-29vh) scale(0.71); }
+    transform: translateX(15vw) translateY(-29vh) scale(0.71);
+  }
+
   29.62963% {
-    transform: translateX(22vw) translateY(20vh) scale(0.85); }
+    transform: translateX(22vw) translateY(20vh) scale(0.85);
+  }
+
   33.33333% {
-    transform: translateX(-37vw) translateY(41vh) scale(0.31); }
+    transform: translateX(-37vw) translateY(41vh) scale(0.31);
+  }
+
   37.03704% {
-    transform: translateX(-48vw) translateY(18vh) scale(0.54); }
+    transform: translateX(-48vw) translateY(18vh) scale(0.54);
+  }
+
   40.74074% {
-    transform: translateX(-14vw) translateY(-28vh) scale(0.3); }
+    transform: translateX(-14vw) translateY(-28vh) scale(0.3);
+  }
+
   44.44444% {
-    transform: translateX(37vw) translateY(33vh) scale(0.35); }
+    transform: translateX(37vw) translateY(33vh) scale(0.35);
+  }
+
   48.14815% {
-    transform: translateX(-13vw) translateY(19vh) scale(0.28); }
+    transform: translateX(-13vw) translateY(19vh) scale(0.28);
+  }
+
   51.85185% {
-    transform: translateX(31vw) translateY(18vh) scale(0.81); }
+    transform: translateX(31vw) translateY(18vh) scale(0.81);
+  }
+
   55.55556% {
-    transform: translateX(30vw) translateY(48vh) scale(0.28); }
+    transform: translateX(30vw) translateY(48vh) scale(0.28);
+  }
+
   59.25926% {
-    transform: translateX(45vw) translateY(50vh) scale(0.78); }
+    transform: translateX(45vw) translateY(50vh) scale(0.78);
+  }
+
   62.96296% {
-    transform: translateX(-21vw) translateY(0vh) scale(0.47); }
+    transform: translateX(-21vw) translateY(0vh) scale(0.47);
+  }
+
   66.66667% {
-    transform: translateX(-23vw) translateY(43vh) scale(0.41); }
+    transform: translateX(-23vw) translateY(43vh) scale(0.41);
+  }
+
   70.37037% {
-    transform: translateX(23vw) translateY(-6vh) scale(0.37); }
+    transform: translateX(23vw) translateY(-6vh) scale(0.37);
+  }
+
   74.07407% {
-    transform: translateX(8vw) translateY(19vh) scale(0.44); }
+    transform: translateX(8vw) translateY(19vh) scale(0.44);
+  }
+
   77.77778% {
-    transform: translateX(-21vw) translateY(-34vh) scale(0.67); }
+    transform: translateX(-21vw) translateY(-34vh) scale(0.67);
+  }
+
   81.48148% {
-    transform: translateX(-26vw) translateY(34vh) scale(0.41); }
+    transform: translateX(-26vw) translateY(34vh) scale(0.41);
+  }
+
   85.18519% {
-    transform: translateX(13vw) translateY(-44vh) scale(0.89); }
+    transform: translateX(13vw) translateY(-44vh) scale(0.89);
+  }
+
   88.88889% {
-    transform: translateX(-38vw) translateY(-44vh) scale(0.77); }
+    transform: translateX(-38vw) translateY(-44vh) scale(0.77);
+  }
+
   92.59259% {
-    transform: translateX(-13vw) translateY(-36vh) scale(0.32); }
+    transform: translateX(-13vw) translateY(-36vh) scale(0.32);
+  }
+
   96.2963% {
-    transform: translateX(5vw) translateY(22vh) scale(0.46); }
+    transform: translateX(5vw) translateY(22vh) scale(0.46);
+  }
+
   100% {
-    transform: translateX(49vw) translateY(7vh) scale(0.78); } }
+    transform: translateX(49vw) translateY(7vh) scale(0.78);
+  }
+}
 
 .firefly:nth-child(4) {
-  animation-name: move4; }
-  .firefly:nth-child(4)::before {
-    animation-duration: 12s; }
-  .firefly:nth-child(4)::after {
-    animation-duration: 12s, 10112ms;
-    animation-delay: 0ms, 6557ms; }
+  animation-name: move4;
+}
+
+.firefly:nth-child(4)::before {
+  animation-duration: 12s;
+}
+
+.firefly:nth-child(4)::after {
+  animation-duration: 12s, 10112ms;
+  animation-delay: 0ms, 6557ms;
+}
 
 @keyframes move4 {
   0% {
-    transform: translateX(11vw) translateY(15vh) scale(0.41); }
+    transform: translateX(11vw) translateY(15vh) scale(0.41);
+  }
+
   5.55556% {
-    transform: translateX(15vw) translateY(35vh) scale(0.27); }
+    transform: translateX(15vw) translateY(35vh) scale(0.27);
+  }
+
   11.11111% {
-    transform: translateX(18vw) translateY(16vh) scale(0.67); }
+    transform: translateX(18vw) translateY(16vh) scale(0.67);
+  }
+
   16.66667% {
-    transform: translateX(2vw) translateY(38vh) scale(0.6); }
+    transform: translateX(2vw) translateY(38vh) scale(0.6);
+  }
+
   22.22222% {
-    transform: translateX(9vw) translateY(30vh) scale(0.55); }
+    transform: translateX(9vw) translateY(30vh) scale(0.55);
+  }
+
   27.77778% {
-    transform: translateX(-28vw) translateY(8vh) scale(0.36); }
+    transform: translateX(-28vw) translateY(8vh) scale(0.36);
+  }
+
   33.33333% {
-    transform: translateX(-37vw) translateY(-34vh) scale(0.36); }
+    transform: translateX(-37vw) translateY(-34vh) scale(0.36);
+  }
+
   38.88889% {
-    transform: translateX(50vw) translateY(-17vh) scale(0.59); }
+    transform: translateX(50vw) translateY(-17vh) scale(0.59);
+  }
+
   44.44444% {
-    transform: translateX(42vw) translateY(-10vh) scale(0.74); }
+    transform: translateX(42vw) translateY(-10vh) scale(0.74);
+  }
+
   50% {
-    transform: translateX(45vw) translateY(38vh) scale(0.79); }
+    transform: translateX(45vw) translateY(38vh) scale(0.79);
+  }
+
   55.55556% {
-    transform: translateX(-46vw) translateY(-41vh) scale(0.29); }
+    transform: translateX(-46vw) translateY(-41vh) scale(0.29);
+  }
+
   61.11111% {
-    transform: translateX(-9vw) translateY(50vh) scale(0.67); }
+    transform: translateX(-9vw) translateY(50vh) scale(0.67);
+  }
+
   66.66667% {
-    transform: translateX(-23vw) translateY(-4vh) scale(0.9); }
+    transform: translateX(-23vw) translateY(-4vh) scale(0.9);
+  }
+
   72.22222% {
-    transform: translateX(-44vw) translateY(-12vh) scale(0.85); }
+    transform: translateX(-44vw) translateY(-12vh) scale(0.85);
+  }
+
   77.77778% {
-    transform: translateX(-3vw) translateY(-21vh) scale(0.33); }
+    transform: translateX(-3vw) translateY(-21vh) scale(0.33);
+  }
+
   83.33333% {
-    transform: translateX(-15vw) translateY(-43vh) scale(0.34); }
+    transform: translateX(-15vw) translateY(-43vh) scale(0.34);
+  }
+
   88.88889% {
-    transform: translateX(-10vw) translateY(-23vh) scale(0.3); }
+    transform: translateX(-10vw) translateY(-23vh) scale(0.3);
+  }
+
   94.44444% {
-    transform: translateX(-40vw) translateY(-34vh) scale(0.44); }
+    transform: translateX(-40vw) translateY(-34vh) scale(0.44);
+  }
+
   100% {
-    transform: translateX(40vw) translateY(-36vh) scale(0.96); } }
+    transform: translateX(40vw) translateY(-36vh) scale(0.96);
+  }
+}
 
 .firefly:nth-child(5) {
-  animation-name: move5; }
-  .firefly:nth-child(5)::before {
-    animation-duration: 13s; }
-  .firefly:nth-child(5)::after {
-    animation-duration: 13s, 5167ms;
-    animation-delay: 0ms, 1131ms; }
+  animation-name: move5;
+}
+
+.firefly:nth-child(5)::before {
+  animation-duration: 13s;
+}
+
+.firefly:nth-child(5)::after {
+  animation-duration: 13s, 5167ms;
+  animation-delay: 0ms, 1131ms;
+}
 
 @keyframes move5 {
   0% {
-    transform: translateX(-4vw) translateY(-10vh) scale(0.99); }
+    transform: translateX(-4vw) translateY(-10vh) scale(0.99);
+  }
+
   5.55556% {
-    transform: translateX(-46vw) translateY(-23vh) scale(0.79); }
+    transform: translateX(-46vw) translateY(-23vh) scale(0.79);
+  }
+
   11.11111% {
-    transform: translateX(27vw) translateY(-20vh) scale(0.97); }
+    transform: translateX(27vw) translateY(-20vh) scale(0.97);
+  }
+
   16.66667% {
-    transform: translateX(19vw) translateY(6vh) scale(0.41); }
+    transform: translateX(19vw) translateY(6vh) scale(0.41);
+  }
+
   22.22222% {
-    transform: translateX(-27vw) translateY(47vh) scale(0.82); }
+    transform: translateX(-27vw) translateY(47vh) scale(0.82);
+  }
+
   27.77778% {
-    transform: translateX(-10vw) translateY(10vh) scale(0.95); }
+    transform: translateX(-10vw) translateY(10vh) scale(0.95);
+  }
+
   33.33333% {
-    transform: translateX(-22vw) translateY(-10vh) scale(0.55); }
+    transform: translateX(-22vw) translateY(-10vh) scale(0.55);
+  }
+
   38.88889% {
-    transform: translateX(32vw) translateY(46vh) scale(0.86); }
+    transform: translateX(32vw) translateY(46vh) scale(0.86);
+  }
+
   44.44444% {
-    transform: translateX(-29vw) translateY(48vh) scale(0.65); }
+    transform: translateX(-29vw) translateY(48vh) scale(0.65);
+  }
+
   50% {
-    transform: translateX(-14vw) translateY(-37vh) scale(0.45); }
+    transform: translateX(-14vw) translateY(-37vh) scale(0.45);
+  }
+
   55.55556% {
-    transform: translateX(4vw) translateY(-21vh) scale(0.81); }
+    transform: translateX(4vw) translateY(-21vh) scale(0.81);
+  }
+
   61.11111% {
-    transform: translateX(-22vw) translateY(28vh) scale(0.39); }
+    transform: translateX(-22vw) translateY(28vh) scale(0.39);
+  }
+
   66.66667% {
-    transform: translateX(22vw) translateY(26vh) scale(0.67); }
+    transform: translateX(22vw) translateY(26vh) scale(0.67);
+  }
+
   72.22222% {
-    transform: translateX(-33vw) translateY(44vh) scale(0.6); }
+    transform: translateX(-33vw) translateY(44vh) scale(0.6);
+  }
+
   77.77778% {
-    transform: translateX(-46vw) translateY(29vh) scale(0.99); }
+    transform: translateX(-46vw) translateY(29vh) scale(0.99);
+  }
+
   83.33333% {
-    transform: translateX(18vw) translateY(-5vh) scale(0.87); }
+    transform: translateX(18vw) translateY(-5vh) scale(0.87);
+  }
+
   88.88889% {
-    transform: translateX(-48vw) translateY(-17vh) scale(0.35); }
+    transform: translateX(-48vw) translateY(-17vh) scale(0.35);
+  }
+
   94.44444% {
-    transform: translateX(30vw) translateY(-26vh) scale(0.54); }
+    transform: translateX(30vw) translateY(-26vh) scale(0.54);
+  }
+
   100% {
-    transform: translateX(-8vw) translateY(45vh) scale(0.49); } }
+    transform: translateX(-8vw) translateY(45vh) scale(0.49);
+  }
+}
 
 .firefly:nth-child(6) {
-  animation-name: move6; }
-  .firefly:nth-child(6)::before {
-    animation-duration: 10s; }
-  .firefly:nth-child(6)::after {
-    animation-duration: 10s, 9337ms;
-    animation-delay: 0ms, 4014ms; }
+  animation-name: move6;
+}
+
+.firefly:nth-child(6)::before {
+  animation-duration: 10s;
+}
+
+.firefly:nth-child(6)::after {
+  animation-duration: 10s, 9337ms;
+  animation-delay: 0ms, 4014ms;
+}
 
 @keyframes move6 {
   0% {
-    transform: translateX(-3vw) translateY(20vh) scale(0.54); }
+    transform: translateX(-3vw) translateY(20vh) scale(0.54);
+  }
+
   4.7619% {
-    transform: translateX(-46vw) translateY(49vh) scale(0.61); }
+    transform: translateX(-46vw) translateY(49vh) scale(0.61);
+  }
+
   9.52381% {
-    transform: translateX(18vw) translateY(-9vh) scale(0.37); }
+    transform: translateX(18vw) translateY(-9vh) scale(0.37);
+  }
+
   14.28571% {
-    transform: translateX(-24vw) translateY(-25vh) scale(0.63); }
+    transform: translateX(-24vw) translateY(-25vh) scale(0.63);
+  }
+
   19.04762% {
-    transform: translateX(-27vw) translateY(6vh) scale(0.74); }
+    transform: translateX(-27vw) translateY(6vh) scale(0.74);
+  }
+
   23.80952% {
-    transform: translateX(40vw) translateY(38vh) scale(0.98); }
+    transform: translateX(40vw) translateY(38vh) scale(0.98);
+  }
+
   28.57143% {
-    transform: translateX(3vw) translateY(-28vh) scale(0.98); }
+    transform: translateX(3vw) translateY(-28vh) scale(0.98);
+  }
+
   33.33333% {
-    transform: translateX(42vw) translateY(26vh) scale(0.77); }
+    transform: translateX(42vw) translateY(26vh) scale(0.77);
+  }
+
   38.09524% {
-    transform: translateX(-16vw) translateY(27vh) scale(0.52); }
+    transform: translateX(-16vw) translateY(27vh) scale(0.52);
+  }
+
   42.85714% {
-    transform: translateX(38vw) translateY(26vh) scale(0.48); }
+    transform: translateX(38vw) translateY(26vh) scale(0.48);
+  }
+
   47.61905% {
-    transform: translateX(-24vw) translateY(-34vh) scale(0.53); }
+    transform: translateX(-24vw) translateY(-34vh) scale(0.53);
+  }
+
   52.38095% {
-    transform: translateX(-49vw) translateY(-23vh) scale(0.77); }
+    transform: translateX(-49vw) translateY(-23vh) scale(0.77);
+  }
+
   57.14286% {
-    transform: translateX(-36vw) translateY(-46vh) scale(0.74); }
+    transform: translateX(-36vw) translateY(-46vh) scale(0.74);
+  }
+
   61.90476% {
-    transform: translateX(-7vw) translateY(6vh) scale(0.7); }
+    transform: translateX(-7vw) translateY(6vh) scale(0.7);
+  }
+
   66.66667% {
-    transform: translateX(-7vw) translateY(-5vh) scale(0.48); }
+    transform: translateX(-7vw) translateY(-5vh) scale(0.48);
+  }
+
   71.42857% {
-    transform: translateX(33vw) translateY(23vh) scale(0.67); }
+    transform: translateX(33vw) translateY(23vh) scale(0.67);
+  }
+
   76.19048% {
-    transform: translateX(-27vw) translateY(-16vh) scale(0.91); }
+    transform: translateX(-27vw) translateY(-16vh) scale(0.91);
+  }
+
   80.95238% {
-    transform: translateX(5vw) translateY(44vh) scale(0.36); }
+    transform: translateX(5vw) translateY(44vh) scale(0.36);
+  }
+
   85.71429% {
-    transform: translateX(-34vw) translateY(27vh) scale(0.58); }
+    transform: translateX(-34vw) translateY(27vh) scale(0.58);
+  }
+
   90.47619% {
-    transform: translateX(42vw) translateY(41vh) scale(0.85); }
+    transform: translateX(42vw) translateY(41vh) scale(0.85);
+  }
+
   95.2381% {
-    transform: translateX(-17vw) translateY(16vh) scale(0.48); }
+    transform: translateX(-17vw) translateY(16vh) scale(0.48);
+  }
+
   100% {
-    transform: translateX(7vw) translateY(41vh) scale(0.27); } }
+    transform: translateX(7vw) translateY(41vh) scale(0.27);
+  }
+}
 
 .firefly:nth-child(7) {
-  animation-name: move7; }
-  .firefly:nth-child(7)::before {
-    animation-duration: 18s; }
-  .firefly:nth-child(7)::after {
-    animation-duration: 18s, 8122ms;
-    animation-delay: 0ms, 540ms; }
+  animation-name: move7;
+}
+
+.firefly:nth-child(7)::before {
+  animation-duration: 18s;
+}
+
+.firefly:nth-child(7)::after {
+  animation-duration: 18s, 8122ms;
+  animation-delay: 0ms, 540ms;
+}
 
 @keyframes move7 {
   0% {
-    transform: translateX(23vw) translateY(-14vh) scale(0.33); }
+    transform: translateX(23vw) translateY(-14vh) scale(0.33);
+  }
+
   3.57143% {
-    transform: translateX(31vw) translateY(24vh) scale(0.9); }
+    transform: translateX(31vw) translateY(24vh) scale(0.9);
+  }
+
   7.14286% {
-    transform: translateX(-42vw) translateY(-28vh) scale(0.9); }
+    transform: translateX(-42vw) translateY(-28vh) scale(0.9);
+  }
+
   10.71429% {
-    transform: translateX(8vw) translateY(15vh) scale(0.85); }
+    transform: translateX(8vw) translateY(15vh) scale(0.85);
+  }
+
   14.28571% {
-    transform: translateX(40vw) translateY(10vh) scale(0.67); }
+    transform: translateX(40vw) translateY(10vh) scale(0.67);
+  }
+
   17.85714% {
-    transform: translateX(-3vw) translateY(19vh) scale(0.91); }
+    transform: translateX(-3vw) translateY(19vh) scale(0.91);
+  }
+
   21.42857% {
-    transform: translateX(24vw) translateY(-41vh) scale(0.65); }
+    transform: translateX(24vw) translateY(-41vh) scale(0.65);
+  }
+
   25% {
-    transform: translateX(30vw) translateY(-14vh) scale(0.7); }
+    transform: translateX(30vw) translateY(-14vh) scale(0.7);
+  }
+
   28.57143% {
-    transform: translateX(29vw) translateY(-35vh) scale(0.51); }
+    transform: translateX(29vw) translateY(-35vh) scale(0.51);
+  }
+
   32.14286% {
-    transform: translateX(10vw) translateY(-24vh) scale(0.56); }
+    transform: translateX(10vw) translateY(-24vh) scale(0.56);
+  }
+
   35.71429% {
-    transform: translateX(21vw) translateY(-7vh) scale(0.37); }
+    transform: translateX(21vw) translateY(-7vh) scale(0.37);
+  }
+
   39.28571% {
-    transform: translateX(34vw) translateY(-1vh) scale(0.27); }
+    transform: translateX(34vw) translateY(-1vh) scale(0.27);
+  }
+
   42.85714% {
-    transform: translateX(35vw) translateY(-11vh) scale(0.89); }
+    transform: translateX(35vw) translateY(-11vh) scale(0.89);
+  }
+
   46.42857% {
-    transform: translateX(44vw) translateY(-8vh) scale(0.39); }
+    transform: translateX(44vw) translateY(-8vh) scale(0.39);
+  }
+
   50% {
-    transform: translateX(-12vw) translateY(48vh) scale(0.68); }
+    transform: translateX(-12vw) translateY(48vh) scale(0.68);
+  }
+
   53.57143% {
-    transform: translateX(-40vw) translateY(34vh) scale(0.63); }
+    transform: translateX(-40vw) translateY(34vh) scale(0.63);
+  }
+
   57.14286% {
-    transform: translateX(-15vw) translateY(7vh) scale(0.67); }
+    transform: translateX(-15vw) translateY(7vh) scale(0.67);
+  }
+
   60.71429% {
-    transform: translateX(-44vw) translateY(2vh) scale(0.26); }
+    transform: translateX(-44vw) translateY(2vh) scale(0.26);
+  }
+
   64.28571% {
-    transform: translateX(20vw) translateY(48vh) scale(0.33); }
+    transform: translateX(20vw) translateY(48vh) scale(0.33);
+  }
+
   67.85714% {
-    transform: translateX(9vw) translateY(-37vh) scale(0.94); }
+    transform: translateX(9vw) translateY(-37vh) scale(0.94);
+  }
+
   71.42857% {
-    transform: translateX(-3vw) translateY(-28vh) scale(0.87); }
+    transform: translateX(-3vw) translateY(-28vh) scale(0.87);
+  }
+
   75% {
-    transform: translateX(-5vw) translateY(-27vh) scale(0.45); }
+    transform: translateX(-5vw) translateY(-27vh) scale(0.45);
+  }
+
   78.57143% {
-    transform: translateX(-48vw) translateY(-2vh) scale(0.82); }
+    transform: translateX(-48vw) translateY(-2vh) scale(0.82);
+  }
+
   82.14286% {
-    transform: translateX(-41vw) translateY(-42vh) scale(0.64); }
+    transform: translateX(-41vw) translateY(-42vh) scale(0.64);
+  }
+
   85.71429% {
-    transform: translateX(28vw) translateY(21vh) scale(0.35); }
+    transform: translateX(28vw) translateY(21vh) scale(0.35);
+  }
+
   89.28571% {
-    transform: translateX(10vw) translateY(-46vh) scale(0.47); }
+    transform: translateX(10vw) translateY(-46vh) scale(0.47);
+  }
+
   92.85714% {
-    transform: translateX(45vw) translateY(50vh) scale(0.46); }
+    transform: translateX(45vw) translateY(50vh) scale(0.46);
+  }
+
   96.42857% {
-    transform: translateX(30vw) translateY(-23vh) scale(1); }
+    transform: translateX(30vw) translateY(-23vh) scale(1);
+  }
+
   100% {
-    transform: translateX(34vw) translateY(-26vh) scale(0.65); } }
+    transform: translateX(34vw) translateY(-26vh) scale(0.65);
+  }
+}
 
 .firefly:nth-child(8) {
-  animation-name: move8; }
-  .firefly:nth-child(8)::before {
-    animation-duration: 12s; }
-  .firefly:nth-child(8)::after {
-    animation-duration: 12s, 10207ms;
-    animation-delay: 0ms, 7960ms; }
+  animation-name: move8;
+}
+
+.firefly:nth-child(8)::before {
+  animation-duration: 12s;
+}
+
+.firefly:nth-child(8)::after {
+  animation-duration: 12s, 10207ms;
+  animation-delay: 0ms, 7960ms;
+}
 
 @keyframes move8 {
   0% {
-    transform: translateX(42vw) translateY(-46vh) scale(0.97); }
+    transform: translateX(42vw) translateY(-46vh) scale(0.97);
+  }
+
   4.34783% {
-    transform: translateX(-7vw) translateY(20vh) scale(0.64); }
+    transform: translateX(-7vw) translateY(20vh) scale(0.64);
+  }
+
   8.69565% {
-    transform: translateX(-45vw) translateY(-8vh) scale(0.73); }
+    transform: translateX(-45vw) translateY(-8vh) scale(0.73);
+  }
+
   13.04348% {
-    transform: translateX(-32vw) translateY(-29vh) scale(0.86); }
+    transform: translateX(-32vw) translateY(-29vh) scale(0.86);
+  }
+
   17.3913% {
-    transform: translateX(18vw) translateY(28vh) scale(0.99); }
+    transform: translateX(18vw) translateY(28vh) scale(0.99);
+  }
+
   21.73913% {
-    transform: translateX(-11vw) translateY(-42vh) scale(0.35); }
+    transform: translateX(-11vw) translateY(-42vh) scale(0.35);
+  }
+
   26.08696% {
-    transform: translateX(38vw) translateY(29vh) scale(0.72); }
+    transform: translateX(38vw) translateY(29vh) scale(0.72);
+  }
+
   30.43478% {
-    transform: translateX(31vw) translateY(-8vh) scale(0.62); }
+    transform: translateX(31vw) translateY(-8vh) scale(0.62);
+  }
+
   34.78261% {
-    transform: translateX(-6vw) translateY(-33vh) scale(0.79); }
+    transform: translateX(-6vw) translateY(-33vh) scale(0.79);
+  }
+
   39.13043% {
-    transform: translateX(-37vw) translateY(40vh) scale(0.99); }
+    transform: translateX(-37vw) translateY(40vh) scale(0.99);
+  }
+
   43.47826% {
-    transform: translateX(-25vw) translateY(36vh) scale(0.78); }
+    transform: translateX(-25vw) translateY(36vh) scale(0.78);
+  }
+
   47.82609% {
-    transform: translateX(16vw) translateY(30vh) scale(0.49); }
+    transform: translateX(16vw) translateY(30vh) scale(0.49);
+  }
+
   52.17391% {
-    transform: translateX(-44vw) translateY(-11vh) scale(0.4); }
+    transform: translateX(-44vw) translateY(-11vh) scale(0.4);
+  }
+
   56.52174% {
-    transform: translateX(-25vw) translateY(-2vh) scale(0.65); }
+    transform: translateX(-25vw) translateY(-2vh) scale(0.65);
+  }
+
   60.86957% {
-    transform: translateX(-18vw) translateY(20vh) scale(0.69); }
+    transform: translateX(-18vw) translateY(20vh) scale(0.69);
+  }
+
   65.21739% {
-    transform: translateX(-37vw) translateY(-46vh) scale(0.58); }
+    transform: translateX(-37vw) translateY(-46vh) scale(0.58);
+  }
+
   69.56522% {
-    transform: translateX(-32vw) translateY(-17vh) scale(0.78); }
+    transform: translateX(-32vw) translateY(-17vh) scale(0.78);
+  }
+
   73.91304% {
-    transform: translateX(-42vw) translateY(42vh) scale(0.97); }
+    transform: translateX(-42vw) translateY(42vh) scale(0.97);
+  }
+
   78.26087% {
-    transform: translateX(-37vw) translateY(-28vh) scale(0.9); }
+    transform: translateX(-37vw) translateY(-28vh) scale(0.9);
+  }
+
   82.6087% {
-    transform: translateX(-35vw) translateY(-23vh) scale(0.32); }
+    transform: translateX(-35vw) translateY(-23vh) scale(0.32);
+  }
+
   86.95652% {
-    transform: translateX(17vw) translateY(21vh) scale(0.44); }
+    transform: translateX(17vw) translateY(21vh) scale(0.44);
+  }
+
   91.30435% {
-    transform: translateX(-5vw) translateY(-7vh) scale(0.4); }
+    transform: translateX(-5vw) translateY(-7vh) scale(0.4);
+  }
+
   95.65217% {
-    transform: translateX(3vw) translateY(-8vh) scale(0.95); }
+    transform: translateX(3vw) translateY(-8vh) scale(0.95);
+  }
+
   100% {
-    transform: translateX(22vw) translateY(-38vh) scale(0.97); } }
+    transform: translateX(22vw) translateY(-38vh) scale(0.97);
+  }
+}
 
 .firefly:nth-child(9) {
-  animation-name: move9; }
-  .firefly:nth-child(9)::before {
-    animation-duration: 16s; }
-  .firefly:nth-child(9)::after {
-    animation-duration: 16s, 8878ms;
-    animation-delay: 0ms, 1373ms; }
+  animation-name: move9;
+}
+
+.firefly:nth-child(9)::before {
+  animation-duration: 16s;
+}
+
+.firefly:nth-child(9)::after {
+  animation-duration: 16s, 8878ms;
+  animation-delay: 0ms, 1373ms;
+}
 
 @keyframes move9 {
   0% {
-    transform: translateX(-1vw) translateY(-49vh) scale(0.73); }
+    transform: translateX(-1vw) translateY(-49vh) scale(0.73);
+  }
+
   4.16667% {
-    transform: translateX(36vw) translateY(-32vh) scale(0.52); }
+    transform: translateX(36vw) translateY(-32vh) scale(0.52);
+  }
+
   8.33333% {
-    transform: translateX(-12vw) translateY(11vh) scale(0.55); }
+    transform: translateX(-12vw) translateY(11vh) scale(0.55);
+  }
+
   12.5% {
-    transform: translateX(49vw) translateY(22vh) scale(0.41); }
+    transform: translateX(49vw) translateY(22vh) scale(0.41);
+  }
+
   16.66667% {
-    transform: translateX(-23vw) translateY(42vh) scale(0.37); }
+    transform: translateX(-23vw) translateY(42vh) scale(0.37);
+  }
+
   20.83333% {
-    transform: translateX(28vw) translateY(39vh) scale(0.54); }
+    transform: translateX(28vw) translateY(39vh) scale(0.54);
+  }
+
   25% {
-    transform: translateX(7vw) translateY(8vh) scale(0.95); }
+    transform: translateX(7vw) translateY(8vh) scale(0.95);
+  }
+
   29.16667% {
-    transform: translateX(-27vw) translateY(-47vh) scale(0.43); }
+    transform: translateX(-27vw) translateY(-47vh) scale(0.43);
+  }
+
   33.33333% {
-    transform: translateX(-4vw) translateY(-39vh) scale(0.77); }
+    transform: translateX(-4vw) translateY(-39vh) scale(0.77);
+  }
+
   37.5% {
-    transform: translateX(-30vw) translateY(0vh) scale(0.42); }
+    transform: translateX(-30vw) translateY(0vh) scale(0.42);
+  }
+
   41.66667% {
-    transform: translateX(21vw) translateY(-29vh) scale(0.26); }
+    transform: translateX(21vw) translateY(-29vh) scale(0.26);
+  }
+
   45.83333% {
-    transform: translateX(-41vw) translateY(-1vh) scale(0.38); }
+    transform: translateX(-41vw) translateY(-1vh) scale(0.38);
+  }
+
   50% {
-    transform: translateX(1vw) translateY(-26vh) scale(0.3); }
+    transform: translateX(1vw) translateY(-26vh) scale(0.3);
+  }
+
   54.16667% {
-    transform: translateX(-4vw) translateY(-46vh) scale(0.45); }
+    transform: translateX(-4vw) translateY(-46vh) scale(0.45);
+  }
+
   58.33333% {
-    transform: translateX(-15vw) translateY(-44vh) scale(0.88); }
+    transform: translateX(-15vw) translateY(-44vh) scale(0.88);
+  }
+
   62.5% {
-    transform: translateX(-45vw) translateY(-2vh) scale(0.98); }
+    transform: translateX(-45vw) translateY(-2vh) scale(0.98);
+  }
+
   66.66667% {
-    transform: translateX(-45vw) translateY(-15vh) scale(0.52); }
+    transform: translateX(-45vw) translateY(-15vh) scale(0.52);
+  }
+
   70.83333% {
-    transform: translateX(30vw) translateY(-38vh) scale(0.75); }
+    transform: translateX(30vw) translateY(-38vh) scale(0.75);
+  }
+
   75% {
-    transform: translateX(10vw) translateY(41vh) scale(0.52); }
+    transform: translateX(10vw) translateY(41vh) scale(0.52);
+  }
+
   79.16667% {
-    transform: translateX(40vw) translateY(2vh) scale(0.53); }
+    transform: translateX(40vw) translateY(2vh) scale(0.53);
+  }
+
   83.33333% {
-    transform: translateX(-31vw) translateY(-20vh) scale(0.93); }
+    transform: translateX(-31vw) translateY(-20vh) scale(0.93);
+  }
+
   87.5% {
-    transform: translateX(-45vw) translateY(17vh) scale(0.33); }
+    transform: translateX(-45vw) translateY(17vh) scale(0.33);
+  }
+
   91.66667% {
-    transform: translateX(6vw) translateY(47vh) scale(0.82); }
+    transform: translateX(6vw) translateY(47vh) scale(0.82);
+  }
+
   95.83333% {
-    transform: translateX(-19vw) translateY(-32vh) scale(0.53); }
+    transform: translateX(-19vw) translateY(-32vh) scale(0.53);
+  }
+
   100% {
-    transform: translateX(-19vw) translateY(38vh) scale(0.98); } }
+    transform: translateX(-19vw) translateY(38vh) scale(0.98);
+  }
+}
 
 .firefly:nth-child(10) {
-  animation-name: move10; }
-  .firefly:nth-child(10)::before {
-    animation-duration: 9s; }
-  .firefly:nth-child(10)::after {
-    animation-duration: 9s, 8986ms;
-    animation-delay: 0ms, 7104ms; }
+  animation-name: move10;
+}
+
+.firefly:nth-child(10)::before {
+  animation-duration: 9s;
+}
+
+.firefly:nth-child(10)::after {
+  animation-duration: 9s, 8986ms;
+  animation-delay: 0ms, 7104ms;
+}
 
 @keyframes move10 {
   0% {
-    transform: translateX(45vw) translateY(-16vh) scale(0.46); }
+    transform: translateX(45vw) translateY(-16vh) scale(0.46);
+  }
+
   3.57143% {
-    transform: translateX(-38vw) translateY(-20vh) scale(1); }
+    transform: translateX(-38vw) translateY(-20vh) scale(1);
+  }
+
   7.14286% {
-    transform: translateX(36vw) translateY(-42vh) scale(0.94); }
+    transform: translateX(36vw) translateY(-42vh) scale(0.94);
+  }
+
   10.71429% {
-    transform: translateX(47vw) translateY(-1vh) scale(0.94); }
+    transform: translateX(47vw) translateY(-1vh) scale(0.94);
+  }
+
   14.28571% {
-    transform: translateX(-29vw) translateY(-25vh) scale(1); }
+    transform: translateX(-29vw) translateY(-25vh) scale(1);
+  }
+
   17.85714% {
-    transform: translateX(-8vw) translateY(24vh) scale(0.3); }
+    transform: translateX(-8vw) translateY(24vh) scale(0.3);
+  }
+
   21.42857% {
-    transform: translateX(5vw) translateY(11vh) scale(0.51); }
+    transform: translateX(5vw) translateY(11vh) scale(0.51);
+  }
+
   25% {
-    transform: translateX(19vw) translateY(-22vh) scale(0.38); }
+    transform: translateX(19vw) translateY(-22vh) scale(0.38);
+  }
+
   28.57143% {
-    transform: translateX(-5vw) translateY(-34vh) scale(0.48); }
+    transform: translateX(-5vw) translateY(-34vh) scale(0.48);
+  }
+
   32.14286% {
-    transform: translateX(39vw) translateY(36vh) scale(0.4); }
+    transform: translateX(39vw) translateY(36vh) scale(0.4);
+  }
+
   35.71429% {
-    transform: translateX(6vw) translateY(-14vh) scale(0.36); }
+    transform: translateX(6vw) translateY(-14vh) scale(0.36);
+  }
+
   39.28571% {
-    transform: translateX(-16vw) translateY(9vh) scale(0.39); }
+    transform: translateX(-16vw) translateY(9vh) scale(0.39);
+  }
+
   42.85714% {
-    transform: translateX(2vw) translateY(-1vh) scale(0.62); }
+    transform: translateX(2vw) translateY(-1vh) scale(0.62);
+  }
+
   46.42857% {
-    transform: translateX(5vw) translateY(45vh) scale(0.47); }
+    transform: translateX(5vw) translateY(45vh) scale(0.47);
+  }
+
   50% {
-    transform: translateX(43vw) translateY(-29vh) scale(0.62); }
+    transform: translateX(43vw) translateY(-29vh) scale(0.62);
+  }
+
   53.57143% {
-    transform: translateX(32vw) translateY(-1vh) scale(0.93); }
+    transform: translateX(32vw) translateY(-1vh) scale(0.93);
+  }
+
   57.14286% {
-    transform: translateX(-37vw) translateY(-37vh) scale(0.74); }
+    transform: translateX(-37vw) translateY(-37vh) scale(0.74);
+  }
+
   60.71429% {
-    transform: translateX(-45vw) translateY(29vh) scale(0.27); }
+    transform: translateX(-45vw) translateY(29vh) scale(0.27);
+  }
+
   64.28571% {
-    transform: translateX(13vw) translateY(-5vh) scale(0.41); }
+    transform: translateX(13vw) translateY(-5vh) scale(0.41);
+  }
+
   67.85714% {
-    transform: translateX(-18vw) translateY(15vh) scale(0.27); }
+    transform: translateX(-18vw) translateY(15vh) scale(0.27);
+  }
+
   71.42857% {
-    transform: translateX(-28vw) translateY(-8vh) scale(0.9); }
+    transform: translateX(-28vw) translateY(-8vh) scale(0.9);
+  }
+
   75% {
-    transform: translateX(-16vw) translateY(48vh) scale(0.27); }
+    transform: translateX(-16vw) translateY(48vh) scale(0.27);
+  }
+
   78.57143% {
-    transform: translateX(19vw) translateY(31vh) scale(0.31); }
+    transform: translateX(19vw) translateY(31vh) scale(0.31);
+  }
+
   82.14286% {
-    transform: translateX(-13vw) translateY(17vh) scale(0.91); }
+    transform: translateX(-13vw) translateY(17vh) scale(0.91);
+  }
+
   85.71429% {
-    transform: translateX(-8vw) translateY(46vh) scale(0.75); }
+    transform: translateX(-8vw) translateY(46vh) scale(0.75);
+  }
+
   89.28571% {
-    transform: translateX(-6vw) translateY(12vh) scale(0.86); }
+    transform: translateX(-6vw) translateY(12vh) scale(0.86);
+  }
+
   92.85714% {
-    transform: translateX(-8vw) translateY(-4vh) scale(0.96); }
+    transform: translateX(-8vw) translateY(-4vh) scale(0.96);
+  }
+
   96.42857% {
-    transform: translateX(-22vw) translateY(47vh) scale(0.55); }
+    transform: translateX(-22vw) translateY(47vh) scale(0.55);
+  }
+
   100% {
-    transform: translateX(7vw) translateY(-21vh) scale(0.49); } }
+    transform: translateX(7vw) translateY(-21vh) scale(0.49);
+  }
+}
 
 .firefly:nth-child(11) {
-  animation-name: move11; }
-  .firefly:nth-child(11)::before {
-    animation-duration: 15s; }
-  .firefly:nth-child(11)::after {
-    animation-duration: 15s, 5013ms;
-    animation-delay: 0ms, 5068ms; }
+  animation-name: move11;
+}
+
+.firefly:nth-child(11)::before {
+  animation-duration: 15s;
+}
+
+.firefly:nth-child(11)::after {
+  animation-duration: 15s, 5013ms;
+  animation-delay: 0ms, 5068ms;
+}
 
 @keyframes move11 {
   0% {
-    transform: translateX(-10vw) translateY(-2vh) scale(0.57); }
+    transform: translateX(-10vw) translateY(-2vh) scale(0.57);
+  }
+
   3.57143% {
-    transform: translateX(-25vw) translateY(-29vh) scale(0.54); }
+    transform: translateX(-25vw) translateY(-29vh) scale(0.54);
+  }
+
   7.14286% {
-    transform: translateX(-33vw) translateY(50vh) scale(0.33); }
+    transform: translateX(-33vw) translateY(50vh) scale(0.33);
+  }
+
   10.71429% {
-    transform: translateX(-6vw) translateY(-30vh) scale(0.59); }
+    transform: translateX(-6vw) translateY(-30vh) scale(0.59);
+  }
+
   14.28571% {
-    transform: translateX(9vw) translateY(41vh) scale(0.96); }
+    transform: translateX(9vw) translateY(41vh) scale(0.96);
+  }
+
   17.85714% {
-    transform: translateX(-8vw) translateY(46vh) scale(0.66); }
+    transform: translateX(-8vw) translateY(46vh) scale(0.66);
+  }
+
   21.42857% {
-    transform: translateX(-13vw) translateY(-2vh) scale(0.68); }
+    transform: translateX(-13vw) translateY(-2vh) scale(0.68);
+  }
+
   25% {
-    transform: translateX(17vw) translateY(13vh) scale(0.43); }
+    transform: translateX(17vw) translateY(13vh) scale(0.43);
+  }
+
   28.57143% {
-    transform: translateX(20vw) translateY(-48vh) scale(0.34); }
+    transform: translateX(20vw) translateY(-48vh) scale(0.34);
+  }
+
   32.14286% {
-    transform: translateX(24vw) translateY(34vh) scale(0.97); }
+    transform: translateX(24vw) translateY(34vh) scale(0.97);
+  }
+
   35.71429% {
-    transform: translateX(-22vw) translateY(9vh) scale(0.92); }
+    transform: translateX(-22vw) translateY(9vh) scale(0.92);
+  }
+
   39.28571% {
-    transform: translateX(39vw) translateY(-12vh) scale(0.57); }
+    transform: translateX(39vw) translateY(-12vh) scale(0.57);
+  }
+
   42.85714% {
-    transform: translateX(-1vw) translateY(-3vh) scale(0.5); }
+    transform: translateX(-1vw) translateY(-3vh) scale(0.5);
+  }
+
   46.42857% {
-    transform: translateX(1vw) translateY(35vh) scale(0.5); }
+    transform: translateX(1vw) translateY(35vh) scale(0.5);
+  }
+
   50% {
-    transform: translateX(23vw) translateY(-8vh) scale(0.76); }
+    transform: translateX(23vw) translateY(-8vh) scale(0.76);
+  }
+
   53.57143% {
-    transform: translateX(3vw) translateY(10vh) scale(0.45); }
+    transform: translateX(3vw) translateY(10vh) scale(0.45);
+  }
+
   57.14286% {
-    transform: translateX(-3vw) translateY(30vh) scale(0.5); }
+    transform: translateX(-3vw) translateY(30vh) scale(0.5);
+  }
+
   60.71429% {
-    transform: translateX(-29vw) translateY(-26vh) scale(0.33); }
+    transform: translateX(-29vw) translateY(-26vh) scale(0.33);
+  }
+
   64.28571% {
-    transform: translateX(-40vw) translateY(42vh) scale(0.48); }
+    transform: translateX(-40vw) translateY(42vh) scale(0.48);
+  }
+
   67.85714% {
-    transform: translateX(30vw) translateY(-10vh) scale(0.27); }
+    transform: translateX(30vw) translateY(-10vh) scale(0.27);
+  }
+
   71.42857% {
-    transform: translateX(13vw) translateY(-7vh) scale(0.71); }
+    transform: translateX(13vw) translateY(-7vh) scale(0.71);
+  }
+
   75% {
-    transform: translateX(-13vw) translateY(15vh) scale(0.65); }
+    transform: translateX(-13vw) translateY(15vh) scale(0.65);
+  }
+
   78.57143% {
-    transform: translateX(36vw) translateY(-20vh) scale(0.9); }
+    transform: translateX(36vw) translateY(-20vh) scale(0.9);
+  }
+
   82.14286% {
-    transform: translateX(-45vw) translateY(15vh) scale(0.99); }
+    transform: translateX(-45vw) translateY(15vh) scale(0.99);
+  }
+
   85.71429% {
-    transform: translateX(-47vw) translateY(41vh) scale(0.45); }
+    transform: translateX(-47vw) translateY(41vh) scale(0.45);
+  }
+
   89.28571% {
-    transform: translateX(-25vw) translateY(-22vh) scale(0.32); }
+    transform: translateX(-25vw) translateY(-22vh) scale(0.32);
+  }
+
   92.85714% {
-    transform: translateX(-11vw) translateY(-23vh) scale(0.38); }
+    transform: translateX(-11vw) translateY(-23vh) scale(0.38);
+  }
+
   96.42857% {
-    transform: translateX(4vw) translateY(6vh) scale(0.36); }
+    transform: translateX(4vw) translateY(6vh) scale(0.36);
+  }
+
   100% {
-    transform: translateX(15vw) translateY(-30vh) scale(0.9); } }
+    transform: translateX(15vw) translateY(-30vh) scale(0.9);
+  }
+}
 
 .firefly:nth-child(12) {
-  animation-name: move12; }
-  .firefly:nth-child(12)::before {
-    animation-duration: 11s; }
-  .firefly:nth-child(12)::after {
-    animation-duration: 11s, 8471ms;
-    animation-delay: 0ms, 3874ms; }
+  animation-name: move12;
+}
+
+.firefly:nth-child(12)::before {
+  animation-duration: 11s;
+}
+
+.firefly:nth-child(12)::after {
+  animation-duration: 11s, 8471ms;
+  animation-delay: 0ms, 3874ms;
+}
 
 @keyframes move12 {
   0% {
-    transform: translateX(-3vw) translateY(-46vh) scale(0.26); }
+    transform: translateX(-3vw) translateY(-46vh) scale(0.26);
+  }
+
   4.16667% {
-    transform: translateX(-7vw) translateY(45vh) scale(0.71); }
+    transform: translateX(-7vw) translateY(45vh) scale(0.71);
+  }
+
   8.33333% {
-    transform: translateX(34vw) translateY(-16vh) scale(0.66); }
+    transform: translateX(34vw) translateY(-16vh) scale(0.66);
+  }
+
   12.5% {
-    transform: translateX(14vw) translateY(39vh) scale(0.66); }
+    transform: translateX(14vw) translateY(39vh) scale(0.66);
+  }
+
   16.66667% {
-    transform: translateX(-29vw) translateY(-16vh) scale(0.87); }
+    transform: translateX(-29vw) translateY(-16vh) scale(0.87);
+  }
+
   20.83333% {
-    transform: translateX(46vw) translateY(-11vh) scale(0.43); }
+    transform: translateX(46vw) translateY(-11vh) scale(0.43);
+  }
+
   25% {
-    transform: translateX(7vw) translateY(-10vh) scale(0.81); }
+    transform: translateX(7vw) translateY(-10vh) scale(0.81);
+  }
+
   29.16667% {
-    transform: translateX(-8vw) translateY(18vh) scale(0.6); }
+    transform: translateX(-8vw) translateY(18vh) scale(0.6);
+  }
+
   33.33333% {
-    transform: translateX(-38vw) translateY(-35vh) scale(0.36); }
+    transform: translateX(-38vw) translateY(-35vh) scale(0.36);
+  }
+
   37.5% {
-    transform: translateX(-29vw) translateY(5vh) scale(1); }
+    transform: translateX(-29vw) translateY(5vh) scale(1);
+  }
+
   41.66667% {
-    transform: translateX(-28vw) translateY(-24vh) scale(0.35); }
+    transform: translateX(-28vw) translateY(-24vh) scale(0.35);
+  }
+
   45.83333% {
-    transform: translateX(13vw) translateY(8vh) scale(0.81); }
+    transform: translateX(13vw) translateY(8vh) scale(0.81);
+  }
+
   50% {
-    transform: translateX(42vw) translateY(21vh) scale(0.86); }
+    transform: translateX(42vw) translateY(21vh) scale(0.86);
+  }
+
   54.16667% {
-    transform: translateX(2vw) translateY(15vh) scale(0.27); }
+    transform: translateX(2vw) translateY(15vh) scale(0.27);
+  }
+
   58.33333% {
-    transform: translateX(-35vw) translateY(31vh) scale(0.63); }
+    transform: translateX(-35vw) translateY(31vh) scale(0.63);
+  }
+
   62.5% {
-    transform: translateX(23vw) translateY(35vh) scale(0.28); }
+    transform: translateX(23vw) translateY(35vh) scale(0.28);
+  }
+
   66.66667% {
-    transform: translateX(-30vw) translateY(12vh) scale(0.3); }
+    transform: translateX(-30vw) translateY(12vh) scale(0.3);
+  }
+
   70.83333% {
-    transform: translateX(-46vw) translateY(24vh) scale(0.4); }
+    transform: translateX(-46vw) translateY(24vh) scale(0.4);
+  }
+
   75% {
-    transform: translateX(45vw) translateY(44vh) scale(0.34); }
+    transform: translateX(45vw) translateY(44vh) scale(0.34);
+  }
+
   79.16667% {
-    transform: translateX(17vw) translateY(30vh) scale(0.84); }
+    transform: translateX(17vw) translateY(30vh) scale(0.84);
+  }
+
   83.33333% {
-    transform: translateX(42vw) translateY(21vh) scale(0.79); }
+    transform: translateX(42vw) translateY(21vh) scale(0.79);
+  }
+
   87.5% {
-    transform: translateX(-11vw) translateY(40vh) scale(0.81); }
+    transform: translateX(-11vw) translateY(40vh) scale(0.81);
+  }
+
   91.66667% {
-    transform: translateX(-17vw) translateY(-32vh) scale(0.95); }
+    transform: translateX(-17vw) translateY(-32vh) scale(0.95);
+  }
+
   95.83333% {
-    transform: translateX(-48vw) translateY(9vh) scale(0.29); }
+    transform: translateX(-48vw) translateY(9vh) scale(0.29);
+  }
+
   100% {
-    transform: translateX(-17vw) translateY(-26vh) scale(0.31); } }
+    transform: translateX(-17vw) translateY(-26vh) scale(0.31);
+  }
+}
 
 .firefly:nth-child(13) {
-  animation-name: move13; }
-  .firefly:nth-child(13)::before {
-    animation-duration: 15s; }
-  .firefly:nth-child(13)::after {
-    animation-duration: 15s, 6795ms;
-    animation-delay: 0ms, 4249ms; }
+  animation-name: move13;
+}
+
+.firefly:nth-child(13)::before {
+  animation-duration: 15s;
+}
+
+.firefly:nth-child(13)::after {
+  animation-duration: 15s, 6795ms;
+  animation-delay: 0ms, 4249ms;
+}
 
 @keyframes move13 {
   0% {
-    transform: translateX(5vw) translateY(-11vh) scale(0.49); }
+    transform: translateX(5vw) translateY(-11vh) scale(0.49);
+  }
+
   4.7619% {
-    transform: translateX(-40vw) translateY(50vh) scale(0.36); }
+    transform: translateX(-40vw) translateY(50vh) scale(0.36);
+  }
+
   9.52381% {
-    transform: translateX(-43vw) translateY(-5vh) scale(0.95); }
+    transform: translateX(-43vw) translateY(-5vh) scale(0.95);
+  }
+
   14.28571% {
-    transform: translateX(32vw) translateY(6vh) scale(0.69); }
+    transform: translateX(32vw) translateY(6vh) scale(0.69);
+  }
+
   19.04762% {
-    transform: translateX(-31vw) translateY(-12vh) scale(0.4); }
+    transform: translateX(-31vw) translateY(-12vh) scale(0.4);
+  }
+
   23.80952% {
-    transform: translateX(-27vw) translateY(-11vh) scale(0.67); }
+    transform: translateX(-27vw) translateY(-11vh) scale(0.67);
+  }
+
   28.57143% {
-    transform: translateX(-25vw) translateY(47vh) scale(0.47); }
+    transform: translateX(-25vw) translateY(47vh) scale(0.47);
+  }
+
   33.33333% {
-    transform: translateX(-11vw) translateY(-10vh) scale(0.69); }
+    transform: translateX(-11vw) translateY(-10vh) scale(0.69);
+  }
+
   38.09524% {
-    transform: translateX(-1vw) translateY(-27vh) scale(0.32); }
+    transform: translateX(-1vw) translateY(-27vh) scale(0.32);
+  }
+
   42.85714% {
-    transform: translateX(29vw) translateY(-41vh) scale(0.99); }
+    transform: translateX(29vw) translateY(-41vh) scale(0.99);
+  }
+
   47.61905% {
-    transform: translateX(7vw) translateY(48vh) scale(0.75); }
+    transform: translateX(7vw) translateY(48vh) scale(0.75);
+  }
+
   52.38095% {
-    transform: translateX(-37vw) translateY(-33vh) scale(0.9); }
+    transform: translateX(-37vw) translateY(-33vh) scale(0.9);
+  }
+
   57.14286% {
-    transform: translateX(-45vw) translateY(33vh) scale(0.37); }
+    transform: translateX(-45vw) translateY(33vh) scale(0.37);
+  }
+
   61.90476% {
-    transform: translateX(-9vw) translateY(-43vh) scale(0.35); }
+    transform: translateX(-9vw) translateY(-43vh) scale(0.35);
+  }
+
   66.66667% {
-    transform: translateX(11vw) translateY(26vh) scale(0.52); }
+    transform: translateX(11vw) translateY(26vh) scale(0.52);
+  }
+
   71.42857% {
-    transform: translateX(-32vw) translateY(8vh) scale(0.89); }
+    transform: translateX(-32vw) translateY(8vh) scale(0.89);
+  }
+
   76.19048% {
-    transform: translateX(32vw) translateY(16vh) scale(0.45); }
+    transform: translateX(32vw) translateY(16vh) scale(0.45);
+  }
+
   80.95238% {
-    transform: translateX(45vw) translateY(38vh) scale(0.33); }
+    transform: translateX(45vw) translateY(38vh) scale(0.33);
+  }
+
   85.71429% {
-    transform: translateX(31vw) translateY(-29vh) scale(0.49); }
+    transform: translateX(31vw) translateY(-29vh) scale(0.49);
+  }
+
   90.47619% {
-    transform: translateX(-40vw) translateY(19vh) scale(0.75); }
+    transform: translateX(-40vw) translateY(19vh) scale(0.75);
+  }
+
   95.2381% {
-    transform: translateX(-5vw) translateY(19vh) scale(0.68); }
+    transform: translateX(-5vw) translateY(19vh) scale(0.68);
+  }
+
   100% {
-    transform: translateX(-2vw) translateY(19vh) scale(0.7); } }
+    transform: translateX(-2vw) translateY(19vh) scale(0.7);
+  }
+}
 
 .firefly:nth-child(14) {
-  animation-name: move14; }
-  .firefly:nth-child(14)::before {
-    animation-duration: 15s; }
-  .firefly:nth-child(14)::after {
-    animation-duration: 15s, 6194ms;
-    animation-delay: 0ms, 6368ms; }
+  animation-name: move14;
+}
+
+.firefly:nth-child(14)::before {
+  animation-duration: 15s;
+}
+
+.firefly:nth-child(14)::after {
+  animation-duration: 15s, 6194ms;
+  animation-delay: 0ms, 6368ms;
+}
 
 @keyframes move14 {
   0% {
-    transform: translateX(-27vw) translateY(0vh) scale(0.48); }
+    transform: translateX(-27vw) translateY(0vh) scale(0.48);
+  }
+
   3.57143% {
-    transform: translateX(1vw) translateY(2vh) scale(0.59); }
+    transform: translateX(1vw) translateY(2vh) scale(0.59);
+  }
+
   7.14286% {
-    transform: translateX(6vw) translateY(13vh) scale(0.56); }
+    transform: translateX(6vw) translateY(13vh) scale(0.56);
+  }
+
   10.71429% {
-    transform: translateX(20vw) translateY(-30vh) scale(0.7); }
+    transform: translateX(20vw) translateY(-30vh) scale(0.7);
+  }
+
   14.28571% {
-    transform: translateX(19vw) translateY(47vh) scale(0.91); }
+    transform: translateX(19vw) translateY(47vh) scale(0.91);
+  }
+
   17.85714% {
-    transform: translateX(11vw) translateY(-17vh) scale(0.73); }
+    transform: translateX(11vw) translateY(-17vh) scale(0.73);
+  }
+
   21.42857% {
-    transform: translateX(-43vw) translateY(-13vh) scale(0.77); }
+    transform: translateX(-43vw) translateY(-13vh) scale(0.77);
+  }
+
   25% {
-    transform: translateX(-3vw) translateY(28vh) scale(1); }
+    transform: translateX(-3vw) translateY(28vh) scale(1);
+  }
+
   28.57143% {
-    transform: translateX(4vw) translateY(31vh) scale(0.49); }
+    transform: translateX(4vw) translateY(31vh) scale(0.49);
+  }
+
   32.14286% {
-    transform: translateX(-48vw) translateY(9vh) scale(0.56); }
+    transform: translateX(-48vw) translateY(9vh) scale(0.56);
+  }
+
   35.71429% {
-    transform: translateX(10vw) translateY(20vh) scale(0.64); }
+    transform: translateX(10vw) translateY(20vh) scale(0.64);
+  }
+
   39.28571% {
-    transform: translateX(18vw) translateY(19vh) scale(0.4); }
+    transform: translateX(18vw) translateY(19vh) scale(0.4);
+  }
+
   42.85714% {
-    transform: translateX(26vw) translateY(32vh) scale(0.85); }
+    transform: translateX(26vw) translateY(32vh) scale(0.85);
+  }
+
   46.42857% {
-    transform: translateX(13vw) translateY(-28vh) scale(0.6); }
+    transform: translateX(13vw) translateY(-28vh) scale(0.6);
+  }
+
   50% {
-    transform: translateX(1vw) translateY(-10vh) scale(0.83); }
+    transform: translateX(1vw) translateY(-10vh) scale(0.83);
+  }
+
   53.57143% {
-    transform: translateX(21vw) translateY(-41vh) scale(0.89); }
+    transform: translateX(21vw) translateY(-41vh) scale(0.89);
+  }
+
   57.14286% {
-    transform: translateX(5vw) translateY(-2vh) scale(0.87); }
+    transform: translateX(5vw) translateY(-2vh) scale(0.87);
+  }
+
   60.71429% {
-    transform: translateX(20vw) translateY(-46vh) scale(0.97); }
+    transform: translateX(20vw) translateY(-46vh) scale(0.97);
+  }
+
   64.28571% {
-    transform: translateX(-36vw) translateY(-1vh) scale(0.92); }
+    transform: translateX(-36vw) translateY(-1vh) scale(0.92);
+  }
+
   67.85714% {
-    transform: translateX(45vw) translateY(44vh) scale(0.98); }
+    transform: translateX(45vw) translateY(44vh) scale(0.98);
+  }
+
   71.42857% {
-    transform: translateX(12vw) translateY(13vh) scale(0.55); }
+    transform: translateX(12vw) translateY(13vh) scale(0.55);
+  }
+
   75% {
-    transform: translateX(-46vw) translateY(21vh) scale(0.41); }
+    transform: translateX(-46vw) translateY(21vh) scale(0.41);
+  }
+
   78.57143% {
-    transform: translateX(-48vw) translateY(-33vh) scale(0.31); }
+    transform: translateX(-48vw) translateY(-33vh) scale(0.31);
+  }
+
   82.14286% {
-    transform: translateX(-6vw) translateY(13vh) scale(0.41); }
+    transform: translateX(-6vw) translateY(13vh) scale(0.41);
+  }
+
   85.71429% {
-    transform: translateX(32vw) translateY(-17vh) scale(0.3); }
+    transform: translateX(32vw) translateY(-17vh) scale(0.3);
+  }
+
   89.28571% {
-    transform: translateX(-1vw) translateY(9vh) scale(0.28); }
+    transform: translateX(-1vw) translateY(9vh) scale(0.28);
+  }
+
   92.85714% {
-    transform: translateX(33vw) translateY(-41vh) scale(0.84); }
+    transform: translateX(33vw) translateY(-41vh) scale(0.84);
+  }
+
   96.42857% {
-    transform: translateX(20vw) translateY(-45vh) scale(0.51); }
+    transform: translateX(20vw) translateY(-45vh) scale(0.51);
+  }
+
   100% {
-    transform: translateX(24vw) translateY(-18vh) scale(0.29); } }
+    transform: translateX(24vw) translateY(-18vh) scale(0.29);
+  }
+}
 
 .firefly:nth-child(15) {
-  animation-name: move15; }
-  .firefly:nth-child(15)::before {
-    animation-duration: 13s; }
-  .firefly:nth-child(15)::after {
-    animation-duration: 13s, 9469ms;
-    animation-delay: 0ms, 1526ms; }
+  animation-name: move15;
+}
+
+.firefly:nth-child(15)::before {
+  animation-duration: 13s;
+}
+
+.firefly:nth-child(15)::after {
+  animation-duration: 13s, 9469ms;
+  animation-delay: 0ms, 1526ms;
+}
 
 @keyframes move15 {
   0% {
-    transform: translateX(18vw) translateY(31vh) scale(0.46); }
+    transform: translateX(18vw) translateY(31vh) scale(0.46);
+  }
+
   5.88235% {
-    transform: translateX(-23vw) translateY(-17vh) scale(0.73); }
+    transform: translateX(-23vw) translateY(-17vh) scale(0.73);
+  }
+
   11.76471% {
-    transform: translateX(19vw) translateY(-11vh) scale(0.36); }
+    transform: translateX(19vw) translateY(-11vh) scale(0.36);
+  }
+
   17.64706% {
-    transform: translateX(42vw) translateY(-26vh) scale(0.94); }
+    transform: translateX(42vw) translateY(-26vh) scale(0.94);
+  }
+
   23.52941% {
-    transform: translateX(-7vw) translateY(-19vh) scale(0.43); }
+    transform: translateX(-7vw) translateY(-19vh) scale(0.43);
+  }
+
   29.41176% {
-    transform: translateX(19vw) translateY(16vh) scale(0.8); }
+    transform: translateX(19vw) translateY(16vh) scale(0.8);
+  }
+
   35.29412% {
-    transform: translateX(-31vw) translateY(23vh) scale(0.96); }
+    transform: translateX(-31vw) translateY(23vh) scale(0.96);
+  }
+
   41.17647% {
-    transform: translateX(-1vw) translateY(-2vh) scale(0.94); }
+    transform: translateX(-1vw) translateY(-2vh) scale(0.94);
+  }
+
   47.05882% {
-    transform: translateX(32vw) translateY(50vh) scale(0.72); }
+    transform: translateX(32vw) translateY(50vh) scale(0.72);
+  }
+
   52.94118% {
-    transform: translateX(-24vw) translateY(23vh) scale(0.51); }
+    transform: translateX(-24vw) translateY(23vh) scale(0.51);
+  }
+
   58.82353% {
-    transform: translateX(1vw) translateY(-38vh) scale(0.95); }
+    transform: translateX(1vw) translateY(-38vh) scale(0.95);
+  }
+
   64.70588% {
-    transform: translateX(-3vw) translateY(-24vh) scale(0.61); }
+    transform: translateX(-3vw) translateY(-24vh) scale(0.61);
+  }
+
   70.58824% {
-    transform: translateX(-25vw) translateY(46vh) scale(0.95); }
+    transform: translateX(-25vw) translateY(46vh) scale(0.95);
+  }
+
   76.47059% {
-    transform: translateX(22vw) translateY(39vh) scale(0.74); }
+    transform: translateX(22vw) translateY(39vh) scale(0.74);
+  }
+
   82.35294% {
-    transform: translateX(36vw) translateY(-15vh) scale(0.32); }
+    transform: translateX(36vw) translateY(-15vh) scale(0.32);
+  }
+
   88.23529% {
-    transform: translateX(5vw) translateY(22vh) scale(0.49); }
+    transform: translateX(5vw) translateY(22vh) scale(0.49);
+  }
+
   94.11765% {
-    transform: translateX(50vw) translateY(44vh) scale(0.79); }
+    transform: translateX(50vw) translateY(44vh) scale(0.79);
+  }
+
   100% {
-    transform: translateX(31vw) translateY(50vh) scale(0.52); } }
+    transform: translateX(31vw) translateY(50vh) scale(0.52);
+  }
+}
 
 @keyframes drift {
   0% {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
+
   100% {
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
 
 @keyframes flash {
-  0%, 30%, 100% {
+
+  0%,
+  30%,
+  100% {
     opacity: 0;
-    box-shadow: 0 0 0vw 0vw yellow; }
+    box-shadow: 0 0 0vw 0vw yellow;
+  }
+
   5% {
     opacity: 1;
-    box-shadow: 0 0 2vw 0.4vw yellow; } }
+    box-shadow: 0 0 2vw 0.4vw yellow;
+  }
+}

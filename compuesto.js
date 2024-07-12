@@ -24,23 +24,40 @@ window.addEventListener('load', function () {
         let interes = parseFloat(input_interes.value);
         let duracion = parseFloat(input_duracion.value);
 
-        let interest = (inicial + periodico) * interes / 100;
-        let total = interest + inicial + periodico
-
-        resultado_balance.innerHTML = inicial + '€';
-        resultado_periodico.innerHTML = periodico + '€';
-        resultado_total.innerHTML = interest + '€';
-        resultado_totalt.innerHTML = total + '€';
-
         if (dia.value == "Diario") {
             let periodico = (period * 365) * duracion;
+            let interest = (inicial + periodico) * interes / 100;
+            let total = interest + inicial + periodico
+            resultado_balance.innerHTML = inicial + '€';
+            resultado_periodico.innerHTML = periodico + '€';
+            resultado_total.innerHTML = interest + '€';
+            resultado_totalt.innerHTML = total + '€';
         } else if (semana.value == "Semanal") {
             let periodico = (period * (4 * 12)) * duracion;
+            let interest = (inicial + periodico) * interes / 100;
+            let total = interest + inicial + periodico
+            resultado_balance.innerHTML = inicial + '€';
+            resultado_periodico.innerHTML = periodico + '€';
+            resultado_total.innerHTML = interest + '€';
+            resultado_totalt.innerHTML = total + '€';
         } else if (mes.value == "Mensual") {
             let periodico = (period * 12) * duracion;
+            let interest = (inicial + periodico) * interes / 100;
+            let total = interest + inicial + periodico
+            resultado_balance.innerHTML = inicial + '€';
+            resultado_periodico.innerHTML = periodico + '€';
+            resultado_total.innerHTML = interest + '€';
+            resultado_totalt.innerHTML = total + '€';
         } else if (año.value == "Anual") {
             let periodico = period * duracion;
+            let interest = (inicial + periodico) * interes / 100;
+            let total = interest + inicial + periodico
+            resultado_balance.innerHTML = inicial + '€';
+            resultado_periodico.innerHTML = periodico + '€';
+            resultado_total.innerHTML = interest + '€';
+            resultado_totalt.innerHTML = total + '€';
         }
+
     })    
 
 })

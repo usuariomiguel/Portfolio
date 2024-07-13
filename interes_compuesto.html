@@ -15,77 +15,90 @@
     <title>Interes compuesto</title>
 </head>
 
-<body>
-
-</body class="font-serif">
-<header class="">
-    <div class="">
-
-    </div>
-</header>
-<main class="font-serif p-11 flex flex-col gap-7 max-w-screen-lg m-auto md:text-xl">
-    <div class="flex flex-col gap-9 p-6">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center font-sans">
-            Calculadora de Interés Compuesto
-        </h1>
-        <!-- <p class="text-left">Cálculadora de interés compuesto para que puedas calcular tus cuentas</p> -->
-    </div>
-    <div class="bg-container p-6 rounded-lg flex flex-col gap-5 border border-gray-light lg:grid lg:grid-cols-2 md:p-9 lg:p-12">
-        <div class="flex flex-col gap-2">
-            <label for="">Depósito inicial:</label>
-            <input class="w-full rounded-lg border border-gray-light p-2 md:p-3 lg:p-4 text-sm  md:text-base text-gray" type="number" name="input-inicial" id="input-inicial" value="0">
+<body class="font-sans bg-white dark:bg-dark dark:text-darkfont">
+    <header class="bg-container px-9 py-5 flex justify-between items-center border-b border-gray-light bg-containerlight text-darkfont">
+        <div class="flex items-center gap-2">
+            <img class="w-12" src="./src/img/yoo.png" alt="">
+            <span>Miguel Cantos</span>
         </div>
-        <div class="flex flex-col gap-2">
-            <label for="">Depósitos periódicos:</label>
-            <div class="w-full" style="display: flex;">
-                <input class="w-full rounded-l-lg border border-gray-light p-2 md:p-3 lg:p-4 text-sm text-gray" type="number" name="input-period" id="input-period" value="0">
-                <select class=" rounded-r-lg bg-gray-dark text-gray-light p-2 md:p-3 lg:p-4 text-sm " id="periodo" value="">
-                    <option id="dia" value="Diario">Diario</option>
-                    <option id="semana" value="Semestral">Semestral</option>
-                    <option id="mes" value="Mensual">Mensual</option>
-                    <option id="año" value="Anual">Anual</option>
-                </select>
+        <img id="dark-light" src="./src/icons/darkmode.svg" alt="">
+    </header>
+    <main class="p-9 flex flex-col gap-7 max-w-screen-lg m-auto md:text-xl">
+        <div class="flex flex-col gap-9 p-6">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center font-sans">
+                Calculadora de Interés Compuesto
+            </h1>
+            <!-- <p class="text-left">Cálculadora de interés compuesto para que puedas calcular tus cuentas</p> -->
+        </div>
+        <div
+            class="bg-containerlight text-darkfont p-6 rounded-lg flex flex-col gap-5 border border-gray-light lg:grid lg:grid-cols-2 md:p-9 lg:p-12">
+            <div class="flex flex-col gap-2">
+                <label for="">Depósito inicial:</label>
+                <input
+                    class="w-full rounded-lg border border-gray-light p-2 md:p-3 lg:p-4 text-sm  md:text-base text-gray"
+                    type="number" name="input-inicial" id="input-inicial" value="">
             </div>
-        </div>
-        <div class="flex flex-col gap-2">
-            <label for="">Ratio interés anual:</label>
-            <input class="w-full rounded-lg border border-gray-light p-2 md:p-3 lg:p-4 text-sm text-gray" type="number" name="input-interes" id="input-interes" value="0">
-        </div>
-        <div class="flex flex-col gap-2">
-            <label for="">Duración (años):</label>
-            <input class="w-full rounded-lg border border-gray-light p-2 md:p-3 lg:p-4 text-sm text-gray" type="number" name="input-duracion" id="input-duracion" value="0">
-        </div>
-        <input class="bg-gray-dark p-2 md:p-3 lg:p-4 rounded-lg text-gray-light mt-3  lg:col-start-3 lg:col-end-2" type="submit" value="Calcular" id="submit" name="submit">
-    </div>
-    <div class="lg:grid lg:grid-cols-2 lg:gap-7">
-        <div class="bg-container p-6 rounded-lg flex flex-col gap-5 border border-gray-light md:p-9 lg:p-12">
-            <h2 class="text-xl font-bold font-sans">Resultados</h2>
-            <p>Con un ahorro de € cada mes durante X años y con un balance inicial de €</p>
-            <div class="">
-                <div class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 border-b border-gray-light gap-3 sm:gap-0">
-                    <span>Balance inicial</span>
-                    <span class="flex justify-end" id="r-bal">€</span>
-                </div>
-                <div class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 border-b border-gray-light gap-3 sm:gap-0">
-                    <span>Depositos periódicos</span>
-                    <span class="flex justify-end" id="r-per">€</span>
-                </div>
-                <div class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 border-b border-gray-light gap-3 sm:gap-0">
-                    <span>Interés total</span>
-                    <span class="flex justify-end" id="r-tot">€</span>
-                </div>
-                <div class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 gap-3 sm:gap-0">
-                    <span>Total</span>
-                    <span class="flex justify-end" id="r-tott">€</span>
+            <div class="flex flex-col gap-2">
+                <label for="">Depósitos periódicos:</label>
+                <div class="w-full" style="display: flex;">
+                    <input class="w-full rounded-l-lg border border-gray-light p-2 md:p-3 lg:p-4 text-sm text-gray"
+                        type="number" name="input-period" id="input-period" value="">
+                    <select class=" rounded-r-lg bg-gray-dark text-gray-light p-2 md:p-3 lg:p-4 text-sm " id="periodo"
+                        value="">
+                        <option id="dia" value="Diario">Diario</option>
+                        <option id="semana" value="Semestral">Semestral</option>
+                        <option id="mes" value="Mensual">Mensual</option>
+                        <option id="año" value="Anual">Anual</option>
+                    </select>
                 </div>
             </div>
-            <button class="bg-gray-dark p-2 p-2 md:p-3 lg:p-4 rounded-lg text-gray-light" type="button">Limpiar Resultados</button>
+            <div class="flex flex-col gap-2">
+                <label for="">Ratio interés anual:</label>
+                <input class="w-full rounded-lg border border-gray-light p-2 md:p-3 lg:p-4 text-sm text-gray"
+                    type="number" name="input-interes" id="input-interes" value="">
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="">Duración (años):</label>
+                <input class="w-full rounded-lg border border-gray-light p-2 md:p-3 lg:p-4 text-sm text-gray"
+                    type="number" name="input-duracion" id="input-duracion" value="">
+            </div>
+            <input class="bg-gray-dark p-2 md:p-3 lg:p-4 rounded-lg text-gray-light mt-3  lg:col-start-3 lg:col-end-2 cursor-pointer"
+                type="submit" value="Calcular" id="submit" name="submit">
         </div>
-        <div class="hidden lg:block bg-container p-6 rounded-lg border border-gray-light lg:p-12"></div>
-    </div>
-</main>
-<footer class="text-center p-3 bg-container border-t border-gray-light">
-    <span>Hecho por Miguel Ángel Cantos</span>
-</footer>
+        <div class="lg:grid lg:grid-cols-2 lg:gap-7 bg-containerlight text-darkfont border rounded-lg">
+            <div class="bg-container p-6 flex flex-col gap-5 border-gray-light md:p-9 lg:p-12">
+                <h2 class="text-xl font-bold font-sans">Resultados</h2>
+                <p>Con un ahorro de € cada mes durante X años y con un balance inicial de €</p>
+                <div class="">
+                    <div
+                        class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 border-b border-gray-light gap-3 sm:gap-0">
+                        <span>Balance inicial</span>
+                        <span class="flex justify-end" id="r-bal">€</span>
+                    </div>
+                    <div
+                        class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 border-b border-gray-light gap-3 sm:gap-0">
+                        <span>Depositos periódicos</span>
+                        <span class="flex justify-end" id="r-per">€</span>
+                    </div>
+                    <div
+                        class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 border-b border-gray-light gap-3 sm:gap-0">
+                        <span>Interés total</span>
+                        <span class="flex justify-end" id="r-tot">€</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 gap-3 sm:gap-0">
+                        <span>Total</span>
+                        <span class="flex justify-end" id="r-tott">€</span>
+                    </div>
+                </div>
+                <button class="bg-gray-dark p-2 md:p-3 lg:p-4 rounded-lg text-gray-light" id="cleaner"
+                    type="button">Limpiar Resultados</button>
+            </div>
+            <div class="hidden lg:block bg-container p-6 rounded-lg border border-gray-light lg:p-12"></div>
+        </div>
+    </main>
+    <footer class="text-center px-9 py-5 bg-container border-t border-gray-light bg-containerlight text-darkfont">
+        <span>Hecho por Miguel Ángel Cantos</span>
+    </footer>
+</body>
 
 </html>

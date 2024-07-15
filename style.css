@@ -655,13 +655,12 @@ textarea:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 15px;
-  margin-bottom: 75px;
+  /* margin: 0 15px; */
   /* background-color: var(--color-primary); */
   background-color: #1c1529;
   color: white;
-  border-radius: 1.75rem;
-  border: 1px solid white;
+  /* border-radius: 1.75rem; */
+  border-bottom: 1px solid white;
 }
 
 .about__title {
@@ -1218,7 +1217,7 @@ textarea:focus {
 
   .about {
     padding: 100px 32px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
   }
 
   /*PORTFOLIO*/

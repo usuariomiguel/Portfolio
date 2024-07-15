@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Interés Compuesto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de Interés Compuesto</h1>
+        </header>
+        <main>
+            <section class="input-section">
+                <div class="form-group">
+                    <label for="deposito-inicial">Depósito inicial:</label>
+                    <input type="number" id="deposito-inicial" placeholder="0">
+                </div>
+                <div class="form-group">
+                    <label for="depositos-periodicos">Depósitos periódicos:</label>
+                    <input type="number" id="depositos-periodicos" placeholder="0">
+                    <select id="frecuencia">
+                        <option value="diario">Diario</option>
+                        <option value="mensual">Mensual</option>
+                        <option value="anual">Anual</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interes-anual">Ratio interés anual (%):</label>
+                    <input type="number" id="interes-anual" placeholder="0">
+                </div>
+                <div class="form-group">
+                    <label for="duracion">Duración (años):</label>
+                    <input type="number" id="duracion" placeholder="0">
+                </div>
+                <button id="calcular">Calcular</button>
+            </section>
+            <section class="results-section">
+                <h2>Resultados</h2>
+                <div class="results">
+                    <p>Con un ahorro de € cada mes durante X años y con un balance inicial de €</p>
+                    <table>
+                        <tr>
+                            <td>Balance inicial</td>
+                            <td id="balance-inicial">€</td>
+                        </tr>
+                        <tr>
+                            <td>Depósitos periódicos</td>
+                            <td id="depositos-total">€</td>
+                        </tr>
+                        <tr>
+                            <td>Interés total</td>
+                            <td id="interes-total">€</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td id="total">€</td>
+                        </tr>
+                    </table>
+                    <button id="limpiar">Limpiar Resultados</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Hecho por Miguel Ángel Cantos</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

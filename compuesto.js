@@ -36,7 +36,6 @@ window.addEventListener('load', function () {
                 let i10 = (inicial + periodico + i1 + i2 + i3+ i4 + i5 + i6 + i7 + i8 + i9) * (interes / 100) / 12;
                 let i11 = (inicial + periodico + i1 + i2 + i3+ i4 + i5 + i6 + i7 + i8 + i9 + i10) * (interes / 100) / 12;
                 let i12 = (inicial + periodico + i1 + i2 + i3 + i4 + i5 + i6 + i7 + i8 + i9 + i10 + i11) * (interes / 100) / 12;    
-                console.log(i1 , i2 , i3 , i4 , i5 , i6 , i7 , i8 , i9 , i10 , i11 , i12)
                 let interest = i1 + i2 + i3 + i4 + i5 + i6 + i7 + i8 + i9 + i10 + i11 + i12;
                 let total = interest + inicial + periodico;
                 document.getElementById("r-bal").innerHTML = inicial.toFixed(2) + '€';
@@ -57,7 +56,6 @@ window.addEventListener('load', function () {
                 let i10 = (inicial + periodico + i1 + i2 + i3+ i4 + i5 + i6 + i7 + i8 + i9) * (interes / 100) / 12;
                 let i11 = (inicial + periodico + i1 + i2 + i3+ i4 + i5 + i6 + i7 + i8 + i9 + i10) * (interes / 100) / 12;
                 let i12 = (inicial + periodico + i1 + i2 + i3 + i4 + i5 + i6 + i7 + i8 + i9 + i10 + i11) * (interes / 100) / 12;    
-                console.log(i1 , i2 , i3 , i4 , i5 , i6 , i7 , i8 , i9 , i10 , i11 , i12)
                 let interest = i1 + i2 + i3 + i4 + i5 + i6 + i7 + i8 + i9 + i10 + i11 + i12;
                 let total = interest + inicial + periodico;
                 document.getElementById("r-bal").innerHTML = inicial.toFixed(2) + '€';
@@ -78,7 +76,6 @@ window.addEventListener('load', function () {
                 let i10 = (inicial + periodico + i1 + i2 + i3+ i4 + i5 + i6 + i7 + i8 + i9) * (interes / 100) / 12;
                 let i11 = (inicial + periodico + i1 + i2 + i3+ i4 + i5 + i6 + i7 + i8 + i9 + i10) * (interes / 100) / 12;
                 let i12 = (inicial + periodico + i1 + i2 + i3 + i4 + i5 + i6 + i7 + i8 + i9 + i10 + i11) * (interes / 100) / 12;    
-                console.log(i1 , i2 , i3 , i4 , i5 , i6 , i7 , i8 , i9 , i10 , i11 , i12)
                 let interest = i1 + i2 + i3 + i4 + i5 + i6 + i7 + i8 + i9 + i10 + i11 + i12;
                 let total = interest + inicial + periodico;
                 document.getElementById("r-bal").innerHTML = inicial.toFixed(2) + '€';
@@ -99,7 +96,6 @@ window.addEventListener('load', function () {
                 let i10 = (inicial + periodico + i1 + i2 + i3+ i4 + i5 + i6 + i7 + i8 + i9) * (interes / 100) / 12;
                 let i11 = (inicial + periodico + i1 + i2 + i3+ i4 + i5 + i6 + i7 + i8 + i9 + i10) * (interes / 100) / 12;
                 let i12 = (inicial + periodico + i1 + i2 + i3 + i4 + i5 + i6 + i7 + i8 + i9 + i10 + i11) * (interes / 100) / 12;    
-                console.log(i1 , i2 , i3 , i4 , i5 , i6 , i7 , i8 , i9 , i10 , i11 , i12)
                 let interest = i1 + i2 + i3 + i4 + i5 + i6 + i7 + i8 + i9 + i10 + i11 + i12;
                 let total = interest + inicial + periodico;
                 document.getElementById("r-bal").innerHTML = inicial.toFixed(2) + '€';

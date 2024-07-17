@@ -2,9 +2,9 @@ window.addEventListener('load', function () {
 
     let darkl = document.getElementById("dark-light");
 
-    darkl.addEventListener('click', function () {
-        console.log("hol")
-    })
+    // darkl.addEventListener('click', function () {
+    //     console.log("hol")
+    // })
 
     let input_inicial = document.getElementById("input-inicial");
     let input_period = document.getElementById("input-period");

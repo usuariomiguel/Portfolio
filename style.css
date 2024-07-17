@@ -707,7 +707,7 @@ textarea:focus {
 .porfolioContainerSection {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 50px;
 }
 
 .portContainer__item {
@@ -1233,6 +1233,12 @@ textarea:focus {
     grid-area: b;
   }
 
+  .portContainer__item {
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 25px;
+  }
+
   .portContainer__item--first {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
@@ -1574,7 +1580,7 @@ textarea:focus {
   }
 
   .porfolioContainerSection {
-    gap: 100px;
+    gap: 25px;
   }
 
   .portContainer__more {
@@ -1585,14 +1591,14 @@ textarea:focus {
     fill: red;
   } */
 
-  .anco {
+  /* .anco {
     filter: grayscale(1);
     transition: filter 0.5s ease;
   }
 
   .anco:hover {
     filter: grayscale(0);
-  }
+  } */
 
   /*HABILIDADES*/
 
@@ -1790,7 +1796,7 @@ textarea:focus {
   }
 
   .porfolioContainerSection {
-    gap: 150px;
+    gap: 25px;
   }
 
   .portContainer__item--third.active {
@@ -1821,7 +1827,7 @@ textarea:focus {
   /*PORTFOLIO*/
 
   .porfolioContainerSection {
-    gap: 200px;
+    gap: 25px;
   }
 
   /*HABILIDADES*/

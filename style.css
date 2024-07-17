@@ -659,7 +659,9 @@ textarea:focus {
   /* background-color: var(--color-primary); */
   color: white;
   /* border-radius: 1.75rem; */
-  border-bottom: 1px solid gray;
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
 }
 
 .about__title {
@@ -683,6 +685,7 @@ textarea:focus {
 .portContainer {
   padding: 75px 16px;
   overflow: hidden;
+  border-bottom: 1px solid gray;
 }
 
 .portContainer__ellipse,
@@ -867,10 +870,9 @@ textarea:focus {
 
 .habContainer {
   padding: 75px 16px;
-  margin: 15px;
   margin-bottom: 75px;
   color: white;
-  border-radius: 1.75rem;
+  border-bottom: 1px solid gray;
 }
 
 .habContainer__title {

@@ -15,7 +15,7 @@
     <title>Interes compuesto</title>
 </head>
 
-<body class="font-sans bg-gray-light dark:bg-dark dark:text-darkfont">
+<body class="font-sans bg-gray-light dark:bg-gray-dark dark:text-darkfont">
     <!-- <header class="bg-container px-9 border-b border-gray-light bg-containerlight text-darkfont">
         <div class="px-9 lg:px-12 max-w-screen-xl m-auto py-5 flex justify-between items-center">
             <div class="flex items-center gap-2">
@@ -38,13 +38,13 @@
                 <label for="">Depósito inicial:</label>
                 <input
                     class="w-full rounded-lg border border-gray-dark p-2 md:p-3 text-base md:text-xl"
-                    type="number" name="input-inicial" id="input-inicial" value="">
+                    type="number" name="input-inicial" id="input-inicial" value="100000">
             </div>
             <div class="flex flex-col gap-2">
                 <label for="">Depósitos periódicos:</label>
                 <div class="w-full" style="display: flex;">
                     <input class="w-full rounded-l-lg border border-gray-dark p-2 md:p-3 text-base md:text-xl"
-                        type="number" name="input-period" id="input-period" value="">
+                        type="number" name="input-period" id="input-period" value="0">
                     <select class=" rounded-r-lg bg-gray-dark text-gray-light p-2 md:p-3 text-base md:text-xl " id="periodo"
                         value="">
                         <option id="dia" value="Diario">Diario</option>
@@ -57,12 +57,12 @@
             <div class="flex flex-col gap-2">
                 <label for="">Ratio interés anual (%):</label>
                 <input class="w-full rounded-lg border border-gray-dark p-2 md:p-3 text-base md:text-xl"
-                    type="number" name="input-interes" id="input-interes" value="">
+                    type="number" name="input-interes" id="input-interes" value="3.75">
             </div>
             <div class="flex flex-col gap-2">
                 <label for="">Duración (años):</label>
                 <input class="w-full rounded-lg border border-gray-dark p-2 md:p-3 text-base md:text-xl"
-                    type="number" name="input-duracion" id="input-duracion" value="">
+                    type="number" name="input-duracion" id="input-duracion" value="1">
             </div>
             <button class="bg-gray-dark p-2 md:p-3 rounded-lg text-gray-light mt-3  lg:col-start-3 lg:col-end-2 cursor-pointer"
                 type="button" id="submit">Calcular</button>

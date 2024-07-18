@@ -21,7 +21,7 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'gray-dark': '#273444',
+      'gray-dark': '#151529e1',
       'gray': '#8492a6',
       'gray-light': '#f8fbff',
       'yellow': '#f0ff96',

@@ -1032,7 +1032,6 @@ textarea:focus {
 
 .formContainer__forminput {
   border: 1px solid gray;
-  background-color: transparent;
   padding: 11px;
   width: 100%;
   margin: 11px 0;

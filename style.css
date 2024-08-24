@@ -951,7 +951,7 @@ textarea:focus {
 .habContainer__utility,
 .habContainer__all {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: .5fr .5fr;
   gap: 16px;
 }
 
@@ -965,7 +965,7 @@ textarea:focus {
 
 .habContainer__lenguajes.active {
   display: grid;
-  padding-bottom: calc(437.7px - 297.42px);
+  padding-bottom: calc(500px - 328px);
 }
 
 .habContainer__utility {
@@ -974,7 +974,7 @@ textarea:focus {
 
 .habContainer__utility.active {
   display: grid;
-  padding-bottom: calc(437.7px - 226.42px);
+  padding-bottom: calc(500px - 156px);
 }
 
 .habContainer__item {
@@ -987,7 +987,7 @@ textarea:focus {
   padding: 10px 30px;
   box-shadow: 0 0 0 1px var(--color-bgsections), 0 30px 30px rgb(0 0 0 / 7%), 0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 4%), 0 2px 2px rgb(255 255 255);
   border-radius: 7px;
-  margin-right: 25px;
+  height: 70px;
 }
 
 .habContainer__item::after {
@@ -1032,8 +1032,6 @@ textarea:focus {
 
 .formContainer__forminput {
   border: 1px solid gray;
-  color: var(--color-primary-paragraph);
-  background-color: transparent;
   padding: 11px;
   width: 100%;
   margin: 11px 0;
@@ -1276,7 +1274,7 @@ textarea:focus {
   .habContainer__lenguajes,
   .habContainer__utility,
   .habContainer__all {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: .33fr .33fr .33fr;
   }
 
   .habContainer__lenguajes.active {
@@ -1634,16 +1632,16 @@ textarea:focus {
   .habContainer__lenguajes,
   .habContainer__utility,
   .habContainer__all {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: .25fr .25fr .25fr .25fr;
     gap: 25px;
   }
 
   .habContainer__lenguajes.active {
-    padding-bottom: calc(257.53px - 163.77px);
+    padding-bottom: calc(260px - 165px);
   }
 
   .habContainer__utility.active {
-    padding-bottom: calc(257.53px - 162.53px);
+    padding-bottom: calc(260px - 70px);
   }
 
   .habContainer__item {

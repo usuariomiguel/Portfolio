@@ -25,8 +25,8 @@
             <img id="dark-light" src="./src/icons/darkmode.svg" alt="">
         </div>
     </header> -->
-    <main class="p-5 md:p-9 lg:p-12 flex flex-col gap-7 max-w-screen-lg m-auto md:text-xl dark:text-light">
-        <div class="shadow-2xl dark:shadow-white light:bg-light dark:bg-transparent dark:border-gray-light text-lightfont dark:text-light p-6 rounded-xl flex flex-col gap-5">
+    <main class="p-5 md:p-9 lg:p-12 flex flex-col gap-7 max-w-screen-lg m-auto md:text-xl">
+        <div class="bg-light shadow-xl text-lightfont p-6 rounded-xl flex flex-col gap-5">
             <div class="flex flex-col gap-9 p-6">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center font-sans">
                     Calculadora de Interés Compuesto
@@ -44,8 +44,8 @@
                 <div class="w-full" style="display: flex;">
                     <input class="bg-gray-light w-full rounded-l-xl border border-gray p-2 md:p-3 text-base md:text-xl"
                         type="number" name="input-period" id="input-period" value="0">
-                    <select class=" rounded-r-xl bg-gray-dark text-gray-light p-2 md:p-3 text-base md:text-xl " id="periodo"
-                        value="">
+                    <select class=" rounded-r-xl bg-gray-dark text-gray-light p-2 md:p-3 text-base md:text-xl "
+                        id="periodo" value="">
                         <option id="dia" value="Diario">Diario</option>
                         <option id="semana" value="Semestral">Semestral</option>
                         <option id="mes" value="Mensual">Mensual</option>
@@ -63,11 +63,13 @@
                 <input class="bg-gray-light w-full rounded-xl border border-gray p-2 md:p-3 text-base md:text-xl"
                     type="number" name="input-duracion" id="input-duracion" value="1">
             </div>
-            <button class="bg-gray-dark p-2 md:p-3 rounded-xl text-gray-light mt-3  lg:col-start-3 lg:col-end-2 cursor-pointer"
+            <button
+                class="bg-gray-dark p-2 md:p-3 rounded-xl text-gray-light mt-3  lg:col-start-3 lg:col-end-2 cursor-pointer"
                 type="button" id="submit">Calcular</button>
         </div>
         <div class="lg:gap-7 text-lightfont">
-            <div class="bg-light shadow-2xl dark:shadow-xl dark:border-gray-light rounded-xl p-6 flex flex-col gap- md:p-9 lg:p-12">
+            <div
+                class="bg-light shadow-2xl dark:shadow-xl dark:border-gray-light rounded-xl p-6 flex flex-col gap- md:p-9 lg:p-12">
                 <!-- <h2 class="text-xl font-bold font-sans">Resultados</h2> -->
                 <!-- <p>Con un ahorro de € cada mes durante X años y con un balance inicial de €</p> -->
                 <div class="">
@@ -91,8 +93,8 @@
                         <span class="flex justify-end text-xl md:text-2xl" id="r-tott">€</span>
                     </div>
                 </div>
-                <button class="bg-gray-dark p-2 md:p-3 rounded-xl text-gray-light" id="cleaner"
-                    type="button">Limpiar Resultados</button>
+                <button class="bg-gray-dark p-2 md:p-3 rounded-xl text-gray-light" id="cleaner" type="button">Limpiar
+                    Resultados</button>
             </div>
             <div class="hidden shadow-xl bg-container p-6 rounded-xl border border-gray-light lg:p-12"></div>
         </div>

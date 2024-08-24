@@ -54,7 +54,7 @@ window.addEventListener('load', function () {
                 document.getElementById("r-tott").innerHTML = total.toFixed(2) + '€';
             } else if (option_periodico.value == "Mensual") {
                 let periodico = (period * 12) * duracion;
-                let interest = inicial * Math.pow((1 + interesmensual), duracion * 12);
+                let interest = period * (((1+interesmensual)));
                 let total = interest + inicial + periodico;
                 document.getElementById("r-bal").innerHTML = inicial.toFixed(2) + '€';
                 document.getElementById("r-per").innerHTML = periodico.toFixed(2) + '€';

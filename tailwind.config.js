@@ -21,24 +21,23 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'gray-dark': '#151529e1',
       'gray': '#8492a6',
+      'bg-dark': '#222222',
       'gray-light': '#f8fbff',
-      'yellow': '#f0ff96',
-      'green': '#96ffc6',
-      'dark': '#171717',
-      'containerdark': '#060606',
-      'inputdark': '#060606',
-      'darkfont': '#fff',
+      'border-light': '#cccccc',
+      'border-dark': '#cccccc',
+      'dark': '#000',
       'light': '#fff',
-      'containerlight': '#1e293b',
-      'lightfont': '#000',
     },
     fontFamily: {
       sans: ["Anybody", 'sans-serif'],
       serif: ['Merriweather Sans', 'sans-serif'],
     },
     extend: {
+      boxShadow: {
+        'dxl': '0 20px 25px -5px #ffffff12, 0 8px 10px -6px #ffffff12;',
+        'dmd': '0 4px 6px -1px #ffffff12, 0 2px 4px -2px #ffffff12;',
+      },
       spacing: {
         '128': '32rem',
         '144': '36rem',

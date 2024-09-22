@@ -22,12 +22,15 @@ module.exports = {
     },
     colors: {
       'gray': '#8492a6',
-      'bg-dark': '#222222',
+      'bg-dark': '#090F12',
       'gray-light': '#f8fbff',
       'border-light': '#cccccc',
       'border-dark': '#cccccc',
       'dark': '#000',
+      'toolcolor': '#808080',
       'light': '#fff',
+      'yellow': '#fcd561',
+      'blue': '#6366f1',
     },
     fontFamily: {
       sans: ["Anybody", 'sans-serif'],

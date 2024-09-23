@@ -33,7 +33,7 @@ module.exports = {
       'blue': '#6366f1',
     },
     fontFamily: {
-      sans: ["Anybody", 'sans-serif'],
+      sans: ["Climate Crisis", 'cursive'],
       serif: ['Merriweather Sans', 'sans-serif'],
     },
     extend: {

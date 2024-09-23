@@ -658,13 +658,7 @@ textarea:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 0 15px; */
-  /* background-color: var(--color-primary); */
   color: white;
-  /* border-radius: 1.75rem; */
-  border: 1px solid gray;
-  border-left: none;
-  border-right: none;
 }
 
 .about__title {
@@ -688,7 +682,6 @@ textarea:focus {
 .portContainer {
   padding: 75px 16px;
   overflow: hidden;
-  border-bottom: 1px solid gray;
 }
 
 .portContainer__ellipse,
@@ -875,7 +868,7 @@ textarea:focus {
   padding: 75px 16px;
   margin-bottom: 75px;
   color: white;
-  border-bottom: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
 }
 
 .habContainer__title {
@@ -1230,6 +1223,7 @@ textarea:focus {
   .portContainer__item__image {
     grid-area: a;
     max-width: 578px;
+    border: 3px solid gray;
   }
 
   .portContainer__item__information {

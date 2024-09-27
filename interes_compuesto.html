@@ -76,10 +76,10 @@
             <img id="dark-light" src="./src/icons/darkmode.svg" alt="">
         </div>
     </header> -->
-    <main class="p-5 md:p-9 flex flex-col gap-7 max-w-screen-lg m-auto md:text-xl dark:text-light lg:grid-rows-2 ">
+    <main class="p-5 md:p-9 flex flex-col gap-7 max-w-screen-lg m-auto md:text-xl dark:text-light lg:grid-rows-2 font-serif">
         <div class="flex flex-col gap-9 p-6">
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center font-sans text-blue dark:text-yellow">
-                <span class="text-dark dark:text-light text-3xl">Calculadora de</span><br>INTERÉS COMPUESTO 
+            <h1 class="text-3xl md:text-4xl lg:text-5xl text-center font-sans text-blue dark:text-yellow tracking-wide font-normal">
+                <span class="text-dark dark:text-light text-2xl md:text-3xl">Calculadora de</span><br>INTERÉS COMPUESTO 
             </h1>
             <!-- <p class="text-left">Cálculadora de interés compuesto para que puedas calcular tus cuentas</p> -->
         </div>
@@ -88,15 +88,15 @@
 
                 <div class="flex flex-col gap-2 text-toolcolor">
                     <label for="">Depósito inicial:</label>
-                    <input class="w-full rounded-xl border border-border-light p-3 text-base md:text-xl shadow-md dark:bg-bg-dark dark:shadow-dmd dark:border-toolcolor dark:text-light text-dark"
+                    <input class="w-full rounded-xl border-2 border-border-light p-3 text-base md:text-xl shadow-md dark:bg-bg-dark dark:shadow-dmd dark:border-toolcolor dark:text-light text-dark focus:outline-0 focus:border-2 focus:border-blue dark:focus:border-yellow"
                         type="number" name="input-inicial" id="input-inicial" value="100000">
                 </div>
                 <div class="flex flex-col gap-2 text-toolcolor">
                     <label for="">Depósitos periódicos:</label>
                     <div class="w-full shadow-md rounded-xl dark:shadow-dmd" style="display: flex;">
-                        <input class="dark:bg-bg-dark w-full rounded-l-xl border border-border-light dark:border-toolcolor p-3 text-base md:text-xl dark:text-light text-dark"
+                        <input class="dark:bg-bg-dark w-full rounded-l-xl border-2 border-border-light dark:border-toolcolor p-3 text-base md:text-xl dark:text-light text-dark focus:outline-0 focus:border-2 focus:border-blue dark:focus:border-yellow"
                             type="number" name="input-period" id="input-period" value="0">
-                        <select class="rounded-r-xl bg-dark dark:bg-light dark:text-dark text-gray-light p-3 text-base md:text-xl border-y border-r dark:border-none"
+                        <select class="rounded-r-xl bg-dark dark:bg-light dark:text-dark text-gray-light p-3 text-base md:text-xl border-y border-r dark:border-none cursor-pointer"
                             id="periodo" value="">
                             <option id="dia" value="Diario">Diario</option>
                             <option id="semana" value="Semestral">Semestral</option>
@@ -107,16 +107,16 @@
                 </div>
                 <div class="flex flex-col gap-2 text-toolcolor">
                     <label for="">Ratio interés anual (%):</label>
-                    <input class="dark:bg-bg-dark w-full rounded-xl border border-border-light p-3 text-base md:text-xl shadow-md dark:shadow-dmd dark:border-toolcolor dark:text-light text-dark"
+                    <input class="dark:bg-bg-dark w-full rounded-xl border-2 border-border-light p-3 text-base md:text-xl shadow-md dark:shadow-dmd dark:border-toolcolor dark:text-light text-dark focus:outline-0 focus:border-2 focus:border-blue dark:focus:border-yellow"
                         type="number" name="input-interes" id="input-interes" value="3.75">
                 </div>
                 <div class="flex flex-col gap-2 text-toolcolor">
                     <label for="">Duración (años):</label>
-                    <input class="dark:bg-bg-dark w-full rounded-xl border border-border-light p-3 text-base md:text-xl shadow-md dark:shadow-dmd dark:border-toolcolor dark:text-light text-dark"
+                    <input class="dark:bg-bg-dark w-full rounded-xl border-2 border-border-light p-3 text-base md:text-xl shadow-md dark:shadow-dmd dark:border-toolcolor dark:text-light text-dark focus:outline-0 focus:border-2 focus:border-blue dark:focus:border-yellow"
                         type="number" name="input-duracion" id="input-duracion" value="1">
                 </div>
                 <button
-                    class="bg-blue text-light dark:bg-yellow dark:text-dark p-3 rounded-xl mt-3  lg:col-start-3 lg:col-end-2 cursor-pointer dark:shadow-dmd"
+                    class="bg-blue text-light dark:bg-yellow dark:hover:bg-light hover:bg-dark dark:text-dark p-3 rounded-xl mt-3  lg:col-start-3 lg:col-end-2 cursor-pointer dark:shadow-dmd"
                     type="button" id="submit">Calcular</button>
             </div>
             <div class="lg:gap-7">
@@ -154,8 +154,8 @@
         </div>
 
     </main>
-    <footer class="text-center px-9 py-5 bg-container text-dark dark:text-toolcolor">
-        <span>Desarrollado por Miguel Ángel Cantos</span>
+    <footer class="text-center px-9 py-5 bg-container text-dark dark:text-toolcolor font-serif">
+        <span>Desarrollado por <span class="font-bold text-border-light">Miguel Ángel Cantos</span></span>
     </footer>
 </body>
 

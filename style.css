@@ -51,6 +51,7 @@
   --color-primary-button: #423719;
   --color-bgsections: #212134;
   --color-bgsections: #1c1529;
+  --color-bgsections: #1c152913;
   /* --color-bgsections: #d2d2d2; */
   --color-bgContainer: #263946;
   --color-gradient-90º: linear-gradient(90deg, hsla(338, 67%, 53%, 1) 0%, hsla(21, 99%, 52%, 1) 100%);
@@ -285,7 +286,7 @@ textarea:focus {
 }
 
 .header.addColor {
-  background-color: var(--bg-color2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.028);
   z-index: 10;
   backdrop-filter: blur(10px) saturate(200%);
 }

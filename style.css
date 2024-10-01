@@ -43,6 +43,7 @@
   --bg-color-hab: #ff9d00;
   --color-primary: #fcd561;
   --color-primary-title: #f5f5f5;
+  --color-white-border-o: #ffffff4a;
   /* --color-primary:var(--color-primary-paragraph); */
   --color-primary-opacity: rgba(253, 201, 105, 0.8);
   --color-primary-opacity2: rgba(253, 201, 105, 0.085);
@@ -286,7 +287,7 @@ textarea:focus {
 }
 
 .header.addColor {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.028);
+  border-bottom: 1px solid var(--color-white-border-o);
   z-index: 10;
   backdrop-filter: blur(10px) saturate(200%);
 }
@@ -715,6 +716,7 @@ textarea:focus {
   gap: 25px;
   margin: 0;
   padding: 0;
+  border: 1px solid var(--color-white-border-o);
 }
 
 /* .heroContainer__ellipse {
@@ -1224,7 +1226,7 @@ textarea:focus {
   .portContainer__item__image {
     grid-area: a;
     max-width: 578px;
-    border: 3px solid gray;
+    border: 3px solid var(--color-white-border-o);
   }
 
   .portContainer__item__information {

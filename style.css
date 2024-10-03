@@ -1787,8 +1787,7 @@ textarea:focus {
   .portContent,
   .habContent,
   .formContent,
-  .footerContainer,
-  .headerContainer {
+  .footerContainer{
     margin: 0 auto;
     max-width: 1100px;
   }

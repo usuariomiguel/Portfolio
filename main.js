@@ -131,13 +131,45 @@ window.addEventListener('load', function () {
         footer.classList.remove("active");
     })
 
+        // const ciber = document.querySelector(".ciber");
+        // const Dweb = document.querySelector(".Dweb");
+        // const Pweb1 = document.querySelector(".Pweb1");
+        // const Pweb2 = document.querySelector(".Pweb2");
+        // const Pweb3 = document.querySelector(".Pweb3");
+        // const Pciber1 = document.querySelector(".Pciber1");
+    
+        // Pweb1.classList.add("active");
+        // Pweb2.classList.add("active");
+        // Pweb3.classList.add("active");
+        // Pciber1.classList.remove("active");
+    
+        // ciber.addEventListener("click", function () {
+        //     ciber.classList.add("active");
+        //     Dweb.classList.remove("active");
+        //     Pweb1.classList.remove("active");
+        //     Pweb2.classList.remove("active");
+        //     Pweb3.classList.remove("active");
+        //     Pciber1.classList.add("active");
+        // });
+    
+        // // Manejar clic en Dweb
+        // Dweb.addEventListener("click", function () {
+        //     ciber.classList.remove("active");
+        //     Dweb.classList.add("active");
+        //     Pweb1.classList.add("active");
+        //     Pweb2.classList.add("active");
+        //     Pweb3.classList.add("active");
+        //     Pciber1.classList.remove("active");
+        // });
+    
+
     All = this.document.querySelector(".All");
     lenguages = this.document.querySelector(".lenguages");
     tools = this.document.querySelector(".tools");
     habContainer__all = this.document.querySelector(".habContainer__all");
     habContainer__lenguajes = this.document.querySelector(".habContainer__lenguajes");
     habContainer__utility = this.document.querySelector(".habContainer__utility");
-
+    
     All.classList.add("active");
     lenguages.classList.remove("active");
     tools.classList.remove("active");

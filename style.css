@@ -256,9 +256,11 @@ li {
     border: 2px solid var(--color-primary-paragraph);
   }
 
-  .habContainer__buttonsFilters__link:hover,
   a:hover {
     cursor: url(./src/img/pointer.svg), pointer;
+  }
+
+  .habContainer__buttonsFilters__link:hover{
     transform: scale(0.98);
     opacity: 1;
   }
@@ -431,42 +433,6 @@ textarea:focus {
   gap: 10px;
 }
 
-/* .navList__menu__footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.navList__menu__footer__darkmode {
-  background-color:  var(--color-primary);
-  border-radius: 30px;
-  padding: 10px;
-  width: 150px;
-}
-
-.navList__menu__footer__darkmode__paragraph {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  line-height: 0;
-  padding: 0;
-  margin: 0;
-  font-size: var(--fs-links);
-  color:  var(--color-primary-button);
-}
-
-.navList__menu__footer__darkmode__img {
-  width: 15px;
-  height: auto;
-} */
-
-/* .othercolor {
-  background: var(--color-gradient-0º);
-  -webkit-background-clip: text;
-  color: transparent;
-} */
-
 .navList {
   display: none;
 }
@@ -495,7 +461,6 @@ textarea:focus {
 
 .heroContainer {
   overflow: hidden;
-  /* margin: 10px; Se puede dejar aplicando el nuevo diseño */
   border-radius: 17px;
   background-color: var(--bg-color);
 }
@@ -576,20 +541,6 @@ textarea:focus {
   color: var(--color-primary);
   gap: 30px;
 }
-
-/* .heroContent__General__info::after {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 0px;
-  bottom: 0px;
-  right: 0px;
-  width: 100%;
-  height: 20px;
-  background: var(--color-gradient-90º);
-  filter: blur(20px);
-  opacity: 0;
-} */
 
 .heroContent__General__info--one {
   display: flex;
@@ -684,6 +635,7 @@ textarea:focus {
 .portContainer {
   padding: 75px 16px;
   overflow: hidden;
+  background-color: var(--color-primary);
 }
 
 .portContainer__ellipse,
@@ -697,7 +649,7 @@ textarea:focus {
 }
 
 .portContainer__item__paragraph {
-  color: var(--color-primary-paragraph);
+  color: black;
 }
 
 .portContainer__items {
@@ -715,8 +667,10 @@ textarea:focus {
   display: grid;
   gap: 25px;
   margin: 0;
-  padding: 0;
-  border: 1px solid var(--color-white-border-o);
+  padding: 15px;
+  border: 1px solid var(--bg-color);
+  border-radius: 7px;
+  background-color: var(--color-white-border-o);
 }
 
 /* .heroContainer__ellipse {
@@ -832,7 +786,7 @@ textarea:focus {
 
 .portContainer__more__img {
   width: 25px;
-  rotate: 45deg;
+  rotate: 90deg;
   animation: close 2s linear infinite;
 }
 
@@ -1226,7 +1180,6 @@ textarea:focus {
   .portContainer__item__image {
     grid-area: a;
     max-width: 578px;
-    border: 3px solid var(--color-white-border-o);
   }
 
   .portContainer__item__information {
@@ -1234,7 +1187,6 @@ textarea:focus {
   }
 
   .portContainer__item {
-    border-radius: 7px;
     padding: 25px;
   }
 
@@ -1242,14 +1194,12 @@ textarea:focus {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-areas: "a b";
-    gap: 50px;
   }
 
   .portContainer__item--second {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-areas: "b a";
-    gap: 50px;
   }
 
 
@@ -1577,26 +1527,25 @@ textarea:focus {
     gap: 100px;
   }
 
+  .portContainer__item--first, .portContainer__item--second {
+    display: flex;
+    flex-direction: column;
+  }
+
   .porfolioContainerSection {
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
     gap: 25px;
   }
 
   .portContainer__more {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
+    color: white;
   }
-
-  /* .p, .o, .l, .l, .a {
-    fill: red;
-  } */
-
-  /* .anco {
-    filter: grayscale(1);
-    transition: filter 0.5s ease;
-  }
-
-  .anco:hover {
-    filter: grayscale(0);
-  } */
 
   /*HABILIDADES*/
 
@@ -1784,7 +1733,6 @@ textarea:focus {
 
   .heroContent__General__info,
   .aboutContainer,
-  .portContent,
   .habContent,
   .formContent,
   .footerContainer{
@@ -1797,10 +1745,6 @@ textarea:focus {
   }
 
   .portContainer__item--third.active {
-    gap: 100px;
-  }
-
-  .portContainer__item {
     gap: 100px;
   }
 
@@ -3587,3 +3531,52 @@ textarea:focus {
     box-shadow: 0 0 2vw 0.4vw yellow;
   }
 }
+
+/* Clasificar Porfolio
+
+/* .portContainerSections {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 7px;
+  border: 1px solid gray;
+  .portContainerSections__link {
+    color: white;
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+  }
+  .first {
+    border-right: 1px solid gray;
+    border-radius: 0;
+  }
+  .Dweb.active, .ciber.active {
+    background-color: var(--color-primary);
+    color: black;
+    border-radius: 7px;
+  }
+}
+
+.portContainer__item {
+  display: grid;
+  gap: 25px;
+  margin: 0;
+  padding: 15px;
+  border: 1px solid var(--color-white-border-o);
+  border-radius: 7px;
+}
+
+.Pciber1 {
+  display: none;
+}
+
+.Pweb1, .Pweb2, .Pweb3 {
+  display: none !important;
+}
+
+.Pciber1.active {
+  display: grid !important;
+}
+
+.Pweb1.active, .Pweb2.active, .Pweb3.active {
+  display: grid !important;
+} */

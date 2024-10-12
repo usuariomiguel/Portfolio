@@ -242,7 +242,7 @@ textarea:focus {
 .header.addColor {
   border-bottom: 1px solid var(--color-white-border-o);
   z-index: 10;
-  backdrop-filter: blur(10px) saturate(200%);
+  backdrop-filter: blur(10px);
 }
 
 .headerContainer {
@@ -1410,6 +1410,7 @@ textarea:focus {
   .portContainer__item--second {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .porfolioContainerSection {

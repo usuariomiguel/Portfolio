@@ -1055,6 +1055,7 @@ textarea:focus {
 
   .hero__paragraph {
     max-width: 80%;
+    margin: 0 auto;
   }
 
   .herobutton__link {
@@ -1357,6 +1358,7 @@ textarea:focus {
     margin: 0;
     padding: 10px 40px;
     max-width: max-content;
+    margin: 0 auto;
   }
 
   /* ABOUT */
@@ -1596,6 +1598,7 @@ textarea:focus {
 
   .heroContent__General__info--one {
     padding-left: 75PX;
+    text-align: center;
   }
 
   .hero__source {
@@ -1618,7 +1621,7 @@ textarea:focus {
 
   .heroContent__General__info {
     display: grid;
-    grid-template-columns: 4.5FR 5.5FR;
+    /* grid-template-columns: 4.5FR 5.5FR; */
     gap: 0;
     margin: 0 auto;
     max-width: 1600px;

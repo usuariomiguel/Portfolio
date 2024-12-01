@@ -280,9 +280,7 @@ textarea:focus {
   position: relative;
   margin: 0 auto;
   margin-bottom: 25px;
-  color: var(--color-primary-paragraph);
   border: 2px solid var(--color-primary-title);
-  background-color: var(--color-bgsections);
   text-align: center;
   padding: 5px 15px;
   max-width: max-content;
@@ -292,7 +290,6 @@ textarea:focus {
   position: absolute;
   font-family: var(--ff-paragraph);
   width: 100vw;
-  background-color: var(--bg-color);
   left: 0;
   right: 0;
   top: 90px;
@@ -311,7 +308,7 @@ textarea:focus {
 }
 
 .header.active {
-  background-color: var(--bg-color2);
+  /* background-color: var(--bg-color2); */
 }
 
 .herosubtitle.active {
@@ -324,11 +321,7 @@ textarea:focus {
   pointer-events: none;
   overflow-x: scroll;
 }
-
-#about.active,
-#port.active,
-#skills.active,
-#form.active {
+.main.active {
   display: none;
   opacity: 0;
 }
@@ -350,7 +343,6 @@ textarea:focus {
   height: calc(100vh - 112px);
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-color2);
   border-radius: 7px;
   padding: 0;
   gap: 50px;
@@ -379,13 +371,13 @@ textarea:focus {
 }
 
 .navList__menu__link__CV {
-  color: var(--color-bgsections);
   background-color: var(--color-primary);
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  color: black;
 }
 
 .navList {

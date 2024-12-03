@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .card {
+        overflow: visible;
+        width: 190px;
+        height: 254px;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 300ms;
+        box-shadow: 0px 0px 10px 1px #000000ee;
+        border-radius: 5px;
+    }
+
+    .front,
+    .back {
+        background-color: #151515;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .back {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .back::before {
+        position: absolute;
+        content: ' ';
+        display: block;
+        width: 160px;
+        height: 160%;
+        background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+        animation: rotation_481 5000ms infinite linear;
+    }
+
+    .back-content {
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        background-color: #151515;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card:hover .content {
+        transform: rotateY(180deg);
+    }
+
+    @keyframes rotation_481 {
+        0% {
+            transform: rotateZ(0deg);
+        }
+
+        0% {
+            transform: rotateZ(360deg);
+        }
+    }
+
+    .front {
+        transform: rotateY(180deg);
+        color: white;
+    }
+
+    .front .front-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .front-content .badge {
+        background-color: #00000055;
+        padding: 2px 10px;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+        width: fit-content;
+    }
+
+    .description {
+        box-shadow: 0px 0px 10px 5px #00000088;
+        width: 100%;
+        padding: 10px;
+        background-color: #00000099;
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+    }
+
+    .title {
+        font-size: 11px;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title p {
+        width: 70%;
+    }
+
+    .card-footer {
+        color: #ffffff88;
+        margin-top: 5px;
+        font-size: 8px;
+    }
+
+    .front .img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .circle {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: #ffbb66;
+        position: relative;
+        filter: blur(15px);
+        animation: floating 2600ms infinite linear;
+    }
+
+    #bottom {
+        background-color: #ff8866;
+        left: 50px;
+        top: 0px;
+        width: 150px;
+        height: 150px;
+        animation-delay: -800ms;
+    }
+
+    #right {
+        background-color: #ff2233;
+        left: 160px;
+        top: -80px;
+        width: 30px;
+        height: 30px;
+        animation-delay: -1800ms;
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+</style>
+
+<body>
+    <main class="main">
+        <div class="bg">
+            <div class="portContent">
+                <h2 class="portTitle Title">
+                    <div class="pp">Mis <span class="cyellow">Proyectos.</span></div>
+                </h2>
+                <div class="portContainer__items">
+                    <div class="porfolioContainerSection">
+                        <div class="card">
+                            <div class="content">
+                                <div class="back">
+                                    <div class="back-content">
+                                        <svg width="119" height="100" viewBox="0 0 119 100" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="73" cy="39" r="10" fill="#20b46a" stroke="black" />
+                                            <circle cx="47" cy="65" r="9.5" fill="#20b46a" stroke="black" />
+                                            <path d="M60.9822 61.1725L68.4792 61.2682L60.9822 68.771L60.9822 61.1725Z"
+                                                fill="#20b46a" />
+                                            <circle cx="77.1207" cy="68.9809" r="16.5838"
+                                                transform="rotate(-0.512576 77.1207 68.9809)" fill="#20b46a"
+                                                stroke="black" />
+                                            <path d="M60.5568 66.9933L60.5858 52.5459L74.8849 52.4426L60.5568 66.9933Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M60.9822 61.1725L68.4792 61.2682L60.9822 68.771L60.9822 61.1725Z"
+                                                fill="#20b46a" />
+                                            <path d="M69.6947 52.9779L76.6581 52.8224L67.9159 61.6009L69.6947 52.9779Z"
+                                                fill="#20b46a" />
+                                            <rect x="63" y="56" width="9" height="6" fill="#20b46a" />
+                                            <path d="M58.7946 43.8383L51.297 43.8503L58.6855 36.2835L58.7946 43.8383Z"
+                                                fill="#20b46a" />
+                                            <path
+                                                d="M26.5586 34.9892C26.59 25.8861 34.0376 18.527 43.1992 18.5583C52.3608 18.5896 59.7575 25.9993 59.726 35.1024C59.6946 44.2055 52.247 51.5646 43.0854 51.5333C33.9238 51.5021 26.5272 44.0924 26.5586 34.9892Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M59.6789 37.2293L59.4712 51.5892L45.1767 51.5159L59.6789 37.2293Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M59.1829 43.0083L51.6877 42.8209L59.277 35.4532L59.1829 43.0083Z"
+                                                fill="#20b46a" />
+                                            <path d="M50.3697 51.0489L43.405 51.1178L52.2551 42.4971L50.3697 51.0489Z"
+                                                fill="#20b46a" />
+                                            <rect width="8.38355" height="5.55757"
+                                                transform="matrix(-0.999924 -0.0123078 0.0124475 -0.999922 56.4912 47.5735)"
+                                                fill="#20b46a" />
+                                        </svg>
+                                        <strong> Anco Company</strong>
+                                    </div>
+                                </div>
+                                <div class="front">
+    
+                                    <div class="img">
+                                        <div class="circle">
+                                        </div>
+                                        <div class="circle" id="right">
+                                        </div>
+                                        <div class="circle" id="bottom">
+                                        </div>
+                                    </div>
+    
+                                    <div class="front-content">
+                                        <small class="badge">Anco Company</small>
+                                        <div class="description">
+                                            <div class="title">
+                                                <p class="title">
+                                                    <strong>Compañía ficticia de diseño y desarrollo web.</strong>
+                                                </p>
+                                                <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g style="mix-blend-mode: normal" text-anchor="none" font-size="none"
+                                                        font-weight="none" font-family="none" stroke-dashoffset="0"
+                                                        stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter"
+                                                        stroke-linecap="butt" stroke-width="1" stroke="none"
+                                                        fill-rule="nonzero" fill="#20c997">
+                                                        <g transform="scale(8,8)">
+                                                            <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <p class="card-footer">
+                                                2022 - 2023 &nbsp; | &nbsp; 2 personas
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="back">
+                                    <div class="back-content">
+                                        <svg width="119" height="100" viewBox="0 0 119 100" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="73" cy="39" r="10" fill="#20b46a" stroke="black" />
+                                            <circle cx="47" cy="65" r="9.5" fill="#20b46a" stroke="black" />
+                                            <path d="M60.9822 61.1725L68.4792 61.2682L60.9822 68.771L60.9822 61.1725Z"
+                                                fill="#20b46a" />
+                                            <circle cx="77.1207" cy="68.9809" r="16.5838"
+                                                transform="rotate(-0.512576 77.1207 68.9809)" fill="#20b46a"
+                                                stroke="black" />
+                                            <path d="M60.5568 66.9933L60.5858 52.5459L74.8849 52.4426L60.5568 66.9933Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M60.9822 61.1725L68.4792 61.2682L60.9822 68.771L60.9822 61.1725Z"
+                                                fill="#20b46a" />
+                                            <path d="M69.6947 52.9779L76.6581 52.8224L67.9159 61.6009L69.6947 52.9779Z"
+                                                fill="#20b46a" />
+                                            <rect x="63" y="56" width="9" height="6" fill="#20b46a" />
+                                            <path d="M58.7946 43.8383L51.297 43.8503L58.6855 36.2835L58.7946 43.8383Z"
+                                                fill="#20b46a" />
+                                            <path
+                                                d="M26.5586 34.9892C26.59 25.8861 34.0376 18.527 43.1992 18.5583C52.3608 18.5896 59.7575 25.9993 59.726 35.1024C59.6946 44.2055 52.247 51.5646 43.0854 51.5333C33.9238 51.5021 26.5272 44.0924 26.5586 34.9892Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M59.6789 37.2293L59.4712 51.5892L45.1767 51.5159L59.6789 37.2293Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M59.1829 43.0083L51.6877 42.8209L59.277 35.4532L59.1829 43.0083Z"
+                                                fill="#20b46a" />
+                                            <path d="M50.3697 51.0489L43.405 51.1178L52.2551 42.4971L50.3697 51.0489Z"
+                                                fill="#20b46a" />
+                                            <rect width="8.38355" height="5.55757"
+                                                transform="matrix(-0.999924 -0.0123078 0.0124475 -0.999922 56.4912 47.5735)"
+                                                fill="#20b46a" />
+                                        </svg>
+                                        <strong> Calculadora</strong>
+                                    </div>
+                                </div>
+                                <div class="front">
+    
+                                    <div class="img">
+                                        <div class="circle">
+                                        </div>
+                                        <div class="circle" id="right">
+                                        </div>
+                                        <div class="circle" id="bottom">
+                                        </div>
+                                    </div>
+    
+                                    <div class="front-content">
+                                        <small class="badge">Calculadora</small>
+                                        <div class="description">
+                                            <div class="title">
+                                                <p class="title">
+                                                    <strong>Una web para calcular el interés compuesto.</strong>
+                                                </p>
+                                                <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g style="mix-blend-mode: normal" text-anchor="none" font-size="none"
+                                                        font-weight="none" font-family="none" stroke-dashoffset="0"
+                                                        stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter"
+                                                        stroke-linecap="butt" stroke-width="1" stroke="none"
+                                                        fill-rule="nonzero" fill="#20c997">
+                                                        <g transform="scale(8,8)">
+                                                            <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <p class="card-footer">
+                                                2024 &nbsp; | &nbsp; 1 personas
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="back">
+                                    <div class="back-content">
+                                        <svg width="119" height="100" viewBox="0 0 119 100" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="73" cy="39" r="10" fill="#20b46a" stroke="black" />
+                                            <circle cx="47" cy="65" r="9.5" fill="#20b46a" stroke="black" />
+                                            <path d="M60.9822 61.1725L68.4792 61.2682L60.9822 68.771L60.9822 61.1725Z"
+                                                fill="#20b46a" />
+                                            <circle cx="77.1207" cy="68.9809" r="16.5838"
+                                                transform="rotate(-0.512576 77.1207 68.9809)" fill="#20b46a"
+                                                stroke="black" />
+                                            <path d="M60.5568 66.9933L60.5858 52.5459L74.8849 52.4426L60.5568 66.9933Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M60.9822 61.1725L68.4792 61.2682L60.9822 68.771L60.9822 61.1725Z"
+                                                fill="#20b46a" />
+                                            <path d="M69.6947 52.9779L76.6581 52.8224L67.9159 61.6009L69.6947 52.9779Z"
+                                                fill="#20b46a" />
+                                            <rect x="63" y="56" width="9" height="6" fill="#20b46a" />
+                                            <path d="M58.7946 43.8383L51.297 43.8503L58.6855 36.2835L58.7946 43.8383Z"
+                                                fill="#20b46a" />
+                                            <path
+                                                d="M26.5586 34.9892C26.59 25.8861 34.0376 18.527 43.1992 18.5583C52.3608 18.5896 59.7575 25.9993 59.726 35.1024C59.6946 44.2055 52.247 51.5646 43.0854 51.5333C33.9238 51.5021 26.5272 44.0924 26.5586 34.9892Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M59.6789 37.2293L59.4712 51.5892L45.1767 51.5159L59.6789 37.2293Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M59.1829 43.0083L51.6877 42.8209L59.277 35.4532L59.1829 43.0083Z"
+                                                fill="#20b46a" />
+                                            <path d="M50.3697 51.0489L43.405 51.1178L52.2551 42.4971L50.3697 51.0489Z"
+                                                fill="#20b46a" />
+                                            <rect width="8.38355" height="5.55757"
+                                                transform="matrix(-0.999924 -0.0123078 0.0124475 -0.999922 56.4912 47.5735)"
+                                                fill="#20b46a" />
+                                        </svg>
+                                        <strong>Portfolio</strong>
+                                    </div>
+                                </div>
+                                <div class="front">
+    
+                                    <div class="img">
+                                        <div class="circle">
+                                        </div>
+                                        <div class="circle" id="right">
+                                        </div>
+                                        <div class="circle" id="bottom">
+                                        </div>
+                                    </div>
+    
+                                    <div class="front-content">
+                                        <small class="badge">Portfolio</small>
+                                        <div class="description">
+                                            <div class="title">
+                                                <p class="title">
+                                                    <strong>Este sitio web.</strong>
+                                                </p>
+                                                <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g style="mix-blend-mode: normal" text-anchor="none" font-size="none"
+                                                        font-weight="none" font-family="none" stroke-dashoffset="0"
+                                                        stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter"
+                                                        stroke-linecap="butt" stroke-width="1" stroke="none"
+                                                        fill-rule="nonzero" fill="#20c997">
+                                                        <g transform="scale(8,8)">
+                                                            <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <p class="card-footer">
+                                                2023 - 2024 &nbsp; | &nbsp; 1 personas
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="back">
+                                    <div class="back-content">
+                                        <svg width="119" height="100" viewBox="0 0 119 100" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="73" cy="39" r="10" fill="#20b46a" stroke="black" />
+                                            <circle cx="47" cy="65" r="9.5" fill="#20b46a" stroke="black" />
+                                            <path d="M60.9822 61.1725L68.4792 61.2682L60.9822 68.771L60.9822 61.1725Z"
+                                                fill="#20b46a" />
+                                            <circle cx="77.1207" cy="68.9809" r="16.5838"
+                                                transform="rotate(-0.512576 77.1207 68.9809)" fill="#20b46a"
+                                                stroke="black" />
+                                            <path d="M60.5568 66.9933L60.5858 52.5459L74.8849 52.4426L60.5568 66.9933Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M60.9822 61.1725L68.4792 61.2682L60.9822 68.771L60.9822 61.1725Z"
+                                                fill="#20b46a" />
+                                            <path d="M69.6947 52.9779L76.6581 52.8224L67.9159 61.6009L69.6947 52.9779Z"
+                                                fill="#20b46a" />
+                                            <rect x="63" y="56" width="9" height="6" fill="#20b46a" />
+                                            <path d="M58.7946 43.8383L51.297 43.8503L58.6855 36.2835L58.7946 43.8383Z"
+                                                fill="#20b46a" />
+                                            <path
+                                                d="M26.5586 34.9892C26.59 25.8861 34.0376 18.527 43.1992 18.5583C52.3608 18.5896 59.7575 25.9993 59.726 35.1024C59.6946 44.2055 52.247 51.5646 43.0854 51.5333C33.9238 51.5021 26.5272 44.0924 26.5586 34.9892Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M59.6789 37.2293L59.4712 51.5892L45.1767 51.5159L59.6789 37.2293Z"
+                                                fill="#20b46a" stroke="black" />
+                                            <path d="M59.1829 43.0083L51.6877 42.8209L59.277 35.4532L59.1829 43.0083Z"
+                                                fill="#20b46a" />
+                                            <path d="M50.3697 51.0489L43.405 51.1178L52.2551 42.4971L50.3697 51.0489Z"
+                                                fill="#20b46a" />
+                                            <rect width="8.38355" height="5.55757"
+                                                transform="matrix(-0.999924 -0.0123078 0.0124475 -0.999922 56.4912 47.5735)"
+                                                fill="#20b46a" />
+                                        </svg>
+                                        <strong>Ciberseguridad</strong>
+                                    </div>
+                                </div>
+                                <div class="front">
+    
+                                    <div class="img">
+                                        <div class="circle">
+                                        </div>
+                                        <div class="circle" id="right">
+                                        </div>
+                                        <div class="circle" id="bottom">
+                                        </div>
+                                    </div>
+    
+                                    <div class="front-content">
+                                        <small class="badge">Aprendizaje Ciberseguridad</small>
+                                        <div class="description">
+                                            <div class="title">
+                                                <p class="title">
+                                                    <strong>Página donde subo mi paso por la
+                                                        ciberseguridad. Con contenidos de calidad como writeups de
+                                                        laboratorios,
+                                                        herramientas de pentesting o datos relevantes del ambito.</strong>
+                                                </p>
+                                                <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g style="mix-blend-mode: normal" text-anchor="none" font-size="none"
+                                                        font-weight="none" font-family="none" stroke-dashoffset="0"
+                                                        stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter"
+                                                        stroke-linecap="butt" stroke-width="1" stroke="none"
+                                                        fill-rule="nonzero" fill="#20c997">
+                                                        <g transform="scale(8,8)">
+                                                            <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <p class="card-footer">
+                                                2022 - 2023 &nbsp; | &nbsp; 2 personas
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        </div>
+    </main>
+</body>
+
+</html>

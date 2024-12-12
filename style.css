@@ -210,9 +210,8 @@ li {
     cursor: url(./src/img/pointer.svg), pointer;
     transform: scale(0.98);
     opacity: 1;
-    border-radius: 7px;
-    padding-bottom: 5px;
-    border: 2px solid var(--color-primary-paragraph);
+    background: var(--color-primary);
+    color: black;
   }
 
   a:hover {
@@ -281,13 +280,11 @@ textarea:focus {
 }
 
 .navList__cv {
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  border: 2px solid var(--color-primary-title);
   text-align: center;
-  padding: 5px 15px;
-  max-width: max-content;
+  padding: 5px 25px;
+  border: 2px solid var(--color-primary);
+  border-radius: 25px;
+  transition: .5s all;
 }
 
 .navList__movile {
@@ -1283,36 +1280,15 @@ textarea:focus {
 
   .navList__link {
     opacity: 0.75;
-    position: relative;
     font-weight: 400;
     font-size: var(--fs-links);
     text-decoration: none;
     color: var(--color-primary-paragraph);
   }
 
-  .navList__link--s:hover:after {
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 110%;
-    height: 1px;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 0 2px white;
-    color: white;
-  }
-
   .navList__list {
     display: block !important;
   }
-
-  .navList__cv {
-    border: 2px solid white;
-    border-radius: 8px;
-  }
-
   .darkMode__img {
     display: block;
     width: 25px;

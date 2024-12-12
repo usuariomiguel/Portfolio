@@ -39,33 +39,26 @@ window.addEventListener('load', function () {
     let navBurguermenu__img__close = this.document.querySelector(".navBurguermenu__img__close");
     let navList__movile = this.document.querySelector(".navList__movile");
     let herosubtitle = this.document.querySelector(".herosubtitle");
-    let heroContainer = this.document.querySelector(".heroContent__General__info--one");
-    let form = this.document.getElementById("form");
-    let footer = this.document.querySelector(".footer");
     let main = this.document.querySelector(".main");
     navList__movile.classList.add("translate");
+    
     navBurguermenu__link__open.addEventListener('click', function () {
         navBurguermenu__img__close.classList.add("active");
         navBurguermenu__img__hamburguer.classList.add("active");
         navList__movile.classList.remove("translate");
         navList__movile.classList.add("active");
         herosubtitle.classList.add("active");
-        heroContainer.classList.add("active");
         main.classList.add("active");
-        footer.classList.add("active");
     })
 
     navBurguermenu__link__close.addEventListener('click', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
-        herosubtitle.classList.remove("active");
-        heroContainer.classList.remove("active");
-        footer.classList.remove("active");
         header.classList.remove("active");
-        main.classList.remove("active");
-        footer.classList.remove("active");
         navList__movile.classList.add("translate");
+        herosubtitle.classList.remove("active");
+        main.classList.remove("active");
         // setTimeout(() => {
         // }, 700);
     })
@@ -79,48 +72,37 @@ window.addEventListener('load', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
-        heroContainer.classList.remove("active");
-        about.classList.remove("active");
-        port.classList.remove("active");
-        skills.classList.remove("active");
-        footer.classList.remove("active");
-        form.classList.remove("active");
+        main.classList.remove("active");
+        herosubtitle.classList.remove("active");
+        // main.classList.remove("active");
     })
 
     navList__menu__about.addEventListener('click', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
-        heroContainer.classList.remove("active");
-        about.classList.remove("active");
-        port.classList.remove("active");
-        skills.classList.remove("active");
-        footer.classList.remove("active");
-        form.classList.remove("active");
+        main.classList.remove("active");
+        herosubtitle.classList.remove("active");
+
+        // main.classList.remove("active");
     })
 
     navList__menu__portfolio.addEventListener('click', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
-        heroContainer.classList.remove("active");
-        about.classList.remove("active");
-        port.classList.remove("active");
-        skills.classList.remove("active");
-        form.classList.remove("active");
-        footer.classList.remove("active");
+        main.classList.remove("active");
+        herosubtitle.classList.remove("active");
+        // main.classList.remove("active");
     })
 
     navList__menu__skills.addEventListener('click', function () {
         navBurguermenu__img__close.classList.remove("active");
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
-        heroContainer.classList.remove("active");
-        about.classList.remove("active");
-        port.classList.remove("active");
-        skills.classList.remove("active");
-        form.classList.remove("active");
-        footer.classList.remove("active");
+        main.classList.remove("active");
+        herosubtitle.classList.remove("active");
+        // main.classList.remove("active");
     })
 
         // const ciber = document.querySelector(".ciber");

@@ -4,6 +4,7 @@ window.addEventListener('load', function () {
 
     ScrollReveal({
         distance: '5px',
+        reset: true,
         // delay: 100,
     })
 
@@ -38,8 +39,9 @@ window.addEventListener('load', function () {
     let navBurguermenu__img__hamburguer = this.document.querySelector(".navBurguermenu__img__hamburguer");
     let navBurguermenu__img__close = this.document.querySelector(".navBurguermenu__img__close");
     let navList__movile = this.document.querySelector(".navList__movile");
-    let herosubtitle = this.document.querySelector(".herosubtitle");
     let main = this.document.querySelector(".main");
+    let footer = this.document.querySelector(".footer");
+    navList__movile.classList.add("translate");
     navList__movile.classList.add("translate");
     
     navBurguermenu__link__open.addEventListener('click', function () {
@@ -47,8 +49,9 @@ window.addEventListener('load', function () {
         navBurguermenu__img__hamburguer.classList.add("active");
         navList__movile.classList.remove("translate");
         navList__movile.classList.add("active");
-        herosubtitle.classList.add("active");
         main.classList.add("active");
+        footer.classList.add("active");
+        document.body.style.overflowY = "hidden";
     })
 
     navBurguermenu__link__close.addEventListener('click', function () {
@@ -57,8 +60,9 @@ window.addEventListener('load', function () {
         navList__movile.classList.remove("active");
         header.classList.remove("active");
         navList__movile.classList.add("translate");
-        herosubtitle.classList.remove("active");
         main.classList.remove("active");
+        footer.classList.remove("active");
+        document.body.style.overflowY = "auto";
         // setTimeout(() => {
         // }, 700);
     })
@@ -73,8 +77,8 @@ window.addEventListener('load', function () {
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
         main.classList.remove("active");
-        herosubtitle.classList.remove("active");
-        // main.classList.remove("active");
+        navList__movile.classList.add("translate");
+        document.body.style.overflowY = "auto";
     })
 
     navList__menu__about.addEventListener('click', function () {
@@ -82,9 +86,8 @@ window.addEventListener('load', function () {
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
         main.classList.remove("active");
-        herosubtitle.classList.remove("active");
-
-        // main.classList.remove("active");
+        navList__movile.classList.add("translate");
+        document.body.style.overflowY = "auto";
     })
 
     navList__menu__portfolio.addEventListener('click', function () {
@@ -92,8 +95,8 @@ window.addEventListener('load', function () {
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
         main.classList.remove("active");
-        herosubtitle.classList.remove("active");
-        // main.classList.remove("active");
+        navList__movile.classList.add("translate");
+        document.body.style.overflowY = "auto";
     })
 
     navList__menu__skills.addEventListener('click', function () {
@@ -101,8 +104,8 @@ window.addEventListener('load', function () {
         navBurguermenu__img__hamburguer.classList.remove("active");
         navList__movile.classList.remove("active");
         main.classList.remove("active");
-        herosubtitle.classList.remove("active");
-        // main.classList.remove("active");
+        navList__movile.classList.add("translate");
+        document.body.style.overflowY = "auto";
     })
 
         // const ciber = document.querySelector(".ciber");
@@ -137,44 +140,44 @@ window.addEventListener('load', function () {
         // });
     
 
-    All = this.document.querySelector(".All");
-    lenguages = this.document.querySelector(".lenguages");
-    tools = this.document.querySelector(".tools");
-    habContainer__all = this.document.querySelector(".habContainer__all");
-    habContainer__lenguajes = this.document.querySelector(".habContainer__lenguajes");
-    habContainer__utility = this.document.querySelector(".habContainer__utility");
+    // All = this.document.querySelector(".All");
+    // lenguages = this.document.querySelector(".lenguages");
+    // tools = this.document.querySelector(".tools");
+    // habContainer__all = this.document.querySelector(".habContainer__all");
+    // habContainer__lenguajes = this.document.querySelector(".habContainer__lenguajes");
+    // habContainer__utility = this.document.querySelector(".habContainer__utility");
     
-    All.classList.add("active");
-    lenguages.classList.remove("active");
-    tools.classList.remove("active");
-    habContainer__all.classList.remove("innactive");
-    habContainer__lenguajes.classList.remove("active");
-    habContainer__utility.classList.remove("active");
+    // All.classList.add("active");
+    // lenguages.classList.remove("active");
+    // tools.classList.remove("active");
+    // habContainer__all.classList.remove("innactive");
+    // habContainer__lenguajes.classList.remove("active");
+    // habContainer__utility.classList.remove("active");
 
-    All.addEventListener("click", function () {
-        All.classList.add("active");
-        lenguages.classList.remove("active");
-        tools.classList.remove("active");
-        habContainer__all.classList.remove("innactive");
-        habContainer__lenguajes.classList.remove("active");
-        habContainer__utility.classList.remove("active");
-    })
+    // All.addEventListener("click", function () {
+    //     All.classList.add("active");
+    //     lenguages.classList.remove("active");
+    //     tools.classList.remove("active");
+    //     habContainer__all.classList.remove("innactive");
+    //     habContainer__lenguajes.classList.remove("active");
+    //     habContainer__utility.classList.remove("active");
+    // })
 
-    lenguages.addEventListener("click", function () {
-        lenguages.classList.add("active");
-        All.classList.remove("active");
-        tools.classList.remove("active");
-        habContainer__all.classList.add("innactive");
-        habContainer__lenguajes.classList.add("active");
-        habContainer__utility.classList.remove("active");
-    })
+    // lenguages.addEventListener("click", function () {
+    //     lenguages.classList.add("active");
+    //     All.classList.remove("active");
+    //     tools.classList.remove("active");
+    //     habContainer__all.classList.add("innactive");
+    //     habContainer__lenguajes.classList.add("active");
+    //     habContainer__utility.classList.remove("active");
+    // })
 
-    tools.addEventListener("click", function () {
-        tools.classList.add("active");
-        All.classList.remove("active");
-        lenguages.classList.remove("active");
-        habContainer__all.classList.add("innactive");
-        habContainer__lenguajes.classList.remove("active");
-        habContainer__utility.classList.add("active");
-    })
+    // tools.addEventListener("click", function () {
+    //     tools.classList.add("active");
+    //     All.classList.remove("active");
+    //     lenguages.classList.remove("active");
+    //     habContainer__all.classList.add("innactive");
+    //     habContainer__lenguajes.classList.remove("active");
+    //     habContainer__utility.classList.add("active");
+    // })
 })

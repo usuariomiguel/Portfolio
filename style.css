@@ -12,7 +12,7 @@
   --fs-title2: 25px;
   --fs-title3: 18px;
   --fs-title4: 16px;
-  --fs-paragraph: 18px;
+  --fs-paragraph: 16px;
   --fs-links: 17px;
 
   --fs-title-d: 45px;
@@ -161,7 +161,7 @@ p {
   font-size: var(--fs-paragraph);
   color: var(--color-primary-paragraph);
   margin: 0;
-  line-height: 1.7;
+  line-height: 1.4;
 }
 
 img {
@@ -296,7 +296,7 @@ textarea:focus {
   top: 90px;
   bottom: 0;
   opacity: 0;
-  transition: .7s opacity ease;
+  transition: .5s all ease;
   padding: 0px 22px;
 }
 
@@ -305,7 +305,7 @@ textarea:focus {
 }
 
 .navList__movile.translate {
-  transform: translateX(1000px);
+  transform: translateY(-1000px);
 }
 
 .herosubtitle.active {
@@ -317,6 +317,10 @@ textarea:focus {
   filter: blur(90px);
   pointer-events: none;
   overflow-x: scroll;
+}
+
+.main {
+  transition: .5s all;
 }
 
 .main.active {
@@ -375,6 +379,7 @@ textarea:focus {
   justify-content: center;
   gap: 10px;
   color: black;
+  border-radius: 25px;
 }
 
 .navList {
@@ -551,7 +556,7 @@ textarea:focus {
 
 .about {
   background: var(--bg-container);
-  padding: 50px 32px;
+  padding: 75px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -579,7 +584,11 @@ textarea:focus {
 
 .portContainer__ellipse,
 .portContainer__ellipse--two {
-  display: none;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  z-index: -1;
+  opacity: .15;
 }
 
 .portTitle,
@@ -595,17 +604,19 @@ textarea:focus {
 .porfolioContainerSection {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
 }
 
 .portContainer__item {
+  overflow: hidden;
   background: var(--bg-container);
   display: grid;
   margin: 0;
   padding: 15px;
-  border: 1px solid #ffffff1c;
+  outline: 1px solid #ffffff1c;
   border-radius: 25px;
   box-shadow: 10px 10px 10px black;
+  gap: 25px;
 }
 
 .portContainer__item__information {
@@ -659,6 +670,7 @@ textarea:focus {
 .portContainer__item--img {
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .portContainer__item__lenguajes {
@@ -882,9 +894,9 @@ textarea:focus {
   border: 1px solid gray;
   width: 100%;
   margin: 11px 0;
-  font-family: var(--ff-title2);
+  font-family: var(--ff-paragraph);
   background: var(--bg-container);
-  padding: 25px;
+  padding: 15px;
   border: 1px solid #ffffff1c;
   border-radius: 25px;
   box-shadow: 10px 10px 10px black;
@@ -893,6 +905,9 @@ textarea:focus {
 
 .formContainer__textarea {
   font-size: var(--fs-paragraph);
+  max-width: 100%;
+  max-height: 300px;
+  min-height: 75px;
 }
 
 .formContainer__submit {
@@ -905,7 +920,6 @@ textarea:focus {
   text-align: center;
   margin: 0;
   margin-top: 25px;
-  background-color: var(--color-bgsections);
   width: 100%;
 }
 
@@ -919,6 +933,7 @@ textarea:focus {
   font-family: var(--ff-title2);
   border: 1px solid var(--color-primary);
   transition: .5s transform;
+  padding: 15px 0;
 }
 
 /*FOOTER*/
@@ -1309,6 +1324,10 @@ textarea:focus {
     padding: 0;
   }
 
+  .heroContent__General__info--one {
+    text-align: center;
+  }
+
   .hero__source {
     height: 80vh;
   }
@@ -1488,6 +1507,7 @@ textarea:focus {
   }
 
   .formContainer__forminput {
+    padding: 20px;
     margin: 0;
   }
 
@@ -1556,19 +1576,9 @@ textarea:focus {
       background: radial-gradient(circle farthest-corner at top right, #3E2D29 0%, #090F12 61%);
   } */
 
-  .heroContent__General__info--one {
-    padding-left: 75PX;
-    text-align: center;
-  }
-
   .hero__source {
     display: block;
   }
-
-  /* 
-  .heroContent__General__info--one {
-      gap: 50px;
-  } */
 
   .aboutContainer,
   .habContent,

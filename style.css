@@ -871,7 +871,6 @@ textarea:focus {
 
 .formContainer {
   padding: 75px 16px;
-  background: var(--bg-container);
 }
 
 .formContainer__text {
@@ -1392,7 +1391,6 @@ textarea:focus {
   .pp {
     display: flex;
     gap: 10px;
-    background-color: var(--bg-color);
     font-size: var(--ff-paragraph);
     padding: 10px;
     width: max-content;

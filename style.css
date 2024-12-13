@@ -79,6 +79,23 @@ html::after {
   pointer-events: none;
 }
 
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #090f12;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #f5f5f5bc; 
+}
+
 body {
   height: 100%;
   padding: 0;

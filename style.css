@@ -231,6 +231,10 @@ li {
     color: black;
   }
 
+  input:hover, textarea:hover {
+    cursor: url(./src/icons/cursor-input.svg), pointer;
+  }
+
   a:hover {
     cursor: url(./src/img/pointer.svg), pointer;
   }
@@ -1255,35 +1259,6 @@ textarea:focus {
   * {
     cursor: url(./src/img/cursorr.svg), pointer;
   }
-
-  /* [data-cursor] {
-      position: static;
-      z-index: 100;
-      width: 35px;
-      height: 35px;
-      border-radius: 50px;
-      border: 2px solid white;
-      mix-blend-mode: difference;
-      pointer-events: none;
-      transition: 0.05s ease;
-  }
-    .cursor-hover--a [data-cursor] {
-      width: 90px;
-      height: 90px;
-      opacity: 1;
-  }
-  
-  .cursor-hover--formContainer__submit  [data-cursor] {
-      width: 90px;
-      height: 90px;
-      opacity: 1;
-  }
-  
-  .cursor-hover--formContainer__submit--link  [data-cursor] {
-      width: 90px;
-      height: 90px;
-      opacity: 1;
-  } */
 
   .header {
     padding: 10px 32px;

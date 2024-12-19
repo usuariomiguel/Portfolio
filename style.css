@@ -13,7 +13,7 @@
   --fs-title3: 18px;
   --fs-title4: 16px;
   --fs-paragraph: 16px;
-  --fs-links: 17px;
+  --fs-links: 14px;
 
   --fs-title-d: 45px;
   --fs-title2-d: 30px;
@@ -28,9 +28,9 @@
 
   --fs-title-pl: 95px;
   --fs-title2-pl: 40px;
-  --fs-title3-pl: 26px;
-  --fs-paragraph-pl: 18px;
-  --fs-links-pl: 16px;
+  --fs-title3-pl: 22px;
+  --fs-paragraph-pl: 16px;
+  --fs-links-pl: 14px;
 
   --bg-color: #151529;
   --bg-color: rgb(9 15 18);
@@ -438,8 +438,7 @@ textarea:focus {
 
 .heroContainer {
   overflow: hidden;
-  border-radius: 17px;
-  background-color: var(--bg-color);
+  background: linear-gradient(0deg, #61b9fc17, transparent);
 }
 
 .heroContent__General {
@@ -908,7 +907,6 @@ textarea:focus {
 }
 
 .formContainer__forminput {
-  border: 1px solid gray;
   width: 100%;
   margin: 11px 0;
   font-family: var(--ff-paragraph);
@@ -957,7 +955,7 @@ textarea:focus {
 
 .footer {
   /* display: none; */
-  background-color: var(--color-primary);
+  background-color: var(--bg-color-portfolio);
   color: var(--color-primary-button);
   padding-top: 75px;
   font-family: var(--ff-title2);

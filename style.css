@@ -1350,16 +1350,6 @@ textarea:focus {
     padding-top: 25px;
   }
 
-  .about__title::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90px;
-    background-color: gray;
-    height: 1px;
-  }
-
   .about__information {
     font-size: 20px;
   }

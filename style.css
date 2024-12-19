@@ -111,7 +111,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  letter-spacing: 2px;
+  font-weight: 100;
 }
 
 h2 {
@@ -122,6 +122,10 @@ h2 {
   letter-spacing: 2px;
 }
 
+.Title {
+  text-align: center;
+}
+
 .cyellow,
 .cyellow__about {
   background-image: var(--gradient-titles);
@@ -129,7 +133,6 @@ h2 {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
@@ -194,7 +197,7 @@ a {
 }
 
 .buttons {
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 25px 15px;
 }
 
@@ -580,7 +583,7 @@ textarea:focus {
 /* ABOUT */
 
 .about {
-  background: var(--bg-container);
+  /* background: var(--bg-container); */
   padding: 75px 32px;
   display: flex;
   flex-direction: column;
@@ -604,7 +607,6 @@ textarea:focus {
 
 .portContainer {
   padding: 75px 16px;
-  overflow: hidden;
 }
 
 .portContainer__ellipse,
@@ -614,11 +616,6 @@ textarea:focus {
   left: 0;
   z-index: -1;
   opacity: .15;
-}
-
-.portTitle,
-.habContainer__title {
-  letter-spacing: 0.25px;
 }
 
 .portContainer__items {
@@ -1220,7 +1217,6 @@ textarea:focus {
   h2 {
     font-size: var(--fs-title2-p);
     padding: 0;
-    text-align: left;
   }
 
   .cyellow {
@@ -1375,11 +1371,8 @@ textarea:focus {
   }
 
   .pp {
-    display: flex;
-    gap: 10px;
     font-size: var(--ff-paragraph);
     padding: 10px;
-    width: max-content;
   }
 
   .portContainer__items {

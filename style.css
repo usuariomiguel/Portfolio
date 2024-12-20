@@ -26,7 +26,7 @@
   --fs-title4-p: 25px;
   --fs-paragraph-p: 16px;
 
-  --fs-title-pl: 95px;
+  --fs-title-pl: 75px;
   --fs-title2-pl: 40px;
   --fs-title3-pl: 22px;
   --fs-paragraph-pl: 16px;
@@ -442,7 +442,7 @@ textarea:focus {
 }
 
 .heroContent__General {
-  margin-top: 90px;
+  /* margin-top: 90px; */
   padding: 75px 16px;
   padding-top: 135px;
   display: flex;
@@ -913,9 +913,10 @@ textarea:focus {
   background: var(--bg-container);
   padding: 15px;
   border: 1px solid #ffffff1c;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 10px 10px 10px black;
   color: white;
+}
 }
 
 .formContainer__textarea {
@@ -927,15 +928,11 @@ textarea:focus {
 
 .formContainer__submit {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
   gap: 10px;
   text-decoration: none;
   color: var(--color-primary);
   text-align: center;
-  margin: 0;
-  margin-top: 25px;
-  width: 100%;
 }
 
 .formContainer__submit--link {
@@ -943,12 +940,12 @@ textarea:focus {
   background-color: transparent;
   cursor: pointer;
   height: 100%;
-  width: 50%;
   padding: 10px;
   font-family: var(--ff-title2);
-  border: 1px solid var(--color-primary);
+  background-color: var(--bg-color-portfolio);
+  color: var(--bg-color);
   transition: .5s transform;
-  padding: 15px 0;
+  padding: 20px 40px;
 }
 
 /*FOOTER*/
@@ -1180,10 +1177,6 @@ textarea:focus {
 
   .formContainer__form {
     padding-bottom: 40px;
-  }
-
-  .formContainer__submit {
-    margin-top: 40px;
   }
 
   /*FOOTER*/

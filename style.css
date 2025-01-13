@@ -13,7 +13,7 @@
   --fs-title3: 18px;
   --fs-title4: 16px;
   --fs-paragraph: 16px;
-  --fs-links: 17px;
+  --fs-links: 14px;
 
   --fs-title-d: 45px;
   --fs-title2-d: 30px;
@@ -26,11 +26,11 @@
   --fs-title4-p: 25px;
   --fs-paragraph-p: 16px;
 
-  --fs-title-pl: 95px;
+  --fs-title-pl: 75px;
   --fs-title2-pl: 40px;
-  --fs-title3-pl: 26px;
-  --fs-paragraph-pl: 18px;
-  --fs-links-pl: 16px;
+  --fs-title3-pl: 22px;
+  --fs-paragraph-pl: 16px;
+  --fs-links-pl: 14px;
 
   --bg-color: #151529;
   --bg-color: rgb(9 15 18);
@@ -111,7 +111,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  letter-spacing: 2px;
+  font-weight: 100;
 }
 
 h2 {
@@ -122,6 +122,10 @@ h2 {
   letter-spacing: 2px;
 }
 
+.Title {
+  text-align: center;
+}
+
 .cyellow,
 .cyellow__about {
   background-image: var(--gradient-titles);
@@ -129,7 +133,6 @@ h2 {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
@@ -178,7 +181,7 @@ p {
   font-size: var(--fs-paragraph);
   color: var(--color-primary-paragraph);
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 img {
@@ -194,8 +197,9 @@ a {
 }
 
 .buttons {
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 25px 15px;
+  border: 1px solid white;
 }
 
 .formContainer__submit {
@@ -214,13 +218,16 @@ li {
     text-shadow: 0px 0px 1px white;
   }
 
-  .portContainer__item__link:hover,
-  .herobutton__link:hover,
-  .formContainer__submit--link:hover {
-    transform: scale(0.98);
-    background-color: var(--color-primary);
-    color: black;
-    opacity: 1;
+  
+  .buttons:hover {
+    transform: scale(0.99);
+    background-color: white;
+    color: var(--bg-color);
+  }
+
+  .portContainer__item__link:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
   }
 
   .navList__cv:hover {
@@ -229,6 +236,10 @@ li {
     opacity: 1;
     background: var(--color-primary);
     color: black;
+  }
+
+  input:hover, textarea:hover {
+    cursor: url(./src/icons/cursor-input.svg), pointer;
   }
 
   a:hover {
@@ -427,12 +438,11 @@ textarea:focus {
 
 .heroContainer {
   overflow: hidden;
-  border-radius: 17px;
-  background-color: var(--bg-color);
+  background: linear-gradient(0deg, #61b9fc17, transparent);
 }
 
 .heroContent__General {
-  margin-top: 90px;
+  /* margin-top: 90px; */
   padding: 75px 16px;
   padding-top: 135px;
   display: flex;
@@ -533,9 +543,6 @@ textarea:focus {
 .herobutton__link {
   margin: 0 auto;
   margin-bottom: 25px;
-  color: var(--color-primary-paragraph);
-  border: 1px solid var(--color-primary);
-  background-color: var(--color-bgsections);
   text-align: center;
   padding: 10px 16px;
   max-width: max-content;
@@ -572,7 +579,7 @@ textarea:focus {
 /* ABOUT */
 
 .about {
-  background: var(--bg-container);
+  /* background: var(--bg-container); */
   padding: 75px 32px;
   display: flex;
   flex-direction: column;
@@ -596,7 +603,6 @@ textarea:focus {
 
 .portContainer {
   padding: 75px 16px;
-  overflow: hidden;
 }
 
 .portContainer__ellipse,
@@ -606,11 +612,6 @@ textarea:focus {
   left: 0;
   z-index: -1;
   opacity: .15;
-}
-
-.portTitle,
-.habContainer__title {
-  letter-spacing: 0.25px;
 }
 
 .portContainer__items {
@@ -625,14 +626,9 @@ textarea:focus {
 }
 
 .portContainer__item {
-  overflow: hidden;
-  background: var(--bg-container);
   display: grid;
   margin: 0;
   padding: 15px;
-  outline: 1px solid #ffffff1c;
-  border-radius: 25px;
-  box-shadow: 10px 10px 10px black;
   gap: 25px;
 }
 
@@ -640,7 +636,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 20px;
+  gap: 15px;
 }
 
 .portContainer__links {
@@ -668,10 +664,10 @@ textarea:focus {
   text-align: center;
   padding-bottom: 10px;
   width: max-content;
-  background-color: var(--color-bgsections);
-  border: 1px solid var(--color-primary);
-  padding: 15px 26px;
+  border-bottom: 1px solid var(--color-primary-paragraph);
+  padding: 0 0 5px 0;
   transition: transform 0.5s;
+  border-radius: 0;
 }
 
 .portContainer__item__link::after {
@@ -908,16 +904,16 @@ textarea:focus {
 }
 
 .formContainer__forminput {
-  border: 1px solid gray;
   width: 100%;
   margin: 11px 0;
   font-family: var(--ff-paragraph);
   background: var(--bg-container);
   padding: 15px;
   border: 1px solid #ffffff1c;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 10px 10px 10px black;
   color: white;
+}
 }
 
 .formContainer__textarea {
@@ -929,15 +925,11 @@ textarea:focus {
 
 .formContainer__submit {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
   gap: 10px;
   text-decoration: none;
   color: var(--color-primary);
   text-align: center;
-  margin: 0;
-  margin-top: 25px;
-  width: 100%;
 }
 
 .formContainer__submit--link {
@@ -945,19 +937,19 @@ textarea:focus {
   background-color: transparent;
   cursor: pointer;
   height: 100%;
-  width: 50%;
   padding: 10px;
   font-family: var(--ff-title2);
-  border: 1px solid var(--color-primary);
+  background-color: var(--bg-color-portfolio);
+  color: var(--bg-color);
   transition: .5s transform;
-  padding: 15px 0;
+  padding: 20px 40px;
 }
 
 /*FOOTER*/
 
 .footer {
   /* display: none; */
-  background-color: var(--color-primary);
+  background-color: var(--bg-color-portfolio);
   color: var(--color-primary-button);
   padding-top: 75px;
   font-family: var(--ff-title2);
@@ -1184,10 +1176,6 @@ textarea:focus {
     padding-bottom: 40px;
   }
 
-  .formContainer__submit {
-    margin-top: 40px;
-  }
-
   /*FOOTER*/
 
   .footer {
@@ -1217,7 +1205,6 @@ textarea:focus {
   h2 {
     font-size: var(--fs-title2-p);
     padding: 0;
-    text-align: left;
   }
 
   .cyellow {
@@ -1255,35 +1242,6 @@ textarea:focus {
   * {
     cursor: url(./src/img/cursorr.svg), pointer;
   }
-
-  /* [data-cursor] {
-      position: static;
-      z-index: 100;
-      width: 35px;
-      height: 35px;
-      border-radius: 50px;
-      border: 2px solid white;
-      mix-blend-mode: difference;
-      pointer-events: none;
-      transition: 0.05s ease;
-  }
-    .cursor-hover--a [data-cursor] {
-      width: 90px;
-      height: 90px;
-      opacity: 1;
-  }
-  
-  .cursor-hover--formContainer__submit  [data-cursor] {
-      width: 90px;
-      height: 90px;
-      opacity: 1;
-  }
-  
-  .cursor-hover--formContainer__submit--link  [data-cursor] {
-      width: 90px;
-      height: 90px;
-      opacity: 1;
-  } */
 
   .header {
     padding: 10px 32px;
@@ -1380,16 +1338,6 @@ textarea:focus {
     padding-top: 25px;
   }
 
-  .about__title::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90px;
-    background-color: gray;
-    height: 1px;
-  }
-
   .about__information {
     font-size: 20px;
   }
@@ -1401,11 +1349,8 @@ textarea:focus {
   }
 
   .pp {
-    display: flex;
-    gap: 10px;
     font-size: var(--ff-paragraph);
     padding: 10px;
-    width: max-content;
   }
 
   .portContainer__items {
@@ -1421,7 +1366,7 @@ textarea:focus {
 
   .porfolioContainerSection {
     display: grid;
-    grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
   }
 
@@ -1613,6 +1558,7 @@ textarea:focus {
     margin: 0 auto;
     max-width: 1600px;
     padding: 0;
+    margin-top: 60px;
   }
 
   .portContainer__item--third.active {

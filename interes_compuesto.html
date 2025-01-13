@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
+        href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Genos:wght@400;600&family=Inconsolata&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link
         href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Genos:wght@400;600" rel="stylesheet">
     <title>Interes compuesto</title>
 </head>
 <!-- <style>
@@ -62,36 +64,38 @@
 
 #myDiv {
   display: none;
-  /* text-align: center; */
+  text-align: center;
 }
 </style> -->
-<body class="font-sans bg-gray-light dark:bg-bg-dark dark:text-dark h-screen flex flex-col" onload="myFunction()">
+<body class="font-sans bg-gray-light dark:bg-bg-dark dark:text-dark h-screen flex flex-col">
     <div id="loader"></div>
-    <header class="bg-container px-9 border-b border-gray-light bg-containerlight text-darkfont">
+    <!-- <header class="bg-container px-9 border-b border-gray-light bg-containerlight text-darkfont">
         <div class="px-9 lg:px-12 max-w-screen-xl m-auto py-5 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <img class="w-12" src="./src/img/yoo.png" alt="">
+                <a href="https://miguelcantos.tech">
+                    <img class="w-12" src="./src/img/yoo.png" alt="">
+                </a>
             </div>  
             <div class="flex">
                 <img id="dark-light" src="./src/icons/darkmode2.svg" alt="">
                 <img id="dark-light" src="./src/icons/darkmode.svg" alt="">
             </div>
         </div>
-    </header>
-    <main class="p-5 md:p-9 flex flex-col gap-7 max-w-screen-lg m-auto md:text-xl dark:text-light lg:grid-rows-2 font-serif">
-        <div class="flex flex-col gap-9 p-6">
-            <h1 class="text-3xl md:text-4xl lg:text-5xl text-center font-sans text-blue dark:text-yellow tracking-wide font-normal">
-                <span class="text-dark dark:text-light text-2xl md:text-3xl">Calculadora de</span><br>INTERÉS COMPUESTO 
+    </header> -->
+    <main class="p-5 md:p-9 flex flex-col gap-7 md:text-left max-w-screen-lg m-auto md:text-xl dark:text-light lg:grid-rows-2 font-serif">
+        <div class="flex flex-col ">
+            <h1 class="text-2xl md:text-4xl lg:text-5xl text-dark dark:text-light tracking-wide font-bold text-center">
+                Calculadora de <span class="text-blue dark:text-yellow">Interés Compuesto</span> 
             </h1>
             <!-- <p class="text-left">Cálculadora de interés compuesto para que puedas calcular tus cuentas</p> -->
         </div>
-        <div class="md:grid md:grid-cols-2 flex flex-col gap-6">
-            <div class="bg-light shadow-xl p-6 rounded-xl flex flex-col gap-5 border border-border-light dark:bg-bg-dark dark:shadow-none dark:border-none">
+        <div class="md:grid md:grid-cols-2 flex flex-col gap-9">
+            <div class="flex flex-col gap-3 dark:bg-bg-dark ">
 
                 <div class="flex flex-col gap-2 text-toolcolor">
                     <label for="">Depósito inicial:</label>
                     <input class="w-full rounded-xl border-2 border-border-light p-3 text-base md:text-xl shadow-md dark:bg-bg-dark dark:shadow-dmd dark:border-toolcolor dark:text-light text-dark focus:outline-0 focus:border-2 focus:border-blue dark:focus:border-yellow"
-                        type="number" name="input-inicial" id="input-inicial" value="100000">
+                        type="number" name="input-inicial" id="input-inicial" value="100">
                 </div>
                 <div class="flex flex-col gap-2 text-toolcolor">
                     <label for="">Depósitos periódicos:</label>
@@ -101,7 +105,7 @@
                         <select class="rounded-r-xl bg-dark dark:bg-light dark:text-dark text-gray-light p-3 text-base md:text-xl border-y border-r dark:border-none cursor-pointer"
                             id="periodo" value="">
                             <option id="dia" value="Diario">Diario</option>
-                            <option id="semana" value="Semestral">Semestral</option>
+                            <option id="semanal" value="Semanal">Semanal</option>
                             <option id="mes" value="Mensual">Mensual</option>
                             <option id="año" value="Anual">Anual</option>
                         </select>
@@ -122,42 +126,39 @@
                     type="button" id="submit">Calcular</button>
             </div>
             <div class="lg:gap-7">
-                <div
-                    class="bg-light shadow-2xl rounded-xl p-6 flex flex-col border border-border-light dark:bg-bg-dark dark:border-none dark:shadow-none">
+                <div class="pt-6 flex flex-col">
                     <!-- <h2 class="text-xl font-bold font-sans">Resultados</h2> -->
                     <!-- <p>Con un ahorro de € cada mes durante X años y con un balance inicial de €</p> -->
-                    <div class="">
                         <!-- <h2 class="pb-6 md:pb-12 text-toolcolor">Puedes ahorrar un total de  <span class="text-xl md:text-2xl text-dark" id="r-tott"></span> ahorrando <span class="text-xl md:text-2xl text-dark" id="r-per"></span> durante X años</h2> -->
                         <div
-                            class="flex flex-col sm:flex-row justify-between py-4 md:py-4 lg:py-5 border-border-light gap-3 sm:gap-0">
+                            class="flex justify-between py-4 md:py-4 lg:py-5 border-border-light gap-3 sm:gap-0">
                             <span class="text-toolcolor">Balance inicial</span>
-                            <span class="flex justify-end text-xl md:text-2xl" id="r-bal">0 €</span>
+                            <span class="flex justify-end" id="r-bal">0 €</span>
                         </div>
                         <div
-                            class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 border-border-light gap-3 sm:gap-0">
+                            class="flex justify-between py-3 md:py-4 lg:py-5 border-border-light gap-3 sm:gap-0">
                             <span class="text-toolcolor">Depositos periódicos</span>
-                            <span class="flex justify-end text-xl md:text-2xl" id="r-per">0 €</span>
+                            <span class="flex justify-end" id="r-per">0 €</span>
                         </div>
                         <div
-                            class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 border-border-light gap-3 sm:gap-0">
+                            class="flex justify-between py-3 md:py-4 lg:py-5 border-border-light gap-3 sm:gap-0">
                             <span class="text-toolcolor">Interés total</span>
-                            <span class="flex justify-end text-xl md:text-2xl" id="r-tot">0 €</span>
+                            <span class="flex justify-end" id="r-tot">0 €</span>
                         </div>
-                        <div class="flex flex-col sm:flex-row justify-between py-3 md:py-4 lg:py-5 gap-3 sm:gap-0">
+                        <div class="flex justify-between py-3 md:py-4 lg:py-5 gap-3 sm:gap-0">
                             <span class="text-toolcolor">Total</span>
-                            <span class="flex justify-end text-xl md:text-2xl" id="r-tott">0 €</span>
+                            <span class="flex justify-end" id="r-tott">0 €</span>
                         </div>
                     </div>
                     <!-- <button class="bg-dark p-3 rounded-xl text-gray-light dark:shadow-dmd dark:bg-yellow dark:text-dark" id="cleaner" type="button">Limpiar
                         Resultados</button> -->
-                </div>
-                <div class="hidden shadow-xl bg-container p-6 rounded-xl border border-gray-light lg:p-12"></div>
-            </div>
+                <!-- <div class="hidden shadow-xl bg-container p-6 rounded-xl border border-gray-light lg:p-12"></div>
+            </div> -->
         </div>
 
     </main>
-    <footer class="text-center px-9 py-5 bg-container text-dark dark:text-toolcolor font-serif">
-        <span>Desarrollado por <span class="font-bold text-border-light">Miguel Ángel Cantos</span></span>
+    <footer class="text-center px-9 py-5 bg-container text-toolcolor font-serif">
+        <span>Desarrollado por <span class="font-bold text-dark dark:text-light">Miguel Ángel Cantos</span></span>
     </footer>
 </body>
 

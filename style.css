@@ -99,6 +99,7 @@ html::after {
 body {
   height: 100%;
   padding: 0;
+  line-height: 1.5;
 }
 
 h1 {
@@ -181,7 +182,6 @@ p {
   font-size: var(--fs-paragraph);
   color: var(--color-primary-paragraph);
   margin: 0;
-  line-height: 1.5;
 }
 
 img {
@@ -632,6 +632,10 @@ textarea:focus {
   gap: 25px;
 }
 
+.portContainer__item__paragraph {
+  font-weight: 300;
+}
+
 .portContainer__item__information {
   display: flex;
   flex-direction: column;
@@ -1030,9 +1034,9 @@ textarea:focus {
     font-size: var(--fs-links-d);
   }
 
-  span {
+  /* span {
     font-size: var(--fs-paragraph-d);
-  }
+  } */
 
   .nav__title__city {
     font-size: 10px;
@@ -1235,9 +1239,9 @@ textarea:focus {
     font-size: var(--fs-links-p);
   }
 
-  span {
+  /* span {
     font-size: var(--fs-paragraph-p);
-  }
+  } */
 
   * {
     cursor: url(./src/img/cursorr.svg), pointer;
@@ -1523,9 +1527,9 @@ textarea:focus {
     font-size: var(--fs-links-pl);
   }
 
-  span {
+  /* span {
     font-size: var(--fs-paragraph-pl);
-  }
+  } */
 
   .headerContainer {
     margin: 0 auto;

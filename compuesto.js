@@ -6,6 +6,48 @@ window.addEventListener('load', function () {
     //     console.log("hol")
     // })
 
+    function actualizarGrafico(balanceInicial, depositosPeriodicos, interesTotal) {
+        // Obtener el canvas donde se renderizará el gráfico
+        const ctx = document.getElementById('resultChart').getContext('2d');
+    
+        // Verificar si el gráfico ya existe y destruirlo antes de crear uno nuevo
+        if (window.resultChart && typeof window.resultChart.destroy === 'function') {
+            window.resultChart.destroy();
+        }
+    
+        // Crear un nuevo gráfico de pastel (queso)
+        window.resultChart = new Chart(ctx, {
+            type: 'pie', // Cambiar a 'bar' para gráfico de barras
+            data: {
+                labels: ['Balance Inicial', 'Depósitos Periódicos', 'Interés Total'], // Etiquetas
+                datasets: [{
+                    label: 'Resultados',
+                    data: [balanceInicial, depositosPeriodicos, interesTotal], // Datos
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)', // Color para el balance inicial
+                        'rgba(54, 162, 235, 0.5)', // Color para los depósitos
+                        'rgba(255, 206, 86, 0.5)'  // Color para el interés
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top', // Posición de la leyenda
+                    }
+                }
+            }
+        });
+    }
+    
+
     let input_inicial = document.getElementById("input-inicial");
     let input_period = document.getElementById("input-period");
     let input_interes = document.getElementById("input-interes");
@@ -52,6 +94,9 @@ window.addEventListener('load', function () {
                 document.getElementById("r-per").innerHTML = periodTotal.toFixed(2) + '€';
                 document.getElementById("r-tot").innerHTML = InteresTotal.toFixed(2) + '€';
                 document.getElementById("r-tott").innerHTML = Total.toFixed(2) + '€';
+
+                // Llamar a la función para actualizar el gráfico
+                actualizarGrafico(inicial, periodTotal, InteresTotal, Total);
             }
 
         }

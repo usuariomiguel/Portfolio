@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,800;1,14..32,800&display=swap"
+        rel="stylesheet">
+    <title>Calculadora Interés Compuesto </title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="./src/js/compuesto.js"></script>
+</head>
+
+<body class="bg-bg_primary text-text">
+    <main class="">
+        <div class="font-Title text-3xl text-center pt-16 pb-8">
+            <h1 class="">Calculadora de <br><span class="text-text_secundary">Interés Compuesto.</span>
+            </h1>
+        </div>
+        <div class="bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 border border-border_container rounded-lg">
+            <div>
+                <label for="" class="text-movil_text">Depósito inicial:</label>
+                <div
+                    class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text">
+                    <input type="number" name="input-inicial" id="input-inicial" value="100"
+                        class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3">
+                    <div class="pr-3">
+                        <img src="" alt="" class="w-6 h-6">
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+                <div>
+                    <label for="" class="text-movil_text">Interés anual:</label>
+                    <div
+                        class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text">
+                        <input type="number" name="input-interes" id="input-interes" value="8"
+                            class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3">
+                        <div class="pr-3">
+                            <img src="" alt="" class="w-6 h-6">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="" class="text-movil_text">Tiempo (años):</label>
+                    <div
+                        class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text">
+                        <input type="number" name="input-duracion" id="input-duracion" value="1"
+                            class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3">
+                        <div class="pr-3">
+                            <img src="" alt="" class="w-6 h-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="" class="text-movil_text">Depósitos periódicos:</label>
+                <div class="grid grid-cols-2 gap-2">
+                    <div
+                        class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text">
+                        <input type="number" name="input-period" id="input-period" value="5"
+                            class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3">
+                        <div class="pr-3">
+                            <img src="" alt="" class="w-6 h-6">
+                        </div>
+                    </div>
+                    <div class="mt-2 mb-2">
+                        <select name="" id="periodo" value=""
+                            class="w-full h-12 bg-text text-bg_container rounded-md font-bold text-movil_text focus:outline-none pl-3 cursor-pointer">
+                            <option id="dia" value="Diario">Diario</option>
+                            <option id="semanal" value="Semanal">Semanal</option>
+                            <option id="mes" value="Mensual">Mensual</option>
+                            <option id="año" value="Anual">Anual</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="submit"
+                class="h-12 w-full rounded-md mt-8 text-movil_text text-center bg-text_secundary font-bold cursor-pointer">Calcular</button>
+        </div>
+        <div class="border-t border-border_container mt-16" style="display: none;" id="resultados">
+            <!-- <h2 class="font-Title text-2xl text-center pt-16 pb-8">Los resultados.</h2> -->
+            <div class="pb-8 pt-16 m-auto max-w-80">
+                <!-- <h2 class="text-xl font-bold font-sans">Resultados</h2> -->
+                <!-- <p>Con un ahorro de € cada mes durante X años y con un balance inicial de €</p> -->
+                <!-- <h2 class="pb-6 md:pb-12 text-toolcolor">Puedes ahorrar un total de  <span class="text-xl md:text-2xl text-dark" id="r-tott"></span> ahorrando <span class="text-xl md:text-2xl text-dark" id="r-per"></span> durante X años</h2> -->
+                <canvas id="resultChart" width="200" height="150"></canvas>
+            </div>
+            <div class="font-Text ml-6 mr-6 grid gap-2 pb-8">
+                <div class="pt-4 pb-4 pr-6 pl-6 bg-bg_container border border-border_container rounded-lg">
+                    <p class="text-movil_text">Balance Inicial:</p>
+                    <p class="text-movil_text_Big2 font-bold" id="r-bal">0,00 €</p>
+                </div>
+                <div class="pt-4 pb-4 pr-6 pl-6 bg-bg_container border border-border_container rounded-lg">
+                    <p class="text-movil_text">Depósitos Periódicos:</p>
+                    <p class="text-movil_text_Big2 font-bold" id="r-per">0,00 €</p>
+                </div>
+                <div
+                    class="pt-4 pb-4 pr-6 pl-6 bg-bg_container2 border border-border_container rounded-lg text-text_secundary2">
+                    <p class="text-movil_text">Interés Total:</p>
+                    <p class="text-movil_text_Big2 font-bold" id="r-tot">0,00 €</p>
+                </div>
+                <div class="pt-4 pb-4 pr-6 pl-6 bg-bg_container border border-border_container rounded-lg">
+                    <p class="text-movil_text">Total:</p>
+                    <p class="text-movil_text_Big2 font-bold" id="r-tott">0,00 €</p>
+                </div>
+            </div>
+            <img src="" alt="" class="hidden h-32 w-32 m-auto mb-8">
+            <div
+                class="hidden ml-6 mr-6 text-center font-Text border border-border_container rounded-t-lg rounded-r-lg">
+                <div class="grid grid-cols-4 bg-bg_container  rounded-t-lg rounded-r-lg">
+                    <p>Año</p>
+                    <p>Depósito</p>
+                    <p>Interés</p>
+                    <p>Balance</p>
+                </div>
+                <div class="grid grid-cols-4">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <p class="text-center text-text font-Text text-movil_text pb-8">Desarrollado por <span
+                    class="text-text_secundary font-bold">Miguel Ángel Cantos</span></p>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

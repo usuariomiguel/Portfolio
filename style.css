@@ -918,7 +918,6 @@ textarea:focus {
   box-shadow: 10px 10px 10px black;
   color: white;
 }
-}
 
 .formContainer__textarea {
   font-size: var(--fs-paragraph);

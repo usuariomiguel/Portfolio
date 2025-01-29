@@ -19,19 +19,19 @@ window.addEventListener('load', function () {
         window.resultChart = new Chart(ctx, {
             type: 'pie', // Cambiar a 'bar' para gráfico de barras
             data: {
-                labels: ['Balance Inicial', 'Depósitos Periódicos', 'Interés Total'], // Etiquetas
+                labels: ['Primer Depósito', 'Depósitos Periódicos', 'Interés Total'], // Etiquetas
                 datasets: [{
                     label: 'Resultados',
                     data: [balanceInicial, depositosPeriodicos, interesTotal], // Datos
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.5)', // Color para el balance inicial
-                        'rgba(54, 162, 235, 0.5)', // Color para los depósitos
-                        'rgba(255, 206, 86, 0.5)'  // Color para el interés
+                        '#40a6b6', // Color para el balance inicial
+                        '#b6ad40', // Color para los depósitos
+                        '#40B66B'  // Color para el interés
                     ],
                     borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)'
+                        '#2B2B2B',
+                        '#2B2B2B',
+                        '#2B2B2B'
                     ],
                     borderWidth: 1
                 }]
@@ -58,10 +58,12 @@ window.addEventListener('load', function () {
 
     submit_calcular.addEventListener('click', function () {
         let inicial = parseFloat(input_inicial.value);
+        console.log(inicial);
         let period = parseFloat(input_period.value);
         let interes = parseFloat(input_interes.value);
         let r = interes / 100; // Tasa de interés anual
         let duracion = parseFloat(input_duracion.value);
+        document.getElementById("resultados").style.display = "block";     
 
         if (isNaN(inicial) || isNaN(period) || isNaN(interes) || isNaN(duracion)) {
             window.alert('Rellena todo si quieres continuar');

@@ -1,8 +1,13 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*.{html,css,js}"],
+  content: [
+    './src/**/*.{html,js}', // Busca clases en todos los archivos HTML y JS dentro de "src"
+    './*.html', // Opcional: Incluye archivos HTML en la raíz del proyecto
+  ],
   theme: {
     fontSize: {
+      movil_text: '18px',
+      movil_text_Big: '20px',
+      movil_text_Big2: '24px',
       sm: '0.8rem',
       base: '1rem',
       xl: '1.25rem',
@@ -20,43 +25,20 @@ module.exports = {
       lg2: '1100px',
       xl: '1440px',
     },
-    colors: {
-      'gray': '#8492a6',
-      'bg-dark': '#090F12',
-      'gray-light': '#f8fbff',
-      'border-light': '#cccccc',
-      'border-dark': '#cccccc',
-      'dark': '#000',
-      'toolcolor': '#808080',
-      'light': '#fff',
-      'yellow': '#fcd561',
-      'blue': '#6366f1',
-    },
     fontFamily: {
-      sans: ["Climate Crisis", 'cursive'],
-      serif: ['Merriweather Sans', 'sans-serif'],
+      Title: ["Inter", 'serif'],
+      Text: [ "Anonymous Pro", 'serif'],
     },
-    extend: {
-      boxShadow: {
-        'dxl': '0 20px 25px -5px #ffffff12, 0 8px 10px -6px #ffffff12;',
-        'dmd': '0 4px 6px -1px #ffffff12, 0 2px 4px -2px #ffffff12;',
-      },
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
-      },
-      borderRadius: {
-        'none': '0',
-        'sm': '0.125rem',
-        DEFAULT: '0.25rem',
-        DEFAULT: '4px',
-        'md': '0.375rem',
-        'lg': '0.5rem',
-        'full': '9999px',
-        'large': '12px',
-      }
-    }
+    colors: {
+      bg_primary: '#161616',
+      bg_container: '#1B1B1B',
+      bg_container2: '#181C19',
+      border_container: '#2B2B2B',
+      text: '#EEEEEE',
+      text_secundary: '#FF077F',
+      text_secundary2: '#40B66B',
+    },
+
   },
   plugins: [],
-}
-
+};

@@ -1,5 +1,4 @@
 window.addEventListener('load', function () {
-
     let darkl = document.getElementById("dark-light");
 
     const inputs = document.querySelectorAll("input");
@@ -7,7 +6,7 @@ window.addEventListener('load', function () {
     inputs.forEach(input => {
         input.addEventListener("input", function () {
             let value = this.value.replace(/\D/g, ""); // Eliminar caracteres no numéricos
-            
+
             if (value === "") return; // Evitar que se borre completamente
 
             // Mantener el cursor en la posición correcta al escribir
@@ -30,39 +29,23 @@ window.addEventListener('load', function () {
             }
         });
     });
-    
-
-    // darkl.addEventListener('click', function () {
-    //     console.log("hol")
-    // })
 
     function actualizarGrafico(balanceInicial, depositosPeriodicos, interesTotal) {
-        // Obtener el canvas donde se renderizará el gráfico
         const ctx = document.getElementById('resultChart').getContext('2d');
-    
-        // Verificar si el gráfico ya existe y destruirlo antes de crear uno nuevo
+
         if (window.resultChart && typeof window.resultChart.destroy === 'function') {
             window.resultChart.destroy();
         }
-    
-        // Crear un nuevo gráfico de pastel (queso)
+
         window.resultChart = new Chart(ctx, {
-            type: 'pie', // Cambiar a 'bar' para gráfico de barras
+            type: 'pie',
             data: {
-                labels: ['Primer Depósito', 'Depósitos Periódicos', 'Interés Total'], // Etiquetas
+                labels: ['Primer Depósito', 'Depósitos Periódicos', 'Interés Total'],
                 datasets: [{
                     label: 'Resultados',
-                    data: [balanceInicial, depositosPeriodicos, interesTotal], // Datos
-                    backgroundColor: [
-                        '#40a6b6', // Color para el balance inicial
-                        '#b6ad40', // Color para los depósitos
-                        '#40B66B'  // Color para el interés
-                    ],
-                    borderColor: [
-                        '#2B2B2B',
-                        '#2B2B2B',
-                        '#2B2B2B'
-                    ],
+                    data: [balanceInicial, depositosPeriodicos, interesTotal],
+                    backgroundColor: ['#40a6b6', '#b6ad40', '#40B66B'],
+                    borderColor: ['#2B2B2B', '#2B2B2B', '#2B2B2B'],
                     borderWidth: 1
                 }]
             },
@@ -70,35 +53,41 @@ window.addEventListener('load', function () {
                 responsive: true,
                 plugins: {
                     legend: {
-                        position: 'top', // Posición de la leyenda
+                        position: 'top',
                     }
                 }
             }
         });
     }
-    
 
-    let input_inicial = document.getElementById("input-inicial");
-    let input_period = document.getElementById("input-period");
-    let input_interes = document.getElementById("input-interes");
-    let input_duracion = document.getElementById("input-duracion");
+    let inputInicial = document.getElementById("input-inicial");
+    let inputPeriodico = document.getElementById("input-period");
+    let inputInteres = document.getElementById("input-interes");
+    let inputDuracion = document.getElementById("input-duracion");
 
-    let option_periodico = document.getElementById("periodo");
-    let submit_calcular = document.getElementById("submit");
+    let optionPeriodico = document.getElementById("periodo");
+    let submitCalcular = document.getElementById("submit");
 
-    submit_calcular.addEventListener('click', function () {
-        let inicial = parseFloat(input_inicial.value.replace(/\./g, "")) || 0;
-        console.log(inicial);
-        let period = parseFloat(input_period.value.replace(/\./g, "")) || 0;
-        let interes = parseFloat(input_interes.value.replace(/\./g, "")) || 0;
-        let r = interes / 100; // Tasa de interés anual
-        let duracion = parseFloat(input_duracion.value.replace(/\./g, "")) || 0;
-        document.getElementById("resultados").style.display = "block";     
+    function formatearNumero(numero) {
+        return numero.toLocaleString("es-ES", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+            useGrouping: true // Asegura la separación de miles con punto siempre
+        });
+    }
 
-        if (isNaN(inicial) || isNaN(period) || isNaN(interes) || isNaN(duracion)) {
+    submitCalcular.addEventListener('click', function () {
+        let inicial = parseFloat(inputInicial.value.replace(/\./g, "")) || 0;
+        let depositoPeriodico = parseFloat(inputPeriodico.value.replace(/\./g, "")) || 0;
+        let interes = parseFloat(inputInteres.value.replace(/\./g, "")) || 0;
+        let duracion = parseFloat(inputDuracion.value.replace(/\./g, "")) || 0;
+        let tasaInteres = interes / 100; // Convertir a decimal
+
+        document.getElementById("resultados").style.display = "block";
+
+        if (isNaN(inicial) || isNaN(depositoPeriodico) || isNaN(interes) || isNaN(duracion)) {
             window.alert('Rellena todo si quieres continuar');
         } else {
-            // Obtener la frecuencia de capitalización
             let frecuencias = {
                 "Diario": 365,
                 "Semanal": 52,
@@ -106,46 +95,39 @@ window.addEventListener('load', function () {
                 "Anual": 1
             };
 
-            let frecuencia = frecuencias[option_periodico.value]; // Obtener la frecuencia correspondiente
+            let frecuencia = frecuencias[optionPeriodico.value];
+
             if (!frecuencia) {
                 window.alert('Por favor selecciona un período válido');
             } else {
-                // Total depósitos periódicos
-                let periodTotal = period * frecuencia * duracion;
+                let totalDepositosPeriodicos = depositoPeriodico * frecuencia * duracion;
+                let valorFuturoInicial = inicial * Math.pow(1 + tasaInteres / frecuencia, duracion * frecuencia);
+                let valorFuturoDepositos = depositoPeriodico * ((Math.pow(1 + tasaInteres / frecuencia, duracion * frecuencia) - 1) / (tasaInteres / frecuencia));
+                let totalFuturo = valorFuturoInicial + valorFuturoDepositos;
 
-                // Calcular valor futuro (FV)
-                let P = inicial * Math.pow(1 + r / frecuencia, duracion * frecuencia); // Valor futuro del depósito inicial
-                let PMT = period * ((Math.pow(1 + r / frecuencia, duracion * frecuencia) - 1) / (r / frecuencia)); // Valor futuro de los depósitos periódicos
-                let Total = P + PMT; // Suma de ambos componentes
+                let interesTotalCalculado = totalFuturo - (inicial + totalDepositosPeriodicos);
 
-                // Interés total
-                let InteresTotal = Total - (inicial + periodTotal);
+                // Actualizar valores en el DOM usando la función formatearNumero()
+                document.getElementById("r-bal").innerHTML = formatearNumero(inicial) + '€';
+                document.getElementById("r-per").innerHTML = formatearNumero(totalDepositosPeriodicos) + '€';
+                document.getElementById("r-tot").innerHTML = formatearNumero(interesTotalCalculado) + '€';
+                document.getElementById("r-tott").innerHTML = formatearNumero(totalFuturo) + '€';
 
-                // Actualizar valores en el DOM
-                document.getElementById("r-bal").innerHTML = inicial.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
-                document.getElementById("r-per").innerHTML = periodTotal.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
-                document.getElementById("r-tot").innerHTML = InteresTotal.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
-                document.getElementById("r-tott").innerHTML = Total.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
-                
-
-                // Llamar a la función para actualizar el gráfico
-                actualizarGrafico(inicial, periodTotal, InteresTotal, Total);
+                actualizarGrafico(inicial, totalDepositosPeriodicos, interesTotalCalculado);
             }
-
         }
+    });
 
-
-    })
     // let cleaner = document.getElementById("cleaner");
     // cleaner.addEventListener('click', function () {
     //     document.getElementById("r-bal").innerHTML = '€';
     //     document.getElementById("r-per").innerHTML = '€';
     //     document.getElementById("r-tot").innerHTML = '€';
     //     document.getElementById("r-tott").innerHTML = '€';
-    //     input_inicial.value = '';
-    //     input_period.value = '';
-    //     input_interes.value = '';
-    //     input_duracion.value = '';
-    // })
+    //     inputInicial.value = '';
+    //     inputPeriodico.value = '';
+    //     inputInteres.value = '';
+    //     inputDuracion.value = '';
+    // });
 
-})
+});

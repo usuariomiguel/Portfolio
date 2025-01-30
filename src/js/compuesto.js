@@ -87,12 +87,12 @@ window.addEventListener('load', function () {
     let submit_calcular = document.getElementById("submit");
 
     submit_calcular.addEventListener('click', function () {
-        let inicial = parseFloat(input_inicial.value);
+        let inicial = parseFloat(input_inicial.value.replace(/\./g, "")) || 0;
         console.log(inicial);
-        let period = parseFloat(input_period.value);
-        let interes = parseFloat(input_interes.value);
+        let period = parseFloat(input_period.value.replace(/\./g, "")) || 0;
+        let interes = parseFloat(input_interes.value.replace(/\./g, "")) || 0;
         let r = interes / 100; // Tasa de interés anual
-        let duracion = parseFloat(input_duracion.value);
+        let duracion = parseFloat(input_duracion.value.replace(/\./g, "")) || 0;
         document.getElementById("resultados").style.display = "block";     
 
         if (isNaN(inicial) || isNaN(period) || isNaN(interes) || isNaN(duracion)) {

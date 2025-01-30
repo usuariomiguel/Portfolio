@@ -35,6 +35,7 @@ module.exports = {
       bg_container2: '#181C19',
       border_container: '#2B2B2B',
       text: '#EEEEEE',
+      icons: '#7b7b7b',
       text_secundary: '#FF077F',
       text_secundary2: '#40B66B',
     },

@@ -2,6 +2,36 @@ window.addEventListener('load', function () {
 
     let darkl = document.getElementById("dark-light");
 
+    const inputs = document.querySelectorAll("input");
+
+    inputs.forEach(input => {
+        input.addEventListener("input", function () {
+            let value = this.value.replace(/\D/g, ""); // Eliminar caracteres no numéricos
+            
+            if (value === "") return; // Evitar que se borre completamente
+
+            // Mantener el cursor en la posición correcta al escribir
+            let cursorPos = this.selectionStart;
+            let oldLength = this.value.length;
+
+            // Formatear número con puntos de miles
+            this.value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+            // Ajustar la posición del cursor después de formatear
+            let newLength = this.value.length;
+            cursorPos += newLength - oldLength;
+            this.setSelectionRange(cursorPos, cursorPos);
+        });
+
+        // Evitar que el usuario escriba letras o símbolos
+        input.addEventListener("keypress", function (e) {
+            if (!/[0-9]/.test(e.key)) {
+                e.preventDefault(); // Bloquear la tecla si no es un número
+            }
+        });
+    });
+    
+
     // darkl.addEventListener('click', function () {
     //     console.log("hol")
     // })
@@ -92,10 +122,11 @@ window.addEventListener('load', function () {
                 let InteresTotal = Total - (inicial + periodTotal);
 
                 // Actualizar valores en el DOM
-                document.getElementById("r-bal").innerHTML = inicial.toFixed(2) + '€';
-                document.getElementById("r-per").innerHTML = periodTotal.toFixed(2) + '€';
-                document.getElementById("r-tot").innerHTML = InteresTotal.toFixed(2) + '€';
-                document.getElementById("r-tott").innerHTML = Total.toFixed(2) + '€';
+                document.getElementById("r-bal").innerHTML = inicial.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
+                document.getElementById("r-per").innerHTML = periodTotal.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
+                document.getElementById("r-tot").innerHTML = InteresTotal.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
+                document.getElementById("r-tott").innerHTML = Total.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
+                
 
                 // Llamar a la función para actualizar el gráfico
                 actualizarGrafico(inicial, periodTotal, InteresTotal, Total);

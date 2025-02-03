@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontSize: {
       movil_text: '18px',
+      movil_text_table: '15px',
       movil_text_Big: '20px',
       movil_text_Big2: '24px',
       sm: '0.8rem',
@@ -36,7 +37,7 @@ module.exports = {
       border_container: '#2B2B2B',
       text: '#EEEEEE',
       icons: '#7b7b7b',
-      text_secundary: '#FF077F',
+      text_secundary: 'rgb(255 243 91)',
       text_secundary2: '#40B66B',
     },
 

@@ -87,7 +87,7 @@
                 </div>
             </div>
             <button type="button" id="submit"
-                class="h-12 w-full rounded-md mt-8 text-movil_text text-center bg-text_secundary font-bold cursor-pointer">Calcular</button>
+                class="h-12 w-full rounded-md mt-8 text-movil_text text-center bg-text_secundary text-bg_primary font-bold cursor-pointer">Calcular</button>
         </div>
         <div class="border-t border-border_container mt-16" style="display: none;" id="resultados">
             <!-- <h2 class="font-Title text-2xl text-center pt-16 pb-8">Los resultados.</h2> -->
@@ -97,7 +97,7 @@
                 <!-- <h2 class="pb-6 md:pb-12 text-toolcolor">Puedes ahorrar un total de  <span class="text-xl md:text-2xl text-dark" id="r-tott"></span> ahorrando <span class="text-xl md:text-2xl text-dark" id="r-per"></span> durante X años</h2> -->
                 <canvas id="resultChart" width="200" height="150"></canvas>
             </div>
-            <div class="font-Text ml-6 mr-6 grid gap-2 pb-8">
+            <div class="font-Text ml-6 mr-6 grid gap-2 pb-8 m-auto">
                 <div class="pt-4 pb-4 pr-6 pl-6 bg-bg_container border border-border_container rounded-lg">
                     <p class="text-movil_text">Balance Inicial:</p>
                     <p class="text-movil_text_Big2 font-bold" id="r-bal">0,00 €</p>
@@ -116,20 +116,18 @@
                     <p class="text-movil_text_Big2 font-bold" id="r-tott">0,00 €</p>
                 </div>
             </div>
-            <img src="" alt="" class="hidden h-32 w-32 m-auto mb-8">
+            <div class="pb-8 pt-16 pl-6 pr-6">
+                <canvas id="barChart" ></canvas>
+            </div>
             <div
-                class="hidden ml-6 mr-6 text-center font-Text border border-border_container rounded-t-lg rounded-r-lg">
-                <div class="grid grid-cols-4 bg-bg_container  rounded-t-lg rounded-r-lg">
+                class="ml-6 mr-6 text-center font-Text text-movil_text_table border border-border_container rounded-lg">
+                <div class="grid grid-cols-4 bg-bg_container rounded-t-lg pt-3 pb-3">
                     <p>Año</p>
                     <p>Depósito</p>
                     <p>Interés</p>
                     <p>Balance</p>
                 </div>
-                <div class="grid grid-cols-4">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                <div class="" id="contenedorAnios">
                 </div>
             </div>
             <p class="text-center text-text font-Text text-movil_text pb-8">Desarrollado por <span

@@ -1,31 +1,25 @@
 window.addEventListener('load', function () {
-    let darkl = document.getElementById("dark-light");
-
+    const darkModeToggle = document.getElementById("dark-light");
     const inputs = document.querySelectorAll("input");
 
     inputs.forEach(input => {
         input.addEventListener("input", function () {
             let value = this.value.replace(/\D/g, ""); // Eliminar caracteres no numéricos
+            if (value === "") return;
 
-            if (value === "") return; // Evitar que se borre completamente
-
-            // Mantener el cursor en la posición correcta al escribir
             let cursorPos = this.selectionStart;
             let oldLength = this.value.length;
 
-            // Formatear número con puntos de miles
             this.value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-            // Ajustar la posición del cursor después de formatear
             let newLength = this.value.length;
             cursorPos += newLength - oldLength;
             this.setSelectionRange(cursorPos, cursorPos);
         });
 
-        // Evitar que el usuario escriba letras o símbolos
         input.addEventListener("keypress", function (e) {
             if (!/[0-9]/.test(e.key)) {
-                e.preventDefault(); // Bloquear la tecla si no es un número
+                e.preventDefault();
             }
         });
     });
@@ -42,92 +36,170 @@ window.addEventListener('load', function () {
             data: {
                 labels: ['Primer Depósito', 'Depósitos Periódicos', 'Interés Total'],
                 datasets: [{
-                    label: 'Resultados',
                     data: [balanceInicial, depositosPeriodicos, interesTotal],
-                    backgroundColor: ['#40a6b6', '#b6ad40', '#40B66B'],
-                    borderColor: ['#2B2B2B', '#2B2B2B', '#2B2B2B'],
+                    backgroundColor: ['#40a6b6', '#6d40b6', '#40B66B'],
+                    borderColor: ['#2B2B2B'],
                     borderWidth: 1
                 }]
             },
             options: {
                 responsive: true,
                 plugins: {
-                    legend: {
-                        position: 'top',
-                    }
+                    legend: { position: 'top' }
                 }
             }
         });
     }
 
-    let inputInicial = document.getElementById("input-inicial");
-    let inputPeriodico = document.getElementById("input-period");
-    let inputInteres = document.getElementById("input-interes");
-    let inputDuracion = document.getElementById("input-duracion");
+    function actualizarGraficoBarras(inicial, period, interes, duracion, frecuencia) {
+        const ctx = document.getElementById('barChart').getContext('2d');
+    
+        if (window.barChart && typeof window.barChart.destroy === 'function') {
+            window.barChart.destroy();
+        }
+    
+        let saldoAnual = [];
+        let labels = [];
+    
+        let saldo = inicial;
+    
+        for (let i = 1; i <= duracion; i++) {
+            saldo = saldo * Math.pow(1 + interes / 100 / frecuencia, frecuencia) + period * frecuencia;
+            saldoAnual.push(saldo.toFixed(2));
+            labels.push(`Año ${i}`);
+        }
+    
+        window.barChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Balance Inicial',
+                        data: Array(duracion).fill(inicial),
+                        backgroundColor: '#40a6b6'
+                    },
+                    {
+                        label: 'Depósitos Periódicos',
+                        data: Array(duracion).fill(period * frecuencia * duracion),
+                        backgroundColor: '#6d40b6'
+                    },
+                    {
+                        label: 'Interés',
+                        data: saldoAnual.map((s, i) => s - inicial - (period * frecuencia * (i + 1))),
+                        backgroundColor: '#40B66B'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    }
 
-    let optionPeriodico = document.getElementById("periodo");
-    let submitCalcular = document.getElementById("submit");
+    function actualizarContenedor(inicial, period, interes, duracion, frecuencia) {
+        const contenedorAnios = document.getElementById('contenedorAnios');
+    
+        let saldoAnual = inicial;
+        let depositoAcumulado = period;
+    
+        // Limpiar el contenedor antes de agregar nuevos divs
+        contenedorAnios.innerHTML = '';
+    
+        for (let i = 1; i <= duracion; i++) {
+            // Calcular el saldo final para el año con interés simple
+            saldoAnual = saldoAnual * Math.pow(1 + interes / 100 / frecuencia, frecuencia) + depositoAcumulado * frecuencia;
+    
+            // Crear un contenedor para este año
+            let contenedorAno = document.createElement('div');
+            contenedorAno.classList.add('anio');
+    
+            // Crear y agregar los párrafos con los datos de cada año
+            let pAno = document.createElement('p');
+            pAno.textContent = `${i}`;
+            contenedorAno.appendChild(pAno);
+    
+            let pDepositos = document.createElement('p');
+            pDepositos.textContent = `${formatearNumero(depositoAcumulado * frecuencia)} €`;
+            contenedorAno.appendChild(pDepositos);
+    
+            let pInteres = document.createElement('p');
+            pInteres.textContent = `${formatearNumero(saldoAnual - (inicial + depositoAcumulado * frecuencia * i))} €`;
+            contenedorAno.appendChild(pInteres);
+    
+            let pBalanceFinal = document.createElement('p');
+            pBalanceFinal.textContent = `${formatearNumero(saldoAnual)} €`;
+            contenedorAno.appendChild(pBalanceFinal);
+    
+            // Agregar el contenedor del año al contenedor principal
+            contenedorAnios.appendChild(contenedorAno);
+        }
+    }
+
+    const inputInicial = document.getElementById("input-inicial");
+    const inputPeriodico = document.getElementById("input-period");
+    const inputInteres = document.getElementById("input-interes");
+    const inputDuracion = document.getElementById("input-duracion");
+
+    const optionPeriodico = document.getElementById("periodo");
+    const submitCalcular = document.getElementById("submit");
 
     function formatearNumero(numero) {
         return numero.toLocaleString("es-ES", {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
-            useGrouping: true // Asegura la separación de miles con punto siempre
+            useGrouping: true
         });
     }
 
     submitCalcular.addEventListener('click', function () {
-        let inicial = parseFloat(inputInicial.value.replace(/\./g, "")) || 0;
-        let depositoPeriodico = parseFloat(inputPeriodico.value.replace(/\./g, "")) || 0;
-        let interes = parseFloat(inputInteres.value.replace(/\./g, "")) || 0;
-        let duracion = parseFloat(inputDuracion.value.replace(/\./g, "")) || 0;
-        let tasaInteres = interes / 100; // Convertir a decimal
-
         document.getElementById("resultados").style.display = "block";
+        setTimeout(() => {
+            document.getElementById("resultados").scrollIntoView({ behavior: "smooth" });
+        }, 300);
+
+        const inicial = parseFloat(inputInicial.value.replace(/\./g, "")) || 0;
+        const depositoPeriodico = parseFloat(inputPeriodico.value.replace(/\./g, "")) || 0;
+        const interes = parseFloat(inputInteres.value.replace(/\./g, "")) || 0;
+        const duracion = parseFloat(inputDuracion.value.replace(/\./g, "")) || 0;
+        const tasaInteres = interes / 100;
 
         if (isNaN(inicial) || isNaN(depositoPeriodico) || isNaN(interes) || isNaN(duracion)) {
             window.alert('Rellena todo si quieres continuar');
         } else {
-            let frecuencias = {
+            const frecuencias = {
                 "Diario": 365,
                 "Semanal": 52,
                 "Mensual": 12,
                 "Anual": 1
             };
 
-            let frecuencia = frecuencias[optionPeriodico.value];
+            const frecuencia = frecuencias[optionPeriodico.value];
 
             if (!frecuencia) {
                 window.alert('Por favor selecciona un período válido');
             } else {
-                let totalDepositosPeriodicos = depositoPeriodico * frecuencia * duracion;
-                let valorFuturoInicial = inicial * Math.pow(1 + tasaInteres / frecuencia, duracion * frecuencia);
-                let valorFuturoDepositos = depositoPeriodico * ((Math.pow(1 + tasaInteres / frecuencia, duracion * frecuencia) - 1) / (tasaInteres / frecuencia));
-                let totalFuturo = valorFuturoInicial + valorFuturoDepositos;
+                const totalDepositosPeriodicos = depositoPeriodico * frecuencia * duracion;
+                const valorFuturoInicial = inicial * Math.pow(1 + tasaInteres / frecuencia, duracion * frecuencia);
+                const valorFuturoDepositos = depositoPeriodico * ((Math.pow(1 + tasaInteres / frecuencia, duracion * frecuencia) - 1) / (tasaInteres / frecuencia));
+                const totalFuturo = valorFuturoInicial + valorFuturoDepositos;
+                const interesTotalCalculado = totalFuturo - (inicial + totalDepositosPeriodicos);
 
-                let interesTotalCalculado = totalFuturo - (inicial + totalDepositosPeriodicos);
-
-                // Actualizar valores en el DOM usando la función formatearNumero()
-                document.getElementById("r-bal").innerHTML = formatearNumero(inicial) + '€';
-                document.getElementById("r-per").innerHTML = formatearNumero(totalDepositosPeriodicos) + '€';
-                document.getElementById("r-tot").innerHTML = formatearNumero(interesTotalCalculado) + '€';
-                document.getElementById("r-tott").innerHTML = formatearNumero(totalFuturo) + '€';
+                document.getElementById("r-bal").innerHTML = formatearNumero(inicial) + ' €';
+                document.getElementById("r-per").innerHTML = formatearNumero(totalDepositosPeriodicos) + ' €';
+                document.getElementById("r-tot").innerHTML = formatearNumero(interesTotalCalculado) + ' €';
+                document.getElementById("r-tott").innerHTML = formatearNumero(totalFuturo) + ' €';
 
                 actualizarGrafico(inicial, totalDepositosPeriodicos, interesTotalCalculado);
+                actualizarGraficoBarras(inicial, depositoPeriodico, interes, duracion, frecuencia);
+                actualizarContenedor(inicial, depositoPeriodico, interes, duracion, frecuencia);
             }
         }
     });
-
-    // let cleaner = document.getElementById("cleaner");
-    // cleaner.addEventListener('click', function () {
-    //     document.getElementById("r-bal").innerHTML = '€';
-    //     document.getElementById("r-per").innerHTML = '€';
-    //     document.getElementById("r-tot").innerHTML = '€';
-    //     document.getElementById("r-tott").innerHTML = '€';
-    //     inputInicial.value = '';
-    //     inputPeriodico.value = '';
-    //     inputInteres.value = '';
-    //     inputDuracion.value = '';
-    // });
-
 });

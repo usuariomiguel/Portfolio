@@ -28,7 +28,7 @@ module.exports = {
     },
     fontFamily: {
       Title: ["Inter", 'serif'],
-      Text: [ "Anonymous Pro", 'serif'],
+      Text: [ "Roboto Flex", 'serif'],
     },
     colors: {
       bg_primary: '#161616',
@@ -42,7 +42,6 @@ module.exports = {
       text: '#EEEEEE',
       icons: '#7b7b7b',
       text_secundary: 'rgb(255 243 91)',
-      text_secundary2: '#40B66B',
     },
 
   },

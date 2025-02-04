@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,800;1,14..32,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <title>Calculadora Interés Compuesto </title>
     <link href="./dist/output.css" rel="stylesheet">
     <script src="./src/js/compuesto.js"></script>
@@ -16,49 +14,58 @@
 
 <body class="bg-bg_primary text-text">
     <main class="">
-        <div class="font-Title text-3xl text-center pt-16 pb-8">
-            <h1 class="">Calculadora de <br><span class="text-text_secundary">Interés Compuesto.</span>
+        <div class="font-Title text-3xl text-center pt-16 pb-8 leading-10">
+            <h1 class="">Calculadora de <br>Interés Compuesto.
             </h1>
         </div>
         <div class="bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 border border-border_container rounded-lg">
             <div>
                 <label for="" class="text-movil_text">Depósito inicial:</label>
                 <div
-                    class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text">
+                    class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text shadow-lg shadow-bg_primary inset-shadow-lg inset-shadow-bg_primary">
                     <div class="pl-3">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.0832 5.83333C14.3799 5.02944 13.4889 4.48567 12.5218 4.27021C11.5547 4.05475 10.5546 4.17718 9.64694 4.62216C8.73926 5.06714 7.96438 5.81486 7.41948 6.77156C6.87458 7.72826 6.5839 8.85135 6.5839 10C6.5839 11.1487 6.87458 12.2717 7.41948 13.2284C7.96438 14.1851 8.73926 14.9329 9.64694 15.3778C10.5546 15.8228 11.5547 15.9453 12.5218 15.7298C13.4889 15.5143 14.3799 14.9706 15.0832 14.1667M11.5832 8.33333H4.9165M4.9165 11.6667H11.5832" stroke="#7b7b7b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <path
+                                d="M15.0832 5.83333C14.3799 5.02944 13.4889 4.48567 12.5218 4.27021C11.5547 4.05475 10.5546 4.17718 9.64694 4.62216C8.73926 5.06714 7.96438 5.81486 7.41948 6.77156C6.87458 7.72826 6.5839 8.85135 6.5839 10C6.5839 11.1487 6.87458 12.2717 7.41948 13.2284C7.96438 14.1851 8.73926 14.9329 9.64694 15.3778C10.5546 15.8228 11.5547 15.9453 12.5218 15.7298C13.4889 15.5143 14.3799 14.9706 15.0832 14.1667M11.5832 8.33333H4.9165M4.9165 11.6667H11.5832"
+                                stroke="#7b7b7b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
                     <input type="text" name="input-inicial" id="input-inicial" value="100"
                         class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3">
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-2">
+
                 <div>
                     <label for="" class="text-movil_text">Interés anual:</label>
                     <div
-                        class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text">
+                        class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text shadow-lg shadow-bg_primary">
                         <div class="pl-3">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16.6668 16.6667L3.3335 3.3874M7.34957 14.5527C7.34957 15.6461 6.45954 16.5325 5.36163 16.5325C4.26372 16.5325 3.37369 15.6461 3.37369 14.5527C3.37369 13.4592 4.26372 12.5728 5.36163 12.5728C6.45954 12.5728 7.34957 13.4592 7.34957 14.5527ZM16.6266 5.31321C16.6266 6.40667 15.7366 7.29309 14.6387 7.29309C13.5408 7.29309 12.6507 6.40667 12.6507 5.31321C12.6507 4.21976 13.5408 3.33333 14.6387 3.33333C15.7366 3.33333 16.6266 4.21976 16.6266 5.31321Z" stroke="#7b7b7b" stroke-width="1" stroke-linecap="round"/>
-                                </svg>                                
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.6668 16.6667L3.3335 3.3874M7.34957 14.5527C7.34957 15.6461 6.45954 16.5325 5.36163 16.5325C4.26372 16.5325 3.37369 15.6461 3.37369 14.5527C3.37369 13.4592 4.26372 12.5728 5.36163 12.5728C6.45954 12.5728 7.34957 13.4592 7.34957 14.5527ZM16.6266 5.31321C16.6266 6.40667 15.7366 7.29309 14.6387 7.29309C13.5408 7.29309 12.6507 6.40667 12.6507 5.31321C12.6507 4.21976 13.5408 3.33333 14.6387 3.33333C15.7366 3.33333 16.6266 4.21976 16.6266 5.31321Z"
+                                    stroke="#7b7b7b" stroke-width="1" stroke-linecap="round" />
+                            </svg>
                         </div>
                         <input type="text" name="input-interes" id="input-interes" value="8"
-                            class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3">
+                            class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3 ">
                     </div>
                 </div>
                 <div>
                     <label for="" class="text-movil_text">Tiempo (años):</label>
                     <div
-                        class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text">
+                        class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text shadow-lg shadow-bg_primary">
                         <div class="pl-3">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.05956 17.5H14.3574C14.8275 17.5 15.2085 17.1162 15.2085 16.6429V14.3531C15.2085 14.1701 15.1504 13.992 15.0426 13.8447L12.5883 10.4901C12.3736 10.1966 12.3667 9.79846 12.5711 9.4976L14.8471 6.14742C14.9439 6.00485 14.9957 5.83614 14.9957 5.6634V3.35714C14.9957 2.88376 14.6147 2.5 14.1447 2.5H6.05956C5.58953 2.5 5.2085 2.88376 5.2085 3.35714V5.64689C5.2085 5.82986 5.26663 6.00804 5.37441 6.15534L7.81522 9.49154C8.03644 9.79391 8.03644 10.2061 7.81522 10.5085L5.37441 13.8447C5.26663 13.992 5.2085 14.1701 5.2085 14.3531V16.6429C5.2085 17.1162 5.58953 17.5 6.05956 17.5Z" stroke="#7b7b7b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.05956 17.5H14.3574C14.8275 17.5 15.2085 17.1162 15.2085 16.6429V14.3531C15.2085 14.1701 15.1504 13.992 15.0426 13.8447L12.5883 10.4901C12.3736 10.1966 12.3667 9.79846 12.5711 9.4976L14.8471 6.14742C14.9439 6.00485 14.9957 5.83614 14.9957 5.6634V3.35714C14.9957 2.88376 14.6147 2.5 14.1447 2.5H6.05956C5.58953 2.5 5.2085 2.88376 5.2085 3.35714V5.64689C5.2085 5.82986 5.26663 6.00804 5.37441 6.15534L7.81522 9.49154C8.03644 9.79391 8.03644 10.2061 7.81522 10.5085L5.37441 13.8447C5.26663 13.992 5.2085 14.1701 5.2085 14.3531V16.6429C5.2085 17.1162 5.58953 17.5 6.05956 17.5Z"
+                                    stroke="#7b7b7b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </div>
                         <input type="text" name="input-duracion" id="input-duracion" value="1"
-                            class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3">
+                            class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3 ">
                     </div>
                 </div>
             </div>
@@ -66,14 +73,17 @@
                 <label for="" class="text-movil_text">Depósitos periódicos:</label>
                 <div class="grid grid-cols-2 gap-2">
                     <div
-                        class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text">
+                        class="flex flex-row justify-between items-center border border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text shadow-lg shadow-bg_primary">
                         <div class="pl-3">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.0832 5.83333C14.3799 5.02944 13.4889 4.48567 12.5218 4.27021C11.5547 4.05475 10.5546 4.17718 9.64694 4.62216C8.73926 5.06714 7.96438 5.81486 7.41948 6.77156C6.87458 7.72826 6.5839 8.85135 6.5839 10C6.5839 11.1487 6.87458 12.2717 7.41948 13.2284C7.96438 14.1851 8.73926 14.9329 9.64694 15.3778C10.5546 15.8228 11.5547 15.9453 12.5218 15.7298C13.4889 15.5143 14.3799 14.9706 15.0832 14.1667M11.5832 8.33333H4.9165M4.9165 11.6667H11.5832" stroke="#7b7b7b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.0832 5.83333C14.3799 5.02944 13.4889 4.48567 12.5218 4.27021C11.5547 4.05475 10.5546 4.17718 9.64694 4.62216C8.73926 5.06714 7.96438 5.81486 7.41948 6.77156C6.87458 7.72826 6.5839 8.85135 6.5839 10C6.5839 11.1487 6.87458 12.2717 7.41948 13.2284C7.96438 14.1851 8.73926 14.9329 9.64694 15.3778C10.5546 15.8228 11.5547 15.9453 12.5218 15.7298C13.4889 15.5143 14.3799 14.9706 15.0832 14.1667M11.5832 8.33333H4.9165M4.9165 11.6667H11.5832"
+                                    stroke="#7b7b7b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </div>
                         <input type="text" name="input-period" id="input-period" value="5"
-                            class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3">
+                            class="w-full h-12 bg-bg_container rounded-md font-bold text-movil_text_Big focus:outline-none pl-3 ">
                     </div>
                     <div class="mt-2 mb-2">
                         <select name="" id="periodo" value=""
@@ -91,37 +101,48 @@
         </div>
         <div class="border-t border-border_container mt-16" style="display: none;" id="resultados">
             <!-- <h2 class="font-Title text-2xl text-center pt-16 pb-8">Los resultados.</h2> -->
-            <div class="pb-8 pt-16 m-auto max-w-80">
+            <h2 class="font-Title text-xl pt-16 ml-6 mr-6">Resultados</h2>
+            <div class="pb-8 pt-16 m-auto max-w-60">
                 <!-- <h2 class="text-xl font-bold font-sans">Resultados</h2> -->
                 <!-- <p>Con un ahorro de € cada mes durante X años y con un balance inicial de €</p> -->
                 <!-- <h2 class="pb-6 md:pb-12 text-toolcolor">Puedes ahorrar un total de  <span class="text-xl md:text-2xl text-dark" id="r-tott"></span> ahorrando <span class="text-xl md:text-2xl text-dark" id="r-per"></span> durante X años</h2> -->
                 <canvas id="resultChart" width="200" height="150"></canvas>
             </div>
-            <div class="font-Text ml-6 mr-6 grid gap-2 pb-8 m-auto">
-                <div class="pt-4 pb-4 pr-6 pl-6 bg-bg_container_inicial border border-border_container rounded-lg">
-                    <p class="text-movil_text">Balance Inicial:</p>
-                    <p class="text-movil_text_Big2 font-bold" id="r-bal">0,00 €</p>
+            <div class="font-Texttracking-tight ml-6 mr-6 grid gap-2 pb-8 m-auto">
+                <div class="flex justify-between items-center pt-4 pb-2 border-b border-border_container">
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-bg_container_inicial rounded-full"></div>
+                        <p class="text-movil_text">Depósito Inicial:</p>
+                    </div>
+                    <p class="text-movil_text_Big font-bold" id="r-bal">0,00 €</p>
                 </div>
-                <div class="pt-4 pb-4 pr-6 pl-6 bg-bg_container border border-border_container rounded-lg">
-                    <p class="text-movil_text">Depósitos Periódicos:</p>
-                    <p class="text-movil_text_Big2 font-bold" id="r-per">0,00 €</p>
+                <div class="flex justify-between items-center pb-2 border-b border-border_container">
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-bg_container_deposito rounded-full"></div>
+                        <p class="text-movil_text">Depósitos Periódicos:</p>
+                    </div>
+                    <p class="text-movil_text_Big font-bold" id="r-per">0,00 €</p>
                 </div>
-                <div
-                    class="pt-4 pb-4 pr-6 pl-6 bg-bg_container2 border border-border_container rounded-lg text-text_secundary2">
-                    <p class="text-movil_text">Interés Total:</p>
-                    <p class="text-movil_text_Big2 font-bold" id="r-tot">0,00 €</p>
+
+                <div class="flex justify-between items-center pb-2 border-b border-border_container">
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-bg_container_interes rounded-full"></div>
+                        <p class="text-movil_text">Interés Total:</p>
+                    </div>
+                    <p class="text-movil_text_Big font-bold" id="r-tot">0,00 €</p>
                 </div>
-                <div class="pt-4 pb-4 pr-6 pl-6 bg-bg_container border border-border_container rounded-lg">
+
+                <div class="flex justify-between items-center pb-2">
                     <p class="text-movil_text">Total:</p>
                     <p class="text-movil_text_Big2 font-bold" id="r-tott">0,00 €</p>
                 </div>
             </div>
-            <div class="pb-8 pt-16 pl-6 pr-6">
-                <canvas id="barChart" ></canvas>
+            <div class="pb-8 pt-16 pl-6 pr-6 m-auto">
+                <canvas id="barChart"></canvas>
             </div>
             <div
-                class="ml-6 mr-6 text-center font-Text text-movil_text_table border border-border_container rounded-lg pb-8">
-                <div class="grid grid-cols-4 bg-bg_container rounded-t-lg pt-3 pb-3">
+                class="ml-6 mr-6 text-center font-Text text-movil_text_table border border-border_container rounded-lg">
+                <div class="bg-bg_container rounded-t-lg pt-3 pb-3 thead">
                     <p>Año</p>
                     <p>Depósito</p>
                     <p>Interés</p>
@@ -130,7 +151,7 @@
                 <div class="" id="contenedorAnios">
                 </div>
             </div>
-            <p class="text-center text-text font-Text text-movil_text pb-8">Desarrollado por <span
+            <p class="text-center text-movil_text_table font-Title text-movil_text pb-4 pt-16">Desarrollado por <span
                     class="text-text_secundary font-bold">Miguel Ángel Cantos</span></p>
         </div>
     </main>

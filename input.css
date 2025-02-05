@@ -5,13 +5,48 @@
 .thead {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 3fr;
+    border-bottom: 1px solid #2B2B2B;
 }
+
+.thead-item {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-right: 1px solid #2B2B2B;
+    padding-right: 7px;
+}
+
+.thead-item:last-child {
+    border-right: none;
+}
+
+.thead-item > p {
+    padding: 5px 0;
+}
+
 
 .anio {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 3fr;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 0;
     border-bottom: 1px solid #2B2B2B;
+}
+
+.anio:last-child {
+    border-bottom: none;
+}
+
+.anio-item {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-right: 1px solid #2B2B2B;
+    padding-right: 7px;
+}
+
+.anio-item:last-child {
+    border-right: none;
+}
+
+.anio-item > p {
+    padding: 5px 0;
 }

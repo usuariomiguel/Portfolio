@@ -180,10 +180,11 @@ window.addEventListener('load', function () {
                     contenedorAno.classList.add('anio');
                 
                     contenedorAno.innerHTML = `
-                        <p>${i}</p>
-                        <p>${formatearNumero(depositosAcumulados)} €</p>
-                        <p>${formatearNumero(interesesAcumulados)} €</p>
-                        <p><strong>${formatearNumero(saldo)} €</strong></p>
+                        <div class="anio-item"><p>${i}</p></div>
+                        <div class="anio-item"><p>${formatearNumero(depositosAcumulados)} €</p></div>
+                        <div class="anio-item"><p>${formatearNumero(interesesAcumulados)} €</p></div>
+                        <div class="anio-item"><p><strong>${formatearNumero(saldo)} €</strong></p></div>
+
                     `;
                 
                     contenedorAnios.appendChild(contenedorAno);

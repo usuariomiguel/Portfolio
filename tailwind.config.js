@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     fontSize: {
       movil_text: '18px',
-      movil_text_table: '15px',
+      movil_text_table: '13px',
       movil_text_Big: '20px',
       movil_text_Big2: '24px',
       sm: '0.8rem',

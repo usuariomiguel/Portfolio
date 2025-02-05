@@ -50,7 +50,6 @@ window.addEventListener('load', function () {
             }
         });
     }
-
     function actualizarGraficoBarras(inicial, period, interes, duracion, frecuencia) {
         const ctx = document.getElementById('barChart').getContext('2d');
     
@@ -58,14 +57,27 @@ window.addEventListener('load', function () {
             window.barChart.destroy();
         }
     
-        let saldoAnual = [];
+        let saldo = inicial;
+        let depositosAcumulados = 0;
+        let interesesAcumulados = 0;
+        let depositosPorAnio = [];
+        let interesesPorAnio = [];
+        let depositoInicial = [];
         let labels = [];
     
-        let saldo = inicial;
-    
         for (let i = 1; i <= duracion; i++) {
-            saldo = saldo * Math.pow(1 + interes / 100 / frecuencia, frecuencia) + period * frecuencia;
-            saldoAnual.push(saldo.toFixed(2));
+            let depositoAnual = period * frecuencia;
+            depositosAcumulados += depositoAnual;
+    
+            // **Corrección en el cálculo del interés compuesto**
+            let interesGanado = saldo * (Math.pow(1 + interes / 100 / frecuencia, frecuencia) - 1);
+            interesesAcumulados += interesGanado;
+    
+            saldo += depositoAnual + interesGanado;
+    
+            depositosPorAnio.push(depositosAcumulados);
+            interesesPorAnio.push(interesesAcumulados);
+            depositoInicial.push(inicial); // Siempre el mismo valor cada año
             labels.push(`Año ${i}`);
         }
     
@@ -75,19 +87,22 @@ window.addEventListener('load', function () {
                 labels: labels,
                 datasets: [
                     {
-                        label: 'Balance Inicial',
-                        data: Array(duracion).fill(inicial),
-                        backgroundColor: '#40a6b6'
+                        label: 'Depósito Inicial',
+                        data: depositoInicial,
+                        backgroundColor: '#40a6b6', // Rojo
+                        stack: 'Stack 0'
                     },
                     {
-                        label: 'Depósitos Periódicos',
-                        data: Array(duracion).fill(period * frecuencia * duracion),
-                        backgroundColor: '#6d40b6'
+                        label: 'Depósitos Acumulados',
+                        data: depositosPorAnio,
+                        backgroundColor: '#6d40b6', // Morado
+                        stack: 'Stack 0'
                     },
                     {
-                        label: 'Interés',
-                        data: saldoAnual.map((s, i) => s - inicial - (period * frecuencia * (i + 1))),
-                        backgroundColor: '#40B66B'
+                        label: 'Interés Acumulado',
+                        data: interesesPorAnio,
+                        backgroundColor: '#40B66B', // Verde
+                        stack: 'Stack 0'
                     }
                 ]
             },
@@ -102,45 +117,7 @@ window.addEventListener('load', function () {
             }
         });
     }
-
-    function actualizarContenedor(inicial, period, interes, duracion, frecuencia) {
-        const contenedorAnios = document.getElementById('contenedorAnios');
-    
-        let saldoAnual = inicial;
-        let depositoAcumulado = period;
-    
-        // Limpiar el contenedor antes de agregar nuevos divs
-        contenedorAnios.innerHTML = '';
-    
-        for (let i = 1; i <= duracion; i++) {
-            // Calcular el saldo final para el año con interés simple
-            saldoAnual = saldoAnual * Math.pow(1 + interes / 100 / frecuencia, frecuencia) + depositoAcumulado * frecuencia;
-    
-            // Crear un contenedor para este año
-            let contenedorAno = document.createElement('div');
-            contenedorAno.classList.add('anio');
-    
-            // Crear y agregar los párrafos con los datos de cada año
-            let pAno = document.createElement('p');
-            pAno.textContent = `${i}`;
-            contenedorAno.appendChild(pAno);
-    
-            let pDepositos = document.createElement('p');
-            pDepositos.textContent = `${formatearNumero(depositoAcumulado * frecuencia)} €`;
-            contenedorAno.appendChild(pDepositos);
-    
-            let pInteres = document.createElement('p');
-            pInteres.textContent = `${formatearNumero(saldoAnual - (inicial + depositoAcumulado * frecuencia * i))} €`;
-            contenedorAno.appendChild(pInteres);
-    
-            let pBalanceFinal = document.createElement('p');
-            pBalanceFinal.textContent = `${formatearNumero(saldoAnual)} €`;
-            contenedorAno.appendChild(pBalanceFinal);
-    
-            // Agregar el contenedor del año al contenedor principal
-            contenedorAnios.appendChild(contenedorAno);
-        }
-    }
+       
 
     const inputInicial = document.getElementById("input-inicial");
     const inputPeriodico = document.getElementById("input-period");
@@ -179,6 +156,39 @@ window.addEventListener('load', function () {
                 "Mensual": 12,
                 "Anual": 1
             };
+
+            function actualizarContenedor(inicial, period, interes, duracion, frecuencia) {
+                const contenedorAnios = document.getElementById('contenedorAnios');
+                contenedorAnios.innerHTML = '';
+                
+                let saldo = inicial;
+                let depositosAcumulados = 0;
+                let interesesAcumulados = 0;
+                
+                for (let i = 1; i <= duracion; i++) {
+                    let depositoAnual = depositoPeriodico * frecuencia;
+                    depositosAcumulados += depositoAnual;
+                
+                    // **Cálculo del interés compuesto corregido**
+                    let saldoConDepositos = inicial + depositosAcumulados;
+                    let interesGanado = saldoConDepositos * (Math.pow(1 + tasaInteres / frecuencia, i * frecuencia) - 1);
+                    interesesAcumulados = interesGanado; // Se actualiza con el cálculo correcto
+                
+                    saldo = saldoConDepositos + interesesAcumulados;
+                
+                    let contenedorAno = document.createElement('div');
+                    contenedorAno.classList.add('anio');
+                
+                    contenedorAno.innerHTML = `
+                        <p>${i}</p>
+                        <p>${formatearNumero(depositosAcumulados)} €</p>
+                        <p>${formatearNumero(interesesAcumulados)} €</p>
+                        <p><strong>${formatearNumero(saldo)} €</strong></p>
+                    `;
+                
+                    contenedorAnios.appendChild(contenedorAno);
+                }        
+            }
 
             const frecuencia = frecuencias[optionPeriodico.value];
 

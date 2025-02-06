@@ -6,9 +6,12 @@ module.exports = {
   theme: {
     fontSize: {
       movil_text: '18px',
+      Pc_text: '22px',
       movil_text_table: '13px',
       movil_text_Big: '20px',
+      Pc_text_Big: '24px',
       movil_text_Big2: '24px',
+      Pc_text_Big2: '26px',
       sm: '0.8rem',
       base: '1rem',
       xl: '1.25rem',
@@ -24,7 +27,7 @@ module.exports = {
       md: '768px',
       lg: '976px',
       lg2: '1100px',
-      xl: '1440px',
+      xl: '1350px',
     },
     fontFamily: {
       Title: ["Inter", 'serif'],

@@ -774,10 +774,6 @@ video {
   font-size: 20px;
 }
 
-.text-Pc_text {
-  font-size: 22px;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -870,20 +866,12 @@ video {
     display: grid;
   }
 
-  .lg\:h-7 {
-    height: 1.75rem;
-  }
-
-  .lg\:h-12 {
-    height: 3rem;
-  }
-
-  .lg\:h-1 {
-    height: 0.25rem;
-  }
-
   .lg\:h-14 {
     height: 3.5rem;
+  }
+
+  .lg\:h-7 {
+    height: 1.75rem;
   }
 
   .lg\:w-7 {
@@ -896,10 +884,6 @@ video {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:p-2 {
-    padding: 0.5rem;
   }
 
   .lg\:p-1 {
@@ -922,18 +906,18 @@ video {
     font-size: 24px;
   }
 
+  .lg\:text-movil_text {
+    font-size: 18px;
+  }
+
   .lg\:leading-tight {
     line-height: 1.25;
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1500px) {
   .xl\:max-w-4xl {
     max-width: 56rem;
-  }
-
-  .xl\:text-6xl {
-    font-size: 4.052rem;
   }
 }
 

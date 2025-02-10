@@ -1373,6 +1373,10 @@ textarea:focus {
     gap: 15px;
   }
 
+  .portContainer__item__link {
+    font-size: 17px;
+  }
+
   .portContainer__more {
     width: 100vw;
     display: flex;
@@ -1552,6 +1556,10 @@ textarea:focus {
     margin: 0 auto;
     max-width: 1100px;
     padding: 0;
+  }
+
+  .footerContainer {
+    font-size: var(--fs-title3-pl);
   }
 
   .heroContent__General__info {

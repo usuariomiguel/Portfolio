@@ -27,7 +27,7 @@ module.exports = {
       md: '768px',
       lg: '976px',
       lg2: '1100px',
-      xl: '1350px',
+      xl: '1500px',
     },
     fontFamily: {
       Title: ["Inter", 'serif'],

@@ -1526,10 +1526,6 @@ textarea:focus {
     font-size: var(--fs-paragraph-pl);
   }
 
-  a {
-    font-size: var(--fs-links-pl);
-  }
-
   /* span {
     font-size: var(--fs-paragraph-pl);
   } */

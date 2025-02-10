@@ -681,7 +681,7 @@ video {
 
 .bg-bg_containerL {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 251 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(235 242 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-bg_container_deposito {
@@ -924,12 +924,12 @@ video {
 @media (prefers-color-scheme: dark) {
   .dark\:border-border_container {
     --tw-border-opacity: 1;
-    border-color: rgb(43 43 43 / var(--tw-border-opacity, 1));
+    border-color: rgb(101 101 101 / var(--tw-border-opacity, 1));
   }
 
   .dark\:bg-bg_container {
     --tw-bg-opacity: 1;
-    background-color: rgb(27 27 27 / var(--tw-bg-opacity, 1));
+    background-color: rgb(30 30 30 / var(--tw-bg-opacity, 1));
   }
 
   .dark\:bg-bg_primary {
@@ -961,7 +961,7 @@ video {
   @media (prefers-color-scheme: dark) {
     .dark\:dark\:text-bg_container {
       --tw-text-opacity: 1;
-      color: rgb(27 27 27 / var(--tw-text-opacity, 1));
+      color: rgb(30 30 30 / var(--tw-text-opacity, 1));
     }
   }
 

@@ -18,7 +18,7 @@
             <h1 class="">Calculadora de <br>Interés Compuesto
             </h1>
         </div>
-        <div class="bg-bg_containerL dark:bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 border border-border_containerL dark:border-border_container rounded-lg lg:max-w-xl lg:m-auto">
+        <div class="bg-bg_containerL dark:bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 rounded-lg lg:max-w-xl lg:m-auto">
             <div>
                 <label for="" class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Depósito inicial:</label>
                 <div
@@ -100,22 +100,22 @@
                 class="h-12 w-full border border-border_containerL rounded-md mt-8 text-movil_text_Big dark:text-center bg-text_secundary dark:text-bg_primary font-bold cursor-pointer lg:h-12 lg:text-Pc_text">Calcular</button>
         </div>
 
-        <div class="mt-16 lg:max-w-xl lg:m-auto" style="display: none;" id="resultados">
+        <div class="mt-8 lg:max-w-xl lg:ml-auto lg:mr-auto pl-6 pr-6 lg:bg-bg_containerL lg:dark:bg-bg_container rounded-lg" style="display: none;" id="resultados">
             <!-- <h2 class="font-Title dark:text-2xl dark:text-center pt-16 pb-8">Los resultados.</h2> -->
             <!-- <h2 class="font-Title dark:text-xl pt-16 ml-6 mr-6">Resultados</h2> -->
-            <div class="lg:grid lg:grid-cols-2 pb-8 pt-16">
+            <div class="lg:grid lg:grid-cols-2 pb-8 pt-16 bg-bg_containerL dark:bg-bg_container rounded-lg">
                 <div class="m-auto max-w-60 pb-8 lg:pb-0">
                     <canvas id="resultChart" width="200" height="150"></canvas>
                 </div>
                 <div class="font-Text tracking-tight ml-6 mr-6 grid gap-2 pb-8 m-auto">
-                    <div class="flex justify-between items-center pt-4 pb-2 border-b border-border_containerL dark:border-border_container lg:grid lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
+                    <div class="flex justify-between items-center pt-4 pb-2 border-b border-border_containerL dark:border-border_container lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
                         <div class="flex items-center gap-2">
                             <div class="w-2 h-2 bg-bg_container_inicial rounded-full"></div>
                             <p class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Depósito Inicial:</p>
                         </div>
                         <p class="text-movil_text lg:text-Pc_text" id="r-bal">0,00 €</p>
                     </div>
-                    <div class="flex justify-between items-center pb-2 border-b border-border_containerL dark:border-border_container lg:grid lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
+                    <div class="flex justify-between items-center pb-2 border-b border-border_containerL dark:border-border_container lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
                         <div class="flex items-center gap-2">
                             <div class="w-2 h-2 bg-bg_container_deposito rounded-full"></div>
     
@@ -124,7 +124,7 @@
                         <p class="text-movil_text lg:text-Pc_text" id="r-per">0,00 €</p>
                     </div>
     
-                    <div class="flex justify-between items-center pb-2 border-b border-border_containerL dark:border-border_container lg:grid lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
+                    <div class="flex justify-between items-center pb-2 border-b border-border_containerL dark:border-border_container lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
                         <div class="flex items-center gap-2">
                             <div class="w-2 h-2 bg-bg_container_interes rounded-full"></div>
                             <p class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Interés Total:</p>
@@ -133,7 +133,7 @@
                         <p class="text-movil_text lg:text-Pc_text" id="r-tot">0,00 €</p>
                     </div>
     
-                    <div class="flex justify-between items-center pb-2 lg:grid lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
+                    <div class="flex justify-between items-center pb-2 lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
                         <p class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Total:</p>
                         <p class="text-movil_text_Big lg:text-Pc_text_Big font-bold" id="r-tott">0,00 €</p>
                     </div>
@@ -162,11 +162,11 @@
                 <div class="" id="contenedorAnios">
                 </div>
             </div>
-            <p class="text-center font-Title pb-4 pt-16 lg:text-movil_text">Desarrollado por <a href="https://miguelcantos.tech" target="_blank">
-                <span
-                    class="dark:text-text_secundary font-bold">Miguel Ángel Cantos</span>
-            </a> </p>
         </div>
+        <p class="text-center font-Title pb-4 pt-16 lg:text-movil_text">Desarrollado por <a href="https://miguelcantos.tech" target="_blank">
+            <span
+                class="dark:text-text_secundary font-bold">Miguel Ángel Cantos</span>
+        </a> </p>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>

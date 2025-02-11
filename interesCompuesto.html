@@ -4,12 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔹 META DESCRIPCIÓN (IMPORTANTE PARA SEO) -->
+    <meta name="description" content="Calcula fácilmente el interés compuesto con nuestra herramienta online. Descubre cuánto crecerán tus ahorros con depósitos periódicos y diferentes tasas de interés.">
+
+    <!-- 🔹 PALABRAS CLAVE (SEO - No tan relevante hoy en día, pero útil) -->
+    <meta name="keywords" content="calculadora interés compuesto, interés compuesto, inversión, ahorro, simulador financiero, finanzas personales, tasa de interés">
+
+    <!-- 🔹 AUTOR -->
+    <meta name="author" content="Miguel Ángel Cantos">
+
+    <!-- 🔹 EVITAR CONTENIDO DUPLICADO EN GOOGLE -->
+    <meta name="robots" content="index, follow">
+
+    <!-- 🔹 OPEN GRAPH (PARA QUE SE VEA BIEN EN REDES SOCIALES) -->
+    <meta property="og:title" content="Calculadora de Interés Compuesto - Simulador de Ahorro e Inversión">
+    <meta property="og:description" content="Descubre cómo tu dinero crece con nuestra calculadora de interés compuesto. Ajusta tasas, depósitos y plazos para obtener proyecciones precisas.">
+    <meta property="og:image" content="./src/img/yoo.png">
+    <meta property="og:url" content="https://miguelcantos.tech/interesCompuesto">
+    <meta property="og:type" content="website">
+
+    <!-- 🔹 VELOCIDAD Y OPTIMIZACIÓN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-    <title>Calculadora Interés Compuesto </title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Flex:wght@100..1000&display=swap" rel="stylesheet">
+
+    <!-- 🔹 ICONO DEL SITIO -->
+    <link rel="shortcut icon" href="./src/img/yoo.png" type="image/x-icon">
+
+    <!-- 🔹 CANONICAL (EVITA CONTENIDO DUPLICADO) -->
+    <link rel="canonical" href="https://miguelcantos.tech/interesCompuesto">
+
+    <title>Calculadora de Interés Compuesto - Simula tu Inversión y Ahorro</title>
+
+    <!-- 🔹 CSS -->
     <link href="./dist/output.css" rel="stylesheet">
-    <script src="./src/js/compuesto.js"></script>
+
+    <!-- 🔹 JAVASCRIPT -->
+    <script src="./src/js/compuesto.js" defer></script>
 </head>
 
 <body class="bg-bg_primaryL dark:bg-bg_primary dark:text-text">
@@ -87,7 +119,7 @@
                     </div>
                     <div class="mt-2 mb-2">
                         <select name="" id="periodo" value=""
-                            class="w-full h-12 bg-bg_primary dark:bg-text text-text dark:dark:text-bg_container rounded-md text-movil_text focus:outline-none pl-3 lg:text-Pc_text cursor-pointer">
+                            class="w-full h-12 bg-bg_primary dark:bg-text text-text dark:text-bg_container rounded-md text-movil_text focus:outline-none pl-3 lg:text-Pc_text cursor-pointer hover:bg-bg_primary_500 hover:dark:bg-text_500">
                             <option id="dia" value="Diario">Diario</option>
                             <option id="semanal" value="Semanal">Semanal</option>
                             <option id="mes" value="Mensual">Mensual</option>
@@ -97,7 +129,7 @@
                 </div>
             </div>
             <button type="button" id="submit"
-                class="h-12 w-full border border-border_containerL rounded-md mt-8 text-movil_text_Big dark:text-center bg-text_secundary dark:text-bg_primary font-bold cursor-pointer lg:h-12 lg:text-Pc_text">Calcular</button>
+                class="h-12 w-full border border-border_containerL rounded-md mt-8 text-movil_text_Big dark:text-center bg-text_secundary dark:text-bg_primary font-bold cursor-pointer lg:h-12 lg:text-Pc_text hover:bg-text_secundary_500">Calcular</button>
         </div>
 
         <div class="mt-8 lg:max-w-xl lg:ml-auto lg:mr-auto pl-6 pr-6 lg:bg-bg_containerL lg:dark:bg-bg_container rounded-lg" style="display: none;" id="resultados">

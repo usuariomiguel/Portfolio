@@ -35,6 +35,7 @@ module.exports = {
     },
     colors: {
       bg_primary: '#161616',
+      bg_primary_500: 'rgb(22 22 22 / 70%)',
       bg_primaryL: '#fff',
       bg_container: 'rgb(30 30 30)',
       bg_containerL: '#ebf2ff',
@@ -45,12 +46,14 @@ module.exports = {
       border_container: '#656565',
       border_containerL: '#7b7b7b5c',
       text: '#EEEEEE',
+      text_500: 'rgb(238 238 238 / 70%)',
       text_soft: '#bfbfbf',
       textL: '#000',
       textL_soft: '#696969',
       icons: '#7b7b7b',
       iconsL: '#rgb(174 174 176)',
       text_secundary: 'rgb(255 243 91)',
+      text_secundary_500: 'rgb(255 243 91 / 70%)',
     },
 
   },

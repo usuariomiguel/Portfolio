@@ -18,7 +18,7 @@
             <h1 class="">Calculadora de <br>Interés Compuesto
             </h1>
         </div>
-        <div class="bg-bg_containerL dark:bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 border border-border_containerL dark:border-border_container rounded-lg lg:max-w-xl lg:m-auto xl:max-w-4xl">
+        <div class="bg-bg_containerL dark:bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 border border-border_containerL dark:border-border_container rounded-lg lg:max-w-xl lg:m-auto">
             <div>
                 <label for="" class="text-movil_text lg:text-Pc_text">Depósito inicial:</label>
                 <div
@@ -100,7 +100,7 @@
                 class="h-12 w-full border border-border_containerL rounded-md mt-8 text-movil_text dark:text-center bg-text_secundary dark:text-bg_primary font-bold cursor-pointer lg:h-14 lg:text-Pc_text">Calcular</button>
         </div>
 
-        <div class="mt-16 lg:max-w-xl lg:m-auto xl:max-w-4xl" style="display: none;" id="resultados">
+        <div class="mt-16 lg:max-w-xl lg:m-auto" style="display: none;" id="resultados">
             <!-- <h2 class="font-Title dark:text-2xl dark:text-center pt-16 pb-8">Los resultados.</h2> -->
             <!-- <h2 class="font-Title dark:text-xl pt-16 ml-6 mr-6">Resultados</h2> -->
             <div class="lg:grid lg:grid-cols-2 pb-8 pt-16">
@@ -108,14 +108,14 @@
                     <canvas id="resultChart" width="200" height="150"></canvas>
                 </div>
                 <div class="font-Text tracking-tight ml-6 mr-6 grid gap-2 pb-8 m-auto">
-                    <div class="flex justify-between items-center pt-4 pb-2 border-b border-border_containerL dark:border-border_container lg:grid lg:gap">
+                    <div class="flex justify-between items-center pt-4 pb-2 border-b border-border_containerL dark:border-border_container lg:grid lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
                         <div class="flex items-center gap-2">
                             <div class="w-2 h-2 bg-bg_container_inicial rounded-full"></div>
                             <p class="text-movil_text lg:text-Pc_text ">Depósito Inicial:</p>
                         </div>
                         <p class="text-movil_text lg:text-Pc_text  font-bold" id="r-bal">0,00 €</p>
                     </div>
-                    <div class="flex justify-between items-center pb-2 border-b border-border_containerL dark:border-border_container lg:grid lg:gap">
+                    <div class="flex justify-between items-center pb-2 border-b border-border_containerL dark:border-border_container lg:grid lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
                         <div class="flex items-center gap-2">
                             <div class="w-2 h-2 bg-bg_container_deposito rounded-full"></div>
     
@@ -124,7 +124,7 @@
                         <p class="text-movil_text lg:text-Pc_text  font-bold" id="r-per">0,00 €</p>
                     </div>
     
-                    <div class="flex justify-between items-center pb-2 border-b border-border_containerL dark:border-border_container lg:grid lg:gap">
+                    <div class="flex justify-between items-center pb-2 border-b border-border_containerL dark:border-border_container lg:grid lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
                         <div class="flex items-center gap-2">
                             <div class="w-2 h-2 bg-bg_container_interes rounded-full"></div>
                             <p class="text-movil_text lg:text-Pc_text ">Interés Total:</p>
@@ -133,7 +133,7 @@
                         <p class="text-movil_text lg:text-Pc_text  font-bold" id="r-tot">0,00 €</p>
                     </div>
     
-                    <div class="flex justify-between items-center pb-2 lg:grid lg:gap">
+                    <div class="flex justify-between items-center pb-2 lg:grid lg:gap lg:grid lg:gap lg:justify-end lg:text-right">
                         <p class="text-movil_text lg:text-Pc_text ">Total:</p>
                         <p class="text-movil_text_Big lg:text-Pc_text_Big font-bold" id="r-tott">0,00 €</p>
                     </div>

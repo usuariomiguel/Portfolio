@@ -39,6 +39,21 @@
     <!-- 🔹 CANONICAL (EVITA CONTENIDO DUPLICADO) -->
     <link rel="canonical" href="https://miguelcantos.tech/interesCompuesto">
 
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Calculadora de Interés Compuesto",
+          "description": "Calcula el crecimiento de tu inversión con nuestra calculadora de interés compuesto. Simula depósitos y tasas de interés fácilmente.",
+          "url": "https://miguelcantos.tech/interesCompuesto",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Miguel Cantos",
+            "logo": "./src/img/yoo.png"
+          }
+        }
+        </script>
+
     <title>Calculadora de Interés Compuesto - Simula tu Inversión y Ahorro</title>
 
     <!-- 🔹 CSS -->
@@ -57,12 +72,12 @@
         <p class="font-Text text-movil_text text-textL_soft dark:text-text_soft text-center pl-6 pr-6 pb-8 lg:max-w-3xl lg:ml-auto lg:mr-auto lg:text-Pc_text">Descubre cómo tu dinero puede crecer con nuestra calculadora de interés compuesto.
             Ajusta depósitos, tasas de interés y plazos para obtener una estimación precisa de tus ganancias.</p>
         <div
-            class="bg-bg_containerL dark:bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 rounded-lg lg:max-w-3xl lg:m-auto lg:pl-12 lg:pr-12 lg:pt-14 lg:pb-14">
+            class="bg-bg_containerL dark:bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 rounded-lg lg:max-w-3xl lg:m-auto lg:pl-12 lg:pr-12 lg:pt-14 lg:pb-14 lg:grid lg:justify-center">
             <div>
                 <label for="" class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Depósito
                     inicial:</label>
                 <div
-                    class="bg-bg_primaryL dark:bg-bg_primary flex flex-row justify-between items-center border border-border_containerL dark:border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text lg:p-1">
+                    class="flex flex-row justify-between items-center border-b border-border_containerL dark:border-border_container mt-2 mb-2 lg:p-1 lg:max-w-md">
                     <div class="pl-3">
                         <svg class="lg:w-7 lg:h-7" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -72,16 +87,16 @@
                         </svg>
                     </div>
                     <input type="text" name="input-inicial" id="input-inicial" value="10.000"
-                        class="w-full h-12 bg-bg_primaryL dark:bg-bg_primary rounded-md text-movil_text focus:outline-none pl-3 lg:text-Pc_text lg:h-10">
+                        class="w-full h-12 bg-bg_containerL dark:bg-bg_container text-movil_text focus:outline-none pl-4 lg:text-Pc_text lg:h-10">
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-2">
+            <div class="grid grid-cols-2 gap-6">
 
                 <div>
                     <label for="" class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Interés
                         anual:</label>
                     <div
-                        class="bg-bg_primaryL dark:bg-bg_primary flex flex-row justify-between items-center border border-border_containerL dark:border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text lg:p-1">
+                        class="flex flex-row justify-between items-center border-b border-border_containerL dark:border-border_container mt-2 mb-2 lg:p-1 lg:max-w-52">
                         <div class="pl-3">
                             <svg class="lg:w-7 lg:h-7" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -91,14 +106,14 @@
                             </svg>
                         </div>
                         <input type="text" name="input-interes" id="input-interes" value="8"
-                            class="w-full h-12 bg-bg_primaryL dark:bg-bg_primary rounded-md text-movil_text focus:outline-none pl-3 lg:text-Pc_text lg:h-10 ">
+                            class="w-full h-12 bg-bg_containerL dark:bg-bg_container text-movil_text focus:outline-none pl-4 lg:text-Pc_text lg:h-10 ">
                     </div>
                 </div>
                 <div>
                     <label for="" class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Tiempo
                         (años):</label>
                     <div
-                        class="bg-bg_primaryL dark:bg-bg_primary flex flex-row justify-between items-center border border-border_containerL dark:border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text lg:p-1">
+                        class="flex flex-row justify-between items-center border-b border-border_containerL dark:border-border_container mt-2 mb-2 lg:p-1 lg:max-w-52">
                         <div class="pl-3">
                             <svg class="lg:w-7 lg:h-7" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -108,16 +123,16 @@
                             </svg>
                         </div>
                         <input type="text" name="input-duracion" id="input-duracion" value="5"
-                            class="w-full h-12 bg-bg_primaryL dark:bg-bg_primary rounded-md text-movil_text focus:outline-none pl-3 lg:text-Pc_text lg:h-10 ">
+                            class="w-full h-12 bg-bg_containerL dark:bg-bg_container text-movil_text focus:outline-none pl-4 lg:text-Pc_text lg:h-10 ">
                     </div>
                 </div>
             </div>
             <div>
                 <label for="" class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Depósitos
                     periódicos:</label>
-                <div class="grid grid-cols-2 gap-2">
+                <div class="grid grid-cols-2 gap-6">
                     <div
-                        class="bg-bg_primaryL dark:bg-bg_primary flex flex-row justify-between items-center border border-border_containerL dark:border-border_container rounded-md mt-2 mb-2 focus:border focus:border-text lg:p-1">
+                        class="flex flex-row justify-between items-center border-b border-border_containerL dark:border-border_container mt-2 mb-2 lg:p-1 lg:max-w-52">
                         <div class="pl-3">
                             <svg class="lg:w-7 lg:h-7" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -127,11 +142,11 @@
                             </svg>
                         </div>
                         <input type="text" name="input-period" id="input-period" value="100"
-                            class="w-full h-12 bg-bg_primaryL dark:bg-bg_primary rounded-md text-movil_text focus:outline-none pl-3 lg:text-Pc_text lg:h-10 ">
+                            class="w-full h-12 bg-bg_containerL dark:bg-bg_container text-movil_text focus:outline-none pl-4 lg:text-Pc_text lg:h-10 ">
                     </div>
                     <div class="mt-2 mb-2">
                         <select name="" id="periodo" value=""
-                            class="w-full h-12 bg-bg_primary dark:bg-text text-text dark:text-bg_container rounded-md text-movil_text focus:outline-none pl-3 lg:text-Pc_text cursor-pointer hover:bg-bg_primary_500 hover:dark:bg-text_500">
+                            class="w-full h-12 bg-bg_primary dark:bg-text text-text dark:text-bg_container rounded-md text-movil_text focus:outline-none pl-3 lg:text-Pc_text cursor-pointer hover:bg-bg_primary_500 hover:dark:bg-text_500 lg:max-w-52">
                             <option id="dia" value="Diario">Diario</option>
                             <option id="semanal" value="Semanal">Semanal</option>
                             <option id="mes" value="Mensual">Mensual</option>
@@ -141,7 +156,7 @@
                 </div>
             </div>
             <button type="button" id="submit"
-                class="h-12 w-full border border-border_containerL rounded-md mt-8 text-movil_text_Big dark:text-center bg-text_secundary dark:text-bg_primary font-bold cursor-pointer lg:h-12 lg:text-Pc_text hover:bg-text_secundary_500">Calcular</button>
+                class="h-12 w-full border border-border_containerL rounded-md mt-8 text-movil_text_Big dark:text-center bg-text_secundary dark:text-bg_primary font-bold cursor-pointer lg:h-12 lg:text-Pc_text hover:bg-text_secundary_500 lg:max-w-md">Calcular</button>
         </div>
 
         <div class="mt-8 lg:max-w-3xl lg:ml-auto lg:mr-auto pl-6 pr-6 lg:bg-bg_containerL lg:dark:bg-bg_container rounded-lg lg:pl-0 lg:pr-0" id="resultados">

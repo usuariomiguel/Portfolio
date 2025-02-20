@@ -34,9 +34,8 @@
         rel="stylesheet">
 
     <!-- ADSENSE -->
-
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8145802031003140"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
     <!-- 🔹 ICONO DEL SITIO -->
     <link rel="shortcut icon" href="./src/img/yoo.png" type="image/x-icon">
@@ -74,7 +73,9 @@
             <h1 class="">Calculadora de <br>Interés Compuesto
             </h1>
         </div>
-        <p class="font-Text text-movil_text text-textL_soft dark:text-text_soft text-center pl-6 pr-6 pb-8 lg:max-w-3xl lg:ml-auto lg:mr-auto lg:text-Pc_text">Descubre cómo tu dinero puede crecer con nuestra calculadora de interés compuesto.
+        <p
+            class="font-Text text-movil_text text-textL_soft dark:text-text_soft text-center pl-6 pr-6 pb-8 lg:max-w-3xl lg:ml-auto lg:mr-auto lg:text-Pc_text">
+            Descubre cómo tu dinero puede crecer con nuestra calculadora de interés compuesto.
             Ajusta depósitos, tasas de interés y plazos para obtener una estimación precisa de tus ganancias.</p>
         <div
             class="bg-bg_containerL dark:bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 rounded-lg lg:max-w-3xl lg:m-auto lg:pl-12 lg:pr-12 lg:pt-14 lg:pb-14 lg:grid lg:justify-center">
@@ -164,15 +165,18 @@
                 class="h-12 w-full border border-border_containerL rounded-md mt-8 text-movil_text_Big dark:text-center bg-text_secundary dark:text-bg_primary font-bold cursor-pointer lg:h-12 lg:text-Pc_text hover:bg-text_secundary_500 lg:max-w-md">Calcular</button>
         </div>
 
-        <div class="mt-8 lg:max-w-3xl lg:ml-auto lg:mr-auto pl-6 pr-6 lg:bg-bg_containerL lg:dark:bg-bg_container rounded-lg lg:pl-0 lg:pr-0" id="resultados">
-            <div class="lg:grid lg:grid-cols-2 pb-8 pt-16 bg-bg_containerL dark:bg-bg_container rounded-lg lg:pl-12 lg:pr-12 lg:pt-14 lg:pb-14">
-                <div class="m-auto max-w-60 pb-8 lg:pb-0">
+        <div class="hidden mt-8 lg:max-w-3xl lg:ml-auto lg:mr-auto pl-6 pr-6 lg:bg-bg_containerL lg:dark:bg-bg_container rounded-lg lg:pl-0 lg:pr-0"
+            id="resultados">
+            <div
+                class="lg:grid lg:grid-cols-2 pb-8 pt-16 bg-bg_containerL dark:bg-bg_container rounded-t-lg lg:pl-12 lg:pr-12 lg:pt-14 lg:pb-14">
+                <div class="m-auto w-max h-max pb-8 lg:pb-0">
                     <canvas id="resultChart" width="200" height="150"></canvas>
                 </div>
                 <div class="font-Text tracking-tight ml-6 mr-6 grid gap-2 m-auto lg:ml-0 lg:mr-0">
-                    <h3 class="font-Title text-movil_text lg:text-Pc_text pb-2 border-b border-border_containerL dark:border-border_container ">Resultados</h3>
-                    <div
-                        class="flex justify-between items-center pb-2 lg:gap lg:grid lg:gap">
+                    <h3
+                        class="font-Title text-movil_text lg:text-Pc_text pb-2 border-b border-border_containerL dark:border-border_container ">
+                        Resultados</h3>
+                    <div class="flex justify-between items-center pb-2 lg:gap lg:grid lg:gap">
                         <div class="flex items-center gap-2">
                             <div class="w-2 h-2 bg-bg_container_inicial rounded-full"></div>
                             <p class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Depósito
@@ -180,9 +184,8 @@
                         </div>
                         <p class="text-movil_text lg:text-Pc_text" id="r-bal">0,00 €</p>
                     </div>
-                    <div
-                        class="flex justify-between items-center pb-2 
-                        lg:gap lg:grid lg:gap">
+                    <div class="flex justify-between items-center pb-2 
+                            lg:gap lg:grid lg:gap">
                         <div class="flex items-center gap-2">
                             <div class="w-2 h-2 bg-bg_container_deposito rounded-full"></div>
 
@@ -203,55 +206,61 @@
                         <p class="text-movil_text lg:text-Pc_text text-bg_container_interes" id="r-tot">0,00 €</p>
                     </div>
 
-                    <div
-                        class="flex justify-between items-center pb-2 lg:gap">
+                    <div class="flex justify-between items-center pb-2 lg:gap">
                         <p class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Total:</p>
                         <p class="text-movil_text_Big lg:text-Pc_text_Big font-bold" id="r-tott">0,00 €</p>
                     </div>
                 </div>
             </div>
-            <div class="pb-8 pt-16 pl-6 pr-6">
-                <canvas id="barChart" class="m-auto"></canvas>
-            </div>
             <div
-                class="ml-6 mr-6 dark:text-center font-Text dark:text-movil_text_table border border-border_containerL dark:border-border_container rounded-lg">
-                <div class="dark:bg-bg_container rounded-t-lg thead">
-                    <div class="thead-item">
-                        <p>Año</p>
-                    </div>
-                    <div class="thead-item">
-
-                        <p>Depósito</p>
-                    </div>
-                    <div class="thead-item">
-                        <p>Interés</p>
-                    </div>
-                    <div class="thead-item">
-                        <p>Balance</p>
-                    </div>
+                class="pb-8 bg-bg_containerL dark:bg-bg_container lg:bg-none rounded-b-lg lg:pl-12 lg:pr-12 lg:pb-14">
+                <div class="pb-8 pt-16 pl-6 pr-6">
+                    <canvas id="barChart" class="m-auto"></canvas>
                 </div>
-                <div class="" id="contenedorAnios">
+                <div class="ml-6 mr-6 text-movil_text_table md:text-Pc_text_table">
+                    <div class="dark:bg-bg_container font-Title thead">
+                        <div class="thead-item">
+                            <p>Año</p>
+                        </div>
+                        <div class="thead-item">
+                            <p>Depósito</p>
+                        </div>
+                        <div class="thead-item">
+                            <p>Interés</p>
+                        </div>
+                        <div class="thead-item">
+                            <p>Total</p>
+                        </div>
+                    </div>
+                    <div class="font-Text" id="contenedorAnios">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="font-Text text-movil_text pl-6 pr-6 pb-8 pt-8 lg:max-w-3xl lg:ml-auto lg:mr-auto lg:text-Pc_text" id="info">
+        <div class="font-Text text-movil_text pl-6 pr-6 pb-8 pt-8 lg:max-w-3xl lg:ml-auto lg:mr-auto lg:text-Pc_text"
+            id="info">
             <div class="pb-8">
                 <h2 class="font-Title text-xl lg:text-Pc_text_Big pb-4">¿Qué es el Interés Compuesto?</h2>
-                <p class="text-textL_soft dark:text-text_soft">El interés compuesto es un método de cálculo de intereses en el que los intereses generados se suman al
-                    capital inicial, permitiendo que la inversión crezca de manera exponencial con el tiempo. A diferencia
-                    del interés simple, donde los intereses no se reinvierten, en el interés compuesto los intereses generan
+                <p class="text-textL_soft dark:text-text_soft">El interés compuesto es un método de cálculo de intereses
+                    en el que los intereses generados se suman al
+                    capital inicial, permitiendo que la inversión crezca de manera exponencial con el tiempo. A
+                    diferencia
+                    del interés simple, donde los intereses no se reinvierten, en el interés compuesto los intereses
+                    generan
                     más intereses.</p>
             </div>
 
             <div class="pb-8">
                 <h2 class="font-Title text-xl lg:text-Pc_text_Big pb-4 ">Fórmula del Interés Compuesto</h2>
-                <p class="text-textL_soft dark:text-text_soft">La fórmula matemática del interés compuesto es la siguiente:</p>
+                <p class="text-textL_soft dark:text-text_soft">La fórmula matemática del interés compuesto es la
+                    siguiente:</p>
                 <pre class="text-movil_text_Big font-bold">A = P (1 + r/n)^(n*t)</pre>
                 <ul class="text-textL_soft dark:text-text_soft">
                     <li><b class="text-textL dark:text-text">A:</b> Monto final después de los intereses.</li>
                     <li><b class="text-textL dark:text-text">P:</b> Capital inicial.</li>
                     <li><b class="text-textL dark:text-text">r:</b> Tasa de interés anual (en decimal).</li>
-                    <li><b class="text-textL dark:text-text">n:</b> Número de veces que se capitaliza el interés por año.</li>
+                    <li><b class="text-textL dark:text-text">n:</b> Número de veces que se capitaliza el interés por
+                        año.</li>
                     <li><b class="text-textL dark:text-text">t:</b> Número de años de inversión.</li>
                 </ul>
             </div>
@@ -259,30 +268,36 @@
             <div class="pb-8">
                 <h2 class="font-Title text-xl lg:text-Pc_text_Big pb-4 ">Beneficios del Interés Compuesto</h2>
                 <ul class="text-textL_soft dark:text-text_soft">
-                    <li>✔️ <span class="text-textL dark:text-text">Mayor crecimiento a largo plazo</span>: Tu dinero crece exponencialmente.</li>
-                    <li>✔️ <span class="text-textL dark:text-text">Ideal para el ahorro e inversión</span>: Perfecto para fondos de retiro, educación y proyectos a
+                    <li>✔️ <span class="text-textL dark:text-text">Mayor crecimiento a largo plazo</span>: Tu dinero
+                        crece exponencialmente.</li>
+                    <li>✔️ <span class="text-textL dark:text-text">Ideal para el ahorro e inversión</span>: Perfecto
+                        para fondos de retiro, educación y proyectos a
                         largo plazo.</li>
-                    <li>✔️ <span class="text-textL dark:text-text">Funciona con pequeños aportes</span>: No necesitas grandes cantidades de dinero para beneficiarte.</li>
+                    <li>✔️ <span class="text-textL dark:text-text">Funciona con pequeños aportes</span>: No necesitas
+                        grandes cantidades de dinero para beneficiarte.</li>
                 </ul>
             </div>
 
             <div class="">
                 <h2 class="font-Title text-xl lg:text-Pc_text_Big pb-4 ">Preguntas Frecuentes</h2>
-    
+
                 <h3 class="pb-2 pt-2 ">¿Cómo se calcula el interés compuesto?</h3>
-                <p class="text-textL_soft dark:text-text_soft">Usamos la fórmula A = P (1 + r/n)^(n*t), pero nuestra calculadora lo hace automáticamente por ti.</p>
-    
+                <p class="text-textL_soft dark:text-text_soft">Usamos la fórmula A = P (1 + r/n)^(n*t), pero nuestra
+                    calculadora lo hace automáticamente por ti.</p>
+
                 <h3 class="pb-2 pt-2">¿Es mejor el interés compuesto que el interés simple?</h3>
-                <p class="text-textL_soft dark:text-text_soft">Sí. En el interés compuesto, los intereses generados se suman al capital inicial, generando más ganancias
+                <p class="text-textL_soft dark:text-text_soft">Sí. En el interés compuesto, los intereses generados se
+                    suman al capital inicial, generando más ganancias
                     con el tiempo.</p>
-    
+
                 <h3 class="pb-2 pt-2">¿Cuántas veces se capitaliza el interés compuesto?</h3>
-                <p class="text-textL_soft dark:text-text_soft">Depende del banco o inversión. Puede ser anual, semestral, trimestral, mensual o diario.</p>
+                <p class="text-textL_soft dark:text-text_soft">Depende del banco o inversión. Puede ser anual,
+                    semestral, trimestral, mensual o diario.</p>
             </div>
 
         </div>
-        <p class="text-center font-Text pb-8 pt-8 mt-12 text-movil_text  bg-bg_containerL dark:bg-bg_container">Desarrollado por <a
-                href="https://miguelcantos.tech" target="_blank">
+        <p class="text-center font-Text pb-8 pt-8 mt-12 text-movil_text_table lg:text-Pc_text_table bg-bg_containerL dark:bg-bg_container">
+            Desarrollado por <a href="https://miguelcantos.tech" target="_blank">
                 <span class="dark:text-text_secundary font-bold">Miguel Ángel Cantos</span>
             </a> </p>
     </main>

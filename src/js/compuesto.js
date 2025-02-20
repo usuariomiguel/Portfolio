@@ -34,7 +34,7 @@ window.addEventListener('load', function () {
         window.resultChart = new Chart(ctx, {
             type: 'pie',
             data: {
-                labels: ['Primer Depósito', 'Depósitos Periódicos', 'Interés Total'],
+                labels: ['Inicial', 'Depósitos', 'Interés'],
                 datasets: [{
                     data: [balanceInicial, depositosPeriodicos, interesTotal],
                     backgroundColor: ['#40a6b6', '#6d40b6', '#40B66B'],
@@ -93,19 +93,19 @@ window.addEventListener('load', function () {
                 labels: labels,
                 datasets: [
                     {
-                        label: 'Depósito Inicial',
+                        label: 'Inicial',
                         data: depositoInicial,
                         backgroundColor: '#40a6b6',
                         stack: 'Stack 0'
                     },
                     {
-                        label: 'Depósitos Acumulados',
+                        label: 'Depósitos',
                         data: depositosPorAnio,
                         backgroundColor: '#6d40b6',
                         stack: 'Stack 0'
                     },
                     {
-                        label: 'Interés Acumulado',
+                        label: 'Interés',
                         data: interesesPorAnio,
                         backgroundColor: '#40B66B',
                         stack: 'Stack 0'
@@ -182,7 +182,7 @@ window.addEventListener('load', function () {
                     contenedorAno.innerHTML = `
                         <div class="anio-item"><p>${i}</p></div>
                         <div class="anio-item"><p>${depositosAcumulados.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €</p></div>
-                        <div class="anio-item"><p>${interesAcumulado.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €</p></div>
+                        <div class="anio-item anio-item-interes"><p>${interesAcumulado.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €</p></div>
                         <div class="anio-item"><p><strong>${saldo.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €</strong></p></div>
                     `;
             

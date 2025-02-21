@@ -53,40 +53,40 @@ window.addEventListener('load', function () {
     function calcularInteresCompuestoAnual(inicial, depositoPeriodico, tasaInteres, frecuencia, duracion) {
         let interesAnual = [];
         let saldo = inicial;
-    
+
         for (let año = 1; año <= duracion; año++) {
             const valorFuturoInicial = saldo * Math.pow(1 + tasaInteres / frecuencia, año * frecuencia);
             const valorFuturoDepositos = depositoPeriodico * ((Math.pow(1 + tasaInteres / frecuencia, año * frecuencia) - 1) / (tasaInteres / frecuencia));
             const totalFuturo = valorFuturoInicial + valorFuturoDepositos;
             const totalDepositosPeriodicos = depositoPeriodico * frecuencia * año;
             const interesAnualCalculado = totalFuturo - (inicial + totalDepositosPeriodicos);
-    
+
             interesAnual.push(interesAnualCalculado);
         }
-    
+
         return interesAnual;
     }
-    
+
     function actualizarGraficoBarras(inicial, depositoPeriodico, interes, duracion, frecuencia) {
         const ctx = document.getElementById('barChart').getContext('2d');
-    
+
         if (window.barChart && typeof window.barChart.destroy === 'function') {
             window.barChart.destroy();
         }
-    
+
         const tasaInteres = interes / 100;
         const interesesPorAnio = calcularInteresCompuestoAnual(inicial, depositoPeriodico, tasaInteres, frecuencia, duracion);
-    
+
         let depositosPorAnio = [];
         let depositoInicial = [];
         let labels = [];
-    
+
         for (let i = 1; i <= duracion; i++) {
             depositosPorAnio.push(depositoPeriodico * frecuencia * i);
             depositoInicial.push(inicial);
             labels.push(`Año ${i}`);
         }
-    
+
         window.barChart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -123,8 +123,8 @@ window.addEventListener('load', function () {
             }
         });
     }
-    
-       
+
+
 
     const inputInicial = document.getElementById("input-inicial");
     const inputPeriodico = document.getElementById("input-period");
@@ -167,28 +167,31 @@ window.addEventListener('load', function () {
             function actualizarContenedor(inicial, depositoPeriodico, interes, duracion, frecuencia) {
                 const contenedorAnios = document.getElementById('contenedorAnios');
                 contenedorAnios.innerHTML = '';
-            
+
                 const tasaInteres = interes / 100;
                 const interesesPorAnio = calcularInteresCompuestoAnual(inicial, depositoPeriodico, tasaInteres, frecuencia, duracion);
-            
+
                 for (let i = 1; i <= duracion; i++) {
                     let depositosAcumulados = depositoPeriodico * frecuencia * i;
                     let interesAcumulado = interesesPorAnio[i - 1];
                     let saldo = inicial + depositosAcumulados + interesAcumulado;
-            
+
                     let contenedorAno = document.createElement('div');
                     contenedorAno.classList.add('anio');
-            
+
                     contenedorAno.innerHTML = `
                         <div class="anio-item"><p>${i}</p></div>
-                        <div class="anio-item"><p>${depositosAcumulados.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €</p></div>
-                        <div class="anio-item anio-item-interes"><p>${interesAcumulado.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €</p></div>
-                        <div class="anio-item"><p><strong>${saldo.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €</strong></p></div>
+                        <div class="anio-item"><p>${depositosAcumulados.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: true })
+                        } €</p></div>
+                        <div class="anio-item anio-item-interes"><p>${interesAcumulado.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: true })
+                        } €</p></div>
+                        <div class="anio-item"><p><strong>${saldo.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: true })
+                        } €</strong></p></div>
                     `;
-            
+
                     contenedorAnios.appendChild(contenedorAno);
                 }
-            }            
+            }
 
             const frecuencia = frecuencias[optionPeriodico.value];
 

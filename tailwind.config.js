@@ -56,7 +56,11 @@ module.exports = {
       text_secundary: 'rgb(255 243 91)',
       text_secundary_500: 'rgb(255 243 91 / 70%)',
     },
-
+    extend: {
+      width: {
+        md: "425px" // Aquí defines el valor que quieres para "lg"
+      }
+    }
   },
   plugins: [],
 };

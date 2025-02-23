@@ -628,8 +628,8 @@ video {
   width: max-content;
 }
 
-.max-w-60 {
-  max-width: 15rem;
+.min-w-\[425px\] {
+  min-width: 425px;
 }
 
 .transform {
@@ -662,6 +662,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-full {
@@ -933,6 +937,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:overflow-auto {
+    overflow: auto;
+  }
+
   .md\:text-Pc_text_table {
     font-size: 18px;
   }
@@ -1050,6 +1058,10 @@ video {
 
   .lg\:text-Pc_text_Big {
     font-size: 24px;
+  }
+
+  .lg\:text-Pc_text_table {
+    font-size: 18px;
   }
 
   .lg\:leading-tight {

@@ -664,8 +664,8 @@ video {
   gap: 1.5rem;
 }
 
-.overflow-y-scroll {
-  overflow-y: scroll;
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .rounded-full {

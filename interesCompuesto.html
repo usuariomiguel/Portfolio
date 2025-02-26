@@ -78,7 +78,7 @@
             Descubre cómo tu dinero puede crecer con nuestra calculadora de interés compuesto.
             Ajusta depósitos, tasas de interés y plazos para obtener una estimación precisa de tus ganancias.</p>
         <div
-            class="bg-bg_containerL dark:bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 rounded-lg lg:max-w-3xl lg:m-auto lg:pl-12 lg:pr-12 lg:pt-14 lg:pb-14 lg:grid lg:justify-center">
+            class="bg-bg_containerL dark:bg-bg_container font-Text ml-6 mr-6 pl-6 pr-6 pt-8 pb-8 rounded-3xl lg:max-w-3xl lg:m-auto lg:pl-12 lg:pr-12 lg:pt-14 lg:pb-14 lg:grid lg:justify-center">
             <div>
                 <label for="" class="text-movil_text lg:text-Pc_text text-textL_soft dark:text-text_soft">Depósito
                     inicial:</label>
@@ -152,7 +152,7 @@
                     </div>
                     <div class="mt-2 mb-2">
                         <select name="" id="periodo" value=""
-                            class="w-full h-12 bg-bg_primary dark:bg-text text-text dark:text-bg_container rounded-md text-movil_text focus:outline-none pl-3 lg:text-Pc_text cursor-pointer hover:bg-bg_primary_500 hover:dark:bg-text_500 lg:max-w-52">
+                            class="w-full h-12 bg-bg_primary dark:bg-text text-text dark:text-bg_container rounded-xl text-movil_text focus:outline-none pl-3 lg:text-Pc_text cursor-pointer hover:bg-bg_primary_500 hover:dark:bg-text_500 lg:max-w-52">
                             <option id="dia" value="Diario">Diario</option>
                             <option id="semanal" value="Semanal">Semanal</option>
                             <option id="mes" value="Mensual">Mensual</option>
@@ -162,13 +162,13 @@
                 </div>
             </div>
             <button type="button" id="submit"
-                class="h-12 w-full border border-border_containerL rounded-md mt-8 text-movil_text_Big dark:text-center bg-text_secundary dark:text-bg_primary font-bold cursor-pointer lg:h-12 lg:text-Pc_text hover:bg-text_secundary_500 lg:max-w-md">Calcular</button>
+                class="h-12 w-full border border-border_containerL rounded-xl mt-8 text-movil_text_Big dark:text-center bg-text_secundary dark:text-bg_primary font-bold cursor-pointer lg:h-12 lg:text-Pc_text hover:bg-text_secundary_500 lg:max-w-md">Calcular</button>
         </div>
 
-        <div class="hidden mt-8 lg:max-w-3xl lg:ml-auto lg:mr-auto pl-6 pr-6 lg:bg-bg_containerL lg:dark:bg-bg_container rounded-lg lg:pl-0 lg:pr-0"
+        <div class="hidden mt-8 lg:max-w-3xl lg:ml-auto lg:mr-auto pl-6 pr-6 lg:bg-bg_containerL lg:dark:bg-bg_container rounded-3xl lg:pl-0 lg:pr-0"
             id="resultados">
             <div
-                class="lg:grid lg:grid-cols-2 pb-8 pt-16 bg-bg_containerL dark:bg-bg_container rounded-t-lg lg:pl-12 lg:pr-12 lg:pt-14 lg:pb-14">
+                class="lg:grid lg:grid-cols-2 pb-8 pt-16 bg-bg_containerL dark:bg-bg_container rounded-t-3xl lg:pl-12 lg:pr-12 lg:pt-14 lg:pb-14">
                 <div class="m-auto w-max h-max pb-8 lg:pb-0">
                     <canvas id="resultChart" width="200" height="150"></canvas>
                 </div>
@@ -213,12 +213,12 @@
                 </div>
             </div>
             <div
-                class="pb-8 bg-bg_containerL dark:bg-bg_container lg:bg-none rounded-b-lg lg:pl-12 lg:pr-12 lg:pb-14">
+                class="pb-8 bg-bg_containerL dark:bg-bg_container lg:bg-none rounded-b-3xl lg:pl-12 lg:pr-12 lg:pb-14">
                 <div class="pb-8 pt-16 pl-6 pr-6">
                     <canvas id="barChart" class="m-auto"></canvas>
                 </div>
                 <div class="overflow-x-scroll md:overflow-auto ml-6 mr-6 text-movil_text_table md:text-Pc_text_table">
-                    <div class="dark:bg-bg_container font-Title min-w-[425px] thead">
+                    <div class="dark:bg-bg_container font-Title min-w-[380px] thead">
                         <div class="thead-item">
                             <p>Año</p>
                         </div>
@@ -232,7 +232,7 @@
                             <p>Total</p>
                         </div>
                     </div>
-                    <div class="font-Text min-w-[425px]" id="contenedorAnios">
+                    <div class="font-Text min-w-[380px]" id="contenedorAnios">
                     </div>
                 </div>
             </div>

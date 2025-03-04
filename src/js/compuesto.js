@@ -1,28 +1,28 @@
 window.addEventListener('load', function () {
     const darkModeToggle = document.getElementById("dark-light");
-    const inputs = document.querySelectorAll("input");
+    // const inputs = document.querySelectorAll("input");
 
-    inputs.forEach(input => {
-        input.addEventListener("input", function () {
-            let value = this.value.replace(/\D/g, ""); // Eliminar caracteres no numéricos
-            if (value === "") return;
+    // inputs.forEach(input => {
+    //     input.addEventListener("input", function () {
+    //         let value = this.value.replace(/\D/g, ""); // Eliminar caracteres no numéricos
+    //         if (value === "") return;
 
-            let cursorPos = this.selectionStart;
-            let oldLength = this.value.length;
+    //         let cursorPos = this.selectionStart;
+    //         let oldLength = this.value.length;
 
-            this.value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    //         this.value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-            let newLength = this.value.length;
-            cursorPos += newLength - oldLength;
-            this.setSelectionRange(cursorPos, cursorPos);
-        });
+    //         let newLength = this.value.length;
+    //         cursorPos += newLength - oldLength;
+    //         this.setSelectionRange(cursorPos, cursorPos);
+    //     });
 
-        input.addEventListener("keypress", function (e) {
-            if (!/[0-9]/.test(e.key)) {
-                e.preventDefault();
-            }
-        });
-    });
+    //     input.addEventListener("keypress", function (e) {
+    //         if (!/[0-9]/.test(e.key)) {
+    //             e.preventDefault();
+    //         }
+    //     });
+    // });
 
     function actualizarGrafico(balanceInicial, depositosPeriodicos, interesTotal) {
         const ctx = document.getElementById('resultChart').getContext('2d');
@@ -124,8 +124,6 @@ window.addEventListener('load', function () {
         });
     }
 
-
-
     const inputInicial = document.getElementById("input-inicial");
     const inputPeriodico = document.getElementById("input-period");
     const inputInteres = document.getElementById("input-interes");
@@ -150,7 +148,7 @@ window.addEventListener('load', function () {
 
         const inicial = parseFloat(inputInicial.value.replace(/\./g, "")) || 0;
         const depositoPeriodico = parseFloat(inputPeriodico.value.replace(/\./g, "")) || 0;
-        const interes = parseFloat(inputInteres.value.replace(/\./g, "")) || 0;
+        const interes = inputInteres.value;
         const duracion = parseFloat(inputDuracion.value.replace(/\./g, "")) || 0;
         const tasaInteres = interes / 100;
 
